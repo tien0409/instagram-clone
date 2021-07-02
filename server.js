@@ -17,8 +17,10 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 // import routes
+const userRoute = require("./routes/user.route");
 
 // use routes
+app.use("/user", userRoute);
 
 // handle error
 app.use(notFoundRoute);
