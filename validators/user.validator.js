@@ -10,6 +10,7 @@ const signUpValidator = () => [
       }
     }),
   ),
+
   check("username", "Username is required").not().isEmpty(),
   check(
     "username",
@@ -22,6 +23,7 @@ const signUpValidator = () => [
       }
     }),
   ),
+
   check("fullName", "Full name is required").not().isEmpty(),
   check("password", "Password must more than 6 characters").isLength({
     min: 6,
