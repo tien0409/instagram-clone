@@ -22,4 +22,23 @@ const signUp = asyncHandler(async (req, res) => {
   res.json(newUser);
 });
 
-module.exports = { signUp };
+/*
+ * @desc  sign in user
+ * @route POST /api/user/signin
+ * @access Public
+ */
+const signIn = asyncHandler(async (req, res) => {
+  const { email, password } = req.body;
+
+  const user = await User.findOne({ email });
+
+  if (user && (await user.isCorrectPassword(password))) {
+    res.status(200).json(user);
+  } else {
+    res
+      .status(401)
+      .json({ msg: "Email or Password incorrect. Please try again" });
+  }
+});
+
+module.exports = { signUp, signIn };
