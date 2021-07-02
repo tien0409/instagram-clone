@@ -10,6 +10,9 @@ const signUpValidator = () => [
       }
     }),
   ),
+  check("email")
+    .custom((email) => !/\s/.test(email))
+    .withMessage("No spaces are allowed in the email"),
 
   check("username", "Username is required").not().isEmpty(),
   check(
@@ -23,11 +26,17 @@ const signUpValidator = () => [
       }
     }),
   ),
+  check("username")
+    .custom((username) => !/\s/.test(username))
+    .withMessage("No spaces are allowed in the username"),
 
   check("fullName", "Full name is required").not().isEmpty(),
   check("password", "Password must more than 6 characters").isLength({
     min: 6,
   }),
+  check("password")
+    .custom((password) => !/\s/.test(password))
+    .withMessage("No spaces are allowed in the password"),
 ];
 
 module.exports = { signUpValidator };
