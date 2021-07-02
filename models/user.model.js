@@ -39,9 +39,7 @@ const userSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-const User = mongoose.model("user", userSchema);
-
-// hash password previous save (update password, create user)
+// hash password before save (update password, create user)
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {
     return next();
@@ -51,5 +49,12 @@ userSchema.pre("save", async function (next) {
   const passwordHashed = await bcrypt.hash(this.password, salt);
   this.password = passwordHashed;
 });
+
+// compare password with password input
+userSchema.methods.isCorrectPassword = function (password) {
+  return bcrypt.compare(password, this.password);
+};
+
+const User = mongoose.model("user", userSchema);
 
 module.exports = User;
