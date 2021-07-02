@@ -20,7 +20,7 @@ app.use(morgan("dev"));
 const userRoute = require("./routes/user.route");
 
 // use routes
-app.use("/user", userRoute);
+app.use("/api/user", userRoute);
 
 // handle error
 app.use(notFoundRoute);
