@@ -39,4 +39,25 @@ const signUpValidator = () => [
     .withMessage("No spaces are allowed in the password"),
 ];
 
-module.exports = { signUpValidator };
+const signInValidator = () => [
+  check("email", "Email is not valid").isEmail(),
+  check("email").custom((email) =>
+    User.findOne({ email }).then((emailExists) => {
+      if (!emailExists) {
+        throw new Error("Email is not exists");
+      }
+    }),
+  ),
+  check("email")
+    .custom((email) => !/\s/.test(email))
+    .withMessage("No spaces are allowed in the email"),
+
+  check("password", "Password must more than 6 characters").isLength({
+    min: 6,
+  }),
+  check("password")
+    .custom((password) => !/\s/.test(password))
+    .withMessage("No spaces are allowed in the password"),
+];
+
+module.exports = { signUpValidator, signInValidator };
