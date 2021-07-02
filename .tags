@@ -20,8 +20,10 @@
 @types/node	package-lock.json	/^        "@types\/node": "*"$/;"	s	object:dependencies.@types/bson.requires
 @types/node	package-lock.json	/^        "@types\/node": "*"$/;"	s	object:dependencies.@types/mongodb.requires
 @types/node	package-lock.json	/^    "@types\/node": {$/;"	o	object:dependencies
+AnonymousFunction17a937810100	models/user.model.js	/^userSchema.pre("save", async function (next) {$/;"	c
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
+User	controllers/user.controller.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	models/user.model.js	/^const User = mongoose.model("user", userSchema);$/;"	C
 User	validators/user.validator.js	/^const User = require("..\/models\/user.model");$/;"	C
 abbrev	package-lock.json	/^        "abbrev": "1"$/;"	s	object:dependencies.nopt.requires
@@ -41,11 +43,13 @@ anymatch	package-lock.json	/^    "anymatch": {$/;"	o	object:dependencies
 app	server.js	/^const app = express();$/;"	C
 array-flatten	package-lock.json	/^        "array-flatten": "1.1.1",$/;"	s	object:dependencies.express.requires
 array-flatten	package-lock.json	/^    "array-flatten": {$/;"	o	object:dependencies
+asyncHandler	controllers/user.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 author	package.json	/^  "author": "",$/;"	s
 balanced-match	package-lock.json	/^        "balanced-match": "^1.0.0",$/;"	s	object:dependencies.brace-expansion.requires
 balanced-match	package-lock.json	/^    "balanced-match": {$/;"	o	object:dependencies
 basic-auth	package-lock.json	/^        "basic-auth": "~2.0.1",$/;"	s	object:dependencies.morgan.requires
 basic-auth	package-lock.json	/^    "basic-auth": {$/;"	o	object:dependencies
+bcrypt	models/user.model.js	/^const bcrypt = require("bcryptjs");$/;"	C
 binary-extensions	package-lock.json	/^        "binary-extensions": "^2.0.0"$/;"	s	object:dependencies.is-binary-path.requires
 binary-extensions	package-lock.json	/^    "binary-extensions": {$/;"	o	object:dependencies
 bl	package-lock.json	/^        "bl": "^2.2.1",$/;"	s	object:dependencies.mongodb.requires
@@ -291,7 +295,6 @@ end-of-stream	package-lock.json	/^        "end-of-stream": "^1.1.0",$/;"	s	objec
 end-of-stream	package-lock.json	/^    "end-of-stream": {$/;"	o	object:dependencies
 err	middlewares/error.middleware.js	/^  const err = new Error(`Not found - ${req.originalUrl}`);$/;"	C
 errHandler	middlewares/error.middleware.js	/^const errHandler = (err, req, res, next) => {$/;"	C
-errors	controllers/user.controller.js	/^  const errors = validationResult(req);$/;"	C
 escape-goat	package-lock.json	/^        "escape-goat": "^2.0.0"$/;"	s	object:dependencies.pupa.requires
 escape-goat	package-lock.json	/^    "escape-goat": {$/;"	o	object:dependencies
 escape-html	package-lock.json	/^        "escape-html": "~1.0.3",$/;"	s	object:dependencies.express.requires
@@ -1078,7 +1081,7 @@ setprototypeof	package-lock.json	/^        "setprototypeof": "1.1.1",$/;"	s	obje
 setprototypeof	package-lock.json	/^    "setprototypeof": {$/;"	o	object:dependencies
 sift	package-lock.json	/^        "sift": "13.5.2",$/;"	s	object:dependencies.mongoose.requires
 sift	package-lock.json	/^    "sift": {$/;"	o	object:dependencies
-signUpUser	controllers/user.controller.js	/^const signUpUser = (req, res) => {$/;"	C
+signUp	controllers/user.controller.js	/^const signUp = asyncHandler(async (req, res) => {$/;"	C
 signUpValidator	validators/user.validator.js	/^const signUpValidator = () => [$/;"	C
 signal-exit	package-lock.json	/^        "signal-exit": "^3.0.2",$/;"	s	object:dependencies.write-file-atomic.requires
 signal-exit	package-lock.json	/^    "signal-exit": {$/;"	o	object:dependencies
