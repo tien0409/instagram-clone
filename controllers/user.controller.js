@@ -2,6 +2,7 @@ const { validationResult } = require("express-validator");
 const asyncHandler = require("express-async-handler");
 
 const User = require("../models/user.model");
+const generateToken = require("../utils/generate-token");
 
 /*
  * @desc  sign up user
@@ -19,7 +20,15 @@ const signUp = asyncHandler(async (req, res) => {
   const newUser = new User({ email, username, fullName, password });
   await newUser.save();
 
-  res.json(newUser);
+  res.json({
+    _id: user._id,
+    email: user.email,
+    username: user.username,
+    fullName: user.fullName,
+    followers: user.followers,
+    following: user.following,
+    token: generateToken(user._id),
+  });
 });
 
 /*
@@ -33,7 +42,15 @@ const signIn = asyncHandler(async (req, res) => {
   const user = await User.findOne({ email });
 
   if (user && (await user.isCorrectPassword(password))) {
-    res.status(200).json(user);
+    res.status(200).json({
+      _id: user._id,
+      email: user.email,
+      username: user.username,
+      fullName: user.fullName,
+      followers: user.followers,
+      following: user.following,
+      token: generateToken(user._id),
+    });
   } else {
     res
       .status(401)
