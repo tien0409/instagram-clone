@@ -12,15 +12,15 @@ const generateToken = require("../utils/generate-token");
 const signUp = asyncHandler(async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
+    res.status(400);
     throw new Error(errors.array()[0].msg);
   }
-
   const { email, username, fullName, password } = req.body;
 
   const newUser = new User({ email, username, fullName, password });
   await newUser.save();
 
-  res.json({
+  res.status(201).json({
     _id: user._id,
     email: user.email,
     username: user.username,
@@ -37,6 +37,12 @@ const signUp = asyncHandler(async (req, res) => {
  * @access Public
  */
 const signIn = asyncHandler(async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    res.status(400);
+    throw new Error(errors.array()[0].msg);
+  }
+
   const { email, password } = req.body;
 
   const user = await User.findOne({ email });
