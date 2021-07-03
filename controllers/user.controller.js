@@ -27,6 +27,7 @@ const signUp = asyncHandler(async (req, res) => {
     fullName: user.fullName,
     followers: user.followers,
     following: user.following,
+    avatar: user.avatar,
     token: generateToken(user._id),
   });
 });
@@ -52,6 +53,7 @@ const signIn = asyncHandler(async (req, res) => {
       _id: user._id,
       email: user.email,
       username: user.username,
+      avatar: user.avatar,
       fullName: user.fullName,
       followers: user.followers,
       following: user.following,
@@ -73,6 +75,7 @@ const authSignIn = asyncHandler(async (req, res) => {
     _id: req.user._id,
     email: req.user.email,
     username: req.user.username,
+    avatar: req.user.avatar,
     fullName: req.user.fullName,
     followers: req.user.followers,
     following: req.user.following,
