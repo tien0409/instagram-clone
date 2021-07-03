@@ -1,6 +1,7 @@
 // import package
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const morgan = require("morgan");
 
 // import utils, middleware, configs file
@@ -15,6 +16,7 @@ connectDb();
 app.use(express.static("public"));
 app.use(express.json());
 app.use(morgan("dev"));
+app.use(cors());
 
 // import routes
 const userRoute = require("./routes/user.route");

@@ -111,6 +111,7 @@ cookie-signature	package-lock.json	/^        "cookie-signature": "1.0.6",$/;"	s	
 cookie-signature	package-lock.json	/^    "cookie-signature": {$/;"	o	object:dependencies
 core-util-is	package-lock.json	/^        "core-util-is": "~1.0.0",$/;"	s	object:dependencies.readable-stream.requires
 core-util-is	package-lock.json	/^    "core-util-is": {$/;"	o	object:dependencies
+cors	server.js	/^const cors = require("cors");$/;"	C
 crypto-random-string	package-lock.json	/^        "crypto-random-string": "^2.0.0"$/;"	s	object:dependencies.unique-string.requires
 crypto-random-string	package-lock.json	/^    "crypto-random-string": {$/;"	o	object:dependencies
 debug	package-lock.json	/^        "debug": "2.6.9",$/;"	s	object:dependencies.body-parser.requires
