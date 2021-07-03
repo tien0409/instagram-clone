@@ -20,9 +20,11 @@ app.use(cors());
 
 // import routes
 const userRoute = require("./routes/user.route");
+const postRoute = require("./routes/post.route");
 
 // use routes
 app.use("/api/user", userRoute);
+app.use("/api/post", postRoute);
 
 // handle error
 app.use(notFoundRoute);

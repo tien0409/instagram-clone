@@ -324,6 +324,7 @@ etag	package-lock.json	/^    "etag": {$/;"	o	object:dependencies
 exports	configs/env.js	/^module.exports = {$/;"	c	class:module
 express	package-lock.json	/^    "express": {$/;"	o	object:dependencies
 express	package.json	/^    "express": "^4.17.1",$/;"	s	object:dependencies
+express	routes/post.route.js	/^const express = require("express");$/;"	C
 express	routes/user.route.js	/^const express = require("express");$/;"	C
 express	server.js	/^const express = require("express");$/;"	C
 express-async-handler	package-lock.json	/^    "express-async-handler": {$/;"	o	object:dependencies
@@ -775,6 +776,7 @@ path-to-regexp	package-lock.json	/^    "path-to-regexp": {$/;"	o	object:dependen
 picomatch	package-lock.json	/^        "picomatch": "^2.0.4"$/;"	s	object:dependencies.anymatch.requires
 picomatch	package-lock.json	/^        "picomatch": "^2.2.1"$/;"	s	object:dependencies.readdirp.requires
 picomatch	package-lock.json	/^    "picomatch": {$/;"	o	object:dependencies
+postRoute	server.js	/^const postRoute = require(".\/routes\/post.route");$/;"	C
 postSchema	models/post.model.js	/^const postSchema = new mongoose.Schema({$/;"	C
 prepend-http	package-lock.json	/^        "prepend-http": "^2.0.0"$/;"	s	object:dependencies.url-parse-lax.requires
 prepend-http	package-lock.json	/^    "prepend-http": {$/;"	o	object:dependencies
@@ -1128,6 +1130,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/wr
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/xdg-basedir\/-\/xdg-basedir-4.0.0.tgz",$/;"	s	object:dependencies.xdg-basedir
 responselike	package-lock.json	/^        "responselike": "^1.0.2"$/;"	s	object:dependencies.cacheable-request.requires
 responselike	package-lock.json	/^    "responselike": {$/;"	o	object:dependencies
+router	routes/post.route.js	/^const router = express.Router();$/;"	C
 router	routes/user.route.js	/^const router = express.Router();$/;"	C
 safe-buffer	package-lock.json	/^        "safe-buffer": "5.1.2"$/;"	s	object:dependencies.basic-auth.requires
 safe-buffer	package-lock.json	/^        "safe-buffer": "5.1.2"$/;"	s	object:dependencies.content-disposition.requires
