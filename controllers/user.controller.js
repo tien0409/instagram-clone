@@ -52,10 +52,25 @@ const signIn = asyncHandler(async (req, res) => {
       token: generateToken(user._id),
     });
   } else {
-    res
-      .status(401)
-      .json({ msg: "Email or Password incorrect. Please try again" });
+    res.status(401);
+    throw new Error("Email or Password incorrect. Please try again");
   }
 });
 
-module.exports = { signUp, signIn };
+/*
+ * @desc  check auth
+ * @route POST /api/user/auth
+ * @access Public
+ */
+const authSignIn = asyncHandler(async (req, res) => {
+  res.status(200).json({
+    _id: req.user._id,
+    email: req.user.email,
+    username: req.user.username,
+    fullName: req.user.fullName,
+    followers: req.user.followers,
+    following: req.user.following,
+  });
+});
+
+module.exports = { signUp, signIn, authSignIn };

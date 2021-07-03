@@ -48,6 +48,7 @@ array-flatten	package-lock.json	/^    "array-flatten": {$/;"	o	object:dependenci
 asyncHandler	controllers/user.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/auth.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 auth	middlewares/auth.middleware.js	/^const auth = asyncHandler(async (req, res, next) => {$/;"	C
+authSignIn	controllers/user.controller.js	/^const authSignIn = asyncHandler(async (req, res) => {$/;"	C
 author	package.json	/^  "author": "",$/;"	s
 balanced-match	package-lock.json	/^        "balanced-match": "^1.0.0",$/;"	s	object:dependencies.brace-expansion.requires
 balanced-match	package-lock.json	/^    "balanced-match": {$/;"	o	object:dependencies
@@ -114,6 +115,8 @@ cookie-signature	package-lock.json	/^        "cookie-signature": "1.0.6",$/;"	s	
 cookie-signature	package-lock.json	/^    "cookie-signature": {$/;"	o	object:dependencies
 core-util-is	package-lock.json	/^        "core-util-is": "~1.0.0",$/;"	s	object:dependencies.readable-stream.requires
 core-util-is	package-lock.json	/^    "core-util-is": {$/;"	o	object:dependencies
+cors	package-lock.json	/^    "cors": {$/;"	o	object:dependencies
+cors	package.json	/^    "cors": "^2.8.5",$/;"	s	object:dependencies
 cors	server.js	/^const cors = require("cors");$/;"	C
 crypto-random-string	package-lock.json	/^        "crypto-random-string": "^2.0.0"$/;"	s	object:dependencies.unique-string.requires
 crypto-random-string	package-lock.json	/^    "crypto-random-string": {$/;"	o	object:dependencies
@@ -413,6 +416,7 @@ integrity	package-lock.json	/^      "integrity": "sha1-DdOXEhPHxW34gJd9UEyI+0cal
 integrity	package-lock.json	/^      "integrity": "sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow="$/;"	s	object:dependencies.statuses
 integrity	package-lock.json	/^      "integrity": "sha1-FrXK\/Afb42dsGxmZF3gj1lA6yww=",$/;"	s	object:dependencies.url-parse-lax
 integrity	package-lock.json	/^      "integrity": "sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=",$/;"	s	object:dependencies.on-finished
+integrity	package-lock.json	/^      "integrity": "sha1-IQmtx5ZYh8\/AXLvUQsrIv7s2CGM="$/;"	s	object:dependencies.object-assign
 integrity	package-lock.json	/^      "integrity": "sha1-IpnwLG3tMNSllhsLn3RSShj2NPw="$/;"	s	object:dependencies.vary
 integrity	package-lock.json	/^      "integrity": "sha1-PFMZQukIwml8DsNEhYwobHygpgo=",$/;"	s	object:dependencies.strip-json-comments
 integrity	package-lock.json	/^      "integrity": "sha1-POdoEMWSjQM1IwGsKHMX8RwLH\/w="$/;"	s	object:dependencies.lodash.isnumber
@@ -501,6 +505,7 @@ integrity	package-lock.json	/^      "integrity": "sha512-Il80Qs2WjYlJIBNzNkK6KYq
 integrity	package-lock.json	/^      "integrity": "sha512-Iq25XBt6zD5npPhlLVXGFN3\/gyR2\/qODcKNNyTMd4vbm39HUaOiAM4PMq0eMVC\/Tkx/;"	s	object:dependencies.to-readable-stream
 integrity	package-lock.json	/^      "integrity": "sha512-JMrvUwE54emCYWlTI+hGrGv5I8dEwmco\/00EvkzIIsR7MqrHonbD9pO2MOfFnpFntl7e/;"	s	object:dependencies.serve-static
 integrity	package-lock.json	/^      "integrity": "sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEb/;"	s	object:dependencies.setprototypeof
+integrity	package-lock.json	/^      "integrity": "sha512-KIHbLJqu73RGr\/hnbrO9uBeixNGuvSQjul\/jdFvS\/KFSIH1hWVd1ng7zOHx+YrEfIn/;"	s	object:dependencies.cors
 integrity	package-lock.json	/^      "integrity": "sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRD/;"	s	object:dependencies.camelcase
 integrity	package-lock.json	/^      "integrity": "sha512-LOHxIOaPYdHlJRtCQfDIVZtfw\/ufM8+rVj649RIHzcm\/vGwQRXFt6OPqIFWsm2XEMrN/;"	s	object:dependencies.deep-extend
 integrity	package-lock.json	/^      "integrity": "sha512-LwZy+p3SFs1Pytd\/jYct4wpv49HiYCqd9Rlc5ZVdk0V+8Yzv6jR5Blk3TRmPL1ft69Tx/;"	s	object:dependencies.pump
@@ -627,7 +632,7 @@ is-typedarray	package-lock.json	/^        "is-typedarray": "^1.0.0",$/;"	s	objec
 is-typedarray	package-lock.json	/^    "is-typedarray": {$/;"	o	object:dependencies
 is-yarn-global	package-lock.json	/^        "is-yarn-global": "^0.3.0",$/;"	s	object:dependencies.update-notifier.requires
 is-yarn-global	package-lock.json	/^    "is-yarn-global": {$/;"	o	object:dependencies
-isCorrectPassword	models/user.model.js	/^userSchema.methods.isCorrectPassword = function (password) {$/;"	f	function:userSchema.methods
+isCorrectPassword	models/user.model.js	/^userSchema.methods.isCorrectPassword = async function (password) {$/;"	f	function:userSchema.methods
 isarray	package-lock.json	/^        "isarray": "~1.0.0",$/;"	s	object:dependencies.readable-stream.requires
 isarray	package-lock.json	/^    "isarray": {$/;"	o	object:dependencies
 json-buffer	package-lock.json	/^        "json-buffer": "3.0.0"$/;"	s	object:dependencies.keyv.requires
@@ -735,6 +740,8 @@ normalize-path	package-lock.json	/^    "normalize-path": {$/;"	o	object:dependen
 normalize-url	package-lock.json	/^        "normalize-url": "^4.1.0",$/;"	s	object:dependencies.cacheable-request.requires
 normalize-url	package-lock.json	/^    "normalize-url": {$/;"	o	object:dependencies
 notFoundRoute	middlewares/error.middleware.js	/^const notFoundRoute = (req, res, next) => {$/;"	C
+object-assign	package-lock.json	/^        "object-assign": "^4",$/;"	s	object:dependencies.cors.requires
+object-assign	package-lock.json	/^    "object-assign": {$/;"	o	object:dependencies
 on-finished	package-lock.json	/^        "on-finished": "~2.3.0",$/;"	s	object:dependencies.body-parser.requires
 on-finished	package-lock.json	/^        "on-finished": "~2.3.0",$/;"	s	object:dependencies.express.requires
 on-finished	package-lock.json	/^        "on-finished": "~2.3.0",$/;"	s	object:dependencies.finalhandler.requires
@@ -826,6 +833,7 @@ requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.clone
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.color-convert
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.configstore
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.content-disposition
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.cors
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.debug
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.decompress-response
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.dot-prop
@@ -953,6 +961,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/co
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/cookie-signature\/-\/cookie-signature-1.0.6.tgz/;"	s	object:dependencies.cookie-signature
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/cookie\/-\/cookie-0.4.0.tgz",$/;"	s	object:dependencies.cookie
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/core-util-is\/-\/core-util-is-1.0.2.tgz",$/;"	s	object:dependencies.core-util-is
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/cors\/-\/cors-2.8.5.tgz",$/;"	s	object:dependencies.cors
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/crypto-random-string\/-\/crypto-random-string-2/;"	s	object:dependencies.crypto-random-string
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/debug\/-\/debug-2.6.9.tgz",$/;"	s	object:dependencies.debug
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/decompress-response\/-\/decompress-response-3.3/;"	s	object:dependencies.decompress-response
@@ -1048,6 +1057,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/no
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/nopt\/-\/nopt-1.0.10.tgz",$/;"	s	object:dependencies.nopt
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/normalize-path\/-\/normalize-path-3.0.0.tgz",$/;"	s	object:dependencies.normalize-path
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/normalize-url\/-\/normalize-url-4.5.1.tgz",$/;"	s	object:dependencies.normalize-url
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/object-assign\/-\/object-assign-4.1.1.tgz",$/;"	s	object:dependencies.object-assign
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/on-finished\/-\/on-finished-2.3.0.tgz",$/;"	s	object:dependencies.on-finished
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/on-headers\/-\/on-headers-1.0.2.tgz",$/;"	s	object:dependencies.on-headers
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/once\/-\/once-1.4.0.tgz",$/;"	s	object:dependencies.once
@@ -1227,6 +1237,7 @@ utils-merge	package-lock.json	/^        "utils-merge": "1.0.1",$/;"	s	object:dep
 utils-merge	package-lock.json	/^    "utils-merge": {$/;"	o	object:dependencies
 validator	package-lock.json	/^        "validator": "^13.5.2"$/;"	s	object:dependencies.express-validator.requires
 validator	package-lock.json	/^    "validator": {$/;"	o	object:dependencies
+vary	package-lock.json	/^        "vary": "^1"$/;"	s	object:dependencies.cors.requires
 vary	package-lock.json	/^        "vary": "~1.1.2"$/;"	s	object:dependencies.express.requires
 vary	package-lock.json	/^    "vary": {$/;"	o	object:dependencies
 version	package-lock.json	/^          "version": "2.0.0",$/;"	s	object:dependencies.cacheable-request.dependencies.lowercase-keys
@@ -1376,6 +1387,7 @@ version	package-lock.json	/^      "version": "2.3.7",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "2.4.0",$/;"	s	object:dependencies.raw-body
 version	package-lock.json	/^      "version": "2.4.3",$/;"	s	object:dependencies.bcryptjs
 version	package-lock.json	/^      "version": "2.6.9",$/;"	s	object:dependencies.debug
+version	package-lock.json	/^      "version": "2.8.5",$/;"	s	object:dependencies.cors
 version	package-lock.json	/^      "version": "3.0.0",$/;"	s	object:dependencies.ansi-align
 version	package-lock.json	/^      "version": "3.0.0",$/;"	s	object:dependencies.chalk
 version	package-lock.json	/^      "version": "3.0.0",$/;"	s	object:dependencies.has-flag
@@ -1418,6 +1430,7 @@ version	package-lock.json	/^      "version": "4.1.0",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "4.1.0",$/;"	s	object:dependencies.get-stream
 version	package-lock.json	/^      "version": "4.1.0",$/;"	s	object:dependencies.http-cache-semantics
 version	package-lock.json	/^      "version": "4.1.1",$/;"	s	object:dependencies.lodash.once
+version	package-lock.json	/^      "version": "4.1.1",$/;"	s	object:dependencies.object-assign
 version	package-lock.json	/^      "version": "4.1.3",$/;"	s	object:dependencies.update-notifier
 version	package-lock.json	/^      "version": "4.17.1",$/;"	s	object:dependencies.express
 version	package-lock.json	/^      "version": "4.17.21",$/;"	s	object:dependencies.lodash
