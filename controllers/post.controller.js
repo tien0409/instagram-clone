@@ -32,7 +32,7 @@ const createPost = asyncHandler(async (req, res) => {
 
 /*
  * @desc  get all post
- * @route POST /api/post
+ * @route GET /api/post
  * @access Private
  */
 const getAllPost = asyncHandler(async (req, res) => {
@@ -40,4 +40,16 @@ const getAllPost = asyncHandler(async (req, res) => {
   res.status(200).json(posts);
 });
 
-module.exports = { createPost, getAllPost };
+/*
+ * @desc  get all post user created by userId
+ * @route POST /api/post/:userId
+ * @access Private
+ */
+const getAllPostByUserId = asyncHandler(async (req, res) => {
+  const { userId } = req.params;
+
+  const posts = await Post.find({ user: userId }).sort({ createdAt: "desc" });
+  res.status(200).json(posts);
+});
+
+module.exports = { createPost, getAllPost, getAllPostByUserId };
