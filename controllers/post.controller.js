@@ -16,9 +16,15 @@ const createPost = asyncHandler(async (req, res) => {
   }
 
   const { imagePost, caption } = req.body;
-  const { _id, name, avatar } = req.user;
+  const { _id, username, avatar } = req.user;
 
-  const post = new Post({ imagePost, caption, user: _id, name, avatar });
+  const post = new Post({
+    imagePost,
+    caption,
+    user: _id,
+    name: username,
+    avatar,
+  });
   await post.save();
 
   res.status(201).json(post);
