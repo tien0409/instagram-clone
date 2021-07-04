@@ -21,6 +21,7 @@
 @types/node	package-lock.json	/^        "@types\/node": "*"$/;"	s	object:dependencies.@types/mongodb.requires
 @types/node	package-lock.json	/^    "@types\/node": {$/;"	o	object:dependencies
 AnonymousFunction17a937810100	models/user.model.js	/^userSchema.pre("save", async function (next) {$/;"	c
+CLOUD_NAME	configs/env.js	/^  CLOUD_NAME: process.env.CLOUD_NAME,$/;"	p	class:module.exports
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports

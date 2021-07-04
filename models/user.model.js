@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
+const { CLOUD_NAME } = require("../configs/env");
 
 const userSchema = new mongoose.Schema(
   {
@@ -26,7 +27,7 @@ const userSchema = new mongoose.Schema(
     },
     avatar: {
       type: String,
-      default: "/images/avatar_default.png",
+      default: `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/v1625386800/avatar_default_tmzgck.png`,
     },
     followers: {
       type: Array,
