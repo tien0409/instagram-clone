@@ -21,14 +21,14 @@ const signUp = asyncHandler(async (req, res) => {
   await newUser.save();
 
   res.status(201).json({
-    _id: user._id,
-    email: user.email,
-    username: user.username,
-    fullName: user.fullName,
-    followers: user.followers,
-    following: user.following,
-    avatar: user.avatar,
-    token: generateToken(user._id),
+    _id: newUser._id,
+    email: newUser.email,
+    username: newUser.newUsername,
+    fullName: newUser.fullName,
+    followers: newUser.followers,
+    following: newUser.following,
+    avatar: newUser.avatar,
+    token: generateToken(newUser._id),
   });
 });
 
@@ -82,4 +82,17 @@ const authSignIn = asyncHandler(async (req, res) => {
   });
 });
 
-module.exports = { signUp, signIn, authSignIn };
+/*
+ * @desc  get all user suggestion
+ * @route POST /api/user/suggestion
+ * @access Private
+ */
+const getUserSuggestion = asyncHandler(async (req, res) => {
+  const { _id: idLoggedIn, following } = req.user;
+
+  const users = await User.find({ _id: { $ne: idLoggedIn, $nin: following } });
+
+  res.status(201).json(users);
+});
+
+module.exports = { signUp, signIn, authSignIn, getUserSuggestion };
