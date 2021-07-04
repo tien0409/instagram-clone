@@ -36,7 +36,7 @@ const createPost = asyncHandler(async (req, res) => {
  * @access Private
  */
 const getAllPost = asyncHandler(async (req, res) => {
-  const posts = await Post.find();
+  const posts = await Post.find().sort({ createdAt: "desc" });
   res.status(200).json(posts);
 });
 
