@@ -352,6 +352,7 @@ get-stream	package-lock.json	/^        "get-stream": "^4.1.0",$/;"	s	object:depe
 get-stream	package-lock.json	/^        "get-stream": "^5.1.0",$/;"	s	object:dependencies.cacheable-request.requires
 get-stream	package-lock.json	/^        "get-stream": {$/;"	o	object:dependencies.cacheable-request.dependencies
 get-stream	package-lock.json	/^    "get-stream": {$/;"	o	object:dependencies
+getAllPost	controllers/post.controller.js	/^const getAllPost = asyncHandler(async (req, res) => {$/;"	C
 glob-parent	package-lock.json	/^        "glob-parent": "~5.1.2",$/;"	s	object:dependencies.chokidar.requires
 glob-parent	package-lock.json	/^    "glob-parent": {$/;"	o	object:dependencies
 global-dirs	package-lock.json	/^        "global-dirs": "^2.0.1",$/;"	s	object:dependencies.is-installed-globally.requires

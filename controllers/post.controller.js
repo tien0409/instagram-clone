@@ -30,4 +30,14 @@ const createPost = asyncHandler(async (req, res) => {
   res.status(201).json(post);
 });
 
-module.exports = { createPost };
+/*
+ * @desc  get all post
+ * @route POST /api/post
+ * @access Private
+ */
+const getAllPost = asyncHandler(async (req, res) => {
+  const posts = await Post.find();
+  res.status(200).json(posts);
+});
+
+module.exports = { createPost, getAllPost };
