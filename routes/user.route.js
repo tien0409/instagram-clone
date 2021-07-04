@@ -6,6 +6,7 @@ const {
   signIn,
   authSignIn,
   getUserSuggestion,
+  getUserDetails,
 } = require("../controllers/user.controller");
 const {
   signUpValidator,
@@ -17,5 +18,6 @@ router.post("/signup", signUpValidator(), signUp);
 router.route("/signin", signInValidator()).post(signIn);
 router.get("/auth", auth, authSignIn);
 router.route("/suggestion").get(auth, getUserSuggestion);
+router.route("/:id").get(auth, getUserDetails);
 
 module.exports = router;
