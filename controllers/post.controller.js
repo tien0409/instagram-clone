@@ -36,7 +36,13 @@ const createPost = asyncHandler(async (req, res) => {
  * @access Private
  */
 const getAllPost = asyncHandler(async (req, res) => {
-  const posts = await Post.find().sort({ createdAt: "desc" });
+  const { following } = req.user;
+  const listUserGetPost = [...following, req.user._id];
+
+  const posts = await Post.find({ user: { $in: listUserGetPost } }).sort({
+    createdAt: "desc",
+  });
+
   res.status(200).json(posts);
 });
 

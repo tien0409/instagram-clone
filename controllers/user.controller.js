@@ -24,7 +24,7 @@ const signUp = asyncHandler(async (req, res) => {
   res.status(201).json({
     _id: newUser._id,
     email: newUser.email,
-    username: newUser.newUsername,
+    username: newUser.username,
     fullName: newUser.fullName,
     followers: newUser.followers,
     following: newUser.following,
