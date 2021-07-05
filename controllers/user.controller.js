@@ -125,10 +125,38 @@ const getUserDetails = asyncHandler(async (req, res) => {
   });
 });
 
+/*
+ * @desc  follow user
+ * @route POST /api/user/follow
+ * @access Private
+ */
+const followUser = asyncHandler(async (req, res) => {
+  const { followers } = req.user;
+  const { userId } = req.body;
+
+  const user = await User.findById(userId);
+
+  if (!user) {
+    res.status(404);
+    throw new Error("Can not follow. User not found");
+  }
+
+  if (followers.includes(user._id)) {
+    const index = followers.findIndex((id) => id === user._id);
+    followers.splice(index, 1);
+  } else {
+    followers.push(user._id);
+  }
+  await req.user.save();
+
+  res.status(200).json();
+});
+
 module.exports = {
   signUp,
   signIn,
   authSignIn,
   getUserSuggestion,
   getUserDetails,
+  followUser,
 };
