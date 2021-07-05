@@ -102,24 +102,6 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
 });
 
 /*
- * @desc  get info current user logged in
- * @route GET /api/user/
- * @access Private
- */
-const getCurrentUser = asyncHandler(async (req, res) => {
-  res.status(200).json({
-    _id: req.user._id,
-    email: req.user.email,
-    username: req.user.username,
-    avatar: req.user.avatar,
-    fullName: req.user.fullName,
-    followers: req.user.followers,
-    following: req.user.following,
-    postsCreated: req.user.postsCreated,
-  });
-});
-
-/*
  * @desc  get info user details
  * @route POST /api/user/:id
  * @access Private
@@ -152,7 +134,7 @@ const getUserDetails = asyncHandler(async (req, res) => {
  * @access Private
  */
 const followUser = asyncHandler(async (req, res) => {
-  const { following, id } = req.user;
+  const { following, id: idLoggedIn } = req.user;
   const { userId } = req.body;
 
   const user = await User.findById(userId);
@@ -163,21 +145,20 @@ const followUser = asyncHandler(async (req, res) => {
   }
 
   // user logged in following
-  if (following.includes(user._id)) {
-    const index = following.findIndex((id) => id === user._id);
-    following.splice(index, 1);
+  if (following.includes(userId)) {
+    await User.updateOne({ _id: idLoggedIn }, { $pull: { following: userId } });
   } else {
-    following.push(user._id);
+    await User.updateOne({ _id: idLoggedIn }, { $push: { following: userId } });
   }
 
   // user followed
-  if (user.followers.includes(id)) {
-    const index = user.followers.findIndex((i) => i === id);
-    user.followers.splice(index, 1);
+  if (user.followers.includes(idLoggedIn)) {
+    await User.updateOne({ _id: userId }, { $pull: { followers: idLoggedIn } });
   } else {
-    user.followers.push(id);
+    await User.updateOne({ _id: userId }, { $push: { followers: idLoggedIn } });
   }
 
+  await user.save();
   await req.user.save();
 
   res.status(200).json({ msg: "Follow success" });
@@ -189,6 +170,5 @@ module.exports = {
   authSignIn,
   getUserSuggestion,
   getUserDetails,
-  getCurrentUser,
   followUser,
 };
