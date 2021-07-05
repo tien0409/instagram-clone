@@ -8,6 +8,9 @@ const {
 } = require("../controllers/post.controller");
 const { auth } = require("../middlewares/auth.middleware");
 const { createPostValidator } = require("../validators/post.validator");
+const { getUserId } = require("../middlewares/user.middleware");
+
+router.param("userId", getUserId);
 
 router
   .route("/")

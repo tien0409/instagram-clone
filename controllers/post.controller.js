@@ -51,13 +51,15 @@ const getAllPost = asyncHandler(async (req, res) => {
 
 /*
  * @desc  get all post user created by userId
- * @route POST /api/post/:userId
+ * @route Get /api/post/:userId
  * @access Private
  */
 const getAllPostByUserId = asyncHandler(async (req, res) => {
-  const { userId } = req.params;
+  const { userReq } = req;
 
-  const posts = await Post.find({ user: userId }).sort({ createdAt: "desc" });
+  const posts = await Post.find({ user: userReq._id }).sort({
+    createdAt: "desc",
+  });
   res.status(200).json(posts);
 });
 

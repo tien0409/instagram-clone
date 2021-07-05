@@ -14,12 +14,15 @@ const {
   signInValidator,
 } = require("../validators/user.validator");
 const { auth } = require("../middlewares/auth.middleware");
+const { getUserId } = require("../middlewares/user.middleware");
+
+router.param("userId", getUserId);
 
 router.post("/signup", signUpValidator(), signUp);
 router.route("/signin", signInValidator()).post(signIn);
 router.get("/auth", auth, authSignIn);
 router.route("/suggestion").get(auth, getUserSuggestion);
-router.route("/:id").get(auth, getUserDetails);
+router.route("/:userId").get(auth, getUserDetails);
 router.route("/follow").post(auth, followUser);
 
 module.exports = router;

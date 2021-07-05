@@ -3,7 +3,6 @@ const asyncHandler = require("express-async-handler");
 
 const User = require("../models/user.model");
 const generateToken = require("../utils/generate-token");
-const Post = require("../models/post.model");
 
 /*
  * @desc  sign up user
@@ -103,28 +102,21 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
 
 /*
  * @desc  get info user details
- * @route POST /api/user/:id
+ * @route GET /api/user/:id
  * @access Private
  */
 const getUserDetails = asyncHandler(async (req, res) => {
-  const { id } = req.params;
-
-  const user = await User.findById(id);
-
-  if (!user) {
-    res.status(404);
-    throw new Error("User not found");
-  }
+  const { userReq } = req;
 
   res.status(200).json({
-    _id: user._id,
-    email: user.email,
-    username: user.username,
-    avatar: user.avatar,
-    fullName: user.fullName,
-    followers: user.followers,
-    following: user.following,
-    postsCreated: user.postsCreated,
+    _id: userReq._id,
+    email: userReq.email,
+    username: userReq.username,
+    avatar: userReq.avatar,
+    fullName: userReq.fullName,
+    followers: userReq.followers,
+    following: userReq.following,
+    postsCreated: userReq.postsCreated,
   });
 });
 
