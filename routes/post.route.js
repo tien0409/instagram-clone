@@ -9,8 +9,10 @@ const {
 const { auth } = require("../middlewares/auth.middleware");
 const { createPostValidator } = require("../validators/post.validator");
 const { getUserId } = require("../middlewares/user.middleware");
+const { getPostId } = require("../middlewares/post.middleware");
 
 router.param("userId", getUserId);
+router.param("postId", getPostId);
 
 router
   .route("/")
