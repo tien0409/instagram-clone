@@ -390,7 +390,6 @@ get-stream	package-lock.json	/^        "get-stream": {$/;"	o	object:dependencies
 get-stream	package-lock.json	/^    "get-stream": {$/;"	o	object:dependencies
 getAllPost	controllers/post.controller.js	/^const getAllPost = asyncHandler(async (req, res) => {$/;"	C
 getAllPostByUserId	controllers/post.controller.js	/^const getAllPostByUserId = asyncHandler(async (req, res) => {$/;"	C
-getCurrentUser	controllers/user.controller.js	/^const getCurrentUser = asyncHandler(async (req, res) => {$/;"	C
 getUserDetails	controllers/user.controller.js	/^const getUserDetails = asyncHandler(async (req, res) => {$/;"	C
 getUserSuggestion	controllers/user.controller.js	/^const getUserSuggestion = asyncHandler(async (req, res) => {$/;"	C
 glob-parent	package-lock.json	/^        "glob-parent": "~5.1.2",$/;"	s	object:dependencies.chokidar.requires
