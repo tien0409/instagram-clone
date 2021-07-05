@@ -8,6 +8,7 @@ const {
   getUserSuggestion,
   getUserDetails,
   followUser,
+  getCurrentUser,
 } = require("../controllers/user.controller");
 const {
   signUpValidator,
@@ -21,5 +22,6 @@ router.get("/auth", auth, authSignIn);
 router.route("/suggestion").get(auth, getUserSuggestion);
 router.route("/:id").get(auth, getUserDetails);
 router.route("/follow").post(auth, followUser);
+router.route("/").get(auth, getCurrentUser);
 
 module.exports = router;

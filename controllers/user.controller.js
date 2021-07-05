@@ -85,7 +85,7 @@ const authSignIn = asyncHandler(async (req, res) => {
 
 /*
  * @desc  get all user suggestion
- * @route POST /api/user/suggestion
+ * @route GET /api/user/suggestion
  * @access Private
  */
 const getUserSuggestion = asyncHandler(async (req, res) => {
@@ -94,6 +94,26 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
   const users = await User.find({ _id: { $ne: idLoggedIn, $nin: following } });
 
   res.status(200).json(users);
+});
+
+/*
+ * @desc  get info current user logged in
+ * @route GET /api/user/
+ * @access Private
+ */
+const getCurrentUser = asyncHandler(async (req, res) => {
+  const postsCreated = await Post.find({ user: req.user._id });
+
+  res.status(200).json({
+    _id: req.user._id,
+    email: req.user.email,
+    username: req.user.username,
+    avatar: req.user.avatar,
+    fullName: req.user.fullName,
+    followers: req.user.followers,
+    following: req.user.following,
+    numPostCreated: postsCreated.length,
+  });
 });
 
 /*
@@ -131,7 +151,7 @@ const getUserDetails = asyncHandler(async (req, res) => {
  * @access Private
  */
 const followUser = asyncHandler(async (req, res) => {
-  const { followers } = req.user;
+  const { following, id } = req.user;
   const { userId } = req.body;
 
   const user = await User.findById(userId);
@@ -141,12 +161,22 @@ const followUser = asyncHandler(async (req, res) => {
     throw new Error("Can not follow. User not found");
   }
 
-  if (followers.includes(user._id)) {
-    const index = followers.findIndex((id) => id === user._id);
-    followers.splice(index, 1);
+  // user logged in following
+  if (following.includes(user._id)) {
+    const index = following.findIndex((id) => id === user._id);
+    following.splice(index, 1);
   } else {
-    followers.push(user._id);
+    following.push(user._id);
   }
+
+  // user followed
+  if (user.followers.includes(id)) {
+    const index = user.followers.findIndex((i) => i === id);
+    user.followers.splice(index, 1);
+  } else {
+    user.followers.push(id);
+  }
+
   await req.user.save();
 
   res.status(200).json();
@@ -158,5 +188,6 @@ module.exports = {
   authSignIn,
   getUserSuggestion,
   getUserDetails,
+  getCurrentUser,
   followUser,
 };
