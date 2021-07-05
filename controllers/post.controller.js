@@ -65,7 +65,7 @@ const getAllPostByUserId = asyncHandler(async (req, res) => {
 
 /*
  * @desc  user like post
- * @route POST /api/post/like/:postId
+ * @route GET /api/post/like/:postId
  * @access Private
  */
 const likePost = asyncHandler(async (req, res) => {
@@ -83,4 +83,9 @@ const likePost = asyncHandler(async (req, res) => {
   res.status(200).json({ msg: "Like success" });
 });
 
-module.exports = { createPost, getAllPost, getAllPostByUserId, likePost };
+module.exports = {
+  createPost,
+  getAllPost,
+  getAllPostByUserId,
+  likePost,
+};

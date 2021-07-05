@@ -34,6 +34,7 @@ JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:mo
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
 Post	controllers/post.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
+Post	controllers/user.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	middlewares/post.middleware.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	models/post.model.js	/^const Post = mongoose.model("post", postSchema);$/;"	C
 User	controllers/user.controller.js	/^const User = require("..\/models\/user.model");$/;"	C
@@ -121,6 +122,7 @@ color-convert	package-lock.json	/^        "color-convert": "^2.0.1"$/;"	s	object
 color-convert	package-lock.json	/^    "color-convert": {$/;"	o	object:dependencies
 color-name	package-lock.json	/^        "color-name": "~1.1.4"$/;"	s	object:dependencies.color-convert.requires
 color-name	package-lock.json	/^    "color-name": {$/;"	o	object:dependencies
+commentPost	controllers/user.controller.js	/^const commentPost = asyncHandler(async (req, res) => {$/;"	C
 commentSchema	models/post.model.js	/^const commentSchema = new mongoose.Schema({$/;"	C
 component-emitter	package-lock.json	/^        "component-emitter": "~1.3.0",$/;"	s	object:dependencies.socket.io-parser.requires
 component-emitter	package-lock.json	/^    "component-emitter": {$/;"	o	object:dependencies
@@ -147,6 +149,7 @@ cors	package-lock.json	/^        "cors": "~2.8.5",$/;"	s	object:dependencies.eng
 cors	package-lock.json	/^    "cors": {$/;"	o	object:dependencies
 cors	package.json	/^    "cors": "^2.8.5",$/;"	s	object:dependencies
 cors	server.js	/^const cors = require("cors");$/;"	C
+createCommentValidator	validators/user.validator.js	/^const createCommentValidator = () => [$/;"	C
 createPost	controllers/post.controller.js	/^const createPost = asyncHandler(async (req, res) => {$/;"	C
 createPostValidator	validators/post.validator.js	/^const createPostValidator = () => [$/;"	C
 crypto-random-string	package-lock.json	/^        "crypto-random-string": "^2.0.0"$/;"	s	object:dependencies.unique-string.requires

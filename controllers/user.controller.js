@@ -1,8 +1,9 @@
 const { validationResult } = require("express-validator");
 const asyncHandler = require("express-async-handler");
 
-const User = require("../models/user.model");
 const generateToken = require("../utils/generate-token");
+const User = require("../models/user.model");
+const Post = require("../models/post.model");
 
 /*
  * @desc  sign up user
@@ -156,6 +157,27 @@ const followUser = asyncHandler(async (req, res) => {
   res.status(200).json({ msg: "Follow success" });
 });
 
+/*
+ * @desc  user comment post
+ * @route POST /api/user/comment/:postId
+ * @access Private
+ */
+const commentPost = asyncHandler(async (req, res) => {
+  const { postReq, user } = req;
+  const { content } = req.body;
+
+  const comment = {
+    user: user._id,
+    name: user.username,
+    avatar: user.avatar,
+    content,
+  };
+
+  await Post.updateOne({ _id: postReq._id }, { $push: { comments: comment } });
+
+  res.status(200).json({ msg: "Comment success" });
+});
+
 module.exports = {
   signUp,
   signIn,
@@ -163,4 +185,5 @@ module.exports = {
   getUserSuggestion,
   getUserDetails,
   followUser,
+  commentPost,
 };

@@ -53,4 +53,8 @@ const signInValidator = () => [
     .withMessage("No spaces are allowed in the password"),
 ];
 
-module.exports = { signUpValidator, signInValidator };
+const createCommentValidator = () => [
+  check("content", "Comment cannot white spaces").not().isEmpty(),
+];
+
+module.exports = { signUpValidator, signInValidator, createCommentValidator };

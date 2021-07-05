@@ -8,15 +8,19 @@ const {
   getUserSuggestion,
   getUserDetails,
   followUser,
+  commentPost,
 } = require("../controllers/user.controller");
 const {
   signUpValidator,
   signInValidator,
+  createCommentValidator,
 } = require("../validators/user.validator");
 const { auth } = require("../middlewares/auth.middleware");
 const { getUserId } = require("../middlewares/user.middleware");
+const { getPostId } = require("../middlewares/post.middleware");
 
 router.param("userId", getUserId);
+router.param("postId", getPostId);
 
 router.post("/signup", signUpValidator(), signUp);
 router.route("/signin", signInValidator()).post(signIn);
@@ -24,5 +28,8 @@ router.get("/auth", auth, authSignIn);
 router.route("/suggestion").get(auth, getUserSuggestion);
 router.route("/:userId").get(auth, getUserDetails);
 router.route("/follow").post(auth, followUser);
+router
+  .route("/comment/:postId")
+  .post(auth, createCommentValidator(), commentPost);
 
 module.exports = router;
