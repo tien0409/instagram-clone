@@ -28,6 +28,7 @@ const signUp = asyncHandler(async (req, res) => {
     fullName: newUser.fullName,
     followers: newUser.followers,
     following: newUser.following,
+    postsCreated: newUser.postsCreated,
     avatar: newUser.avatar,
     token: generateToken(newUser._id),
   });
@@ -58,6 +59,7 @@ const signIn = asyncHandler(async (req, res) => {
       fullName: user.fullName,
       followers: user.followers,
       following: user.following,
+      postsCreated: user.postsCreated,
       token: generateToken(user._id),
     });
   } else {
@@ -80,6 +82,7 @@ const authSignIn = asyncHandler(async (req, res) => {
     fullName: req.user.fullName,
     followers: req.user.followers,
     following: req.user.following,
+    postsCreated: req.user.following,
   });
 });
 
@@ -91,7 +94,9 @@ const authSignIn = asyncHandler(async (req, res) => {
 const getUserSuggestion = asyncHandler(async (req, res) => {
   const { _id: idLoggedIn, following } = req.user;
 
-  const users = await User.find({ _id: { $ne: idLoggedIn, $nin: following } });
+  const users = await User.find({
+    _id: { $ne: idLoggedIn, $nin: following },
+  }).select("-password");
 
   res.status(200).json(users);
 });
@@ -102,8 +107,6 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
  * @access Private
  */
 const getCurrentUser = asyncHandler(async (req, res) => {
-  const postsCreated = await Post.find({ user: req.user._id });
-
   res.status(200).json({
     _id: req.user._id,
     email: req.user.email,
@@ -112,7 +115,7 @@ const getCurrentUser = asyncHandler(async (req, res) => {
     fullName: req.user.fullName,
     followers: req.user.followers,
     following: req.user.following,
-    numPostCreated: postsCreated.length,
+    postsCreated: req.user.postsCreated,
   });
 });
 
@@ -131,8 +134,6 @@ const getUserDetails = asyncHandler(async (req, res) => {
     throw new Error("User not found");
   }
 
-  const postsCreated = await Post.find({ user: id });
-
   res.status(200).json({
     _id: user._id,
     email: user.email,
@@ -141,7 +142,7 @@ const getUserDetails = asyncHandler(async (req, res) => {
     fullName: user.fullName,
     followers: user.followers,
     following: user.following,
-    numPostCreated: postsCreated.length,
+    postsCreated: user.postsCreated,
   });
 });
 
@@ -179,7 +180,7 @@ const followUser = asyncHandler(async (req, res) => {
 
   await req.user.save();
 
-  res.status(200).json();
+  res.status(200).json({ msg: "Follow success" });
 });
 
 module.exports = {

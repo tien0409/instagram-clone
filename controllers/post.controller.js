@@ -25,7 +25,10 @@ const createPost = asyncHandler(async (req, res) => {
     name: username,
     avatar,
   });
+
   await post.save();
+  req.user.postsCreated.push(post._id);
+  await req.user.save();
 
   res.status(201).json(post);
 });
