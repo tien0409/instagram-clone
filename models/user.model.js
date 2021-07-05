@@ -29,6 +29,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/v1625386800/avatar_default_tmzgck.png`,
     },
+    postsCreated: {
+      type: Array,
+      default: [],
+    },
     followers: {
       type: Array,
       default: [],
