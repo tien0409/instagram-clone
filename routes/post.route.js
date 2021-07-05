@@ -5,6 +5,7 @@ const {
   createPost,
   getAllPost,
   getAllPostByUserId,
+  likePost,
 } = require("../controllers/post.controller");
 const { auth } = require("../middlewares/auth.middleware");
 const { createPostValidator } = require("../validators/post.validator");
@@ -18,6 +19,7 @@ router
   .route("/")
   .post(auth, createPostValidator(), createPost)
   .get(auth, getAllPost);
-router.route("/:userId").get(auth, getAllPostByUserId);
+router.route("/created/:userId").get(auth, getAllPostByUserId);
+router.route("/like/:postId").get(auth, likePost);
 
 module.exports = router;

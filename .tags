@@ -34,6 +34,7 @@ JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:mo
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
 Post	controllers/post.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
+Post	middlewares/post.middleware.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	models/post.model.js	/^const Post = mongoose.model("post", postSchema);$/;"	C
 User	controllers/user.controller.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	middlewares/auth.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
@@ -62,6 +63,7 @@ array-flatten	package-lock.json	/^    "array-flatten": {$/;"	o	object:dependenci
 asyncHandler	controllers/post.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/user.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/auth.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
+asyncHandler	middlewares/post.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/user.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 auth	middlewares/auth.middleware.js	/^const auth = asyncHandler(async (req, res, next) => {$/;"	C
 authSignIn	controllers/user.controller.js	/^const authSignIn = asyncHandler(async (req, res) => {$/;"	C
@@ -391,6 +393,7 @@ get-stream	package-lock.json	/^        "get-stream": {$/;"	o	object:dependencies
 get-stream	package-lock.json	/^    "get-stream": {$/;"	o	object:dependencies
 getAllPost	controllers/post.controller.js	/^const getAllPost = asyncHandler(async (req, res) => {$/;"	C
 getAllPostByUserId	controllers/post.controller.js	/^const getAllPostByUserId = asyncHandler(async (req, res) => {$/;"	C
+getPostId	middlewares/post.middleware.js	/^const getPostId = asyncHandler(async (req, res, next, postId) => {$/;"	C
 getUserDetails	controllers/user.controller.js	/^const getUserDetails = asyncHandler(async (req, res) => {$/;"	C
 getUserId	middlewares/user.middleware.js	/^const getUserId = asyncHandler(async (req, res, next, userId) => {$/;"	C
 getUserSuggestion	controllers/user.controller.js	/^const getUserSuggestion = asyncHandler(async (req, res) => {$/;"	C
@@ -723,6 +726,7 @@ keyv	package-lock.json	/^    "keyv": {$/;"	o	object:dependencies
 latest-version	package-lock.json	/^        "latest-version": "^5.0.0",$/;"	s	object:dependencies.update-notifier.requires
 latest-version	package-lock.json	/^    "latest-version": {$/;"	o	object:dependencies
 license	package.json	/^  "license": "ISC"$/;"	s
+likePost	controllers/post.controller.js	/^const likePost = asyncHandler(async (req, res) => {$/;"	C
 lockfileVersion	package-lock.json	/^  "lockfileVersion": 1,$/;"	n
 lodash	package-lock.json	/^        "lodash": "^4.17.21",$/;"	s	object:dependencies.express-validator.requires
 lodash	package-lock.json	/^    "lodash": {$/;"	o	object:dependencies

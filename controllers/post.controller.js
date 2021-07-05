@@ -51,7 +51,7 @@ const getAllPost = asyncHandler(async (req, res) => {
 
 /*
  * @desc  get all post user created by userId
- * @route Get /api/post/:userId
+ * @route GET /api/post/created/:userId
  * @access Private
  */
 const getAllPostByUserId = asyncHandler(async (req, res) => {
@@ -63,4 +63,24 @@ const getAllPostByUserId = asyncHandler(async (req, res) => {
   res.status(200).json(posts);
 });
 
-module.exports = { createPost, getAllPost, getAllPostByUserId };
+/*
+ * @desc  user like post
+ * @route POST /api/post/like/:postId
+ * @access Private
+ */
+const likePost = asyncHandler(async (req, res) => {
+  const { postReq, user } = req;
+
+  // unlike
+  if (postReq.likes.includes(user._id)) {
+    await Post.updateOne({ _id: postReq._id }, { $pull: { likes: user._id } });
+  } else {
+    // like
+    await Post.updateOne({ _id: postReq._id }, { $push: { likes: user._id } });
+  }
+  await postReq.save();
+
+  res.status(200).json({ msg: "Like success" });
+});
+
+module.exports = { createPost, getAllPost, getAllPostByUserId, likePost };

@@ -6,7 +6,7 @@ const getPostId = asyncHandler(async (req, res, next, postId) => {
   if (postId.match(/^[0-9a-fA-F]{24}$/)) {
     const postReq = await Post.findById(postId);
     if (postReq) {
-      req.postReq = post;
+      req.postReq = postReq;
       return next();
     }
   }
