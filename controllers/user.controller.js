@@ -97,6 +97,26 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
 });
 
 /*
+ * @desc  get info current user logged in
+ * @route GET /api/user/
+ * @access Private
+ */
+const getCurrentUser = asyncHandler(async (req, res) => {
+  const postsCreated = await Post.find({ user: req.user._id });
+
+  res.status(200).json({
+    _id: req.user._id,
+    email: req.user.email,
+    username: req.user.username,
+    avatar: req.user.avatar,
+    fullName: req.user.fullName,
+    followers: req.user.followers,
+    following: req.user.following,
+    numPostCreated: postsCreated.length,
+  });
+});
+
+/*
  * @desc  get info user details
  * @route POST /api/user/:id
  * @access Private
@@ -168,5 +188,6 @@ module.exports = {
   authSignIn,
   getUserSuggestion,
   getUserDetails,
+  getCurrentUser,
   followUser,
 };
