@@ -17,4 +17,24 @@ const getAllMessage = asyncHandler(async (req, res) => {
   res.status(200).json({ messages });
 });
 
-module.exports = { getAllMessage };
+/*
+ * @desc  create message
+ * @route Post /api/message/:conversationId
+ * @access Private
+ */
+const createMessage = asyncHandler(async (req, res) => {
+  const { conversationReq, user } = req;
+  const { content } = req.body;
+
+  const message = new Message({
+    conversation: conversationReq._id,
+    sender: user._id,
+    avatar: user.avatar,
+    content,
+  });
+  await message.save();
+
+  res.status(201).json({ msg: "Create message success" });
+});
+
+module.exports = { getAllMessage, createMessage };
