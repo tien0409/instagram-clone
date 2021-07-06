@@ -11,7 +11,7 @@ const createConversation = asyncHandler(async (req, res) => {
   const { userReq, user } = req;
 
   const conversationExist = await Conversation.findOne({
-    members: [userReq._id, user._id],
+    members: { $in: [userReq._id, user._id] },
   });
 
   if (conversationExist) {
