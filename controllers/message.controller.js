@@ -14,7 +14,7 @@ const getAllMessage = asyncHandler(async (req, res) => {
     conversation: conversationReq._id,
   });
 
-  res.status(200).json({ messages });
+  res.status(200).json(messages);
 });
 
 /*
