@@ -31,9 +31,11 @@ AnonymousFunction17a937810100	models/user.model.js	/^userSchema.pre("save", asyn
 CLIENT_URL	configs/env.js	/^  CLIENT_URL: process.env.CLIENT_URL,$/;"	p	class:module.exports
 CLOUD_NAME	configs/env.js	/^  CLOUD_NAME: process.env.CLOUD_NAME,$/;"	p	class:module.exports
 Conversation	controllers/conversation.controller.js	/^const Conversation = require("..\/models\/conversation.model");$/;"	C
+Conversation	middlewares/conversation.middleware.js	/^const Conversation = require("..\/models\/post.model");$/;"	C
 Conversation	models/conversation.model.js	/^const Conversation = mongoose.model("conversation", conversationSchema);$/;"	C
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
+Message	controllers/conversation.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
 Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
 Post	controllers/post.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
@@ -68,6 +70,7 @@ asyncHandler	controllers/conversation.controller.js	/^const asyncHandler = requi
 asyncHandler	controllers/post.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/user.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/auth.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
+asyncHandler	middlewares/conversation.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/post.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/user.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 auth	middlewares/auth.middleware.js	/^const auth = asyncHandler(async (req, res, next) => {$/;"	C
@@ -377,6 +380,7 @@ exports	configs/env.js	/^module.exports = {$/;"	c	class:module
 express	package-lock.json	/^    "express": {$/;"	o	object:dependencies
 express	package.json	/^    "express": "^4.17.1",$/;"	s	object:dependencies
 express	routes/conversation.route.js	/^const express = require("express");$/;"	C
+express	routes/message.route.js	/^const express = require("express");$/;"	C
 express	routes/post.route.js	/^const express = require("express");$/;"	C
 express	routes/user.route.js	/^const express = require("express");$/;"	C
 express	server.js	/^const express = require("express");$/;"	C
@@ -404,6 +408,8 @@ get-stream	package-lock.json	/^        "get-stream": {$/;"	o	object:dependencies
 get-stream	package-lock.json	/^    "get-stream": {$/;"	o	object:dependencies
 getAllPost	controllers/post.controller.js	/^const getAllPost = asyncHandler(async (req, res) => {$/;"	C
 getAllPostByUserId	controllers/post.controller.js	/^const getAllPostByUserId = asyncHandler(async (req, res) => {$/;"	C
+getConversation	controllers/conversation.controller.js	/^const getConversation = asyncHandler(async (req, res) => {$/;"	C
+getConversationId	middlewares/conversation.middleware.js	/^const getConversationId = asyncHandler($/;"	C
 getPostId	middlewares/post.middleware.js	/^const getPostId = asyncHandler(async (req, res, next, postId) => {$/;"	C
 getUserDetails	controllers/user.controller.js	/^const getUserDetails = asyncHandler(async (req, res) => {$/;"	C
 getUserId	middlewares/user.middleware.js	/^const getUserId = asyncHandler(async (req, res, next, userId) => {$/;"	C
@@ -769,6 +775,7 @@ memory-pager	package-lock.json	/^        "memory-pager": "^1.0.2"$/;"	s	object:d
 memory-pager	package-lock.json	/^    "memory-pager": {$/;"	o	object:dependencies
 merge-descriptors	package-lock.json	/^        "merge-descriptors": "1.0.1",$/;"	s	object:dependencies.express.requires
 merge-descriptors	package-lock.json	/^    "merge-descriptors": {$/;"	o	object:dependencies
+messageRoute	server.js	/^const messageRoute = require(".\/routes\/message.route");$/;"	C
 messageSchema	models/message.model.js	/^const messageSchema = new mongoose.Schema({$/;"	C
 methods	package-lock.json	/^        "methods": "~1.1.2",$/;"	s	object:dependencies.express.requires
 methods	package-lock.json	/^    "methods": {$/;"	o	object:dependencies
@@ -1250,6 +1257,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/xd
 responselike	package-lock.json	/^        "responselike": "^1.0.2"$/;"	s	object:dependencies.cacheable-request.requires
 responselike	package-lock.json	/^    "responselike": {$/;"	o	object:dependencies
 router	routes/conversation.route.js	/^const router = express.Router();$/;"	C
+router	routes/message.route.js	/^const router = express.Router();$/;"	C
 router	routes/post.route.js	/^const router = express.Router();$/;"	C
 router	routes/user.route.js	/^const router = express.Router();$/;"	C
 safe-buffer	package-lock.json	/^        "safe-buffer": "5.1.2"$/;"	s	object:dependencies.basic-auth.requires

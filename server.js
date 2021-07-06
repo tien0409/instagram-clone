@@ -24,11 +24,13 @@ app.use(cors());
 const userRoute = require("./routes/user.route");
 const postRoute = require("./routes/post.route");
 const conversationRoute = require("./routes/conversation.route");
+const messageRoute = require("./routes/message.route");
 
 // use routes
 app.use("/api/user", userRoute);
 app.use("/api/post", postRoute);
 app.use("/api/conversation", conversationRoute);
+app.use("/api/message", messageRoute);
 
 // handle error
 app.use(notFoundRoute);
