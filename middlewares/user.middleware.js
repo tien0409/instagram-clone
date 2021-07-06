@@ -14,4 +14,14 @@ const getUserId = asyncHandler(async (req, res, next, userId) => {
   next(new Error("User not found"));
 });
 
-module.exports = { getUserId };
+const getUsername = asyncHandler(async (req, res, next, username) => {
+  const userReq = await User.findOne({ username });
+  if (userReq) {
+    req.userReq = userReq;
+    return next();
+  }
+  res.status(404);
+  next(new Error("User not found"));
+});
+
+module.exports = { getUserId, getUsername };

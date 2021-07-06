@@ -51,7 +51,7 @@ const getAllPost = asyncHandler(async (req, res) => {
 
 /*
  * @desc  get all post user created by userId
- * @route GET /api/post/created/:userId
+ * @route GET /api/post/created/:username
  * @access Private
  */
 const getAllPostByUserId = asyncHandler(async (req, res) => {

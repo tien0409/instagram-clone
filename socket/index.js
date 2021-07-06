@@ -24,8 +24,6 @@ const socketio = (httpServer) => {
     socket.on("client-create-conversation", async (data) => {
       const { userReq, user } = data;
 
-      console.log("hello");
-
       const conversationExist = await Conversation.findOne({
         members: { $in: [userReq._id, user._id] },
       });

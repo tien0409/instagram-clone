@@ -422,6 +422,7 @@ getPostId	middlewares/post.middleware.js	/^const getPostId = asyncHandler(async 
 getUserDetails	controllers/user.controller.js	/^const getUserDetails = asyncHandler(async (req, res) => {$/;"	C
 getUserId	middlewares/user.middleware.js	/^const getUserId = asyncHandler(async (req, res, next, userId) => {$/;"	C
 getUserSuggestion	controllers/user.controller.js	/^const getUserSuggestion = asyncHandler(async (req, res) => {$/;"	C
+getUsername	middlewares/user.middleware.js	/^const getUsername = asyncHandler(async (req, res, next, username) => {$/;"	C
 glob-parent	package-lock.json	/^        "glob-parent": "~5.1.2",$/;"	s	object:dependencies.chokidar.requires
 glob-parent	package-lock.json	/^    "glob-parent": {$/;"	o	object:dependencies
 global-dirs	package-lock.json	/^        "global-dirs": "^2.0.1",$/;"	s	object:dependencies.is-installed-globally.requires

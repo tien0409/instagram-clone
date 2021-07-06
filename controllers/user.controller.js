@@ -103,7 +103,7 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
 
 /*
  * @desc  get info user details
- * @route GET /api/user/:id
+ * @route GET /api/user/:username
  * @access Private
  */
 const getUserDetails = asyncHandler(async (req, res) => {
@@ -128,9 +128,9 @@ const getUserDetails = asyncHandler(async (req, res) => {
  */
 const followUser = asyncHandler(async (req, res) => {
   const { following, id: idLoggedIn } = req.user;
-  const { userId } = req.body;
+  const { username } = req.body;
 
-  const user = await User.findById(userId);
+  const user = await User.findOne({ username });
 
   if (!user) {
     res.status(404);
@@ -139,16 +139,28 @@ const followUser = asyncHandler(async (req, res) => {
 
   // user logged in following
   if (following.includes(userId)) {
-    await User.updateOne({ _id: idLoggedIn }, { $pull: { following: userId } });
+    await User.updateOne(
+      { _id: idLoggedIn },
+      { $pull: { following: user._id } },
+    );
   } else {
-    await User.updateOne({ _id: idLoggedIn }, { $push: { following: userId } });
+    await User.updateOne(
+      { _id: idLoggedIn },
+      { $push: { following: user._id } },
+    );
   }
 
   // user followed
   if (user.followers.includes(idLoggedIn)) {
-    await User.updateOne({ _id: userId }, { $pull: { followers: idLoggedIn } });
+    await User.updateOne(
+      { _id: user._id },
+      { $pull: { followers: idLoggedIn } },
+    );
   } else {
-    await User.updateOne({ _id: userId }, { $push: { followers: idLoggedIn } });
+    await User.updateOne(
+      { _id: user._id },
+      { $push: { followers: idLoggedIn } },
+    );
   }
 
   await user.save();
