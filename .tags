@@ -35,7 +35,7 @@ Conversation	middlewares/conversation.middleware.js	/^const Conversation = requi
 Conversation	models/conversation.model.js	/^const Conversation = mongoose.model("conversation", conversationSchema);$/;"	C
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
-Message	controllers/conversation.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
+Message	controllers/message.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
 Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
 Post	controllers/post.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
@@ -67,6 +67,7 @@ app	server.js	/^const app = express();$/;"	C
 array-flatten	package-lock.json	/^        "array-flatten": "1.1.1",$/;"	s	object:dependencies.express.requires
 array-flatten	package-lock.json	/^    "array-flatten": {$/;"	o	object:dependencies
 asyncHandler	controllers/conversation.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
+asyncHandler	controllers/message.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/post.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/user.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/auth.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
@@ -406,9 +407,9 @@ get-stream	package-lock.json	/^        "get-stream": "^4.1.0",$/;"	s	object:depe
 get-stream	package-lock.json	/^        "get-stream": "^5.1.0",$/;"	s	object:dependencies.cacheable-request.requires
 get-stream	package-lock.json	/^        "get-stream": {$/;"	o	object:dependencies.cacheable-request.dependencies
 get-stream	package-lock.json	/^    "get-stream": {$/;"	o	object:dependencies
+getAllMessage	controllers/message.controller.js	/^const getAllMessage = asyncHandler(async (req, res) => {$/;"	C
 getAllPost	controllers/post.controller.js	/^const getAllPost = asyncHandler(async (req, res) => {$/;"	C
 getAllPostByUserId	controllers/post.controller.js	/^const getAllPostByUserId = asyncHandler(async (req, res) => {$/;"	C
-getConversation	controllers/conversation.controller.js	/^const getConversation = asyncHandler(async (req, res) => {$/;"	C
 getConversationId	middlewares/conversation.middleware.js	/^const getConversationId = asyncHandler($/;"	C
 getPostId	middlewares/post.middleware.js	/^const getPostId = asyncHandler(async (req, res, next, postId) => {$/;"	C
 getUserDetails	controllers/user.controller.js	/^const getUserDetails = asyncHandler(async (req, res) => {$/;"	C
