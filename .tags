@@ -30,9 +30,10 @@
 AnonymousFunction17a937810100	models/user.model.js	/^userSchema.pre("save", async function (next) {$/;"	c
 CLIENT_URL	configs/env.js	/^  CLIENT_URL: process.env.CLIENT_URL,$/;"	p	class:module.exports
 CLOUD_NAME	configs/env.js	/^  CLOUD_NAME: process.env.CLOUD_NAME,$/;"	p	class:module.exports
-Conversation	models/conversation.modal.js	/^const Conversation = conversationSchema.model($/;"	C
+Conversation	models/conversation.model.js	/^const Conversation = conversationSchema.model($/;"	C
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
+Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
 Post	controllers/post.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	controllers/user.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
@@ -138,7 +139,7 @@ content-disposition	package-lock.json	/^    "content-disposition": {$/;"	o	objec
 content-type	package-lock.json	/^        "content-type": "~1.0.4",$/;"	s	object:dependencies.body-parser.requires
 content-type	package-lock.json	/^        "content-type": "~1.0.4",$/;"	s	object:dependencies.express.requires
 content-type	package-lock.json	/^    "content-type": {$/;"	o	object:dependencies
-conversationSchema	models/conversation.modal.js	/^const conversationSchema = new mongoose.Schema($/;"	C
+conversationSchema	models/conversation.model.js	/^const conversationSchema = new mongoose.Schema($/;"	C
 cookie	package-lock.json	/^        "cookie": "0.4.0",$/;"	s	object:dependencies.express.requires
 cookie	package-lock.json	/^        "cookie": "~0.4.1",$/;"	s	object:dependencies.engine.io.requires
 cookie	package-lock.json	/^        "cookie": {$/;"	o	object:dependencies.engine.io.dependencies
@@ -763,6 +764,7 @@ memory-pager	package-lock.json	/^        "memory-pager": "^1.0.2"$/;"	s	object:d
 memory-pager	package-lock.json	/^    "memory-pager": {$/;"	o	object:dependencies
 merge-descriptors	package-lock.json	/^        "merge-descriptors": "1.0.1",$/;"	s	object:dependencies.express.requires
 merge-descriptors	package-lock.json	/^    "merge-descriptors": {$/;"	o	object:dependencies
+messageSchema	models/message.model.js	/^const messageSchema = new mongoose.Schema({$/;"	C
 methods	package-lock.json	/^        "methods": "~1.1.2",$/;"	s	object:dependencies.express.requires
 methods	package-lock.json	/^    "methods": {$/;"	o	object:dependencies
 mime	package-lock.json	/^        "mime": "1.6.0",$/;"	s	object:dependencies.send.requires
@@ -782,7 +784,8 @@ minimist	package-lock.json	/^        "minimist": "^1.2.0",$/;"	s	object:dependen
 minimist	package-lock.json	/^    "minimist": {$/;"	o	object:dependencies
 mongodb	package-lock.json	/^        "mongodb": "3.6.8",$/;"	s	object:dependencies.mongoose.requires
 mongodb	package-lock.json	/^    "mongodb": {$/;"	o	object:dependencies
-mongoose	models/conversation.modal.js	/^const mongoose = require("mongoose");$/;"	C
+mongoose	models/conversation.model.js	/^const mongoose = require("mongoose");$/;"	C
+mongoose	models/message.model.js	/^const mongoose = require("mongoose");$/;"	C
 mongoose	models/post.model.js	/^const mongoose = require("mongoose");$/;"	C
 mongoose	models/user.model.js	/^const mongoose = require("mongoose");$/;"	C
 mongoose	package-lock.json	/^    "mongoose": {$/;"	o	object:dependencies
