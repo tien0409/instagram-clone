@@ -23,10 +23,12 @@ app.use(cors());
 // import routes
 const userRoute = require("./routes/user.route");
 const postRoute = require("./routes/post.route");
+const conversationRoute = require("./routes/conversation.route");
 
 // use routes
 app.use("/api/user", userRoute);
 app.use("/api/post", postRoute);
+app.use("/api/conversation", conversationRoute);
 
 // handle error
 app.use(notFoundRoute);

@@ -139,6 +139,7 @@ content-disposition	package-lock.json	/^    "content-disposition": {$/;"	o	objec
 content-type	package-lock.json	/^        "content-type": "~1.0.4",$/;"	s	object:dependencies.body-parser.requires
 content-type	package-lock.json	/^        "content-type": "~1.0.4",$/;"	s	object:dependencies.express.requires
 content-type	package-lock.json	/^    "content-type": {$/;"	o	object:dependencies
+conversationRoute	server.js	/^const conversationRoute = require(".\/routes\/conversation.route");$/;"	C
 conversationSchema	models/conversation.model.js	/^const conversationSchema = new mongoose.Schema($/;"	C
 cookie	package-lock.json	/^        "cookie": "0.4.0",$/;"	s	object:dependencies.express.requires
 cookie	package-lock.json	/^        "cookie": "~0.4.1",$/;"	s	object:dependencies.engine.io.requires
@@ -372,6 +373,7 @@ etag	package-lock.json	/^    "etag": {$/;"	o	object:dependencies
 exports	configs/env.js	/^module.exports = {$/;"	c	class:module
 express	package-lock.json	/^    "express": {$/;"	o	object:dependencies
 express	package.json	/^    "express": "^4.17.1",$/;"	s	object:dependencies
+express	routes/conversation.route.js	/^const express = require("express");$/;"	C
 express	routes/post.route.js	/^const express = require("express");$/;"	C
 express	routes/user.route.js	/^const express = require("express");$/;"	C
 express	server.js	/^const express = require("express");$/;"	C
@@ -1244,6 +1246,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/ws
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/xdg-basedir\/-\/xdg-basedir-4.0.0.tgz",$/;"	s	object:dependencies.xdg-basedir
 responselike	package-lock.json	/^        "responselike": "^1.0.2"$/;"	s	object:dependencies.cacheable-request.requires
 responselike	package-lock.json	/^    "responselike": {$/;"	o	object:dependencies
+router	routes/conversation.route.js	/^const router = express.Router();$/;"	C
 router	routes/post.route.js	/^const router = express.Router();$/;"	C
 router	routes/user.route.js	/^const router = express.Router();$/;"	C
 safe-buffer	package-lock.json	/^        "safe-buffer": "5.1.2"$/;"	s	object:dependencies.basic-auth.requires
