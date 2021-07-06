@@ -30,7 +30,8 @@
 AnonymousFunction17a937810100	models/user.model.js	/^userSchema.pre("save", async function (next) {$/;"	c
 CLIENT_URL	configs/env.js	/^  CLIENT_URL: process.env.CLIENT_URL,$/;"	p	class:module.exports
 CLOUD_NAME	configs/env.js	/^  CLOUD_NAME: process.env.CLOUD_NAME,$/;"	p	class:module.exports
-Conversation	models/conversation.model.js	/^const Conversation = conversationSchema.model($/;"	C
+Conversation	controllers/conversation.controller.js	/^const Conversation = require("..\/models\/conversation.model");$/;"	C
+Conversation	models/conversation.model.js	/^const Conversation = mongoose.model("conversation", conversationSchema);$/;"	C
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
 Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
@@ -63,6 +64,7 @@ anymatch	package-lock.json	/^    "anymatch": {$/;"	o	object:dependencies
 app	server.js	/^const app = express();$/;"	C
 array-flatten	package-lock.json	/^        "array-flatten": "1.1.1",$/;"	s	object:dependencies.express.requires
 array-flatten	package-lock.json	/^    "array-flatten": {$/;"	o	object:dependencies
+asyncHandler	controllers/conversation.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/post.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/user.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/auth.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
@@ -154,6 +156,7 @@ cors	package-lock.json	/^    "cors": {$/;"	o	object:dependencies
 cors	package.json	/^    "cors": "^2.8.5",$/;"	s	object:dependencies
 cors	server.js	/^const cors = require("cors");$/;"	C
 createCommentValidator	validators/user.validator.js	/^const createCommentValidator = () => [$/;"	C
+createConversation	controllers/conversation.controller.js	/^const createConversation = asyncHandler(async (req, res) => {$/;"	C
 createPost	controllers/post.controller.js	/^const createPost = asyncHandler(async (req, res) => {$/;"	C
 createPostValidator	validators/post.validator.js	/^const createPostValidator = () => [$/;"	C
 crypto-random-string	package-lock.json	/^        "crypto-random-string": "^2.0.0"$/;"	s	object:dependencies.unique-string.requires
