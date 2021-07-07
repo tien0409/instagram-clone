@@ -19,10 +19,9 @@ const socketio = (httpServer) => {
     socket.on("client-online", (username) => {
       console.log(`${username} online`);
       const userExist = onlineUsers.find((user) => user === username);
-      if (!userExist) {
-        onlineUsers.push(username);
-      }
+      onlineUsers.push(username);
       socket.username = username;
+      socket.broadcast.emit("server-send-user-online", socket.username);
     });
 
     socket.on("client-get-user-logged-in", async (id) => {
@@ -30,9 +29,9 @@ const socketio = (httpServer) => {
       socket.emit("server-send-user-logged-in", user);
     });
 
-    socket.on("client-get-user-online", (username) => {
-      const index = onlineUsers.findIndex((user) => user === username);
-      socket.emit("server-send-user-online", index < 0 ? false : true);
+    socket.on("client-get-receiver", async (username) => {
+      const user = await User.findOne({ username }).select("-password");
+      socket.emit("server-send-receiver", user);
     });
 
     socket.on("client-create-conversation", async (data) => {
@@ -42,6 +41,9 @@ const socketio = (httpServer) => {
       const userReq = await User.findOne({
         username: usernameReq,
       });
+
+      socket.join(`${userReq.username}-${user.username}`);
+      socket.join(`${user.username}-${userReq.username}`);
 
       const conversationExist = await Conversation.findOne({
         members: { $all: [userReq._id, user._id] },
@@ -57,8 +59,6 @@ const socketio = (httpServer) => {
         await conversation.save();
         socket.emit("server-create-conversation", userReq.username);
       }
-      socket.join(`${userReq.username}-${user.username}`);
-      socket.join(`${user.username}-${userReq.username}`);
     });
 
     socket.on("client-get-all-conversation", async () => {
@@ -78,7 +78,7 @@ const socketio = (httpServer) => {
       const userReq = await User.findOne({ username: usernameReq });
 
       const conversation = await Conversation.findOne({
-        members: { $in: [userReq._id, user._id] },
+        members: { $all: [userReq._id, user._id] },
       });
 
       const messages = await Message.find({
@@ -91,9 +91,10 @@ const socketio = (httpServer) => {
     socket.on("client-send-message", async (data) => {
       const message = new Message({ ...data });
 
-      io.sockets
-        .in(data.room)
-        .emit("server-send-message", { ...data, _id: message._id });
+      io.to(data.room).emit("server-send-message", {
+        ...data,
+        _id: message._id,
+      });
       await message.save();
     });
 
@@ -106,8 +107,14 @@ const socketio = (httpServer) => {
         (username) => username === socket.username,
       );
       console.log(`${onlineUsers[index]} disconnect`);
+
+      const userExistToo = onlineUsers.find(
+        (username) => username === socket.username,
+      );
+      if (!userExistToo) {
+        socket.broadcast.emit("server-send-user-offline", onlineUsers[index]);
+      }
       onlineUsers.splice(index, 1);
-      socket.emit("server-send-user-offline", socket.username);
     });
   });
 };
