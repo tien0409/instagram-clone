@@ -138,7 +138,7 @@ const followUser = asyncHandler(async (req, res) => {
   }
 
   // user logged in following
-  if (following.includes(userId)) {
+  if (following.includes(user._id)) {
     await User.updateOne(
       { _id: idLoggedIn },
       { $pull: { following: user._id } },

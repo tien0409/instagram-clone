@@ -45,10 +45,10 @@ Post	controllers/user.controller.js	/^const Post = require("..\/models\/post.mod
 Post	middlewares/post.middleware.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	models/post.model.js	/^const Post = mongoose.model("post", postSchema);$/;"	C
 User	controllers/user.controller.js	/^const User = require("..\/models\/user.model");$/;"	C
-User	middlewares/auth-socket.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	middlewares/auth.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	middlewares/user.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	models/user.model.js	/^const User = mongoose.model("user", userSchema);$/;"	C
+User	socket/index.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	validators/user.validator.js	/^const User = require("..\/models\/user.model");$/;"	C
 abbrev	package-lock.json	/^        "abbrev": "1"$/;"	s	object:dependencies.nopt.requires
 abbrev	package-lock.json	/^    "abbrev": {$/;"	o	object:dependencies
@@ -73,14 +73,12 @@ asyncHandler	controllers/conversation.controller.js	/^const asyncHandler = requi
 asyncHandler	controllers/message.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/post.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/user.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
-asyncHandler	middlewares/auth-socket.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/auth.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/conversation.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/post.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/user.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 auth	middlewares/auth.middleware.js	/^const auth = asyncHandler(async (req, res, next) => {$/;"	C
 authSignIn	controllers/user.controller.js	/^const authSignIn = asyncHandler(async (req, res) => {$/;"	C
-authSocket	middlewares/auth-socket.middleware.js	/^const authSocket = asyncHandler(async (socket, next) => {$/;"	C
 author	package.json	/^  "author": "",$/;"	s
 balanced-match	package-lock.json	/^        "balanced-match": "^1.0.0",$/;"	s	object:dependencies.brace-expansion.requires
 balanced-match	package-lock.json	/^    "balanced-match": {$/;"	o	object:dependencies
@@ -414,6 +412,7 @@ get-stream	package-lock.json	/^        "get-stream": "^4.1.0",$/;"	s	object:depe
 get-stream	package-lock.json	/^        "get-stream": "^5.1.0",$/;"	s	object:dependencies.cacheable-request.requires
 get-stream	package-lock.json	/^        "get-stream": {$/;"	o	object:dependencies.cacheable-request.dependencies
 get-stream	package-lock.json	/^    "get-stream": {$/;"	o	object:dependencies
+getAllConversation	controllers/conversation.controller.js	/^const getAllConversation = asyncHandler(async (req, res) => {$/;"	C
 getAllMessage	controllers/message.controller.js	/^const getAllMessage = asyncHandler(async (req, res) => {$/;"	C
 getAllPost	controllers/post.controller.js	/^const getAllPost = asyncHandler(async (req, res) => {$/;"	C
 getAllPostByUserId	controllers/post.controller.js	/^const getAllPostByUserId = asyncHandler(async (req, res) => {$/;"	C
@@ -743,7 +742,6 @@ jwa	package-lock.json	/^        "jwa": "^1.4.1",$/;"	s	object:dependencies.jws.r
 jwa	package-lock.json	/^    "jwa": {$/;"	o	object:dependencies
 jws	package-lock.json	/^        "jws": "^3.2.2",$/;"	s	object:dependencies.jsonwebtoken.requires
 jws	package-lock.json	/^    "jws": {$/;"	o	object:dependencies
-jwt	middlewares/auth-socket.middleware.js	/^const jwt = require("jsonwebtoken");$/;"	C
 jwt	middlewares/auth.middleware.js	/^const jwt = require("jsonwebtoken");$/;"	C
 jwt	utils/generate-token.js	/^const jwt = require("jsonwebtoken");$/;"	C
 kareem	package-lock.json	/^        "kareem": "2.3.2",$/;"	s	object:dependencies.mongoose.requires
@@ -785,7 +783,6 @@ memory-pager	package-lock.json	/^        "memory-pager": "^1.0.2"$/;"	s	object:d
 memory-pager	package-lock.json	/^    "memory-pager": {$/;"	o	object:dependencies
 merge-descriptors	package-lock.json	/^        "merge-descriptors": "1.0.1",$/;"	s	object:dependencies.express.requires
 merge-descriptors	package-lock.json	/^    "merge-descriptors": {$/;"	o	object:dependencies
-messageCurrent	socket/index.js	/^const messageCurrent = [];$/;"	C
 messageRoute	server.js	/^const messageRoute = require(".\/routes\/message.route");$/;"	C
 messageSchema	models/message.model.js	/^const messageSchema = new mongoose.Schema({$/;"	C
 methods	package-lock.json	/^        "methods": "~1.1.2",$/;"	s	object:dependencies.express.requires

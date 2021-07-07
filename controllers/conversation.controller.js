@@ -24,4 +24,18 @@ const createConversation = asyncHandler(async (req, res) => {
   res.status(201).json({ _id: conversation._id });
 });
 
-module.exports = { createConversation };
+/*
+ * @desc get all conversation and info user in conversation
+ * @route GET /api/conversation
+ * @access Private
+ */
+const getAllConversation = asyncHandler(async (req, res) => {
+  const conversations = await Conversation.find().populate(
+    "members",
+    "avatar username",
+  );
+
+  res.status(201).json(conversations);
+});
+
+module.exports = { createConversation, getAllConversation };
