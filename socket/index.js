@@ -55,15 +55,22 @@ const socketio = (httpServer) => {
         members: { $all: [userReq._id, user._id] },
       });
 
-      if (conversationExist) {
-        socket.emit("server-create-conversation", userReq.username);
-      } else {
+      if (!conversationExist) {
+        // add conversation
         const conversation = new Conversation({
           members: [userReq._id, user._id],
         });
-
         await conversation.save();
-        socket.emit("server-create-conversation", userReq.username);
+
+        socket.emit("server-create-conversation", {
+          conversationId: conversation._id,
+          usernameReq: usernameReq,
+        });
+      } else {
+        socket.emit("server-create-conversation", {
+          conversationId: conversationExist._id,
+          usernameReq: usernameReq,
+        });
       }
     });
 
@@ -83,15 +90,30 @@ const socketio = (httpServer) => {
 
       const userReq = await User.findOne({ username: usernameReq });
 
-      const conversation = await Conversation.findOne({
+      let conversation = await Conversation.findOne({
         members: { $all: [userReq._id, user._id] },
       });
+
+      // create conversation and send conversation new to client
+      if (!conversation) {
+        conversation = new Conversation({
+          members: [userReq._id, user._id],
+        });
+        await conversation.save();
+
+        // send to client => client add to all conversation
+        conversationInfo = await conversation
+          .populate("members", "avatar username")
+          .execPopulate();
+
+        socket.emit("server-send-new-conversation", conversation);
+      }
 
       const messages = await Message.find({
         conversation: conversation._id,
       });
 
-      socket.emit("server-send-all-message", { messages, conversation });
+      socket.emit("server-send-all-message", messages);
     });
 
     socket.on("client-send-message", async (data) => {
