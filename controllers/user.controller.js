@@ -109,6 +109,8 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
 const getUserDetails = asyncHandler(async (req, res) => {
   const { userReq } = req;
 
+  const postsCreated = await Post.find({ _id: userReq._id });
+
   res.status(200).json({
     _id: userReq._id,
     email: userReq.email,
@@ -117,7 +119,7 @@ const getUserDetails = asyncHandler(async (req, res) => {
     fullName: userReq.fullName,
     followers: userReq.followers,
     following: userReq.following,
-    postsCreated: userReq.postsCreated,
+    postsCreated: postsCreated,
   });
 });
 

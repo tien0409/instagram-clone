@@ -27,7 +27,12 @@ const socketio = (httpServer) => {
 
     socket.on("client-get-user-logged-in", async (id) => {
       const user = await User.findById(id);
-      socket.emit("server-send-user-logged-in", user);
+      const postsCreated = await Post.find({ user: user._id });
+
+      const userRes = Object(user, {});
+      userRes.postsCreated = postsCreated;
+
+      socket.emit("server-send-user-logged-in", userRes);
     });
 
     socket.on("client-get-receiver", async (username) => {
