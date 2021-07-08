@@ -42,7 +42,9 @@ const getAllPost = asyncHandler(async (req, res) => {
   const { following } = req.user;
   const listUserGetPost = [...following, req.user._id];
 
-  const posts = await Post.find({ user: { $in: listUserGetPost } }).sort({
+  const posts = await Post.find({
+    user: { $in: listUserGetPost },
+  }).sort({
     createdAt: "desc",
   });
 
