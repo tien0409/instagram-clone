@@ -1,5 +1,6 @@
 const Message = require("../../models/message.model");
 const Conversation = require("../../models/conversation.model");
+const User = require("../../models/user.model");
 
 module.exports = function (socket, io) {
   const getAllMessageInConversation = async (data) => {

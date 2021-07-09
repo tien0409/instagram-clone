@@ -25,14 +25,19 @@ const socketio = (httpServer) => {
     });
 
     socket.on("disconnect", () => {
-      const index = onlineUsers.findIndex((user) => user._id === socket._id);
-      console.log(`${onlineUsers[index].username} disconnect`);
+      console.log(`${socket.id} disconnect`);
+      if (onlineUsers.length > 0) {
+        const index = onlineUsers.findIndex((user) => user._id === socket._id);
+        // console.log(`${onlineUsers[index].username} disconnect`);
 
-      const userExistToo = onlineUsers.find((user) => user._id === socket._id);
-      if (!userExistToo) {
-        socket.broadcast.emit("server-send-user-offline", onlineUsers[index]);
+        const userExistToo = onlineUsers.find(
+          (user) => user._id === socket._id,
+        );
+        if (!userExistToo) {
+          socket.broadcast.emit("server-send-user-offline", onlineUsers[index]);
+        }
+        onlineUsers.splice(index, 1);
       }
-      onlineUsers.splice(index, 1);
     });
 
     userSocket(socket, io);

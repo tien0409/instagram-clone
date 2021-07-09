@@ -53,10 +53,11 @@ module.exports = function (socket, io) {
     io.emit("server-toggle-follow", userReqInfo.followers.length);
   };
 
-  const sendMessage = async () => {
-    const message = new Message({ ...data });
+  const sendMessage = async (data) => {
+    const { room, sender, conversation, content, avatar } = data;
+    const message = new Message({ conversation, content, avatar, sender });
 
-    io.to(data.room).emit("server-send-message", {
+    io.to(room).emit("server-send-message", {
       ...data,
       _id: message._id,
     });

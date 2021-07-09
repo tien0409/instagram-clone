@@ -3,7 +3,6 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
-const http = require("http");
 
 // import utils, middleware, configs file
 const { notFoundRoute, errHandler } = require("./middlewares/error.middleware");
@@ -11,7 +10,6 @@ const { PORT } = require("./configs/env");
 const connectDb = require("./utils/db");
 
 const app = express();
-const httpServer = http.Server(app);
 connectDb();
 
 // middlewares

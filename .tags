@@ -53,6 +53,7 @@ User	middlewares/auth.middleware.js	/^const User = require("..\/models\/user.mod
 User	middlewares/user.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	models/user.model.js	/^const User = mongoose.model("user", userSchema);$/;"	C
 User	socket/conversation/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
+User	socket/message/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
 User	socket/user/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
 User	validators/user.validator.js	/^const User = require("..\/models\/user.model");$/;"	C
 abbrev	package-lock.json	/^        "abbrev": "1"$/;"	s	object:dependencies.nopt.requires
@@ -448,14 +449,12 @@ has-flag	package-lock.json	/^        "has-flag": {$/;"	o	object:dependencies.cha
 has-flag	package-lock.json	/^    "has-flag": {$/;"	o	object:dependencies
 has-yarn	package-lock.json	/^        "has-yarn": "^2.1.0",$/;"	s	object:dependencies.update-notifier.requires
 has-yarn	package-lock.json	/^    "has-yarn": {$/;"	o	object:dependencies
-http	server.js	/^const http = require("http");$/;"	C
 http-cache-semantics	package-lock.json	/^        "http-cache-semantics": "^4.0.0",$/;"	s	object:dependencies.cacheable-request.requires
 http-cache-semantics	package-lock.json	/^    "http-cache-semantics": {$/;"	o	object:dependencies
 http-errors	package-lock.json	/^        "http-errors": "1.7.2",$/;"	s	object:dependencies.body-parser.requires
 http-errors	package-lock.json	/^        "http-errors": "1.7.2",$/;"	s	object:dependencies.raw-body.requires
 http-errors	package-lock.json	/^        "http-errors": "~1.7.2",$/;"	s	object:dependencies.send.requires
 http-errors	package-lock.json	/^    "http-errors": {$/;"	o	object:dependencies
-httpServer	server.js	/^const httpServer = http.Server(app);$/;"	C
 iconv-lite	package-lock.json	/^        "iconv-lite": "0.4.24",$/;"	s	object:dependencies.body-parser.requires
 iconv-lite	package-lock.json	/^        "iconv-lite": "0.4.24",$/;"	s	object:dependencies.raw-body.requires
 iconv-lite	package-lock.json	/^    "iconv-lite": {$/;"	o	object:dependencies
