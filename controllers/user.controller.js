@@ -192,6 +192,20 @@ const commentPost = asyncHandler(async (req, res) => {
   res.status(200).json({ msg: "Comment success" });
 });
 
+/*
+ * @desc  update avatar
+ * @route POST /api/user/avatar
+ * @access Private
+ */
+const updateAvatar = asyncHandler(async (req, res) => {
+  const { user } = req;
+  const { avatar } = req.body;
+
+  await User.updateOne({ _id: user._id }, { avatar });
+
+  res.status(200).json({ msg: "Update avatar success success" });
+});
+
 module.exports = {
   signUp,
   signIn,
@@ -200,4 +214,5 @@ module.exports = {
   getUserDetails,
   followUser,
   commentPost,
+  updateAvatar,
 };

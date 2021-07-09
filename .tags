@@ -1379,6 +1379,7 @@ unpipe	package-lock.json	/^        "unpipe": "~1.0.0"$/;"	s	object:dependencies.
 unpipe	package-lock.json	/^    "unpipe": {$/;"	o	object:dependencies
 update-notifier	package-lock.json	/^        "update-notifier": "^4.1.0"$/;"	s	object:dependencies.nodemon.requires
 update-notifier	package-lock.json	/^    "update-notifier": {$/;"	o	object:dependencies
+updateAvatar	controllers/user.controller.js	/^const updateAvatar = asyncHandler(async (req, res) => {$/;"	C
 url-parse-lax	package-lock.json	/^        "url-parse-lax": "^3.0.0"$/;"	s	object:dependencies.got.requires
 url-parse-lax	package-lock.json	/^    "url-parse-lax": {$/;"	o	object:dependencies
 userRoute	server.js	/^const userRoute = require(".\/routes\/user.route");$/;"	C
