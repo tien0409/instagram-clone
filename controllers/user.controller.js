@@ -193,7 +193,7 @@ const commentPost = asyncHandler(async (req, res) => {
 });
 
 /*
- * @desc  update avatar
+ * @desc  update avatar user and all post user created
  * @route POST /api/user/avatar
  * @access Private
  */
@@ -202,6 +202,7 @@ const updateAvatar = asyncHandler(async (req, res) => {
   const { avatar } = req.body;
 
   await User.updateOne({ _id: user._id }, { avatar });
+  await Post.updateMany({ user: user._id }, { avatar });
 
   res.status(200).json({ msg: "Update avatar success success" });
 });

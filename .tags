@@ -33,23 +33,27 @@ CLOUD_NAME	configs/env.js	/^  CLOUD_NAME: process.env.CLOUD_NAME,$/;"	p	class:mo
 Conversation	controllers/conversation.controller.js	/^const Conversation = require("..\/models\/conversation.model");$/;"	C
 Conversation	middlewares/conversation.middleware.js	/^const Conversation = require("..\/models\/conversation.model");$/;"	C
 Conversation	models/conversation.model.js	/^const Conversation = mongoose.model("conversation", conversationSchema);$/;"	C
-Conversation	socket/index.js	/^const Conversation = require("..\/models\/conversation.model");$/;"	C
+Conversation	socket/conversation/index.js	/^const Conversation = require("..\/..\/models\/conversation.model");$/;"	C
+Conversation	socket/message/index.js	/^const Conversation = require("..\/..\/models\/conversation.model");$/;"	C
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
 Message	controllers/message.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
 Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
-Message	socket/index.js	/^const Message = require("..\/models\/message.model");$/;"	C
+Message	socket/message/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
+Message	socket/user/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
 Post	controllers/post.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	controllers/user.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	middlewares/post.middleware.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	models/post.model.js	/^const Post = mongoose.model("post", postSchema);$/;"	C
-Post	socket/index.js	/^const Post = require("..\/models\/post.model");$/;"	C
+Post	socket/post/index.js	/^const Post = require("..\/..\/models\/post.model");$/;"	C
+Post	socket/user/index.js	/^const Post = require("..\/..\/models\/post.model");$/;"	C
 User	controllers/user.controller.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	middlewares/auth.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	middlewares/user.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	models/user.model.js	/^const User = mongoose.model("user", userSchema);$/;"	C
-User	socket/index.js	/^const User = require("..\/models\/user.model");$/;"	C
+User	socket/conversation/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
+User	socket/user/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
 User	validators/user.validator.js	/^const User = require("..\/models\/user.model");$/;"	C
 abbrev	package-lock.json	/^        "abbrev": "1"$/;"	s	object:dependencies.nopt.requires
 abbrev	package-lock.json	/^    "abbrev": {$/;"	o	object:dependencies
@@ -81,6 +85,7 @@ asyncHandler	middlewares/user.middleware.js	/^const asyncHandler = require("expr
 auth	middlewares/auth.middleware.js	/^const auth = asyncHandler(async (req, res, next) => {$/;"	C
 authSignIn	controllers/user.controller.js	/^const authSignIn = asyncHandler(async (req, res) => {$/;"	C
 author	package.json	/^  "author": "",$/;"	s
+avatar	socket/post/index.js	/^      avatar: avatar,$/;"	p	class:module.exports.newComment
 balanced-match	package-lock.json	/^        "balanced-match": "^1.0.0",$/;"	s	object:dependencies.brace-expansion.requires
 balanced-match	package-lock.json	/^    "balanced-match": {$/;"	o	object:dependencies
 base64-arraybuffer	package-lock.json	/^        "base64-arraybuffer": "0.1.4"$/;"	s	object:dependencies.engine.io-parser.requires
@@ -151,6 +156,7 @@ content-type	package-lock.json	/^        "content-type": "~1.0.4",$/;"	s	object:
 content-type	package-lock.json	/^    "content-type": {$/;"	o	object:dependencies
 conversationRoute	server.js	/^const conversationRoute = require(".\/routes\/conversation.route");$/;"	C
 conversationSchema	models/conversation.model.js	/^const conversationSchema = new mongoose.Schema($/;"	C
+conversationSocket	socket/index.js	/^const conversationSocket = require(".\/conversation");$/;"	C
 cookie	package-lock.json	/^        "cookie": "0.4.0",$/;"	s	object:dependencies.express.requires
 cookie	package-lock.json	/^        "cookie": "~0.4.1",$/;"	s	object:dependencies.engine.io.requires
 cookie	package-lock.json	/^        "cookie": {$/;"	o	object:dependencies.engine.io.dependencies
@@ -169,6 +175,7 @@ createMessage	controllers/message.controller.js	/^const createMessage = asyncHan
 createMessageValidator	validators/message.validator.js	/^const createMessageValidator = () => [$/;"	C
 createPost	controllers/post.controller.js	/^const createPost = asyncHandler(async (req, res) => {$/;"	C
 createPostValidator	validators/post.validator.js	/^const createPostValidator = () => [$/;"	C
+createdAt	socket/post/index.js	/^      createdAt: Date.now(),$/;"	p	class:module.exports.newComment
 crypto-random-string	package-lock.json	/^        "crypto-random-string": "^2.0.0"$/;"	s	object:dependencies.unique-string.requires
 crypto-random-string	package-lock.json	/^    "crypto-random-string": {$/;"	o	object:dependencies
 debug	package-lock.json	/^        "debug": "2.6.9",$/;"	s	object:dependencies.body-parser.requires
@@ -384,6 +391,10 @@ etag	package-lock.json	/^        "etag": "~1.8.1",$/;"	s	object:dependencies.exp
 etag	package-lock.json	/^        "etag": "~1.8.1",$/;"	s	object:dependencies.send.requires
 etag	package-lock.json	/^    "etag": {$/;"	o	object:dependencies
 exports	configs/env.js	/^module.exports = {$/;"	c	class:module
+exports	socket/conversation/index.js	/^module.exports = function (socket, io) {$/;"	f	function:module
+exports	socket/message/index.js	/^module.exports = function (socket, io) {$/;"	f	function:module
+exports	socket/post/index.js	/^module.exports = function (socket, io) {$/;"	f	function:module
+exports	socket/user/index.js	/^module.exports = function (socket, io) {$/;"	f	function:module
 express	package-lock.json	/^    "express": {$/;"	o	object:dependencies
 express	package.json	/^    "express": "^4.17.1",$/;"	s	object:dependencies
 express	routes/conversation.route.js	/^const express = require("express");$/;"	C
@@ -786,6 +797,7 @@ merge-descriptors	package-lock.json	/^        "merge-descriptors": "1.0.1",$/;"	
 merge-descriptors	package-lock.json	/^    "merge-descriptors": {$/;"	o	object:dependencies
 messageRoute	server.js	/^const messageRoute = require(".\/routes\/message.route");$/;"	C
 messageSchema	models/message.model.js	/^const messageSchema = new mongoose.Schema({$/;"	C
+messageSocket	socket/index.js	/^const messageSocket = require(".\/message");$/;"	C
 methods	package-lock.json	/^        "methods": "~1.1.2",$/;"	s	object:dependencies.express.requires
 methods	package-lock.json	/^    "methods": {$/;"	o	object:dependencies
 mime	package-lock.json	/^        "mime": "1.6.0",$/;"	s	object:dependencies.send.requires
@@ -840,8 +852,10 @@ ms	package-lock.json	/^        "ms": {$/;"	o	object:dependencies.socket.io.depen
 ms	package-lock.json	/^    "ms": {$/;"	o	object:dependencies
 name	package-lock.json	/^  "name": "server",$/;"	s
 name	package.json	/^  "name": "server",$/;"	s
+name	socket/post/index.js	/^      name: username,$/;"	p	class:module.exports.newComment
 negotiator	package-lock.json	/^        "negotiator": "0.6.2"$/;"	s	object:dependencies.accepts.requires
 negotiator	package-lock.json	/^    "negotiator": {$/;"	o	object:dependencies
+newComment	socket/post/index.js	/^    const newComment = {$/;"	c	class:module.exports
 nodemon	package-lock.json	/^    "nodemon": {$/;"	o	object:dependencies
 nodemon	package.json	/^    "nodemon": "^2.0.9"$/;"	s	object:devDependencies
 nopt	package-lock.json	/^        "nopt": "~1.0.10"$/;"	s	object:dependencies.touch.requires
@@ -887,6 +901,7 @@ picomatch	package-lock.json	/^        "picomatch": "^2.2.1"$/;"	s	object:depende
 picomatch	package-lock.json	/^    "picomatch": {$/;"	o	object:dependencies
 postRoute	server.js	/^const postRoute = require(".\/routes\/post.route");$/;"	C
 postSchema	models/post.model.js	/^const postSchema = new mongoose.Schema($/;"	C
+postSocket	socket/index.js	/^const postSocket = require(".\/post");$/;"	C
 prepend-http	package-lock.json	/^        "prepend-http": "^2.0.0"$/;"	s	object:dependencies.url-parse-lax.requires
 prepend-http	package-lock.json	/^    "prepend-http": {$/;"	o	object:dependencies
 process-nextick-args	package-lock.json	/^        "process-nextick-args": "~2.0.0",$/;"	s	object:dependencies.readable-stream.requires
@@ -1382,8 +1397,10 @@ update-notifier	package-lock.json	/^    "update-notifier": {$/;"	o	object:depend
 updateAvatar	controllers/user.controller.js	/^const updateAvatar = asyncHandler(async (req, res) => {$/;"	C
 url-parse-lax	package-lock.json	/^        "url-parse-lax": "^3.0.0"$/;"	s	object:dependencies.got.requires
 url-parse-lax	package-lock.json	/^    "url-parse-lax": {$/;"	o	object:dependencies
+user	socket/post/index.js	/^      user: userId,$/;"	p	class:module.exports.newComment
 userRoute	server.js	/^const userRoute = require(".\/routes\/user.route");$/;"	C
 userSchema	models/user.model.js	/^const userSchema = new mongoose.Schema($/;"	C
+userSocket	socket/index.js	/^const userSocket = require(".\/user");$/;"	C
 util-deprecate	package-lock.json	/^        "util-deprecate": "~1.0.1"$/;"	s	object:dependencies.readable-stream.requires
 util-deprecate	package-lock.json	/^    "util-deprecate": {$/;"	o	object:dependencies
 utils-merge	package-lock.json	/^        "utils-merge": "1.0.1",$/;"	s	object:dependencies.express.requires

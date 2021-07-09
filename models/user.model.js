@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema(
     },
     avatar: {
       type: String,
-      default: `https://res.cloudinary.com/${CLOUD_NAME}/image/upload/v1625386800/avatar_default_tmzgck.png`,
+      default: "/images/avatar_default.png",
     },
     followers: {
       type: Array,
