@@ -40,6 +40,41 @@ const socketio = (httpServer) => {
       socket.emit("server-send-receiver", user);
     });
 
+    socket.on("client-toggle-follow", async (data) => {
+      const { userReq, user } = data;
+
+      console.log("userReq", userReq);
+      // user logged in following
+      if (user.following.includes(userReq._id)) {
+        await User.updateOne(
+          { _id: user._id },
+          { $pull: { following: userReq._id } },
+        );
+      } else {
+        await User.updateOne(
+          { _id: user._id },
+          { $push: { following: userReq._id } },
+        );
+      }
+
+      // userReq followed
+      if (userReq.followers.includes(user._id)) {
+        await User.updateOne(
+          { _id: userReq._id },
+          { $pull: { followers: user._id } },
+        );
+      } else {
+        await User.updateOne(
+          { _id: userReq._id },
+          { $push: { followers: user._id } },
+        );
+      }
+
+      const userReqInfo = await User.findById(userReq._id);
+
+      io.emit("server-toggle-follow", userReqInfo.followers.length);
+    });
+
     socket.on("client-create-conversation", async (data) => {
       const { usernameReq, user } = data;
       socket.emit("server-creating-conversation");
