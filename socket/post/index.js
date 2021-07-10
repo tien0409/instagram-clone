@@ -40,7 +40,17 @@ module.exports = function (socket, io) {
     await post.save();
   };
 
+  const getAllPostCreated = async (username) => {
+    const posts = await Post.find({ name: username }).sort({
+      createdAt: "desc",
+    });
+
+    socket.emit("server-send-posts-created", posts);
+  };
+
   socket.on("client-send-comment", sendComment);
+
+  socket.on("client-get-posts-created", getAllPostCreated);
 
   socket.on("client-send-toggle-like", toggleLikePost);
 };
