@@ -10,6 +10,7 @@ const {
   followUser,
   commentPost,
   updateAvatar,
+  deleteAvatar,
 } = require("../controllers/user.controller");
 const {
   signUpValidator,
@@ -30,7 +31,7 @@ router.get("/auth", auth, authSignIn);
 router.route("/suggestion").get(auth, getUserSuggestion);
 router.route("/details/:username").get(auth, getUserDetails);
 router.route("/follow").post(auth, followUser);
-router.route("/avatar").post(auth, updateAvatar);
+router.route("/avatar").post(auth, updateAvatar).delete(auth, deleteAvatar);
 router
   .route("/comment/:postId")
   .post(auth, createCommentValidator(), commentPost);

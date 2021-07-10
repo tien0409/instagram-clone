@@ -202,6 +202,7 @@ deep-extend	package-lock.json	/^        "deep-extend": "^0.6.0",$/;"	s	object:de
 deep-extend	package-lock.json	/^    "deep-extend": {$/;"	o	object:dependencies
 defer-to-connect	package-lock.json	/^        "defer-to-connect": "^1.0.1"$/;"	s	object:dependencies.@szmarczak/http-timer.requires
 defer-to-connect	package-lock.json	/^    "defer-to-connect": {$/;"	o	object:dependencies
+deleteAvatar	controllers/user.controller.js	/^const deleteAvatar = asyncHandler(async (req, res) => {$/;"	C
 denque	package-lock.json	/^        "denque": "^1.4.1",$/;"	s	object:dependencies.mongodb.requires
 denque	package-lock.json	/^    "denque": {$/;"	o	object:dependencies
 depd	package-lock.json	/^        "depd": "~1.1.2",$/;"	s	object:dependencies.body-parser.requires

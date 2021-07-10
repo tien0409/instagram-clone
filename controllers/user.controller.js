@@ -204,7 +204,23 @@ const updateAvatar = asyncHandler(async (req, res) => {
   await User.updateOne({ _id: user._id }, { avatar });
   await Post.updateMany({ user: user._id }, { avatar });
 
-  res.status(200).json({ msg: "Update avatar success success" });
+  res.status(200).json({ msg: "Update avatar success" });
+});
+
+/*
+ * @desc  delete avatar => update avatar to default
+ * @route DELETE /api/user/avatar
+ * @access Private
+ */
+const deleteAvatar = asyncHandler(async (req, res) => {
+  const { user } = req;
+
+  await User.updateOne(
+    { _id: user._id },
+    { avatar: "/images/avatar_default.png" },
+  );
+
+  res.status(200).json({ msg: "Remove avatar success" });
 });
 
 module.exports = {
@@ -216,4 +232,5 @@ module.exports = {
   followUser,
   commentPost,
   updateAvatar,
+  deleteAvatar,
 };
