@@ -37,6 +37,14 @@ const userSchema = new mongoose.Schema(
       type: Array,
       default: [],
     },
+    phoneNumber: {
+      type: String,
+      default: "",
+    },
+    gender: {
+      type: String,
+      default: "Male",
+    },
   },
   { timestamps: true },
 );

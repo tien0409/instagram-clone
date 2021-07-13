@@ -1,6 +1,7 @@
 const User = require("../../models/user.model");
 const Message = require("../../models/message.model");
 const Post = require("../../models/post.model");
+const Conversation = require("../../models/conversation.model");
 
 module.exports = function (socket, io) {
   const getUserLoggedIn = async (id) => {
@@ -13,15 +14,20 @@ module.exports = function (socket, io) {
     socket.emit("server-send-user-logged-in", userRes);
   };
 
-  const getReceiverMessage = async (username) => {
-    const user = await User.findOne({ username }).select("-password");
+  const getReceiver = async (conversationId) => {
+    const userIdLoggedIn = socket._id;
+
+    const conversation = await Conversation.findById(conversationId);
+    const userId = conversation.members.find((id) => id !== userIdLoggedIn);
+
+    const user = await User.findById(userId).select("-password");
+
     socket.emit("server-send-receiver", user);
   };
 
   const toggleFollow = async (data) => {
     const { userReq, user } = data;
 
-    console.log("userReq", userReq);
     // user logged in following
     if (user.following.includes(userReq._id)) {
       await User.updateOne(
@@ -57,6 +63,8 @@ module.exports = function (socket, io) {
     const { room, sender, conversation, content, avatar } = data;
     const message = new Message({ conversation, content, avatar, sender });
 
+    console.log("data", data);
+    console.log("message", message);
     io.to(room).emit("server-send-message", {
       ...data,
       _id: message._id,
@@ -66,7 +74,7 @@ module.exports = function (socket, io) {
 
   socket.on("client-get-user-logged-in", getUserLoggedIn);
 
-  socket.on("client-get-receiver", getReceiverMessage);
+  socket.on("client-get-receiver", getReceiver);
 
   socket.on("client-toggle-follow", toggleFollow);
 

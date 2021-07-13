@@ -35,6 +35,7 @@ Conversation	middlewares/conversation.middleware.js	/^const Conversation = requi
 Conversation	models/conversation.model.js	/^const Conversation = mongoose.model("conversation", conversationSchema);$/;"	C
 Conversation	socket/conversation/index.js	/^const Conversation = require("..\/..\/models\/conversation.model");$/;"	C
 Conversation	socket/message/index.js	/^const Conversation = require("..\/..\/models\/conversation.model");$/;"	C
+Conversation	socket/user/index.js	/^const Conversation = require("..\/..\/models\/conversation.model");$/;"	C
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
 Message	controllers/message.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
@@ -1395,6 +1396,7 @@ unpipe	package-lock.json	/^    "unpipe": {$/;"	o	object:dependencies
 update-notifier	package-lock.json	/^        "update-notifier": "^4.1.0"$/;"	s	object:dependencies.nodemon.requires
 update-notifier	package-lock.json	/^    "update-notifier": {$/;"	o	object:dependencies
 updateAvatar	controllers/user.controller.js	/^const updateAvatar = asyncHandler(async (req, res) => {$/;"	C
+updateInfo	controllers/user.controller.js	/^const updateInfo = asyncHandler(async (req, res) => {$/;"	C
 url-parse-lax	package-lock.json	/^        "url-parse-lax": "^3.0.0"$/;"	s	object:dependencies.got.requires
 url-parse-lax	package-lock.json	/^    "url-parse-lax": {$/;"	o	object:dependencies
 user	socket/post/index.js	/^      user: userId,$/;"	p	class:module.exports.newComment

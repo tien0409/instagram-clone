@@ -47,6 +47,28 @@ module.exports = function (socket, io) {
     socket.emit("server-send-all-conversation", conversations);
   };
 
+  const getConversationById = async (conversationId) => {
+    try {
+      const conversation = await Conversation.findById(conversationId).populate(
+        "members",
+        "username",
+      );
+
+      socket.join(
+        `${conversation.members[0].username}-${conversation.members[1].username}`,
+      );
+      socket.join(
+        `${conversation.members[1].username}-${conversation.members[0].username}`,
+      );
+
+      socket.emit("server-send-conversation", conversation);
+    } catch (err) {
+      socket.emit("server-send-conversation-error");
+    }
+  };
+
+  socket.on("client-get-conversation", getConversationById);
+
   socket.on("client-create-conversation", createConversation);
 
   socket.on("client-get-all-conversation", getAllConversation);

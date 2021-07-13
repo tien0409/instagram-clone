@@ -28,8 +28,9 @@ const signUp = asyncHandler(async (req, res) => {
     fullName: newUser.fullName,
     followers: newUser.followers,
     following: newUser.following,
-    postsCreated: newUser.postsCreated,
     avatar: newUser.avatar,
+    phoneNumber: newUser.phoneNumber,
+    gender: newUser.gender,
     token: generateToken(newUser._id),
   });
 });
@@ -59,7 +60,8 @@ const signIn = asyncHandler(async (req, res) => {
       fullName: user.fullName,
       followers: user.followers,
       following: user.following,
-      postsCreated: user.postsCreated,
+      phoneNumber: user.phoneNumber,
+      gender: user.gender,
       token: generateToken(user._id),
     });
   } else {
@@ -82,7 +84,8 @@ const authSignIn = asyncHandler(async (req, res) => {
     fullName: req.user.fullName,
     followers: req.user.followers,
     following: req.user.following,
-    postsCreated: req.user.following,
+    phoneNumber: req.user.phoneNumber,
+    gender: req.user.gender,
   });
 });
 
@@ -120,6 +123,8 @@ const getUserDetails = asyncHandler(async (req, res) => {
     followers: userReq.followers,
     following: userReq.following,
     postsCreated: postsCreated.length,
+    phoneNumber: userReq.phoneNumber,
+    gender: userReq.gender,
   });
 });
 
@@ -219,8 +224,30 @@ const deleteAvatar = asyncHandler(async (req, res) => {
     { _id: user._id },
     { avatar: "/images/avatar_default.png" },
   );
+  await Post.updateMany(
+    { user: user._id },
+    { avatar: "/images/avatar_default.png" },
+  );
 
   res.status(200).json({ msg: "Remove avatar success" });
+});
+
+/*
+ * @desc  update info
+ * @route PUT /api/user
+ * @access Private
+ */
+const updateInfo = asyncHandler(async (req, res) => {
+  const { user } = req;
+  const { fullName, username, email, gender, phoneNumber } = req.body;
+
+  await User.updateOne(
+    { _id: user._id },
+    { fullName, username, email, gender, phoneNumber },
+  );
+  await Post.updateMany({ user: user._id }, { name: username });
+
+  res.status(200).json({ msg: "Update info success" });
 });
 
 module.exports = {
@@ -233,4 +260,5 @@ module.exports = {
   commentPost,
   updateAvatar,
   deleteAvatar,
+  updateInfo,
 };

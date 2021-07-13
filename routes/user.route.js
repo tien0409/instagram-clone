@@ -11,6 +11,7 @@ const {
   commentPost,
   updateAvatar,
   deleteAvatar,
+  updateInfo,
 } = require("../controllers/user.controller");
 const {
   signUpValidator,
@@ -35,5 +36,6 @@ router.route("/avatar").post(auth, updateAvatar).delete(auth, deleteAvatar);
 router
   .route("/comment/:postId")
   .post(auth, createCommentValidator(), commentPost);
+router.route("/").put(auth, updateInfo);
 
 module.exports = router;
