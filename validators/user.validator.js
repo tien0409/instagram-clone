@@ -95,9 +95,18 @@ const updateInfoValidator = () => [
     .withMessage("Phone message only contains 10 digits"),
 ];
 
+const updatePasswordValidator = () => [
+  check("password").custom((password, { req }) => {
+    if (password !== req.body.confirmPassword) {
+      throw new Error("Password confirm does not match password");
+    }
+  }),
+];
+
 module.exports = {
   signUpValidator,
   signInValidator,
   createCommentValidator,
   updateInfoValidator,
+  updatePasswordValidator,
 };

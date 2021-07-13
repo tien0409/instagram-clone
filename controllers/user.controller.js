@@ -262,11 +262,11 @@ const updateInfo = asyncHandler(async (req, res) => {
  * @access Private
  */
 const updatePassword = asyncHandler(async (req, res) => {
-  // const errors = validationResult(req);
-  // if (!errors.isEmpty()) {
-  //   res.status(400);
-  //   throw new Error(errors.array()[0].msg);
-  // }
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    res.status(400);
+    throw new Error(errors.array()[0].msg);
+  }
 
   const { user } = req;
   const { password } = req.body;
