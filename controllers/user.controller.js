@@ -256,6 +256,26 @@ const updateInfo = asyncHandler(async (req, res) => {
   res.status(200).json({ msg: "Update info success" });
 });
 
+/*
+ * @desc  update password
+ * @route PUT /api/user/password
+ * @access Private
+ */
+const updatePassword = asyncHandler(async (req, res) => {
+  // const errors = validationResult(req);
+  // if (!errors.isEmpty()) {
+  //   res.status(400);
+  //   throw new Error(errors.array()[0].msg);
+  // }
+
+  const { user } = req;
+  const { password } = req.body;
+
+  await User.updateOne({ _id: user._id }, { password });
+
+  res.status(200).json({ msg: "Update password success" });
+});
+
 module.exports = {
   signUp,
   signIn,
@@ -267,4 +287,5 @@ module.exports = {
   updateAvatar,
   deleteAvatar,
   updateInfo,
+  updatePassword,
 };

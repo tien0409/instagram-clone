@@ -1398,6 +1398,7 @@ update-notifier	package-lock.json	/^    "update-notifier": {$/;"	o	object:depend
 updateAvatar	controllers/user.controller.js	/^const updateAvatar = asyncHandler(async (req, res) => {$/;"	C
 updateInfo	controllers/user.controller.js	/^const updateInfo = asyncHandler(async (req, res) => {$/;"	C
 updateInfoValidator	validators/user.validator.js	/^const updateInfoValidator = () => [$/;"	C
+updatePassword	controllers/user.controller.js	/^const updatePassword = asyncHandler(async (req, res) => {$/;"	C
 url-parse-lax	package-lock.json	/^        "url-parse-lax": "^3.0.0"$/;"	s	object:dependencies.got.requires
 url-parse-lax	package-lock.json	/^    "url-parse-lax": {$/;"	o	object:dependencies
 user	socket/post/index.js	/^      user: userId,$/;"	p	class:module.exports.newComment
