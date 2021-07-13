@@ -60,13 +60,14 @@ const createCommentValidator = () => [
 const updateInfoValidator = () => [
   check("fullName", "Full name is required").not().isEmpty(),
   check("email", "Email is not valid").isEmail(),
-  check("email").custom((email) =>
-    User.findOne({ email }).then((emailExists) => {
-      if (emailExists) {
+  check("email").custom((email, { req }) => {
+    const { user } = req;
+    return User.findOne({ email }).then((emailExists) => {
+      if (emailExists && emailExists.email !== user.email) {
         throw new Error("Email already in use");
       }
-    }),
-  ),
+    });
+  }),
   check("email")
     .custom((email) => !/\s/.test(email))
     .withMessage("No spaces are allowed in the email"),
@@ -76,13 +77,14 @@ const updateInfoValidator = () => [
     "username",
     "Username is more than 4 characters and less than 15 characters",
   ).isLength({ min: 4, max: 15 }),
-  check("username").custom((username) =>
-    User.findOne({ username }).then((usernameExists) => {
-      if (usernameExists) {
+  check("username").custom((username, { req }) => {
+    const { user } = req;
+    return User.findOne({ username }).then((userExist) => {
+      if (userExist && userExist.username !== user.username) {
         throw new Error("Username already in use");
       }
-    }),
-  ),
+    });
+  }),
   check("username")
     .custom((username) => !/\s/.test(username))
     .withMessage("No spaces are allowed in the username"),
@@ -91,8 +93,8 @@ const updateInfoValidator = () => [
 
   check("phoneNumber", "Phone number is required").not().isEmpty(),
   check("phoneNumber")
-    .custom((phoneNumber) => phoneNumber.trim().length !== 10)
-    .withMessage("Phone message only contains 10 digits"),
+    .custom((phoneNumber) => !phoneNumber.trim().length !== 10)
+    .withMessage("Phone number only contains 10 digits"),
 ];
 
 const updatePasswordValidator = () => [
