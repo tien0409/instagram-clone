@@ -35,7 +35,7 @@ router.get("/auth", auth, authSignIn);
 router.route("/suggestion").get(auth, getUserSuggestion);
 router.route("/details/:username").get(auth, getUserDetails);
 router.route("/follow").post(auth, followUser);
-router.route("/avatar").post(auth, updateAvatar).delete(auth, deleteAvatar);
+router.route("/avatar").put(auth, updateAvatar).delete(auth, deleteAvatar);
 router.route("/password").put(auth, updatePasswordValidator(), updatePassword);
 router
   .route("/comment/:postId")

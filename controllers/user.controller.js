@@ -199,7 +199,7 @@ const commentPost = asyncHandler(async (req, res) => {
 
 /*
  * @desc  update avatar user and all post user created
- * @route POST /api/user/avatar
+ * @route PUT /api/user/avatar
  * @access Private
  */
 const updateAvatar = asyncHandler(async (req, res) => {
