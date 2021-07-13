@@ -17,6 +17,7 @@ const {
   signUpValidator,
   signInValidator,
   createCommentValidator,
+  updateInfoValidator,
 } = require("../validators/user.validator");
 const { auth } = require("../middlewares/auth.middleware");
 const { getUserId, getUsername } = require("../middlewares/user.middleware");
@@ -36,6 +37,6 @@ router.route("/avatar").post(auth, updateAvatar).delete(auth, deleteAvatar);
 router
   .route("/comment/:postId")
   .post(auth, createCommentValidator(), commentPost);
-router.route("/").put(auth, updateInfo);
+router.route("/").put(auth, updateInfoValidator(), updateInfo);
 
 module.exports = router;

@@ -238,6 +238,12 @@ const deleteAvatar = asyncHandler(async (req, res) => {
  * @access Private
  */
 const updateInfo = asyncHandler(async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    res.status(400);
+    throw new Error(errors.array()[0].msg);
+  }
+
   const { user } = req;
   const { fullName, username, email, gender, phoneNumber } = req.body;
 
