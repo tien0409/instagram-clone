@@ -5,13 +5,23 @@ const Conversation = require("../../models/conversation.model");
 
 module.exports = function (socket, io) {
   const getUserLoggedIn = async (id) => {
-    const user = await User.findById(id);
+    const user = await User.findById(id)
+      .populate("followers", "avatar username fullName")
+      .populate("following", "avatar username fullName");
     const postsCreated = await Post.find({ user: user._id });
 
-    const userRes = Object(user, {});
-    userRes.postsCreated = postsCreated;
-
-    socket.emit("server-send-user-logged-in", userRes);
+    socket.emit("server-send-user-logged-in", {
+      _id: user._id,
+      email: user.email,
+      username: user.username,
+      avatar: user.avatar,
+      fullName: user.fullName,
+      followers: user.followers,
+      following: user.following,
+      postsCreated: postsCreated.length,
+      phoneNumber: user.phoneNumber,
+      gender: user.gender,
+    });
   };
 
   const getReceiver = async (conversationId) => {
@@ -72,6 +82,12 @@ module.exports = function (socket, io) {
     await message.save();
   };
 
+  const forcedUnfollow = async (id) => {
+    await User.updateOne({ _id: socket._id }, { $pull: { followers: id } });
+    await User.updateOne({ _id: id }, { $pull: { following: socket._id } });
+    socket.emit("server-user-forced-unfollow", id);
+  };
+
   socket.on("client-get-user-logged-in", getUserLoggedIn);
 
   socket.on("client-get-receiver", getReceiver);
@@ -79,6 +95,8 @@ module.exports = function (socket, io) {
   socket.on("client-toggle-follow", toggleFollow);
 
   socket.on("client-send-message", sendMessage);
+
+  socket.on("client-user-forced-unfollow", forcedUnfollow);
 
   socket.on("client-user-typing", (data) => {
     io.to(data.room).emit("server-user-typing");
