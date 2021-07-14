@@ -112,19 +112,22 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
 const getUserDetails = asyncHandler(async (req, res) => {
   const { userReq } = req;
 
+  const user = await User.findById(userReq._id)
+    .populate("followers", "username avatar fullName")
+    .populate("following", "username avatar fullName");
   const postsCreated = await Post.find({ user: userReq._id });
 
   res.status(200).json({
-    _id: userReq._id,
-    email: userReq.email,
-    username: userReq.username,
-    avatar: userReq.avatar,
-    fullName: userReq.fullName,
-    followers: userReq.followers,
-    following: userReq.following,
+    _id: user._id,
+    email: user.email,
+    username: user.username,
+    avatar: user.avatar,
+    fullName: user.fullName,
+    followers: user.followers,
+    following: user.following,
     postsCreated: postsCreated.length,
-    phoneNumber: userReq.phoneNumber,
-    gender: userReq.gender,
+    phoneNumber: user.phoneNumber,
+    gender: user.gender,
   });
 });
 
