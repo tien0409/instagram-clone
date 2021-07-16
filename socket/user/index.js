@@ -38,8 +38,11 @@ module.exports = function (socket, io) {
   const toggleFollow = async (data) => {
     const { userReq, user } = data;
 
+    const userReqRes = await User.findById(userReq._id);
+    const userRes = await User.findById(user._id);
+
     // user logged in following
-    if (user.following.includes(userReq._id)) {
+    if (userRes.following.includes(userReq._id)) {
       await User.updateOne(
         { _id: user._id },
         { $pull: { following: userReq._id } },
@@ -52,7 +55,7 @@ module.exports = function (socket, io) {
     }
 
     // userReq followed
-    if (userReq.followers.includes(user._id)) {
+    if (userReqRes.followers.includes(user._id)) {
       await User.updateOne(
         { _id: userReq._id },
         { $pull: { followers: user._id } },
