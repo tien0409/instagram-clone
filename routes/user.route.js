@@ -13,6 +13,7 @@ const {
   deleteAvatar,
   updateInfo,
   updatePassword,
+  findUser,
 } = require("../controllers/user.controller");
 const {
   signUpValidator,
@@ -40,6 +41,9 @@ router.route("/password").put(auth, updatePasswordValidator(), updatePassword);
 router
   .route("/comment/:postId")
   .post(auth, createCommentValidator(), commentPost);
-router.route("/").put(auth, updateInfoValidator(), updateInfo);
+router
+  .route("/")
+  .put(auth, updateInfoValidator(), updateInfo)
+  .get(auth, findUser);
 
 module.exports = router;

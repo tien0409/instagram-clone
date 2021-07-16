@@ -413,6 +413,7 @@ fill-range	package-lock.json	/^        "fill-range": "^7.0.1"$/;"	s	object:depen
 fill-range	package-lock.json	/^    "fill-range": {$/;"	o	object:dependencies
 finalhandler	package-lock.json	/^        "finalhandler": "~1.1.2",$/;"	s	object:dependencies.express.requires
 finalhandler	package-lock.json	/^    "finalhandler": {$/;"	o	object:dependencies
+findUser	controllers/user.controller.js	/^const findUser = asyncHandler(async (req, res) => {$/;"	C
 followUser	controllers/user.controller.js	/^const followUser = asyncHandler(async (req, res) => {$/;"	C
 forwarded	package-lock.json	/^        "forwarded": "0.2.0",$/;"	s	object:dependencies.proxy-addr.requires
 forwarded	package-lock.json	/^    "forwarded": {$/;"	o	object:dependencies

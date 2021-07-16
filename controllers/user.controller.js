@@ -279,6 +279,25 @@ const updatePassword = asyncHandler(async (req, res) => {
   res.status(200).json({ msg: "Update password success" });
 });
 
+/*
+ * @desc  find user
+ * @route GET /api/user?keyword
+ * @access Private
+ */
+const findUser = asyncHandler(async (req, res) => {
+  const { keyword } = req.query;
+
+  if (keyword.trim() === "") {
+    return res.status(200).json([]);
+  }
+
+  const users = await User.find({
+    username: new RegExp(`${keyword}`, "gi"),
+  }).select("-password");
+
+  res.status(200).json(users);
+});
+
 module.exports = {
   signUp,
   signIn,
@@ -291,4 +310,5 @@ module.exports = {
   deleteAvatar,
   updateInfo,
   updatePassword,
+  findUser,
 };
