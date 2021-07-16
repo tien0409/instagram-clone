@@ -39,6 +39,7 @@ Conversation	socket/user/index.js	/^const Conversation = require("..\/..\/models
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
 Message	controllers/message.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
+Message	controllers/user.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
 Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
 Message	socket/message/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
 Message	socket/user/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C

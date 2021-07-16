@@ -4,6 +4,7 @@ const asyncHandler = require("express-async-handler");
 const generateToken = require("../utils/generate-token");
 const User = require("../models/user.model");
 const Post = require("../models/post.model");
+const Message = require("../models/message.model");
 
 /*
  * @desc  sign up user
@@ -211,6 +212,7 @@ const updateAvatar = asyncHandler(async (req, res) => {
 
   await User.updateOne({ _id: user._id }, { avatar });
   await Post.updateMany({ user: user._id }, { avatar });
+  await Message.updateMany({ sender: user._id }, { avatar });
 
   res.status(200).json({ msg: "Update avatar success" });
 });
@@ -229,6 +231,10 @@ const deleteAvatar = asyncHandler(async (req, res) => {
   );
   await Post.updateMany(
     { user: user._id },
+    { avatar: "/images/avatar_default.png" },
+  );
+  await Message.updateMany(
+    { sender: user._id },
     { avatar: "/images/avatar_default.png" },
   );
 
