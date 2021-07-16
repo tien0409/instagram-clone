@@ -19,6 +19,10 @@ const messageSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
   unread: {
     type: Boolean,
     default: true,
