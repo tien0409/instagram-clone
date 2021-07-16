@@ -260,7 +260,10 @@ const updateInfo = asyncHandler(async (req, res) => {
     { _id: user._id },
     { fullName, username, email, gender, phoneNumber },
   );
-  await Post.updateMany({ user: user._id }, { name: username });
+  await Post.updateMany(
+    { user: user._id },
+    { name: username, comment: { name: username } },
+  );
 
   res.status(200).json({ msg: "Update info success" });
 });
