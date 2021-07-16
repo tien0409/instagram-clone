@@ -27,6 +27,10 @@ module.exports = function (socket, io) {
       socket.emit("server-send-new-conversation", conversation);
     }
 
+    await Message.updateMany(
+      { conversation: conversation._id },
+      { unread: false },
+    );
     const messages = await Message.find({
       conversation: conversation._id,
     });
@@ -34,5 +38,14 @@ module.exports = function (socket, io) {
     socket.emit("server-send-all-message", messages);
   };
 
+  const getLastMessage = async (conversationId) => {
+    const lastMessage = await Message.findOne({
+      conversation: conversationId,
+    }).sort({ createdAt: -1 });
+
+    socket.emit("server-send-last-message", lastMessage);
+  };
+
   socket.on("client-get-all-message", getAllMessageInConversation);
+  socket.on("client-get-last-message", getLastMessage);
 };
