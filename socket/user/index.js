@@ -76,8 +76,6 @@ module.exports = function (socket, io) {
     const { room, sender, conversation, content, avatar } = data;
     const message = new Message({ conversation, content, avatar, sender });
 
-    console.log("data", data);
-    console.log("message", message);
     io.to(room).emit("server-send-message", {
       ...data,
       _id: message._id,
