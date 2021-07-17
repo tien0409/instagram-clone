@@ -41,6 +41,7 @@ MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:modul
 Message	controllers/message.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
 Message	controllers/user.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
 Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
+Message	socket/conversation/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
 Message	socket/message/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
 Message	socket/user/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
 PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
