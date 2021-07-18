@@ -7,11 +7,7 @@ const postSocket = require("./post");
 const onlineUsers = [];
 
 const socketio = (httpServer) => {
-  const io = require("socket.io")(httpServer, {
-    cors: {
-      origin: CLIENT_URL,
-    },
-  });
+  const io = require("socket.io")(httpServer, {});
 
   io.on("connection", (socket) => {
     console.log("user connect:", socket.id);
