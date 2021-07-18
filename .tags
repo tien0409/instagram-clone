@@ -9,10 +9,24 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210606.0/
+0	client/package.json	/^      ">0.2%",$/;"	s	array:browserslist.production
+0	client/package.json	/^      "last 1 chrome version",$/;"	s	array:browserslist.development
+0	client/package.json	/^      "react-app",$/;"	s	array:eslintConfig.extends
+0	client/public/manifest.json	/^    {$/;"	o	array:icons
+1	client/package.json	/^      "last 1 firefox version",$/;"	s	array:browserslist.development
+1	client/package.json	/^      "not dead",$/;"	s	array:browserslist.production
+1	client/package.json	/^      "react-app\/jest"$/;"	s	array:eslintConfig.extends
+1	client/public/manifest.json	/^    {$/;"	o	array:icons
+2	client/package.json	/^      "last 1 safari version"$/;"	s	array:browserslist.development
+2	client/package.json	/^      "not op_mini all"$/;"	s	array:browserslist.production
+2	client/public/manifest.json	/^    {$/;"	o	array:icons
 @sindresorhus/is	package-lock.json	/^        "@sindresorhus\/is": "^0.14.0",$/;"	s	object:dependencies.got.requires
 @sindresorhus/is	package-lock.json	/^    "@sindresorhus\/is": {$/;"	o	object:dependencies
 @szmarczak/http-timer	package-lock.json	/^        "@szmarczak\/http-timer": "^1.1.2",$/;"	s	object:dependencies.got.requires
 @szmarczak/http-timer	package-lock.json	/^    "@szmarczak\/http-timer": {$/;"	o	object:dependencies
+@testing-library/jest-dom	client/package.json	/^    "@testing-library\/jest-dom": "^5.11.4",$/;"	s	object:dependencies
+@testing-library/react	client/package.json	/^    "@testing-library\/react": "^11.1.0",$/;"	s	object:dependencies
+@testing-library/user-event	client/package.json	/^    "@testing-library\/user-event": "^12.1.10",$/;"	s	object:dependencies
 @types/bson	package-lock.json	/^        "@types\/bson": "*",$/;"	s	object:dependencies.@types/mongodb.requires
 @types/bson	package-lock.json	/^    "@types\/bson": {$/;"	o	object:dependencies
 @types/component-emitter	package-lock.json	/^        "@types\/component-emitter": "^1.2.10",$/;"	s	object:dependencies.socket.io-parser.requires
@@ -27,30 +41,861 @@
 @types/node	package-lock.json	/^        "@types\/node": "*"$/;"	s	object:dependencies.@types/mongodb.requires
 @types/node	package-lock.json	/^        "@types\/node": ">=10.0.0",$/;"	s	object:dependencies.socket.io.requires
 @types/node	package-lock.json	/^    "@types\/node": {$/;"	o	object:dependencies
+Actions	client/src/components/post/index.jsx	/^Post.Actions = function PostActions({ children, ...restProps }) {$/;"	f	function:Post
+Actions	client/src/components/post/styles/post.jsx	/^export const Actions = styled.div`$/;"	C
+Advanced Configuration	client/README.md	/^### Advanced Configuration$/;"	S	section:Getting Started with Create React App""Learn More
+Analyzing the Bundle Size	client/README.md	/^### Analyzing the Bundle Size$/;"	S	section:Getting Started with Create React App""Learn More
 AnonymousFunction17a937810100	models/user.model.js	/^userSchema.pre("save", async function (next) {$/;"	c
+AnonymousFunction36c3aae00100	client/src/containers/create-post/index.jsx	/^  window.addEventListener("keydown", function (e) {$/;"	f
+App	client/src/App.jsx	/^function App() {$/;"	f
+Authorization	client/src/actions/userAction.jsx	/^          Authorization: `Bearer ${token}`,$/;"	p	class:config.headers
+Available Scripts	client/README.md	/^## Available Scripts$/;"	s	chapter:Getting Started with Create React App
+Avatar	client/src/components/create-post/index.jsx	/^CreatePost.Avatar = function CreatePostAvatar({ src, ...restProps }) {$/;"	f	function:CreatePost
+Avatar	client/src/components/create-post/styles/create-post.jsx	/^export const Avatar = styled.img`$/;"	C
+Avatar	client/src/components/list-user/index.jsx	/^ListUser.Avatar = function ListAvatarAvatar({ src, ...restProps }) {$/;"	f	function:ListUser
+Avatar	client/src/components/list-user/styles/list-user.jsx	/^export const Avatar = styled.img`$/;"	C
+Avatar	client/src/components/post/index.jsx	/^Post.Avatar = function PostAvatar({ src, ...restProps }) {$/;"	f	function:Post
+Avatar	client/src/components/post/styles/post.jsx	/^export const Avatar = styled.img`$/;"	C
+Avatar	client/src/components/story/index.jsx	/^Store.Avatar = function StoreAvatar({ src, ...restProps }) {$/;"	f	function:Store
+Avatar	client/src/components/story/styles/story.jsx	/^export const Avatar = styled.img`$/;"	C
+AvatarWrap	client/src/components/post/index.jsx	/^Post.AvatarWrap = function PostAvatarWrap({ children, ...restProps }) {$/;"	f	function:Post
+AvatarWrap	client/src/components/post/styles/post.jsx	/^export const AvatarWrap = styled(Link)`$/;"	C
+AvatarWrap	client/src/components/story/index.jsx	/^Store.AvatarWrap = function StoreAvatarWrap({ children, ...restProps }) {$/;"	f	function:Store
+AvatarWrap	client/src/components/story/styles/story.jsx	/^export const AvatarWrap = styled.div`$/;"	C
+AvatarWrap	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.AvatarWrap = function UploadAvatarAvatarWrap({$/;"	f	function:UploadAvatar
+AvatarWrap	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const AvatarWrap = styled.div`$/;"	C
+Base	client/src/components/form/index.jsx	/^Form.Base = function FormBase({ children, ...restProps }) {$/;"	f	function:Form
+Base	client/src/components/form/styles/form.jsx	/^export const Base = styled.form`$/;"	C
+BaseWrap	client/src/components/form/index.jsx	/^Form.BaseWrap = function FormBaseWrap({ children, ...restProps }) {$/;"	f	function:Form
+BaseWrap	client/src/components/form/styles/form.jsx	/^export const BaseWrap = styled.div`$/;"	C
+Body	client/src/components/create-post/index.jsx	/^CreatePost.Body = function CreatePostBody({ children, ...restProps }) {$/;"	f	function:CreatePost
+Body	client/src/components/create-post/styles/create-post.jsx	/^export const Body = styled.div`$/;"	C
+Body	client/src/components/modal/index.jsx	/^Modal.Body = function ModalBody({ children, ...restProps }) {$/;"	f	function:Modal
+Body	client/src/components/modal/styles/modal.jsx	/^export const Body = styled.div`$/;"	C
+Button	client/src/components/create-post/index.jsx	/^CreatePost.Button = function CreatePostButton({ children, ...restProps }) {$/;"	f	function:CreatePost
+Button	client/src/components/create-post/styles/create-post.jsx	/^export const Button = styled.button`$/;"	C
+Button	client/src/components/form/index.jsx	/^Form.Button = function FormButton({ children, ...restProps }) {$/;"	f	function:Form
+Button	client/src/components/form/styles/form.jsx	/^export const Button = styled.button`$/;"	C
+Button	client/src/components/post/index.jsx	/^Post.Button = function PostButton({ children, ...restProps }) {$/;"	f	function:Post
+Button	client/src/components/post/styles/post.jsx	/^export const Button = styled.button`$/;"	C
+Button	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Button = function UploadAvatarButton({ children, ...restProps }) {$/;"	f	function:UploadAvatar
+Button	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Button = styled.button`$/;"	C
+ButtonGroup	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.ButtonGroup = function UploadAvatarButtonGroup({$/;"	f	function:UploadAvatar
+ButtonGroup	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const ButtonGroup = styled.div`$/;"	C
 CLIENT_URL	configs/env.js	/^  CLIENT_URL: process.env.CLIENT_URL,$/;"	p	class:module.exports
 CLOUD_NAME	configs/env.js	/^  CLOUD_NAME: process.env.CLOUD_NAME,$/;"	p	class:module.exports
+CONVERSATION_CREATE_FAIL	client/src/constants/conversationConstants.jsx	/^export const CONVERSATION_CREATE_FAIL = "CONVERSATION_CREATE_FAIL";$/;"	C
+CONVERSATION_CREATE_REQUEST	client/src/constants/conversationConstants.jsx	/^export const CONVERSATION_CREATE_REQUEST = "CONVERSATION_CREATE_REQUEST";$/;"	C
+CONVERSATION_CREATE_RESET	client/src/constants/conversationConstants.jsx	/^export const CONVERSATION_CREATE_RESET = "CONVERSATION_CREATE_RESET";$/;"	C
+CONVERSATION_CREATE_SUCCESS	client/src/constants/conversationConstants.jsx	/^export const CONVERSATION_CREATE_SUCCESS = "CONVERSATION_CREATE_SUCCESS";$/;"	C
+CONVERSATION_LIST_FAIL	client/src/constants/conversationConstants.jsx	/^export const CONVERSATION_LIST_FAIL = "CONVERSATION_LIST_FAIL";$/;"	C
+CONVERSATION_LIST_REQUEST	client/src/constants/conversationConstants.jsx	/^export const CONVERSATION_LIST_REQUEST = "CONVERSATION_LIST_REQUEST";$/;"	C
+CONVERSATION_LIST_RESET	client/src/constants/conversationConstants.jsx	/^export const CONVERSATION_LIST_RESET = "CONVERSATION_LIST_RESET";$/;"	C
+CONVERSATION_LIST_SUCCESS	client/src/constants/conversationConstants.jsx	/^export const CONVERSATION_LIST_SUCCESS = "CONVERSATION_LIST_SUCCESS";$/;"	C
+Caption	client/src/components/post/index.jsx	/^Post.Caption = function PostCaption({ children, ...restProps }) {$/;"	f	function:Post
+Caption	client/src/components/post/styles/post.jsx	/^export const Caption = styled.div`$/;"	C
+CaptionText	client/src/components/post/index.jsx	/^Post.CaptionText = function PostCaptionText({ children, ...restProps }) {$/;"	f	function:Post
+CaptionText	client/src/components/post/styles/post.jsx	/^export const CaptionText = styled.div`$/;"	C
+CaptionWrap	client/src/components/create-post/index.jsx	/^CreatePost.CaptionWrap = function CreatePostCaptionWrap({$/;"	f	function:CreatePost
+CaptionWrap	client/src/components/create-post/styles/create-post.jsx	/^export const CaptionWrap = styled.div`$/;"	C
+Close	client/src/components/list-user/index.jsx	/^ListUser.Close = function ListUserClose({ children, ...restProps }) {$/;"	f	function:ListUser
+Close	client/src/components/list-user/styles/list-user.jsx	/^export const Close = styled.div`$/;"	C
+CloseButton	client/src/components/create-post/index.jsx	/^CreatePost.CloseButton = function CreatePostCloseButton({$/;"	f	function:CreatePost
+CloseButton	client/src/components/create-post/styles/create-post.jsx	/^export const CloseButton = styled.span`$/;"	C
+Code Splitting	client/README.md	/^### Code Splitting$/;"	S	section:Getting Started with Create React App""Learn More
+Container	client/src/components/create-post/styles/create-post.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/components/form/styles/form.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/components/header/styles/header.jsx	/^export const Container = styled.header`$/;"	C
+Container	client/src/components/inbox/styles/inbox.jsx	/^export const Container = styled(ContainerGlobal)`$/;"	C
+Container	client/src/components/list-user/styles/list-user.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/components/modal/styles/modal.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/components/post/styles/post.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/components/profile/styles/profile.jsx	/^export const Container = styled(ContainerGlobal)`$/;"	C
+Container	client/src/components/setting/styles/setting.jsx	/^export const Container = styled(ContainerGlobal)`$/;"	C
+Container	client/src/components/spinner/styles/spinner.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/components/story/styles/story.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/components/suggestion/styles/suggestion.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Container = styled.div`$/;"	C
+Container	client/src/globalStyles.jsx	/^export const Container = styled.div`$/;"	C
+Content-Type	client/src/actions/conversationAction.jsx	/^      "Content-Type": "application\/json",$/;"	p	class:config.headers
+Content-Type	client/src/actions/messageAction.jsx	/^        "Content-Type": "application\/json",$/;"	p	class:config.headers
+Content-Type	client/src/actions/postAction.jsx	/^      "Content-Type": "application\/json",$/;"	p	class:config.headers
+Content-Type	client/src/actions/userAction.jsx	/^          "Content-Type": "application\/json",$/;"	p	class:config.headers
+Content-Type	client/src/actions/userAction.jsx	/^        "Content-Type": "application\/json",$/;"	p	class:config.headers
+Content-Type	client/src/actions/userAction.jsx	/^      "Content-Type": "application\/json",$/;"	p	class:config.headers
 Conversation	controllers/conversation.controller.js	/^const Conversation = require("..\/models\/conversation.model");$/;"	C
 Conversation	middlewares/conversation.middleware.js	/^const Conversation = require("..\/models\/conversation.model");$/;"	C
 Conversation	models/conversation.model.js	/^const Conversation = mongoose.model("conversation", conversationSchema);$/;"	C
 Conversation	socket/conversation/index.js	/^const Conversation = require("..\/..\/models\/conversation.model");$/;"	C
 Conversation	socket/message/index.js	/^const Conversation = require("..\/..\/models\/conversation.model");$/;"	C
 Conversation	socket/user/index.js	/^const Conversation = require("..\/..\/models\/conversation.model");$/;"	C
+Create	client/src/components/create-post/index.jsx	/^CreatePost.Create = function CreatePostCreate({ children, ...restProps }) {$/;"	f	function:CreatePost
+Create	client/src/components/create-post/styles/create-post.jsx	/^export const Create = styled.div`$/;"	C
+CreateImage	client/src/components/create-post/index.jsx	/^CreatePost.Image = function CreateImage({ src, ...restProps }) {$/;"	f
+CreatePost	client/src/components/create-post/index.jsx	/^const CreatePost = ({ children, ...restProps }) => {$/;"	C
+CreatePostAvatar	client/src/components/create-post/index.jsx	/^CreatePost.Avatar = function CreatePostAvatar({ src, ...restProps }) {$/;"	f
+CreatePostBody	client/src/components/create-post/index.jsx	/^CreatePost.Body = function CreatePostBody({ children, ...restProps }) {$/;"	f
+CreatePostBody	client/src/containers/create-post/CreatePostBody.jsx	/^const CreatePostBody = ({ modal, userInfo, setModal, caption, setCaption }) => {$/;"	C
+CreatePostButton	client/src/components/create-post/index.jsx	/^CreatePost.Button = function CreatePostButton({ children, ...restProps }) {$/;"	f
+CreatePostCaptionWrap	client/src/components/create-post/index.jsx	/^CreatePost.CaptionWrap = function CreatePostCaptionWrap({$/;"	f
+CreatePostCloseButton	client/src/components/create-post/index.jsx	/^CreatePost.CloseButton = function CreatePostCloseButton({$/;"	f
+CreatePostContainer	client/src/containers/create-post/index.jsx	/^const CreatePostContainer = () => {$/;"	C
+CreatePostContent	client/src/containers/create-post/CreatePostContent.jsx	/^const CreatePostContent = () => {$/;"	C
+CreatePostCreate	client/src/components/create-post/index.jsx	/^CreatePost.Create = function CreatePostCreate({ children, ...restProps }) {$/;"	f
+CreatePostCustomButton	client/src/components/create-post/index.jsx	/^CreatePost.CustomButton = function CreatePostCustomButton({$/;"	f
+CreatePostError	client/src/components/create-post/index.jsx	/^CreatePost.Error = function CreatePostError({ children, ...restProps }) {$/;"	f
+CreatePostFileInfoWrap	client/src/components/create-post/index.jsx	/^CreatePost.FileInfoWrap = function CreatePostFileInfoWrap({$/;"	f
+CreatePostFileWrap	client/src/components/create-post/index.jsx	/^CreatePost.FileWrap = function CreatePostFileWrap({ children, ...restProps }) {$/;"	f
+CreatePostHead	client/src/components/create-post/index.jsx	/^CreatePost.Head = function CreatePostHead({ children, ...restProps }) {$/;"	f
+CreatePostIcon	client/src/components/create-post/index.jsx	/^CreatePost.Icon = function CreatePostIcon({ children, ...restProps }) {$/;"	f
+CreatePostImageWrap	client/src/components/create-post/index.jsx	/^CreatePost.ImageWrap = function CreatePostImageWrap({$/;"	f
+CreatePostInfoWrap	client/src/components/create-post/index.jsx	/^CreatePost.InfoWrap = function CreatePostInfoWrap({ children, ...restProps }) {$/;"	f
+CreatePostInput	client/src/components/create-post/index.jsx	/^CreatePost.Input = forwardRef(function CreatePostInput({ ...restProps }, ref) {$/;"	f
+CreatePostTextArea	client/src/components/create-post/index.jsx	/^CreatePost.TextArea = function CreatePostTextArea({ children, ...restProps }) {$/;"	f
+CreatePostTitle	client/src/components/create-post/index.jsx	/^CreatePost.HeadTitle = function CreatePostTitle({ children, ...restProps }) {$/;"	f
+CreatePostUploadFileWrap	client/src/components/create-post/index.jsx	/^CreatePost.UploadFileWrap = function CreatePostUploadFileWrap({$/;"	f
+CreatePostUsername	client/src/components/create-post/index.jsx	/^CreatePost.Username = function CreatePostUsername({ children, ...restProps }) {$/;"	f
+CreatePostView	client/src/containers/create-post/CreatePostView.jsx	/^const CreatePostView = ({ userInfo, caption, setModal, setCaption }) => {$/;"	C
+CreatedPost	client/src/components/post/index.jsx	/^Post.CreatedPost = function PostCreatedPost({ children, ...restProps }) {$/;"	f	function:Post
+CreatedPost	client/src/components/post/styles/post.jsx	/^export const CreatedPost = styled(ViewAllComment)`$/;"	C
+CustomButton	client/src/components/create-post/index.jsx	/^CreatePost.CustomButton = function CreatePostCustomButton({$/;"	f	function:CreatePost
+CustomButton	client/src/components/create-post/styles/create-post.jsx	/^export const CustomButton = styled.button`$/;"	C
+Deployment	client/README.md	/^### Deployment$/;"	S	section:Getting Started with Create React App""Learn More
+DownloadImg	client/src/components/form/index.jsx	/^Form.DownloadImg = function FormDownloadImg({ src, ...restProps }) {$/;"	f	function:Form
+DownloadImg	client/src/components/form/styles/download.jsx	/^export const DownloadImg = styled.img`$/;"	C
+DownloadLink	client/src/components/form/index.jsx	/^Form.DownloadLink = function FormDownloadLink({ children, ...restProps }) {$/;"	f	function:Form
+DownloadLink	client/src/components/form/styles/download.jsx	/^export const DownloadLink = styled(ReactLink)``;$/;"	C
+DownloadOS	client/src/components/form/index.jsx	/^Form.DownloadOS = function FormDownloadOS({ children, ...restProps }) {$/;"	f	function:Form
+DownloadOS	client/src/components/form/styles/download.jsx	/^export const DownloadOS = styled.div``;$/;"	C
+DownloadText	client/src/components/form/index.jsx	/^Form.DownloadText = function FormDownloadText({ children, ...restProps }) {$/;"	f	function:Form
+DownloadText	client/src/components/form/styles/download.jsx	/^export const DownloadText = styled.div`$/;"	C
+DownloadWrap	client/src/components/form/index.jsx	/^Form.DownloadWrap = function FormDownloadWrap({ children, ...restProps }) {$/;"	f	function:Form
+DownloadWrap	client/src/components/form/styles/download.jsx	/^export const DownloadWrap = styled.div`$/;"	C
+Edit	client/src/components/setting/index.jsx	/^Setting.Edit = function SettingEdit({ children, ...restProps }) {$/;"	f	function:Setting
+Edit	client/src/components/setting/styles/edit.jsx	/^export const Edit = styled.div`$/;"	C
+EditAvatar	client/src/components/setting/index.jsx	/^Setting.EditAvatar = function SettingEditAvatar({ src, ...restProps }) {$/;"	f	function:Setting
+EditAvatar	client/src/components/setting/styles/edit.jsx	/^export const EditAvatar = styled.img`$/;"	C
+EditAvatarWrap	client/src/components/setting/index.jsx	/^Setting.EditAvatarWrap = function SettingEditAvatarWrap({$/;"	f	function:Setting
+EditAvatarWrap	client/src/components/setting/styles/edit.jsx	/^export const EditAvatarWrap = styled.div`$/;"	C
+EditButton	client/src/components/setting/index.jsx	/^Setting.EditButton = function SettingEditButton({ children, ...restProps }) {$/;"	f	function:Setting
+EditButton	client/src/components/setting/styles/edit.jsx	/^export const EditButton = styled.button`$/;"	C
+EditDesc	client/src/components/setting/index.jsx	/^Setting.EditDesc = function SettingEditDesc({ children, ...restProps }) {$/;"	f	function:Setting
+EditDesc	client/src/components/setting/styles/edit.jsx	/^export const EditDesc = styled.p`$/;"	C
+EditGroup	client/src/components/setting/index.jsx	/^Setting.EditGroup = function SettingEditGroup({ children, ...restProps }) {$/;"	f	function:Setting
+EditGroup	client/src/components/setting/styles/edit.jsx	/^export const EditGroup = styled.div`$/;"	C
+EditHead	client/src/components/setting/index.jsx	/^Setting.EditHead = function SettingEditHead({ children, ...restProps }) {$/;"	f	function:Setting
+EditHead	client/src/components/setting/styles/edit.jsx	/^export const EditHead = styled.h2`$/;"	C
+EditInput	client/src/components/setting/index.jsx	/^Setting.EditInput = function SettingEditInput({ ...restProps }) {$/;"	f	function:Setting
+EditInput	client/src/components/setting/styles/edit.jsx	/^export const EditInput = styled.input`$/;"	C
+EditInputWrap	client/src/components/setting/index.jsx	/^Setting.EditInputWrap = function SettingEditInputWrap({$/;"	f	function:Setting
+EditInputWrap	client/src/components/setting/styles/edit.jsx	/^export const EditInputWrap = styled.div`$/;"	C
+EditItem	client/src/components/setting/index.jsx	/^Setting.EditItem = function SettingEditItem({ children, ...restProps }) {$/;"	f	function:Setting
+EditItem	client/src/components/setting/styles/edit.jsx	/^export const EditItem = styled.div`$/;"	C
+EditLabel	client/src/components/setting/index.jsx	/^Setting.EditLabel = function SettingEditLabel({ children, ...restProps }) {$/;"	f	function:Setting
+EditLabel	client/src/components/setting/styles/edit.jsx	/^export const EditLabel = styled.label`$/;"	C
+EditList	client/src/components/setting/index.jsx	/^Setting.EditList = function SettingEditList({ children, ...restProps }) {$/;"	f	function:Setting
+EditList	client/src/components/setting/styles/edit.jsx	/^export const EditList = styled.div`$/;"	C
+EditNotify	client/src/components/setting/index.jsx	/^Setting.EditNotify = function SettingEditNotify({ children, ...restProps }) {$/;"	f	function:Setting
+EditNotify	client/src/components/setting/styles/edit.jsx	/^export const EditNotify = styled.div`$/;"	C
+EditPopup	client/src/components/setting/index.jsx	/^Setting.EditPopup = function SettingEditPopup({ children, ...restProps }) {$/;"	f	function:Setting
+EditPopup	client/src/components/setting/styles/edit.jsx	/^export const EditPopup = styled.div`$/;"	C
+EditText	client/src/components/setting/index.jsx	/^Setting.EditText = function SettingEditText({ children, ...restProps }) {$/;"	f	function:Setting
+EditText	client/src/components/setting/styles/edit.jsx	/^export const EditText = styled(EditAvatarWrap)`$/;"	C
+EditWrap	client/src/components/setting/index.jsx	/^Setting.EditWrap = function SettingEditWrap({ children, ...restProps }) {$/;"	f	function:Setting
+EditWrap	client/src/components/setting/styles/edit.jsx	/^export const EditWrap = styled.div`$/;"	C
+Error	client/src/components/create-post/index.jsx	/^CreatePost.Error = function CreatePostError({ children, ...restProps }) {$/;"	f	function:CreatePost
+Error	client/src/components/create-post/styles/create-post.jsx	/^export const Error = styled.span`$/;"	C
+Error	client/src/components/form/index.jsx	/^Form.Error = function FormError({ children, ...restProps }) {$/;"	f	function:Form
+Error	client/src/components/form/styles/form.jsx	/^export const Error = styled.div`$/;"	C
+Error	client/src/components/inbox/index.jsx	/^Inbox.Error = function InboxError({ children, ...restProps }) {$/;"	f	function:Inbox
+Error	client/src/components/inbox/styles/inbox.jsx	/^export const Error = styled.div`$/;"	C
+Error	client/src/components/profile/index.jsx	/^Profile.Error = function ProfileError({ children, ...restProps }) {$/;"	f	function:Profile
+Error	client/src/components/profile/styles/profile.jsx	/^export const Error = styled.div`$/;"	C
+FileInfoWrap	client/src/components/create-post/index.jsx	/^CreatePost.FileInfoWrap = function CreatePostFileInfoWrap({$/;"	f	function:CreatePost
+FileInfoWrap	client/src/components/create-post/styles/create-post.jsx	/^export const FileInfoWrap = styled.div`$/;"	C
+FileWrap	client/src/components/create-post/index.jsx	/^CreatePost.FileWrap = function CreatePostFileWrap({ children, ...restProps }) {$/;"	f	function:CreatePost
+FileWrap	client/src/components/create-post/styles/create-post.jsx	/^export const FileWrap = styled.div`$/;"	C
+ForgotPassword	client/src/components/form/index.jsx	/^Form.ForgotPassword = function FormForgotPassword({ children, ...restProps }) {$/;"	f	function:Form
+ForgotPassword	client/src/components/form/styles/form.jsx	/^export const ForgotPassword = styled(Link)`$/;"	C
+Form	client/src/components/form/index.jsx	/^const Form = ({ children, ...restProps }) => {$/;"	C
+Form	client/src/components/inbox/index.jsx	/^Inbox.Form = function InboxForm({ children, ...restProps }) {$/;"	f	function:Inbox
+Form	client/src/components/inbox/styles/message.jsx	/^export const Form = styled.form`$/;"	C
+Form	client/src/components/post/index.jsx	/^Post.Form = function PostForm({ children, ...restProps }) {$/;"	f	function:Post
+Form	client/src/components/post/styles/post.jsx	/^export const Form = styled.form`$/;"	C
+FormBase	client/src/components/form/index.jsx	/^Form.Base = function FormBase({ children, ...restProps }) {$/;"	f
+FormBaseWrap	client/src/components/form/index.jsx	/^Form.BaseWrap = function FormBaseWrap({ children, ...restProps }) {$/;"	f
+FormButton	client/src/components/form/index.jsx	/^Form.Button = function FormButton({ children, ...restProps }) {$/;"	f
+FormDownloadImg	client/src/components/form/index.jsx	/^Form.DownloadImg = function FormDownloadImg({ src, ...restProps }) {$/;"	f
+FormDownloadLink	client/src/components/form/index.jsx	/^Form.DownloadLink = function FormDownloadLink({ children, ...restProps }) {$/;"	f
+FormDownloadOS	client/src/components/form/index.jsx	/^Form.DownloadOS = function FormDownloadOS({ children, ...restProps }) {$/;"	f
+FormDownloadText	client/src/components/form/index.jsx	/^Form.DownloadText = function FormDownloadText({ children, ...restProps }) {$/;"	f
+FormDownloadWrap	client/src/components/form/index.jsx	/^Form.DownloadWrap = function FormDownloadWrap({ children, ...restProps }) {$/;"	f
+FormError	client/src/components/form/index.jsx	/^Form.Error = function FormError({ children, ...restProps }) {$/;"	f
+FormForgotPassword	client/src/components/form/index.jsx	/^Form.ForgotPassword = function FormForgotPassword({ children, ...restProps }) {$/;"	f
+FormImgItem	client/src/components/form/index.jsx	/^Form.ImgItem = function FormImgItem({ src, ...restProps }) {$/;"	f
+FormImgList	client/src/components/form/index.jsx	/^Form.ImgList = function FormImgList({ children, ...restProps }) {$/;"	f
+FormImgWrap	client/src/components/form/index.jsx	/^Form.ImgWrap = function FormImgWrap({ children, ...restProps }) {$/;"	f
+FormInput	client/src/components/form/index.jsx	/^Form.Input = function FormInput({ children, ...restProps }) {$/;"	f
+FormLink	client/src/components/form/index.jsx	/^Form.Link = function FormLink({ children, ...restProps }) {$/;"	f
+FormOption	client/src/components/form/index.jsx	/^Form.Option = function FormOption({ children, ...restProps }) {$/;"	f
+FormOptionLink	client/src/components/form/index.jsx	/^Form.OptionLink = function FormOptionLink({ children, ...restProps }) {$/;"	f
+FormOptionText	client/src/components/form/index.jsx	/^Form.OptionText = function FormOptionText({ children, ...restProps }) {$/;"	f
+FormSeparate	client/src/components/form/index.jsx	/^Form.Separate = function FormSeparate({ children, ...restProps }) {$/;"	f
+FormSocialIcon	client/src/components/form/index.jsx	/^Form.SocialIcon = function FormSocialIcon({ children, ...restProps }) {$/;"	f
+FormSocialName	client/src/components/form/index.jsx	/^Form.SocialName = function FormSocialName({ children, ...restProps }) {$/;"	f
+FormSocialWrap	client/src/components/form/index.jsx	/^Form.SocialWrap = function FormSocialWrap({ children, ...restProps }) {$/;"	f
+FormTitle	client/src/components/form/index.jsx	/^Form.Title = function FormTitle({ children, ...restProps }) {$/;"	f
+FormWrap	client/src/components/form/index.jsx	/^Form.Wrap = function FormWrap({ children, ...restProps }) {$/;"	f
+FullName	client/src/components/list-user/index.jsx	/^ListUser.FullName = function ListFullName({ children, ...restProps }) {$/;"	f	function:ListUser
+FullName	client/src/components/list-user/styles/list-user.jsx	/^export const FullName = styled.div`$/;"	C
+Getting Started with Create React App	client/README.md	/^# Getting Started with Create React App$/;"	c
+GlobalStyle	client/src/globalStyles.jsx	/^const GlobalStyle = createGlobalStyle`$/;"	C
+Group	client/src/components/inbox/index.jsx	/^Inbox.Group = function InboxGroup({ children, ...restProps }) {$/;"	f	function:Inbox
+Group	client/src/components/inbox/styles/message.jsx	/^export const Group = styled.div`$/;"	C
+Group	client/src/components/post/index.jsx	/^Post.Group = function PostGroup({ children, ...restProps }) {$/;"	f	function:Post
+Group	client/src/components/post/styles/post.jsx	/^export const Group = styled.div`$/;"	C
+HOME	client/src/constants/routes.jsx	/^export const HOME = "\/";$/;"	C
+Head	client/src/components/create-post/index.jsx	/^CreatePost.Head = function CreatePostHead({ children, ...restProps }) {$/;"	f	function:CreatePost
+Head	client/src/components/create-post/styles/create-post.jsx	/^export const Head = styled.div`$/;"	C
+Head	client/src/components/list-user/index.jsx	/^ListUser.Head = function ListUserHead({ children, ...restProps }) {$/;"	f	function:ListUser
+Head	client/src/components/list-user/styles/list-user.jsx	/^export const Head = styled.div`$/;"	C
+Head	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Head = function UploadAvatarHead({ children, ...restProps }) {$/;"	f	function:UploadAvatar
+Head	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Head = styled.h2`$/;"	C
+HeadTitle	client/src/components/create-post/index.jsx	/^CreatePost.HeadTitle = function CreatePostTitle({ children, ...restProps }) {$/;"	f	function:CreatePost
+HeadTitle	client/src/components/create-post/styles/create-post.jsx	/^export const HeadTitle = styled.h1`$/;"	C
+Header	client/src/components/header/index.jsx	/^const Header = ({ children, ...restProps }) => {$/;"	C
+HeaderContainer	client/src/containers/header/index.jsx	/^const HeaderContainer = ({$/;"	C
+HeaderInputSearch	client/src/containers/header/HeaderInputSearch.jsx	/^const HeaderInputSearch = () => {$/;"	C
+HeaderListNavigate	client/src/containers/header/HeaderMessageItem.jsx	/^const HeaderListNavigate = ({ home, inbox, profile, activity, explore }) => {$/;"	C
+HeaderMoreMenu	client/src/containers/header/HeaderMoreMenu.jsx	/^const HeaderMoreMenu = () => {$/;"	C
+HeaderNavAvatarImg	client/src/components/header/index.jsx	/^Header.NavAvatarImg = function HeaderNavAvatarImg({ src, ...restProps }) {$/;"	f
+HeaderNavAvatarWrap	client/src/components/header/index.jsx	/^Header.NavAvatarWrap = function HeaderNavAvatarWrap({$/;"	f
+HeaderNavIcon	client/src/components/header/index.jsx	/^Header.NavIcon = function HeaderNavIcon({ children, ...restProps }) {$/;"	f
+HeaderNavInputWrap	client/src/components/header/index.jsx	/^Header.NavInputWrap = forwardRef(function HeaderNavInputWrap($/;"	f
+HeaderNavItem	client/src/components/header/index.jsx	/^Header.NavItem = function HeaderNavItem({ children, ...restProps }) {$/;"	f
+HeaderNavLink	client/src/components/header/index.jsx	/^Header.NavLink = function HeaderNavLink({ children, ...restProps }) {$/;"	f
+HeaderNavList	client/src/components/header/index.jsx	/^Header.NavList = function HeaderNavList({ children, ...restProps }) {$/;"	f
+HeaderNavMenuIcon	client/src/components/header/index.jsx	/^Header.NavMenuIcon = function HeaderNavMenuIcon({ children, ...restProps }) {$/;"	f
+HeaderNavMenuItem	client/src/components/header/index.jsx	/^Header.NavMenuItem = function HeaderNavMenuItem({ children, ...restProps }) {$/;"	f
+HeaderNavMenuLink	client/src/components/header/index.jsx	/^Header.NavMenuLink = function HeaderNavMenuLink({ children, ...restProps }) {$/;"	f
+HeaderNavMenuList	client/src/components/header/index.jsx	/^Header.NavMenuList = function HeaderNavMenuList({ children, ...restProps }) {$/;"	f
+HeaderNavMenuText	client/src/components/header/index.jsx	/^Header.NavMenuText = function HeaderNavMenuText({ children, ...restProps }) {$/;"	f
+HeaderNavMessageUnread	client/src/components/header/index.jsx	/^Header.NavMessageUnread = function HeaderNavMessageUnread({$/;"	f
+HeaderNavMoreMenu	client/src/components/header/index.jsx	/^Header.NavMoreMenu = function HeaderNavMoreMenu({ children, ...restProps }) {$/;"	f
+HeaderNavNumberMessageUnread	client/src/components/header/index.jsx	/^Header.NavNumberMessageUnread = function HeaderNavNumberMessageUnread({$/;"	f
+HeaderNavSearch	client/src/components/header/index.jsx	/^Header.NavSearch = function HeaderNavSearch({ children, ...restProps }) {$/;"	f
+HeaderNavSearchAvatar	client/src/components/header/index.jsx	/^Header.NavSearchAvatar = function HeaderNavSearchAvatar({ src, ...restProps }) {$/;"	f
+HeaderNavSearchFullName	client/src/components/header/index.jsx	/^Header.NavSearchFullName = function HeaderNavSearchFullName({$/;"	f
+HeaderNavSearchHeading	client/src/components/header/index.jsx	/^Header.NavSearchHeading = function HeaderNavSearchHeading({$/;"	f
+HeaderNavSearchHeadingClear	client/src/components/header/index.jsx	/^Header.NavSearchHeadingClear = function HeaderNavSearchHeadingClear({$/;"	f
+HeaderNavSearchHeadingText	client/src/components/header/index.jsx	/^Header.NavSearchHeadingText = function HeaderNavSearchHeadingText({$/;"	f
+HeaderNavSearchInforWrap	client/src/components/header/index.jsx	/^Header.NavSearchInforWrap = function HeaderNavSearchInforWrap({$/;"	f
+HeaderNavSearchItem	client/src/components/header/index.jsx	/^Header.NavSearchItem = function HeaderNavSearchItem({$/;"	f
+HeaderNavSearchList	client/src/components/header/index.jsx	/^Header.NavSearchList = function HeaderNavSearchList({$/;"	f
+HeaderNavSearchName	client/src/components/header/index.jsx	/^Header.NavSearchName = function HeaderNavSearchName({$/;"	f
+HeaderNavSearchNameWrap	client/src/components/header/index.jsx	/^Header.NavSearchNameWrap = function HeaderNavSearchNameWrap({$/;"	f
+HeaderNavSearchNoUser	client/src/components/header/index.jsx	/^Header.NavSearchNoUser = function HeaderNavSearchNoUser({$/;"	f
+HeaderNavSearchRemove	client/src/components/header/index.jsx	/^Header.NavSearchRemove = function HeaderNavSearchRemove({$/;"	f
+HeaderNavbar	client/src/components/header/index.jsx	/^Header.Navbar = function HeaderNavbar({ children, ...restProps }) {$/;"	f
+HeaderNavbarInput	client/src/components/header/index.jsx	/^Header.NavbarInput = forwardRef(function HeaderNavbarInput($/;"	f
+HeaderNavbarLogo	client/src/components/header/index.jsx	/^Header.NavbarLogo = function HeaderNavbarLogo({ src, ...restProps }) {$/;"	f
+HeaderSearchItem	client/src/containers/header/HeaderSearchItem.jsx	/^const HeaderSearchItem = ({$/;"	C
+HeaderSearchList	client/src/containers/header/HeaderSearchList.jsx	/^const HeaderSearchList = ({$/;"	C
+Heading	client/src/components/suggestion/index.jsx	/^Suggestion.Heading = function SuggestionHeading({ children, ...restProps }) {$/;"	f	function:Suggestion
+Heading	client/src/components/suggestion/styles/suggestion.jsx	/^export const Heading = styled.div`$/;"	C
+HeadingAvatar	client/src/components/profile/index.jsx	/^Profile.HeadingAvatar = function ProfileHeadingAvatar({ src, ...restProps }) {$/;"	f	function:Profile
+HeadingAvatar	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingAvatar = styled.img`$/;"	C
+HeadingEdit	client/src/components/profile/index.jsx	/^Profile.HeadingEdit = function ProfileHeadingEdit({ children, ...restProps }) {$/;"	f	function:Profile
+HeadingEdit	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingEdit = styled(Link)`$/;"	C
+HeadingFollow	client/src/components/profile/index.jsx	/^Profile.HeadingFollow = function ProfileHeadingFollow({$/;"	f	function:Profile
+HeadingFollow	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingFollow = styled.div`$/;"	C
+HeadingFullName	client/src/components/profile/index.jsx	/^Profile.HeadingFullName = function ProfileHeadingFullName({$/;"	f	function:Profile
+HeadingFullName	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingFullName = styled.div`$/;"	C
+HeadingInfor	client/src/components/profile/index.jsx	/^Profile.HeadingInfor = function ProfileHeadingInfor({$/;"	f	function:Profile
+HeadingInfor	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingInfor = styled.div`$/;"	C
+HeadingMessage	client/src/components/profile/index.jsx	/^Profile.HeadingMessage = function ProfileHeadingMessage({$/;"	f	function:Profile
+HeadingMessage	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingMessage = styled.div`$/;"	C
+HeadingSeeAll	client/src/components/suggestion/index.jsx	/^Suggestion.HeadingSeeAll = function SuggestionHeadingSeeAll({$/;"	f	function:Suggestion
+HeadingSeeAll	client/src/components/suggestion/styles/suggestion.jsx	/^export const HeadingSeeAll = styled.div`$/;"	C
+HeadingStatistics	client/src/components/profile/index.jsx	/^Profile.HeadingStatistics = function ProfileHeadingStatistics({$/;"	f	function:Profile
+HeadingStatistics	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingStatistics = styled.div`$/;"	C
+HeadingStatisticsNumber	client/src/components/profile/index.jsx	/^Profile.HeadingStatisticsNumber = function ProfileHeadingStatisticsNumber({$/;"	f	function:Profile
+HeadingStatisticsNumber	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingStatisticsNumber = styled.span`$/;"	C
+HeadingStatisticsWrap	client/src/components/profile/index.jsx	/^Profile.HeadingStatisticsWrap = function ProfileHeadingStatisticsWrap({$/;"	f	function:Profile
+HeadingStatisticsWrap	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingStatisticsWrap = styled.p`$/;"	C
+HeadingText	client/src/components/suggestion/index.jsx	/^Suggestion.HeadingText = function SuggestionHeadingText({$/;"	f	function:Suggestion
+HeadingText	client/src/components/suggestion/styles/suggestion.jsx	/^export const HeadingText = styled.div`$/;"	C
+HeadingUsername	client/src/components/profile/index.jsx	/^Profile.HeadingUsername = function ProfileHeadingUsername({$/;"	f	function:Profile
+HeadingUsername	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingUsername = styled.div`$/;"	C
+HeadingUsernameWrap	client/src/components/profile/index.jsx	/^Profile.HeadingUsernameWrap = function ProfileHeadingUsernameWrap({$/;"	f	function:Profile
+HeadingUsernameWrap	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingUsernameWrap = styled.div`$/;"	C
+HeadingWrap	client/src/components/profile/index.jsx	/^Profile.HeadingWrap = function ProfileHeadingWrap({ children, ...restProps }) {$/;"	f	function:Profile
+HeadingWrap	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingWrap = styled.div`$/;"	C
+HomePage	client/src/App.jsx	/^const HomePage = lazy(() => import(".\/pages\/HomePage"));$/;"	C
+HomePage	client/src/pages/HomePage.jsx	/^const HomePage = () => {$/;"	C
+INBOX	client/src/constants/routes.jsx	/^export const INBOX = "\/inbox";$/;"	C
+Icon	client/src/components/create-post/index.jsx	/^CreatePost.Icon = function CreatePostIcon({ children, ...restProps }) {$/;"	f	function:CreatePost
+Icon	client/src/components/create-post/styles/create-post.jsx	/^export const Icon = styled.div`$/;"	C
+Icon	client/src/components/post/index.jsx	/^Post.Icon = function PostIcon({ children, ...restProps }) {$/;"	f	function:Post
+Icon	client/src/components/post/styles/post.jsx	/^export const Icon = styled.span`$/;"	C
+Image	client/src/components/create-post/index.jsx	/^CreatePost.Image = function CreateImage({ src, ...restProps }) {$/;"	f	function:CreatePost
+Image	client/src/components/create-post/styles/create-post.jsx	/^export const Image = styled.img`$/;"	C
+Image	client/src/components/post/index.jsx	/^Post.Image = function PostImage({ src, ...restProps }) {$/;"	f	function:Post
+Image	client/src/components/post/styles/post.jsx	/^export const Image = styled.img`$/;"	C
+ImageWrap	client/src/components/create-post/index.jsx	/^CreatePost.ImageWrap = function CreatePostImageWrap({$/;"	f	function:CreatePost
+ImageWrap	client/src/components/create-post/styles/create-post.jsx	/^export const ImageWrap = styled.div`$/;"	C
+ImgItem	client/src/components/form/index.jsx	/^Form.ImgItem = function FormImgItem({ src, ...restProps }) {$/;"	f	function:Form
+ImgItem	client/src/components/form/styles/form.jsx	/^export const ImgItem = styled.img`$/;"	C
+ImgList	client/src/components/form/index.jsx	/^Form.ImgList = function FormImgList({ children, ...restProps }) {$/;"	f	function:Form
+ImgList	client/src/components/form/styles/form.jsx	/^export const ImgList = styled.div`$/;"	C
+ImgWrap	client/src/components/form/index.jsx	/^Form.ImgWrap = function FormImgWrap({ children, ...restProps }) {$/;"	f	function:Form
+ImgWrap	client/src/components/form/styles/form.jsx	/^export const ImgWrap = styled.div`$/;"	C
+Inbox	client/src/components/inbox/index.jsx	/^const Inbox = ({ children, ...restProps }) => {$/;"	C
+InboxError	client/src/components/inbox/index.jsx	/^Inbox.Error = function InboxError({ children, ...restProps }) {$/;"	f
+InboxForm	client/src/components/inbox/index.jsx	/^Inbox.Form = function InboxForm({ children, ...restProps }) {$/;"	f
+InboxGroup	client/src/components/inbox/index.jsx	/^Inbox.Group = function InboxGroup({ children, ...restProps }) {$/;"	f
+InboxInput	client/src/components/inbox/index.jsx	/^Inbox.Input = function InboxInput({ ...restProps }) {$/;"	f
+InboxMsg	client/src/components/inbox/index.jsx	/^Inbox.Msg = function InboxMsg({ children, ...restProps }) {$/;"	f
+InboxMsgAvatar	client/src/components/inbox/index.jsx	/^Inbox.MsgAvatar = function InboxMsgAvatar({ src, ...restProps }) {$/;"	f
+InboxMsgContent	client/src/components/inbox/index.jsx	/^Inbox.MsgContent = function InboxMsgContent({ children, ...restProps }) {$/;"	f
+InboxMsgHead	client/src/components/inbox/index.jsx	/^Inbox.MsgHead = function InboxMsgHead({ children, ...restProps }) {$/;"	f
+InboxMsgHeadAvatar	client/src/components/inbox/index.jsx	/^Inbox.MsgHeadAvatar = function InboxMsgHeadAvatar({ src, ...restProps }) {$/;"	f
+InboxMsgHeadInfor	client/src/components/inbox/index.jsx	/^Inbox.MsgHeadInfor = function InboxMsgHeadInfor({ children, ...restProps }) {$/;"	f
+InboxMsgHeadName	client/src/components/inbox/index.jsx	/^Inbox.MsgHeadName = function InboxMsgHeadName({ children, ...restProps }) {$/;"	f
+InboxMsgHeadTime	client/src/components/inbox/index.jsx	/^Inbox.MsgHeadTime = function InboxMsgHeadTime({ children, ...restProps }) {$/;"	f
+InboxMsgItem	client/src/components/inbox/index.jsx	/^Inbox.MsgItem = forwardRef(function InboxMsgItem($/;"	f
+InboxMsgList	client/src/components/inbox/index.jsx	/^Inbox.MsgList = function InboxMsgList({ children, ...restProps }) {$/;"	f
+InboxMsgLoading	client/src/components/inbox/index.jsx	/^Inbox.MsgLoading = function InboxMsgLoading({ ...restProps }) {$/;"	f
+InboxMsgWrap	client/src/components/inbox/index.jsx	/^Inbox.MsgWrap = function InboxMsgWrap({ children, ...restProps }) {$/;"	f
+InboxNoMsg	client/src/components/inbox/index.jsx	/^Inbox.NoMsg = function InboxNoMsg({ children, ...restProps }) {$/;"	f
+InboxNoMsgWrap	client/src/components/inbox/index.jsx	/^Inbox.NoMsgWrap = function InboxNoMsgWrap({ children, ...restProps }) {$/;"	f
+InboxNoSubMsg	client/src/components/inbox/index.jsx	/^Inbox.NoSubMsg = function InboxNoSubMsg({ children, ...restProps }) {$/;"	f
+InboxPage	client/src/App.jsx	/^const InboxPage = lazy(() => import(".\/pages\/InboxPage"));$/;"	C
+InboxPage	client/src/pages/InboxPage.jsx	/^const InboxPage = () => {$/;"	C
+InboxSend	client/src/components/inbox/index.jsx	/^Inbox.Send = function InboxSend({ children, ...restProps }) {$/;"	f
+InboxSidebar	client/src/components/inbox/index.jsx	/^Inbox.Sidebar = function InboxSidebar({ children, ...restProps }) {$/;"	f
+InboxSidebarAvatar	client/src/components/inbox/index.jsx	/^Inbox.SidebarAvatar = function InboxSidebarAvatar({ src, ...restProps }) {$/;"	f
+InboxSidebarHead	client/src/components/inbox/index.jsx	/^Inbox.SidebarHead = function InboxSidebarHead({ children, ...restProps }) {$/;"	f
+InboxSidebarInfor	client/src/components/inbox/index.jsx	/^Inbox.SidebarInfor = function InboxSidebarInfor({ children, ...restProps }) {$/;"	f
+InboxSidebarItem	client/src/components/inbox/index.jsx	/^Inbox.SidebarItem = function InboxSidebarItem({ children, ...restProps }) {$/;"	f
+InboxSidebarList	client/src/components/inbox/index.jsx	/^Inbox.SidebarList = function InboxSidebarList({ children, ...restProps }) {$/;"	f
+InboxSidebarMsg	client/src/components/inbox/index.jsx	/^Inbox.SidebarMsg = function InboxSidebarMsg({ children, ...restProps }) {$/;"	f
+InboxSidebarMsgWrap	client/src/components/inbox/index.jsx	/^Inbox.SidebarMsgWrap = function InboxSidebarMsgWrap({$/;"	f
+InboxSidebarName	client/src/components/inbox/index.jsx	/^Inbox.SidebarName = function InboxSidebarName({ children, ...restProps }) {$/;"	f
+InboxSidebarTime	client/src/components/inbox/index.jsx	/^Inbox.SidebarTime = function InboxSidebarTime({ children, ...restProps }) {$/;"	f
+Info	client/src/components/list-user/index.jsx	/^ListUser.Info = function ListInfoInfo({ children, ...restProps }) {$/;"	f	function:ListUser
+Info	client/src/components/list-user/styles/list-user.jsx	/^export const Info = styled.div`$/;"	C
+InfoWrap	client/src/components/create-post/index.jsx	/^CreatePost.InfoWrap = function CreatePostInfoWrap({ children, ...restProps }) {$/;"	f	function:CreatePost
+InfoWrap	client/src/components/create-post/styles/create-post.jsx	/^export const InfoWrap = styled.div`$/;"	C
+Infor	client/src/components/post/index.jsx	/^Post.Infor = function PostInfor({ children, ...restProps }) {$/;"	f	function:Post
+Infor	client/src/components/post/styles/post.jsx	/^export const Infor = styled.div`$/;"	C
+Input	client/src/components/create-post/styles/create-post.jsx	/^export const Input = styled.input`$/;"	C
+Input	client/src/components/form/index.jsx	/^Form.Input = function FormInput({ children, ...restProps }) {$/;"	f	function:Form
+Input	client/src/components/form/styles/form.jsx	/^export const Input = styled.input`$/;"	C
+Input	client/src/components/inbox/index.jsx	/^Inbox.Input = function InboxInput({ ...restProps }) {$/;"	f	function:Inbox
+Input	client/src/components/inbox/styles/message.jsx	/^export const Input = styled.input`$/;"	C
+Input	client/src/components/post/index.jsx	/^Post.Input = function PostInput({ ...restProps }) {$/;"	f	function:Post
+Input	client/src/components/post/styles/post.jsx	/^export const Input = styled.input`$/;"	C
+Input	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Input = styled.input`$/;"	C
+Item	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Item = function UploadAvatarItem({ children, ...restProps }) {$/;"	f	function:UploadAvatar
+Item	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Item = styled.div`$/;"	C
 JWT_SECRET	configs/env.js	/^  JWT_SECRET: process.env.JWT_SECRET,$/;"	p	class:module.exports
+Learn More	client/README.md	/^## Learn More$/;"	s	chapter:Getting Started with Create React App
+Link	client/src/components/form/index.jsx	/^Form.Link = function FormLink({ children, ...restProps }) {$/;"	f	function:Form
+Link	client/src/components/form/styles/form.jsx	/^export const Link = styled(ReactLink)`$/;"	C
+Link	client/src/components/list-user/index.jsx	/^ListUser.Link = function ListUserLink({ children, ...restProps }) {$/;"	f	function:ListUser
+Link	client/src/components/list-user/styles/list-user.jsx	/^export const Link = styled(LinkReact)`$/;"	C
+Link	client/src/components/setting/index.jsx	/^Setting.Link = function SettingLink({ children, ...restProps }) {$/;"	f	function:Setting
+Link	client/src/components/setting/styles/setting.jsx	/^export const Link = styled(LinkReact)`$/;"	C
+Link	client/src/components/suggestion/index.jsx	/^Suggestion.Link = function SuggestionLink({ children, ...restProps }) {$/;"	f	function:Suggestion
+Link	client/src/components/suggestion/styles/suggestion.jsx	/^export const Link = styled(LinkReact)`$/;"	C
+List	client/src/components/list-user/index.jsx	/^ListUser.List = function ListUserUser({ children, ...restProps }) {$/;"	f	function:ListUser
+List	client/src/components/list-user/styles/list-user.jsx	/^export const List = styled.div`$/;"	C
+List	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.List = function UploadAvatarList({ children, ...restProps }) {$/;"	f	function:UploadAvatar
+List	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const List = styled.div`$/;"	C
+ListAvatarAvatar	client/src/components/list-user/index.jsx	/^ListUser.Avatar = function ListAvatarAvatar({ src, ...restProps }) {$/;"	f
+ListFullName	client/src/components/list-user/index.jsx	/^ListUser.FullName = function ListFullName({ children, ...restProps }) {$/;"	f
+ListInfoInfo	client/src/components/list-user/index.jsx	/^ListUser.Info = function ListInfoInfo({ children, ...restProps }) {$/;"	f
+ListNameName	client/src/components/list-user/index.jsx	/^ListUser.Name = function ListNameName({ children, ...restProps }) {$/;"	f
+ListUser	client/src/components/list-user/index.jsx	/^const ListUser = ({ children, ...restProps }) => {$/;"	C
+ListUserClose	client/src/components/list-user/index.jsx	/^ListUser.Close = function ListUserClose({ children, ...restProps }) {$/;"	f
+ListUserContainer	client/src/containers/list-user/index.jsx	/^const ListUserContainer = ({$/;"	C
+ListUserHead	client/src/components/list-user/index.jsx	/^ListUser.Head = function ListUserHead({ children, ...restProps }) {$/;"	f
+ListUserItem	client/src/containers/list-user/ListUserItem.jsx	/^const ListUserItem = ({$/;"	C
+ListUserLink	client/src/components/list-user/index.jsx	/^ListUser.Link = function ListUserLink({ children, ...restProps }) {$/;"	f
+ListUserList	client/src/containers/list-user/ListUserList.jsx	/^const ListUserList = ({$/;"	C
+ListUserRemove	client/src/components/list-user/index.jsx	/^ListUser.Remove = function ListUserRemove({ children, ...restProps }) {$/;"	f
+ListUserUser	client/src/components/list-user/index.jsx	/^ListUser.List = function ListUserUser({ children, ...restProps }) {$/;"	f
+Loading	client/src/components/post/index.jsx	/^Post.Loading = function PostLoading({ children, ...restProps }) {$/;"	f	function:Post
+Loading	client/src/components/post/styles/post.jsx	/^export const Loading = styled(Skeleton)``;$/;"	C
+Loading	client/src/components/profile/index.jsx	/^Profile.Loading = function ProfileLoading({ children, ...restProps }) {$/;"	f	function:Profile
+Loading	client/src/components/profile/styles/profile.jsx	/^export const Loading = styled(Skeleton)``;$/;"	C
+Loading	client/src/components/suggestion/index.jsx	/^Suggestion.Loading = function SuggestionLoading({ children, ...restProps }) {$/;"	f	function:Suggestion
+Loading	client/src/components/suggestion/styles/suggestion.jsx	/^export const Loading = styled(Skeleton)``;$/;"	C
+LoadingWrap	client/src/components/post/index.jsx	/^Post.LoadingWrap = function PostLoadingWrap({ children, ...restProps }) {$/;"	f	function:Post
+LoadingWrap	client/src/components/post/styles/post.jsx	/^export const LoadingWrap = styled.div`$/;"	C
+LoadingWrap	client/src/components/profile/index.jsx	/^Profile.LoadingWrap = function ProfileLoadingWrap({ children, ...restProps }) {$/;"	f	function:Profile
+LoadingWrap	client/src/components/profile/styles/profile.jsx	/^export const LoadingWrap = styled.div`$/;"	C
+LoginPage	client/src/App.jsx	/^const LoginPage = lazy(() => import(".\/pages\/LoginPage"));$/;"	C
+LoginPage	client/src/pages/LoginPage.jsx	/^const LoginPage = () => {$/;"	C
+MESSAGE_CREATE_FAIL	client/src/constants/messageConstants.jsx	/^export const MESSAGE_CREATE_FAIL = "MESSAGE_CREATE_FAIL";$/;"	C
+MESSAGE_CREATE_REQUEST	client/src/constants/messageConstants.jsx	/^export const MESSAGE_CREATE_REQUEST = "MESSAGE_CREATE_REQUEST";$/;"	C
+MESSAGE_CREATE_SUCCESS	client/src/constants/messageConstants.jsx	/^export const MESSAGE_CREATE_SUCCESS = "MESSAGE_CREATE_SUCCESS";$/;"	C
+MESSAGE_LIST_FAIL	client/src/constants/messageConstants.jsx	/^export const MESSAGE_LIST_FAIL = "MESSAGE_LIST_FAIL";$/;"	C
+MESSAGE_LIST_REQUEST	client/src/constants/messageConstants.jsx	/^export const MESSAGE_LIST_REQUEST = "MESSAGE_LIST_REQUEST";$/;"	C
+MESSAGE_LIST_RESET	client/src/constants/messageConstants.jsx	/^export const MESSAGE_LIST_RESET = "MESSAGE_LIST_RESET";$/;"	C
+MESSAGE_LIST_SUCCESS	client/src/constants/messageConstants.jsx	/^export const MESSAGE_LIST_SUCCESS = "MESSAGE_LIST_SUCCESS";$/;"	C
 MONGO_URI	configs/env.js	/^  MONGO_URI: process.env.MONGO_URI,$/;"	p	class:module.exports
+Making a Progressive Web App	client/README.md	/^### Making a Progressive Web App$/;"	S	section:Getting Started with Create React App""Learn More
 Message	controllers/message.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
 Message	controllers/user.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
 Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
 Message	socket/conversation/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
 Message	socket/message/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
 Message	socket/user/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
-PORT	configs/env.js	/^  PORT: process.env.PORT,$/;"	p	class:module.exports
+MessageContainer	client/src/containers/message/index.jsx	/^const MessageContainer = () => {$/;"	C
+MessageForm	client/src/containers/message/MessageForm.jsx	/^const MessageForm = ({ receiver, conversation }) => {$/;"	C
+MessageList	client/src/containers/message/MessageList.jsx	/^const MessageList = ({ userInfo, messages }) => {$/;"	C
+MessageNoUser	client/src/containers/message/MessageNoUser.jsx	/^const MessageNoUser = () => {$/;"	C
+MessageReceiver	client/src/containers/message/MessageReceiver.jsx	/^const MessageReceiver = ({ receiver, active }) => {$/;"	C
+Modal	client/src/components/modal/index.jsx	/^const Modal = ({ children, ...restProps }) => {$/;"	C
+ModalBody	client/src/components/modal/index.jsx	/^Modal.Body = function ModalBody({ children, ...restProps }) {$/;"	f
+Msg	client/src/components/inbox/index.jsx	/^Inbox.Msg = function InboxMsg({ children, ...restProps }) {$/;"	f	function:Inbox
+Msg	client/src/components/inbox/styles/message.jsx	/^export const Msg = styled.div`$/;"	C
+MsgAvatar	client/src/components/inbox/index.jsx	/^Inbox.MsgAvatar = function InboxMsgAvatar({ src, ...restProps }) {$/;"	f	function:Inbox
+MsgAvatar	client/src/components/inbox/styles/message.jsx	/^export const MsgAvatar = styled(MsgHeadAvatar)``;$/;"	C
+MsgContent	client/src/components/inbox/index.jsx	/^Inbox.MsgContent = function InboxMsgContent({ children, ...restProps }) {$/;"	f	function:Inbox
+MsgContent	client/src/components/inbox/styles/message.jsx	/^export const MsgContent = styled.div`$/;"	C
+MsgHead	client/src/components/inbox/index.jsx	/^Inbox.MsgHead = function InboxMsgHead({ children, ...restProps }) {$/;"	f	function:Inbox
+MsgHead	client/src/components/inbox/styles/message.jsx	/^export const MsgHead = styled.div`$/;"	C
+MsgHeadAvatar	client/src/components/inbox/index.jsx	/^Inbox.MsgHeadAvatar = function InboxMsgHeadAvatar({ src, ...restProps }) {$/;"	f	function:Inbox
+MsgHeadAvatar	client/src/components/inbox/styles/message.jsx	/^export const MsgHeadAvatar = styled.img`$/;"	C
+MsgHeadInfor	client/src/components/inbox/index.jsx	/^Inbox.MsgHeadInfor = function InboxMsgHeadInfor({ children, ...restProps }) {$/;"	f	function:Inbox
+MsgHeadInfor	client/src/components/inbox/styles/message.jsx	/^export const MsgHeadInfor = styled.div`$/;"	C
+MsgHeadName	client/src/components/inbox/index.jsx	/^Inbox.MsgHeadName = function InboxMsgHeadName({ children, ...restProps }) {$/;"	f	function:Inbox
+MsgHeadName	client/src/components/inbox/styles/message.jsx	/^export const MsgHeadName = styled.div`$/;"	C
+MsgHeadTime	client/src/components/inbox/index.jsx	/^Inbox.MsgHeadTime = function InboxMsgHeadTime({ children, ...restProps }) {$/;"	f	function:Inbox
+MsgHeadTime	client/src/components/inbox/styles/message.jsx	/^export const MsgHeadTime = styled.span`$/;"	C
+MsgItem	client/src/components/inbox/styles/message.jsx	/^export const MsgItem = styled.div`$/;"	C
+MsgList	client/src/components/inbox/index.jsx	/^Inbox.MsgList = function InboxMsgList({ children, ...restProps }) {$/;"	f	function:Inbox
+MsgList	client/src/components/inbox/styles/message.jsx	/^export const MsgList = styled.div`$/;"	C
+MsgLoading	client/src/components/inbox/index.jsx	/^Inbox.MsgLoading = function InboxMsgLoading({ ...restProps }) {$/;"	f	function:Inbox
+MsgLoading	client/src/components/inbox/styles/message.jsx	/^export const MsgLoading = styled(Skeleton)`$/;"	C
+MsgWrap	client/src/components/inbox/index.jsx	/^Inbox.MsgWrap = function InboxMsgWrap({ children, ...restProps }) {$/;"	f	function:Inbox
+MsgWrap	client/src/components/inbox/styles/message.jsx	/^export const MsgWrap = styled.div`$/;"	C
+MyAvatar	client/src/components/suggestion/index.jsx	/^Suggestion.MyAvatar = function SuggestionMyAvatar({ src, ...restProps }) {$/;"	f	function:Suggestion
+MyAvatar	client/src/components/suggestion/styles/suggestion.jsx	/^export const MyAvatar = styled.img`$/;"	C
+MyFullName	client/src/components/suggestion/index.jsx	/^Suggestion.MyFullName = function SuggestionMyFullName({$/;"	f	function:Suggestion
+MyFullName	client/src/components/suggestion/styles/suggestion.jsx	/^export const MyFullName = styled.div`$/;"	C
+MyInfor	client/src/components/suggestion/index.jsx	/^Suggestion.MyInfor = function SuggestionMyInfor({ children, ...restProps }) {$/;"	f	function:Suggestion
+MyInfor	client/src/components/suggestion/styles/suggestion.jsx	/^export const MyInfor = styled.div`$/;"	C
+MyName	client/src/components/post/index.jsx	/^Post.MyName = function PostMyName({ children, ...restProps }) {$/;"	f	function:Post
+MyName	client/src/components/post/styles/post.jsx	/^export const MyName = styled(Link)`$/;"	C
+MyName	client/src/components/suggestion/index.jsx	/^Suggestion.MyName = function SuggestionMyName({ children, ...restProps }) {$/;"	f	function:Suggestion
+MyName	client/src/components/suggestion/styles/suggestion.jsx	/^export const MyName = styled.div`$/;"	C
+MyNameWrap	client/src/components/suggestion/index.jsx	/^Suggestion.MyNameWrap = function SuggestionMyNameWrap({$/;"	f	function:Suggestion
+MyNameWrap	client/src/components/suggestion/styles/suggestion.jsx	/^export const MyNameWrap = styled.div`$/;"	C
+Name	client/src/components/list-user/index.jsx	/^ListUser.Name = function ListNameName({ children, ...restProps }) {$/;"	f	function:ListUser
+Name	client/src/components/list-user/styles/list-user.jsx	/^export const Name = styled.div`$/;"	C
+Name	client/src/components/story/index.jsx	/^Store.Name = function StoreName({ children, ...restProps }) {$/;"	f	function:Store
+Name	client/src/components/story/styles/story.jsx	/^export const Name = styled.span`$/;"	C
+NavAvatarImg	client/src/components/header/index.jsx	/^Header.NavAvatarImg = function HeaderNavAvatarImg({ src, ...restProps }) {$/;"	f	function:Header
+NavAvatarImg	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavAvatarImg = styled.img`$/;"	C
+NavAvatarWrap	client/src/components/header/index.jsx	/^Header.NavAvatarWrap = function HeaderNavAvatarWrap({$/;"	f	function:Header
+NavAvatarWrap	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavAvatarWrap = styled.div`$/;"	C
+NavIcon	client/src/components/header/index.jsx	/^Header.NavIcon = function HeaderNavIcon({ children, ...restProps }) {$/;"	f	function:Header
+NavIcon	client/src/components/header/styles/header.jsx	/^export const NavIcon = styled.span`$/;"	C
+NavInputWrap	client/src/components/header/styles/nav-search.jsx	/^export const NavInputWrap = styled.div`$/;"	C
+NavItem	client/src/components/header/index.jsx	/^Header.NavItem = function HeaderNavItem({ children, ...restProps }) {$/;"	f	function:Header
+NavItem	client/src/components/header/styles/header.jsx	/^export const NavItem = styled.li`$/;"	C
+NavLink	client/src/components/header/index.jsx	/^Header.NavLink = function HeaderNavLink({ children, ...restProps }) {$/;"	f	function:Header
+NavLink	client/src/components/header/styles/header.jsx	/^export const NavLink = styled(Link)`$/;"	C
+NavList	client/src/components/header/index.jsx	/^Header.NavList = function HeaderNavList({ children, ...restProps }) {$/;"	f	function:Header
+NavList	client/src/components/header/styles/header.jsx	/^export const NavList = styled.ul`$/;"	C
+NavMenuIcon	client/src/components/header/index.jsx	/^Header.NavMenuIcon = function HeaderNavMenuIcon({ children, ...restProps }) {$/;"	f	function:Header
+NavMenuIcon	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavMenuIcon = styled.span`$/;"	C
+NavMenuItem	client/src/components/header/index.jsx	/^Header.NavMenuItem = function HeaderNavMenuItem({ children, ...restProps }) {$/;"	f	function:Header
+NavMenuItem	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavMenuItem = styled.div`$/;"	C
+NavMenuLink	client/src/components/header/index.jsx	/^Header.NavMenuLink = function HeaderNavMenuLink({ children, ...restProps }) {$/;"	f	function:Header
+NavMenuLink	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavMenuLink = styled(Link)`$/;"	C
+NavMenuList	client/src/components/header/index.jsx	/^Header.NavMenuList = function HeaderNavMenuList({ children, ...restProps }) {$/;"	f	function:Header
+NavMenuList	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavMenuList = styled.div``;$/;"	C
+NavMenuText	client/src/components/header/index.jsx	/^Header.NavMenuText = function HeaderNavMenuText({ children, ...restProps }) {$/;"	f	function:Header
+NavMenuText	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavMenuText = styled.span`$/;"	C
+NavMessageUnread	client/src/components/header/index.jsx	/^Header.NavMessageUnread = function HeaderNavMessageUnread({$/;"	f	function:Header
+NavMessageUnread	client/src/components/header/styles/header.jsx	/^export const NavMessageUnread = styled.span`$/;"	C
+NavMoreMenu	client/src/components/header/index.jsx	/^Header.NavMoreMenu = function HeaderNavMoreMenu({ children, ...restProps }) {$/;"	f	function:Header
+NavMoreMenu	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavMoreMenu = styled.div`$/;"	C
+NavNumberMessageUnread	client/src/components/header/index.jsx	/^Header.NavNumberMessageUnread = function HeaderNavNumberMessageUnread({$/;"	f	function:Header
+NavNumberMessageUnread	client/src/components/header/styles/header.jsx	/^export const NavNumberMessageUnread = styled.span``;$/;"	C
+NavSearch	client/src/components/header/index.jsx	/^Header.NavSearch = function HeaderNavSearch({ children, ...restProps }) {$/;"	f	function:Header
+NavSearch	client/src/components/header/styles/nav-search.jsx	/^export const NavSearch = styled.div`$/;"	C
+NavSearchAvatar	client/src/components/header/index.jsx	/^Header.NavSearchAvatar = function HeaderNavSearchAvatar({ src, ...restProps }) {$/;"	f	function:Header
+NavSearchAvatar	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchAvatar = styled.img`$/;"	C
+NavSearchFullName	client/src/components/header/index.jsx	/^Header.NavSearchFullName = function HeaderNavSearchFullName({$/;"	f	function:Header
+NavSearchFullName	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchFullName = styled.div`$/;"	C
+NavSearchHeading	client/src/components/header/index.jsx	/^Header.NavSearchHeading = function HeaderNavSearchHeading({$/;"	f	function:Header
+NavSearchHeading	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchHeading = styled.div`$/;"	C
+NavSearchHeadingClear	client/src/components/header/index.jsx	/^Header.NavSearchHeadingClear = function HeaderNavSearchHeadingClear({$/;"	f	function:Header
+NavSearchHeadingClear	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchHeadingClear = styled.div`$/;"	C
+NavSearchHeadingText	client/src/components/header/index.jsx	/^Header.NavSearchHeadingText = function HeaderNavSearchHeadingText({$/;"	f	function:Header
+NavSearchHeadingText	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchHeadingText = styled.div`$/;"	C
+NavSearchInforWrap	client/src/components/header/index.jsx	/^Header.NavSearchInforWrap = function HeaderNavSearchInforWrap({$/;"	f	function:Header
+NavSearchInforWrap	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchInforWrap = styled.div`$/;"	C
+NavSearchItem	client/src/components/header/index.jsx	/^Header.NavSearchItem = function HeaderNavSearchItem({$/;"	f	function:Header
+NavSearchItem	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchItem = styled(Link)`$/;"	C
+NavSearchList	client/src/components/header/index.jsx	/^Header.NavSearchList = function HeaderNavSearchList({$/;"	f	function:Header
+NavSearchList	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchList = styled.div`$/;"	C
+NavSearchName	client/src/components/header/index.jsx	/^Header.NavSearchName = function HeaderNavSearchName({$/;"	f	function:Header
+NavSearchName	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchName = styled.div`$/;"	C
+NavSearchNameWrap	client/src/components/header/index.jsx	/^Header.NavSearchNameWrap = function HeaderNavSearchNameWrap({$/;"	f	function:Header
+NavSearchNameWrap	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchNameWrap = styled.div`$/;"	C
+NavSearchNoUser	client/src/components/header/index.jsx	/^Header.NavSearchNoUser = function HeaderNavSearchNoUser({$/;"	f	function:Header
+NavSearchNoUser	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchNoUser = styled.div`$/;"	C
+NavSearchRemove	client/src/components/header/index.jsx	/^Header.NavSearchRemove = function HeaderNavSearchRemove({$/;"	f	function:Header
+NavSearchRemove	client/src/components/header/styles/nav-search.jsx	/^export const NavSearchRemove = styled.div`$/;"	C
+Navbar	client/src/components/header/index.jsx	/^Header.Navbar = function HeaderNavbar({ children, ...restProps }) {$/;"	f	function:Header
+Navbar	client/src/components/header/styles/header.jsx	/^export const Navbar = styled.nav`$/;"	C
+NavbarInput	client/src/components/header/styles/nav-search.jsx	/^export const NavbarInput = styled.input`$/;"	C
+NavbarLogo	client/src/components/header/index.jsx	/^Header.NavbarLogo = function HeaderNavbarLogo({ src, ...restProps }) {$/;"	f	function:Header
+NavbarLogo	client/src/components/header/styles/header.jsx	/^export const NavbarLogo = styled.img`$/;"	C
+Next	client/src/components/story/index.jsx	/^Store.Next = function StoreNext({ children, ...restProps }) {$/;"	f	function:Store
+Next	client/src/components/story/styles/story.jsx	/^export const Next = styled.div`$/;"	C
+NoMsg	client/src/components/inbox/index.jsx	/^Inbox.NoMsg = function InboxNoMsg({ children, ...restProps }) {$/;"	f	function:Inbox
+NoMsg	client/src/components/inbox/styles/message.jsx	/^export const NoMsg = styled.div`$/;"	C
+NoMsgWrap	client/src/components/inbox/index.jsx	/^Inbox.NoMsgWrap = function InboxNoMsgWrap({ children, ...restProps }) {$/;"	f	function:Inbox
+NoMsgWrap	client/src/components/inbox/styles/message.jsx	/^export const NoMsgWrap = styled.div`$/;"	C
+NoPost	client/src/components/profile/index.jsx	/^Profile.NoPost = function ProfileNoPost({ children, ...restProps }) {$/;"	f	function:Profile
+NoPost	client/src/components/profile/styles/post.jsx	/^export const NoPost = styled.div`$/;"	C
+NoSubMsg	client/src/components/inbox/index.jsx	/^Inbox.NoSubMsg = function InboxNoSubMsg({ children, ...restProps }) {$/;"	f	function:Inbox
+NoSubMsg	client/src/components/inbox/styles/message.jsx	/^export const NoSubMsg = styled.div`$/;"	C
+NumberLiked	client/src/components/post/index.jsx	/^Post.NumberLiked = function PostNumberLiked({ children, ...restProps }) {$/;"	f	function:Post
+NumberLiked	client/src/components/post/styles/post.jsx	/^export const NumberLiked = styled.div`$/;"	C
+Option	client/src/components/form/index.jsx	/^Form.Option = function FormOption({ children, ...restProps }) {$/;"	f	function:Form
+Option	client/src/components/form/styles/form.jsx	/^export const Option = styled.div`$/;"	C
+OptionLink	client/src/components/form/index.jsx	/^Form.OptionLink = function FormOptionLink({ children, ...restProps }) {$/;"	f	function:Form
+OptionLink	client/src/components/form/styles/form.jsx	/^export const OptionLink = styled(Link)`$/;"	C
+OptionText	client/src/components/form/index.jsx	/^Form.OptionText = function FormOptionText({ children, ...restProps }) {$/;"	f	function:Form
+OptionText	client/src/components/form/styles/form.jsx	/^export const OptionText = styled.span`$/;"	C
+PORT	configs/env.js	/^  PORT: process.env.PORT || 8000,$/;"	p	class:module.exports
+POST_CREATE_FAIL	client/src/constants/postConstants.jsx	/^export const POST_CREATE_FAIL = "POST_CREATE_FAIL";$/;"	C
+POST_CREATE_REQUEST	client/src/constants/postConstants.jsx	/^export const POST_CREATE_REQUEST = "POST_CREATE_REQUEST";$/;"	C
+POST_CREATE_RESET	client/src/constants/postConstants.jsx	/^export const POST_CREATE_RESET = "POST_CREATE_RESET";$/;"	C
+POST_CREATE_SUCCESS	client/src/constants/postConstants.jsx	/^export const POST_CREATE_SUCCESS = "POST_CREATE_SUCCESS";$/;"	C
+POST_LIST_CREATED_FAIL	client/src/constants/postConstants.jsx	/^export const POST_LIST_CREATED_FAIL = "POST_LIST_CREATED_FAIL";$/;"	C
+POST_LIST_CREATED_REQUEST	client/src/constants/postConstants.jsx	/^export const POST_LIST_CREATED_REQUEST = "POST_LIST_CREATED_REQUEST";$/;"	C
+POST_LIST_CREATED_RESET	client/src/constants/postConstants.jsx	/^export const POST_LIST_CREATED_RESET = "POST_LIST_CREATED_RESET";$/;"	C
+POST_LIST_CREATED_SUCCESS	client/src/constants/postConstants.jsx	/^export const POST_LIST_CREATED_SUCCESS = "POST_LIST_CREATED_SUCCESS";$/;"	C
+POST_LIST_FAIL	client/src/constants/postConstants.jsx	/^export const POST_LIST_FAIL = "POST_LIST_FAIL";$/;"	C
+POST_LIST_REQUEST	client/src/constants/postConstants.jsx	/^export const POST_LIST_REQUEST = "POST_LIST_REQUEST";$/;"	C
+POST_LIST_RESET	client/src/constants/postConstants.jsx	/^export const POST_LIST_RESET = "POST_LIST_RESET";$/;"	C
+POST_LIST_SUCCESS	client/src/constants/postConstants.jsx	/^export const POST_LIST_SUCCESS = "POST_LIST_SUCCESS";$/;"	C
+POST_TOGGLE_LIKE_FAIL	client/src/constants/postConstants.jsx	/^export const POST_TOGGLE_LIKE_FAIL = "POST_TOGGLE_LIKE_FAIL";$/;"	C
+POST_TOGGLE_LIKE_REQUEST	client/src/constants/postConstants.jsx	/^export const POST_TOGGLE_LIKE_REQUEST = "POST_TOGGLE_LIKE_REQUEST";$/;"	C
+POST_TOGGLE_LIKE_SUCCESS	client/src/constants/postConstants.jsx	/^export const POST_TOGGLE_LIKE_SUCCESS = "POST_TOGGLE_LIKE_SUCCESS";$/;"	C
+PROFILE	client/src/constants/routes.jsx	/^export const PROFILE = "\/:username";$/;"	C
+Person	client/src/components/story/index.jsx	/^Store.Person = function StorePerson({ children, ...restProps }) {$/;"	f	function:Store
+Person	client/src/components/story/styles/story.jsx	/^export const Person = styled(Link)`$/;"	C
+PersonComment	client/src/components/post/index.jsx	/^Post.PersonComment = function PostPersonComment({ children, ...restProps }) {$/;"	f	function:Post
+PersonComment	client/src/components/post/styles/post.jsx	/^export const PersonComment = styled.div`$/;"	C
+PersonList	client/src/components/story/styles/story.jsx	/^export const PersonList = styled.div`$/;"	C
+PersonName	client/src/components/post/index.jsx	/^Post.PersonName = function PostPersonName({ children, ...restProps }) {$/;"	f	function:Post
+PersonName	client/src/components/post/styles/post.jsx	/^export const PersonName = styled(Link)`$/;"	C
+PersonWrap	client/src/components/post/index.jsx	/^Post.PersonWrap = function PostPersonWrap({ children, ...restProps }) {$/;"	f	function:Post
+PersonWrap	client/src/components/post/styles/post.jsx	/^export const PersonWrap = styled.div`$/;"	C
+Post	client/src/components/post/index.jsx	/^const Post = ({ children, ...restProps }) => {$/;"	C
 Post	controllers/post.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	controllers/user.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	middlewares/post.middleware.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	models/post.model.js	/^const Post = mongoose.model("post", postSchema);$/;"	C
 Post	socket/post/index.js	/^const Post = require("..\/..\/models\/post.model");$/;"	C
 Post	socket/user/index.js	/^const Post = require("..\/..\/models\/post.model");$/;"	C
+PostActions	client/src/components/post/index.jsx	/^Post.Actions = function PostActions({ children, ...restProps }) {$/;"	f
+PostAvatar	client/src/components/post/index.jsx	/^Post.Avatar = function PostAvatar({ src, ...restProps }) {$/;"	f
+PostAvatarWrap	client/src/components/post/index.jsx	/^Post.AvatarWrap = function PostAvatarWrap({ children, ...restProps }) {$/;"	f
+PostButton	client/src/components/post/index.jsx	/^Post.Button = function PostButton({ children, ...restProps }) {$/;"	f
+PostCaption	client/src/components/post/index.jsx	/^Post.Caption = function PostCaption({ children, ...restProps }) {$/;"	f
+PostCaptionText	client/src/components/post/index.jsx	/^Post.CaptionText = function PostCaptionText({ children, ...restProps }) {$/;"	f
+PostCreatedPost	client/src/components/post/index.jsx	/^Post.CreatedPost = function PostCreatedPost({ children, ...restProps }) {$/;"	f
+PostForm	client/src/components/post/index.jsx	/^Post.Form = function PostForm({ children, ...restProps }) {$/;"	f
+PostGroup	client/src/components/post/index.jsx	/^Post.Group = function PostGroup({ children, ...restProps }) {$/;"	f
+PostIcon	client/src/components/post/index.jsx	/^Post.Icon = function PostIcon({ children, ...restProps }) {$/;"	f
+PostImage	client/src/components/post/index.jsx	/^Post.Image = function PostImage({ src, ...restProps }) {$/;"	f
+PostImg	client/src/components/profile/index.jsx	/^Profile.PostImg = function ProfilePostImg({ src, ...restProps }) {$/;"	f	function:Profile
+PostImg	client/src/components/profile/styles/post.jsx	/^export const PostImg = styled.img`$/;"	C
+PostImgWrap	client/src/components/profile/index.jsx	/^Profile.PostImgWrap = function ProfilePostImgWrap({ children, ...restProps }) {$/;"	f	function:Profile
+PostImgWrap	client/src/components/profile/styles/post.jsx	/^export const PostImgWrap = styled.div`$/;"	C
+PostInfor	client/src/components/post/index.jsx	/^Post.Infor = function PostInfor({ children, ...restProps }) {$/;"	f
+PostInput	client/src/components/post/index.jsx	/^Post.Input = function PostInput({ ...restProps }) {$/;"	f
+PostItem	client/src/components/profile/index.jsx	/^Profile.PostItem = function ProfilePostItem({ children, ...restProps }) {$/;"	f	function:Profile
+PostItem	client/src/components/profile/styles/post.jsx	/^export const PostItem = styled(Link)`$/;"	C
+PostItem	client/src/containers/post-list/PostItem.jsx	/^const PostItem = ({ post }) => {$/;"	C
+PostList	client/src/components/profile/index.jsx	/^Profile.PostList = function ProfilePostList({ children, ...restProps }) {$/;"	f	function:Profile
+PostList	client/src/components/profile/styles/post.jsx	/^export const PostList = styled.div`$/;"	C
+PostListContainer	client/src/containers/post-list/index.jsx	/^const PostListContainer = () => {$/;"	C
+PostLoading	client/src/components/post/index.jsx	/^Post.Loading = function PostLoading({ children, ...restProps }) {$/;"	f
+PostLoading	client/src/containers/post-list/PostLoading.jsx	/^const PostLoading = () => {$/;"	C
+PostLoadingWrap	client/src/components/post/index.jsx	/^Post.LoadingWrap = function PostLoadingWrap({ children, ...restProps }) {$/;"	f
+PostModal	client/src/components/profile/index.jsx	/^Profile.PostModal = function ProfilePostModal({ children, ...restProps }) {$/;"	f	function:Profile
+PostModal	client/src/components/profile/styles/post.jsx	/^export const PostModal = styled.div`$/;"	C
+PostMyName	client/src/components/post/index.jsx	/^Post.MyName = function PostMyName({ children, ...restProps }) {$/;"	f
+PostNumberLiked	client/src/components/post/index.jsx	/^Post.NumberLiked = function PostNumberLiked({ children, ...restProps }) {$/;"	f
+PostPersonComment	client/src/components/post/index.jsx	/^Post.PersonComment = function PostPersonComment({ children, ...restProps }) {$/;"	f
+PostPersonName	client/src/components/post/index.jsx	/^Post.PersonName = function PostPersonName({ children, ...restProps }) {$/;"	f
+PostPersonWrap	client/src/components/post/index.jsx	/^Post.PersonWrap = function PostPersonWrap({ children, ...restProps }) {$/;"	f
+PostReactIcon	client/src/components/profile/index.jsx	/^Profile.PostReactIcon = function ProfilePostReactIcon({$/;"	f	function:Profile
+PostReactIcon	client/src/components/profile/styles/post.jsx	/^export const PostReactIcon = styled.span`$/;"	C
+PostReactNumber	client/src/components/profile/index.jsx	/^Profile.PostReactNumber = function ProfilePostReactNumber({$/;"	f	function:Profile
+PostReactNumber	client/src/components/profile/styles/post.jsx	/^export const PostReactNumber = styled.span`$/;"	C
+PostReactWrap	client/src/components/profile/index.jsx	/^Profile.PostReactWrap = function ProfilePostReactWrap({$/;"	f	function:Profile
+PostReactWrap	client/src/components/profile/styles/post.jsx	/^export const PostReactWrap = styled.div`$/;"	C
+PostViewAllComment	client/src/components/post/index.jsx	/^Post.ViewAllComment = function PostViewAllComment({ children, ...restProps }) {$/;"	f
+PostWrap	client/src/components/post/index.jsx	/^Post.Wrap = function PostWrap({ children, ...restProps }) {$/;"	f
+PostWrap	client/src/components/profile/index.jsx	/^Profile.PostWrap = function ProfilePostWrap({ children, ...restProps }) {$/;"	f	function:Profile
+PostWrap	client/src/components/profile/styles/post.jsx	/^export const PostWrap = styled.div`$/;"	C
+Prev	client/src/components/story/index.jsx	/^Store.Prev = function StorePrev({ children, ...restProps }) {$/;"	f	function:Store
+Prev	client/src/components/story/styles/story.jsx	/^export const Prev = styled.div`$/;"	C
+Profile	client/src/components/profile/index.jsx	/^const Profile = ({ children, ...restProps }) => {$/;"	C
+ProfileContainer	client/src/containers/profile/index.jsx	/^const ProfileContainer = () => {$/;"	C
+ProfileError	client/src/components/profile/index.jsx	/^Profile.Error = function ProfileError({ children, ...restProps }) {$/;"	f
+ProfileHeading	client/src/containers/profile/ProfileHeading.jsx	/^const ProfileHeading = ({$/;"	C
+ProfileHeadingAvatar	client/src/components/profile/index.jsx	/^Profile.HeadingAvatar = function ProfileHeadingAvatar({ src, ...restProps }) {$/;"	f
+ProfileHeadingEdit	client/src/components/profile/index.jsx	/^Profile.HeadingEdit = function ProfileHeadingEdit({ children, ...restProps }) {$/;"	f
+ProfileHeadingFollow	client/src/components/profile/index.jsx	/^Profile.HeadingFollow = function ProfileHeadingFollow({$/;"	f
+ProfileHeadingFullName	client/src/components/profile/index.jsx	/^Profile.HeadingFullName = function ProfileHeadingFullName({$/;"	f
+ProfileHeadingInfor	client/src/components/profile/index.jsx	/^Profile.HeadingInfor = function ProfileHeadingInfor({$/;"	f
+ProfileHeadingMessage	client/src/components/profile/index.jsx	/^Profile.HeadingMessage = function ProfileHeadingMessage({$/;"	f
+ProfileHeadingStatistics	client/src/components/profile/index.jsx	/^Profile.HeadingStatistics = function ProfileHeadingStatistics({$/;"	f
+ProfileHeadingStatisticsNumber	client/src/components/profile/index.jsx	/^Profile.HeadingStatisticsNumber = function ProfileHeadingStatisticsNumber({$/;"	f
+ProfileHeadingStatisticsWrap	client/src/components/profile/index.jsx	/^Profile.HeadingStatisticsWrap = function ProfileHeadingStatisticsWrap({$/;"	f
+ProfileHeadingUsername	client/src/components/profile/index.jsx	/^Profile.HeadingUsername = function ProfileHeadingUsername({$/;"	f
+ProfileHeadingUsernameWrap	client/src/components/profile/index.jsx	/^Profile.HeadingUsernameWrap = function ProfileHeadingUsernameWrap({$/;"	f
+ProfileHeadingWrap	client/src/components/profile/index.jsx	/^Profile.HeadingWrap = function ProfileHeadingWrap({ children, ...restProps }) {$/;"	f
+ProfileLoading	client/src/components/profile/index.jsx	/^Profile.Loading = function ProfileLoading({ children, ...restProps }) {$/;"	f
+ProfileLoading	client/src/containers/profile/ProfileLoading.jsx	/^const ProfileLoading = () => {$/;"	C
+ProfileLoadingWrap	client/src/components/profile/index.jsx	/^Profile.LoadingWrap = function ProfileLoadingWrap({ children, ...restProps }) {$/;"	f
+ProfileNoPost	client/src/components/profile/index.jsx	/^Profile.NoPost = function ProfileNoPost({ children, ...restProps }) {$/;"	f
+ProfilePage	client/src/App.jsx	/^const ProfilePage = lazy(() => import(".\/pages\/ProfilePage"));$/;"	C
+ProfilePage	client/src/pages/ProfilePage.jsx	/^const ProfilePage = () => {$/;"	C
+ProfilePostImg	client/src/components/profile/index.jsx	/^Profile.PostImg = function ProfilePostImg({ src, ...restProps }) {$/;"	f
+ProfilePostImgWrap	client/src/components/profile/index.jsx	/^Profile.PostImgWrap = function ProfilePostImgWrap({ children, ...restProps }) {$/;"	f
+ProfilePostItem	client/src/components/profile/index.jsx	/^Profile.PostItem = function ProfilePostItem({ children, ...restProps }) {$/;"	f
+ProfilePostItem	client/src/containers/profile/ProfilePostItem.jsx	/^const ProfilePostItem = ({ post }) => {$/;"	C
+ProfilePostList	client/src/components/profile/index.jsx	/^Profile.PostList = function ProfilePostList({ children, ...restProps }) {$/;"	f
+ProfilePostList	client/src/containers/profile/ProfilePostList.jsx	/^const ProfilePostList = ({ posts }) => {$/;"	C
+ProfilePostModal	client/src/components/profile/index.jsx	/^Profile.PostModal = function ProfilePostModal({ children, ...restProps }) {$/;"	f
+ProfilePostReactIcon	client/src/components/profile/index.jsx	/^Profile.PostReactIcon = function ProfilePostReactIcon({$/;"	f
+ProfilePostReactNumber	client/src/components/profile/index.jsx	/^Profile.PostReactNumber = function ProfilePostReactNumber({$/;"	f
+ProfilePostReactWrap	client/src/components/profile/index.jsx	/^Profile.PostReactWrap = function ProfilePostReactWrap({$/;"	f
+ProfilePostWrap	client/src/components/profile/index.jsx	/^Profile.PostWrap = function ProfilePostWrap({ children, ...restProps }) {$/;"	f
+ProfileSeparate	client/src/components/profile/index.jsx	/^Profile.Separate = function ProfileSeparate({ children, ...restProps }) {$/;"	f
+ProfileUploadAvatar	client/src/components/profile/index.jsx	/^Profile.UploadAvatar = function ProfileUploadAvatar({$/;"	f
+ProfileUploadAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^const ProfileUploadAvatar = ({ modal, setModal }) => {$/;"	C
+ProfileUploadButton	client/src/components/profile/index.jsx	/^Profile.UploadButton = function ProfileUploadButton({$/;"	f
+ProfileUploadHead	client/src/components/profile/index.jsx	/^Profile.UploadHead = function ProfileUploadHead({ children, ...restProps }) {$/;"	f
+ProfileUploadInput	client/src/components/profile/index.jsx	/^Profile.UploadInput = forwardRef(function ProfileUploadInput($/;"	f
+ProfileUploadItem	client/src/components/profile/index.jsx	/^Profile.UploadItem = function ProfileUploadItem({ children, ...restProps }) {$/;"	f
+ProfileUploadLabel	client/src/components/profile/index.jsx	/^Profile.UploadLabel = function ProfileUploadLabel({ children, ...restProps }) {$/;"	f
+ProfileUploadList	client/src/components/profile/index.jsx	/^Profile.UploadList = function ProfileUploadList({ children, ...restProps }) {$/;"	f
+ProtectedRoute	client/src/helpers/protected-route.jsx	/^export const ProtectedRoute = ({ userInfo, children, ...restProps }) => ($/;"	C
+Remove	client/src/components/list-user/index.jsx	/^ListUser.Remove = function ListUserRemove({ children, ...restProps }) {$/;"	f	function:ListUser
+Remove	client/src/components/list-user/styles/list-user.jsx	/^export const Remove = styled.button`$/;"	C
+SETTING	client/src/constants/routes.jsx	/^export const SETTING = "\/setting";$/;"	C
+SIGN_IN	client/src/constants/routes.jsx	/^export const SIGN_IN = "\/sign-in";$/;"	C
+SIGN_UP	client/src/constants/routes.jsx	/^export const SIGN_UP = "\/sign-up";$/;"	C
+SOCKET_CONNECT	client/src/constants/socketConstants.jsx	/^export const SOCKET_CONNECT = "SOCKET_CONNECT";$/;"	C
+SOCKET_DISCONNECT	client/src/constants/socketConstants.jsx	/^export const SOCKET_DISCONNECT = "SOCKET_DISCONNECT";$/;"	C
+Send	client/src/components/inbox/index.jsx	/^Inbox.Send = function InboxSend({ children, ...restProps }) {$/;"	f	function:Inbox
+Send	client/src/components/inbox/styles/message.jsx	/^export const Send = styled.button`$/;"	C
+Separate	client/src/components/form/index.jsx	/^Form.Separate = function FormSeparate({ children, ...restProps }) {$/;"	f	function:Form
+Separate	client/src/components/form/styles/form.jsx	/^export const Separate = styled.span`$/;"	C
+Separate	client/src/components/profile/index.jsx	/^Profile.Separate = function ProfileSeparate({ children, ...restProps }) {$/;"	f	function:Profile
+Separate	client/src/components/profile/styles/profile.jsx	/^export const Separate = styled.div`$/;"	C
+Setting	client/src/components/setting/index.jsx	/^const Setting = ({ children, ...restProps }) => {$/;"	C
+SettingChangePassword	client/src/containers/setting/SettingChangePassword.jsx	/^const SettingChangePassword = () => {$/;"	C
+SettingContainer	client/src/containers/setting/index.jsx	/^const SettingContainer = () => {$/;"	C
+SettingEdit	client/src/components/setting/index.jsx	/^Setting.Edit = function SettingEdit({ children, ...restProps }) {$/;"	f
+SettingEdit	client/src/containers/setting/SettingEdit.jsx	/^const SettingEdit = () => {$/;"	C
+SettingEditAvatar	client/src/components/setting/index.jsx	/^Setting.EditAvatar = function SettingEditAvatar({ src, ...restProps }) {$/;"	f
+SettingEditAvatarWrap	client/src/components/setting/index.jsx	/^Setting.EditAvatarWrap = function SettingEditAvatarWrap({$/;"	f
+SettingEditButton	client/src/components/setting/index.jsx	/^Setting.EditButton = function SettingEditButton({ children, ...restProps }) {$/;"	f
+SettingEditDesc	client/src/components/setting/index.jsx	/^Setting.EditDesc = function SettingEditDesc({ children, ...restProps }) {$/;"	f
+SettingEditGroup	client/src/components/setting/index.jsx	/^Setting.EditGroup = function SettingEditGroup({ children, ...restProps }) {$/;"	f
+SettingEditHead	client/src/components/setting/index.jsx	/^Setting.EditHead = function SettingEditHead({ children, ...restProps }) {$/;"	f
+SettingEditInput	client/src/components/setting/index.jsx	/^Setting.EditInput = function SettingEditInput({ ...restProps }) {$/;"	f
+SettingEditInputWrap	client/src/components/setting/index.jsx	/^Setting.EditInputWrap = function SettingEditInputWrap({$/;"	f
+SettingEditItem	client/src/components/setting/index.jsx	/^Setting.EditItem = function SettingEditItem({ children, ...restProps }) {$/;"	f
+SettingEditLabel	client/src/components/setting/index.jsx	/^Setting.EditLabel = function SettingEditLabel({ children, ...restProps }) {$/;"	f
+SettingEditList	client/src/components/setting/index.jsx	/^Setting.EditList = function SettingEditList({ children, ...restProps }) {$/;"	f
+SettingEditNotify	client/src/components/setting/index.jsx	/^Setting.EditNotify = function SettingEditNotify({ children, ...restProps }) {$/;"	f
+SettingEditPopup	client/src/components/setting/index.jsx	/^Setting.EditPopup = function SettingEditPopup({ children, ...restProps }) {$/;"	f
+SettingEditText	client/src/components/setting/index.jsx	/^Setting.EditText = function SettingEditText({ children, ...restProps }) {$/;"	f
+SettingEditWrap	client/src/components/setting/index.jsx	/^Setting.EditWrap = function SettingEditWrap({ children, ...restProps }) {$/;"	f
+SettingGender	client/src/containers/setting/SettingGender.jsx	/^const SettingGender = ({ gender, setGender, modal, setModal }) => {$/;"	C
+SettingLink	client/src/components/setting/index.jsx	/^Setting.Link = function SettingLink({ children, ...restProps }) {$/;"	f
+SettingPage	client/src/pages/SettingPage.jsx	/^const SettingPage = () => {$/;"	C
+SettingSidebar	client/src/components/setting/index.jsx	/^Setting.Sidebar = function SettingSidebar({ children, ...restProps }) {$/;"	f
+SettingSidebar	client/src/containers/setting/SettingSidebar.jsx	/^const SettingSidebar = () => {$/;"	C
+SettingSidebarItem	client/src/components/setting/index.jsx	/^Setting.SidebarItem = function SettingSidebarItem({ children, ...restProps }) {$/;"	f
+SettingSidebarList	client/src/components/setting/index.jsx	/^Setting.SidebarList = function SettingSidebarList({ children, ...restProps }) {$/;"	f
+Sidebar	client/src/components/inbox/index.jsx	/^Inbox.Sidebar = function InboxSidebar({ children, ...restProps }) {$/;"	f	function:Inbox
+Sidebar	client/src/components/inbox/styles/sidebar.jsx	/^export const Sidebar = styled.div`$/;"	C
+Sidebar	client/src/components/setting/index.jsx	/^Setting.Sidebar = function SettingSidebar({ children, ...restProps }) {$/;"	f	function:Setting
+Sidebar	client/src/components/setting/styles/sidebar.jsx	/^export const Sidebar = styled.div`$/;"	C
+SidebarAvatar	client/src/components/inbox/index.jsx	/^Inbox.SidebarAvatar = function InboxSidebarAvatar({ src, ...restProps }) {$/;"	f	function:Inbox
+SidebarAvatar	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarAvatar = styled.img`$/;"	C
+SidebarContainer	client/src/containers/sidebar/index.jsx	/^const SidebarContainer = ({ conversations }) => {$/;"	C
+SidebarHead	client/src/components/inbox/index.jsx	/^Inbox.SidebarHead = function InboxSidebarHead({ children, ...restProps }) {$/;"	f	function:Inbox
+SidebarHead	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarHead = styled.div`$/;"	C
+SidebarInfor	client/src/components/inbox/index.jsx	/^Inbox.SidebarInfor = function InboxSidebarInfor({ children, ...restProps }) {$/;"	f	function:Inbox
+SidebarInfor	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarInfor = styled.div`$/;"	C
+SidebarItem	client/src/components/inbox/index.jsx	/^Inbox.SidebarItem = function InboxSidebarItem({ children, ...restProps }) {$/;"	f	function:Inbox
+SidebarItem	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarItem = styled(Link)`$/;"	C
+SidebarItem	client/src/components/setting/index.jsx	/^Setting.SidebarItem = function SettingSidebarItem({ children, ...restProps }) {$/;"	f	function:Setting
+SidebarItem	client/src/components/setting/styles/sidebar.jsx	/^export const SidebarItem = styled.div`$/;"	C
+SidebarItem	client/src/containers/sidebar/SidebarItem.jsx	/^const SidebarItem = ({ conversation, conversationId, user }) => {$/;"	C
+SidebarList	client/src/components/inbox/index.jsx	/^Inbox.SidebarList = function InboxSidebarList({ children, ...restProps }) {$/;"	f	function:Inbox
+SidebarList	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarList = styled.div`$/;"	C
+SidebarList	client/src/components/setting/index.jsx	/^Setting.SidebarList = function SettingSidebarList({ children, ...restProps }) {$/;"	f	function:Setting
+SidebarList	client/src/components/setting/styles/sidebar.jsx	/^export const SidebarList = styled.div`$/;"	C
+SidebarList	client/src/containers/sidebar/SidebarList.jsx	/^const SidebarList = ({ conversations, conversationId, userInfo }) => {$/;"	C
+SidebarMsg	client/src/components/inbox/index.jsx	/^Inbox.SidebarMsg = function InboxSidebarMsg({ children, ...restProps }) {$/;"	f	function:Inbox
+SidebarMsg	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarMsg = styled.div``;$/;"	C
+SidebarMsgWrap	client/src/components/inbox/index.jsx	/^Inbox.SidebarMsgWrap = function InboxSidebarMsgWrap({$/;"	f	function:Inbox
+SidebarMsgWrap	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarMsgWrap = styled.div`$/;"	C
+SidebarName	client/src/components/inbox/index.jsx	/^Inbox.SidebarName = function InboxSidebarName({ children, ...restProps }) {$/;"	f	function:Inbox
+SidebarName	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarName = styled.div`$/;"	C
+SidebarTime	client/src/components/inbox/index.jsx	/^Inbox.SidebarTime = function InboxSidebarTime({ children, ...restProps }) {$/;"	f	function:Inbox
+SidebarTime	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarTime = styled.span`$/;"	C
+SignUpPage	client/src/App.jsx	/^const SignUpPage = lazy(() => import(".\/pages\/SignUpPage"));$/;"	C
+SignUpPage	client/src/pages/SignUpPage.jsx	/^const SignUpPage = () => {$/;"	C
+SocialIcon	client/src/components/form/index.jsx	/^Form.SocialIcon = function FormSocialIcon({ children, ...restProps }) {$/;"	f	function:Form
+SocialIcon	client/src/components/form/styles/form.jsx	/^export const SocialIcon = styled.span`$/;"	C
+SocialName	client/src/components/form/index.jsx	/^Form.SocialName = function FormSocialName({ children, ...restProps }) {$/;"	f	function:Form
+SocialName	client/src/components/form/styles/form.jsx	/^export const SocialName = styled.span`$/;"	C
+SocialWrap	client/src/components/form/index.jsx	/^Form.SocialWrap = function FormSocialWrap({ children, ...restProps }) {$/;"	f	function:Form
+SocialWrap	client/src/components/form/styles/form.jsx	/^export const SocialWrap = styled(Link)`$/;"	C
+Spinner	client/src/components/spinner/index.jsx	/^const Spinner = ({ children, ...restProps }) => {$/;"	C
+Store	client/src/components/story/index.jsx	/^const Store = ({ children, ...restProps }) => {$/;"	C
+StoreAvatar	client/src/components/story/index.jsx	/^Store.Avatar = function StoreAvatar({ src, ...restProps }) {$/;"	f
+StoreAvatarWrap	client/src/components/story/index.jsx	/^Store.AvatarWrap = function StoreAvatarWrap({ children, ...restProps }) {$/;"	f
+StoreName	client/src/components/story/index.jsx	/^Store.Name = function StoreName({ children, ...restProps }) {$/;"	f
+StoreNext	client/src/components/story/index.jsx	/^Store.Next = function StoreNext({ children, ...restProps }) {$/;"	f
+StorePerson	client/src/components/story/index.jsx	/^Store.Person = function StorePerson({ children, ...restProps }) {$/;"	f
+StorePersonList	client/src/components/story/index.jsx	/^Store.PersonList = React.forwardRef(function StorePersonList($/;"	f
+StorePrev	client/src/components/story/index.jsx	/^Store.Prev = function StorePrev({ children, ...restProps }) {$/;"	f
+StoryContainer	client/src/containers/StoryContainer.jsx	/^const StoryContainer = () => {$/;"	C
+SuggestedAvatar	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedAvatar = function SuggestionSuggestedAvatar({$/;"	f	function:Suggestion
+SuggestedAvatar	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedAvatar = styled(MyAvatar)`$/;"	C
+SuggestedDesc	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedDesc = function SuggestionSuggestedDesc({$/;"	f	function:Suggestion
+SuggestedDesc	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedDesc = styled(MyFullName)`$/;"	C
+SuggestedDetails	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedDetails = function SuggestionSuggestedDetails({$/;"	f	function:Suggestion
+SuggestedDetails	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedDetails = styled.div`$/;"	C
+SuggestedFollow	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedFollow = function SuggestionSuggestedFollow({$/;"	f	function:Suggestion
+SuggestedFollow	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedFollow = styled.div`$/;"	C
+SuggestedItem	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedItem = function SuggestionSuggestedItem({$/;"	f	function:Suggestion
+SuggestedItem	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedItem = styled.div`$/;"	C
+SuggestedList	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedList = function SuggestionSuggestedList({$/;"	f	function:Suggestion
+SuggestedList	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedList = styled.div`$/;"	C
+SuggestedName	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedName = function SuggestionSuggestedName({$/;"	f	function:Suggestion
+SuggestedName	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedName = styled(MyName)``;$/;"	C
+SuggestedWrapInfor	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedWrapInfor = function SuggestionSuggestedWrapInfor({$/;"	f	function:Suggestion
+SuggestedWrapInfor	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedWrapInfor = styled.div`$/;"	C
+Suggestion	client/src/components/suggestion/index.jsx	/^const Suggestion = ({ children, ...restProps }) => {$/;"	C
+SuggestionContainer	client/src/containers/suggestion/index.jsx	/^const SuggestionContainer = () => {$/;"	C
+SuggestionHeading	client/src/components/suggestion/index.jsx	/^Suggestion.Heading = function SuggestionHeading({ children, ...restProps }) {$/;"	f
+SuggestionHeadingSeeAll	client/src/components/suggestion/index.jsx	/^Suggestion.HeadingSeeAll = function SuggestionHeadingSeeAll({$/;"	f
+SuggestionHeadingText	client/src/components/suggestion/index.jsx	/^Suggestion.HeadingText = function SuggestionHeadingText({$/;"	f
+SuggestionItem	client/src/containers/suggestion/SuggestionItem.jsx	/^const SuggestionItem = ({ user, userInfo, dispatch, index, listSuggested }) => {$/;"	C
+SuggestionLink	client/src/components/suggestion/index.jsx	/^Suggestion.Link = function SuggestionLink({ children, ...restProps }) {$/;"	f
+SuggestionList	client/src/containers/suggestion/SuggestionList.jsx	/^const SuggestionList = ({$/;"	C
+SuggestionLoading	client/src/components/suggestion/index.jsx	/^Suggestion.Loading = function SuggestionLoading({ children, ...restProps }) {$/;"	f
+SuggestionLoading	client/src/containers/suggestion/SuggestionLoading.jsx	/^const SuggestionLoading = () => {$/;"	C
+SuggestionMyAvatar	client/src/components/suggestion/index.jsx	/^Suggestion.MyAvatar = function SuggestionMyAvatar({ src, ...restProps }) {$/;"	f
+SuggestionMyFullName	client/src/components/suggestion/index.jsx	/^Suggestion.MyFullName = function SuggestionMyFullName({$/;"	f
+SuggestionMyInfor	client/src/components/suggestion/index.jsx	/^Suggestion.MyInfor = function SuggestionMyInfor({ children, ...restProps }) {$/;"	f
+SuggestionMyName	client/src/components/suggestion/index.jsx	/^Suggestion.MyName = function SuggestionMyName({ children, ...restProps }) {$/;"	f
+SuggestionMyNameWrap	client/src/components/suggestion/index.jsx	/^Suggestion.MyNameWrap = function SuggestionMyNameWrap({$/;"	f
+SuggestionSuggestedAvatar	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedAvatar = function SuggestionSuggestedAvatar({$/;"	f
+SuggestionSuggestedDesc	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedDesc = function SuggestionSuggestedDesc({$/;"	f
+SuggestionSuggestedDetails	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedDetails = function SuggestionSuggestedDetails({$/;"	f
+SuggestionSuggestedFollow	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedFollow = function SuggestionSuggestedFollow({$/;"	f
+SuggestionSuggestedItem	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedItem = function SuggestionSuggestedItem({$/;"	f
+SuggestionSuggestedList	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedList = function SuggestionSuggestedList({$/;"	f
+SuggestionSuggestedName	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedName = function SuggestionSuggestedName({$/;"	f
+SuggestionSuggestedWrapInfor	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedWrapInfor = function SuggestionSuggestedWrapInfor({$/;"	f
+TextArea	client/src/components/create-post/index.jsx	/^CreatePost.TextArea = function CreatePostTextArea({ children, ...restProps }) {$/;"	f	function:CreatePost
+TextArea	client/src/components/create-post/styles/create-post.jsx	/^export const TextArea = styled.textarea`$/;"	C
+Title	client/src/components/form/index.jsx	/^Form.Title = function FormTitle({ children, ...restProps }) {$/;"	f	function:Form
+Title	client/src/components/form/styles/form.jsx	/^export const Title = styled.h1`$/;"	C
+Title	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Title = function UploadAvatarTitle({ children, ...restProps }) {$/;"	f	function:UploadAvatar
+Title	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Title = styled.div`$/;"	C
+USER_COMMENT_FAIL	client/src/constants/userConstants.jsx	/^export const USER_COMMENT_FAIL = "USER_COMMENT_FAIL";$/;"	C
+USER_COMMENT_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_COMMENT_REQUEST = "USER_COMMENT_REQUEST";$/;"	C
+USER_COMMENT_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_COMMENT_SUCCESS = "USER_COMMENT_SUCCESS";$/;"	C
+USER_DELETE_AVATAR_FAIL	client/src/constants/userConstants.jsx	/^export const USER_DELETE_AVATAR_FAIL = "USER_DELETE_AVATAR_FAIL";$/;"	C
+USER_DELETE_AVATAR_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_DELETE_AVATAR_REQUEST = "USER_DELETE_AVATAR_REQUEST";$/;"	C
+USER_DELETE_AVATAR_RESET	client/src/constants/userConstants.jsx	/^export const USER_DELETE_AVATAR_RESET = "USER_DELETE_AVATAR_RESET";$/;"	C
+USER_DELETE_AVATAR_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_DELETE_AVATAR_SUCCESS = "USER_DELETE_AVATAR_SUCCESS";$/;"	C
+USER_DETAILS_FAIL	client/src/constants/userConstants.jsx	/^export const USER_DETAILS_FAIL = "USER_DETAILS_FAIL";$/;"	C
+USER_DETAILS_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_DETAILS_REQUEST = "USER_DETAILS_REQUEST";$/;"	C
+USER_DETAILS_RESET	client/src/constants/userConstants.jsx	/^export const USER_DETAILS_RESET = "USER_DETAILS_RESET";$/;"	C
+USER_DETAILS_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_DETAILS_SUCCESS = "USER_DETAILS_SUCCESS";$/;"	C
+USER_FIND_FAIL	client/src/constants/userConstants.jsx	/^export const USER_FIND_FAIL = "USER_FIND_FAIL";$/;"	C
+USER_FIND_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_FIND_REQUEST = "USER_FIND_REQUEST";$/;"	C
+USER_FIND_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_FIND_SUCCESS = "USER_FIND_SUCCESS";$/;"	C
+USER_FOLLOW_FAIL	client/src/constants/userConstants.jsx	/^export const USER_FOLLOW_FAIL = "USER_FOLLOW_FAIL";$/;"	C
+USER_FOLLOW_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_FOLLOW_REQUEST = "USER_FOLLOW_REQUEST";$/;"	C
+USER_FOLLOW_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_FOLLOW_SUCCESS = "USER_FOLLOW_SUCCESS";$/;"	C
+USER_LOGIN_FAIL	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_FAIL = "USER_LOGIN_FAIL";$/;"	C
+USER_LOGIN_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_REQUEST = "USER_LOGIN_REQUEST";$/;"	C
+USER_LOGIN_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_SUCCESS = "USER_LOGIN_SUCCESS";$/;"	C
+USER_LOGOUT	client/src/constants/userConstants.jsx	/^export const USER_LOGOUT = "USER_LOGOUT";$/;"	C
+USER_REGISTER_FAIL	client/src/constants/userConstants.jsx	/^export const USER_REGISTER_FAIL = "USER_REGISTER_FAIL";$/;"	C
+USER_REGISTER_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_REGISTER_REQUEST = "USER_REGISTER_REQUEST";$/;"	C
+USER_REGISTER_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_REGISTER_SUCCESS = "USER_REGISTER_SUCCESS";$/;"	C
+USER_SUGGESTED_FAIL	client/src/constants/userConstants.jsx	/^export const USER_SUGGESTED_FAIL = "USER_SUGGESTED_FAIL";$/;"	C
+USER_SUGGESTED_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_SUGGESTED_REQUEST = "USER_SUGGESTED_REQUEST";$/;"	C
+USER_SUGGESTED_RESET	client/src/constants/userConstants.jsx	/^export const USER_SUGGESTED_RESET = "USER_SUGGESTED_RESET";$/;"	C
+USER_SUGGESTED_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_SUGGESTED_SUCCESS = "USER_SUGGESTED_SUCCESS";$/;"	C
+USER_UPDATE_AVATAR_FAIL	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_AVATAR_FAIL = "USER_UPDATE_AVATAR_FAIL";$/;"	C
+USER_UPDATE_AVATAR_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_AVATAR_REQUEST = "USER_UPDATE_AVATAR_REQUEST";$/;"	C
+USER_UPDATE_AVATAR_RESET	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_AVATAR_RESET = "USER_UPDATE_AVATAR_RESET";$/;"	C
+USER_UPDATE_AVATAR_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_AVATAR_SUCCESS = "USER_UPDATE_AVATAR_SUCCESS";$/;"	C
+USER_UPDATE_FAIL	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_FAIL = "USER_UPDATE_FAIL";$/;"	C
+USER_UPDATE_PASSWORD_FAIL	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_PASSWORD_FAIL = "USER_UPDATE_PASSWORD_FAIL";$/;"	C
+USER_UPDATE_PASSWORD_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_PASSWORD_REQUEST = "USER_UPDATE_PASSWORD_REQUEST";$/;"	C
+USER_UPDATE_PASSWORD_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_PASSWORD_SUCCESS = "USER_UPDATE_PASSWORD_SUCCESS";$/;"	C
+USER_UPDATE_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_REQUEST = "USER_UPDATE_REQUEST";$/;"	C
+USER_UPDATE_RESET	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_RESET = "USER_UPDATE_RESET";$/;"	C
+USER_UPDATE_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_UPDATE_SUCCESS = "USER_UPDATE_SUCCESS";$/;"	C
+UploadAvatar	client/src/components/profile/index.jsx	/^Profile.UploadAvatar = function ProfileUploadAvatar({$/;"	f	function:Profile
+UploadAvatar	client/src/components/profile/styles/upload-avatar.jsx	/^export const UploadAvatar = styled.div`$/;"	C
+UploadAvatar	client/src/components/upload-avatar/index.jsx	/^const UploadAvatar = ({ children, ...restProps }) => {$/;"	C
+UploadAvatarAvatarWrap	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.AvatarWrap = function UploadAvatarAvatarWrap({$/;"	f
+UploadAvatarButton	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Button = function UploadAvatarButton({ children, ...restProps }) {$/;"	f
+UploadAvatarButtonGroup	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.ButtonGroup = function UploadAvatarButtonGroup({$/;"	f
+UploadAvatarHead	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Head = function UploadAvatarHead({ children, ...restProps }) {$/;"	f
+UploadAvatarInput	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Input = forwardRef(function UploadAvatarInput($/;"	f
+UploadAvatarItem	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Item = function UploadAvatarItem({ children, ...restProps }) {$/;"	f
+UploadAvatarList	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.List = function UploadAvatarList({ children, ...restProps }) {$/;"	f
+UploadAvatarTitle	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Title = function UploadAvatarTitle({ children, ...restProps }) {$/;"	f
+UploadAvatarWrap	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Wrap = function UploadAvatarWrap({ children, ...restProps }) {$/;"	f
+UploadButton	client/src/components/profile/index.jsx	/^Profile.UploadButton = function ProfileUploadButton({$/;"	f	function:Profile
+UploadButton	client/src/components/profile/styles/upload-avatar.jsx	/^export const UploadButton = styled.button`$/;"	C
+UploadFileWrap	client/src/components/create-post/index.jsx	/^CreatePost.UploadFileWrap = function CreatePostUploadFileWrap({$/;"	f	function:CreatePost
+UploadFileWrap	client/src/components/create-post/styles/create-post.jsx	/^export const UploadFileWrap = styled.div`$/;"	C
+UploadHead	client/src/components/profile/index.jsx	/^Profile.UploadHead = function ProfileUploadHead({ children, ...restProps }) {$/;"	f	function:Profile
+UploadHead	client/src/components/profile/styles/upload-avatar.jsx	/^export const UploadHead = styled.h2`$/;"	C
+UploadInput	client/src/components/profile/styles/upload-avatar.jsx	/^export const UploadInput = styled.input`$/;"	C
+UploadItem	client/src/components/profile/index.jsx	/^Profile.UploadItem = function ProfileUploadItem({ children, ...restProps }) {$/;"	f	function:Profile
+UploadItem	client/src/components/profile/styles/upload-avatar.jsx	/^export const UploadItem = styled.div`$/;"	C
+UploadLabel	client/src/components/profile/index.jsx	/^Profile.UploadLabel = function ProfileUploadLabel({ children, ...restProps }) {$/;"	f	function:Profile
+UploadLabel	client/src/components/profile/styles/upload-avatar.jsx	/^export const UploadLabel = styled.label`$/;"	C
+UploadList	client/src/components/profile/index.jsx	/^Profile.UploadList = function ProfileUploadList({ children, ...restProps }) {$/;"	f	function:Profile
+UploadList	client/src/components/profile/styles/upload-avatar.jsx	/^export const UploadList = styled.div`$/;"	C
+User	client/src/components/list-user/index.jsx	/^ListUser.User = function ListUserUser({ children, ...restProps }) {$/;"	f	function:ListUser
+User	client/src/components/list-user/styles/list-user.jsx	/^export const User = styled.div`$/;"	C
 User	controllers/user.controller.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	middlewares/auth.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
 User	middlewares/user.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
@@ -59,12 +904,33 @@ User	socket/conversation/index.js	/^const User = require("..\/..\/models\/user.m
 User	socket/message/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
 User	socket/user/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
 User	validators/user.validator.js	/^const User = require("..\/models\/user.model");$/;"	C
+UserRedirect	client/src/helpers/protected-route.jsx	/^export const UserRedirect = ({ userInfo, children, ...restProps }) => ($/;"	C
+Username	client/src/components/create-post/index.jsx	/^CreatePost.Username = function CreatePostUsername({ children, ...restProps }) {$/;"	f	function:CreatePost
+Username	client/src/components/create-post/styles/create-post.jsx	/^export const Username = styled.div`$/;"	C
+ViewAllComment	client/src/components/post/index.jsx	/^Post.ViewAllComment = function PostViewAllComment({ children, ...restProps }) {$/;"	f	function:Post
+ViewAllComment	client/src/components/post/styles/post.jsx	/^export const ViewAllComment = styled.div`$/;"	C
+Wrap	client/src/components/form/index.jsx	/^Form.Wrap = function FormWrap({ children, ...restProps }) {$/;"	f	function:Form
+Wrap	client/src/components/form/styles/form.jsx	/^export const Wrap = styled.div`$/;"	C
+Wrap	client/src/components/list-user/index.jsx	/^ListUser.Wrap = function WrapUserUser({ children, ...restProps }) {$/;"	f	function:ListUser
+Wrap	client/src/components/list-user/styles/list-user.jsx	/^export const Wrap = styled.div`$/;"	C
+Wrap	client/src/components/post/index.jsx	/^Post.Wrap = function PostWrap({ children, ...restProps }) {$/;"	f	function:Post
+Wrap	client/src/components/post/styles/post.jsx	/^export const Wrap = styled.div`$/;"	C
+Wrap	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Wrap = function UploadAvatarWrap({ children, ...restProps }) {$/;"	f	function:UploadAvatar
+Wrap	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Wrap = styled.div`$/;"	C
+WrapUserUser	client/src/components/list-user/index.jsx	/^ListUser.Wrap = function WrapUserUser({ children, ...restProps }) {$/;"	f
+`yarn build`	client/README.md	/^### `yarn build`$/;"	S	section:Getting Started with Create React App""Available Scripts
+`yarn build` fails to minify	client/README.md	/^### `yarn build` fails to minify$/;"	S	section:Getting Started with Create React App""Learn More
+`yarn eject`	client/README.md	/^### `yarn eject`$/;"	S	section:Getting Started with Create React App""Available Scripts
+`yarn start`	client/README.md	/^### `yarn start`$/;"	S	section:Getting Started with Create React App""Available Scripts
+`yarn test`	client/README.md	/^### `yarn test`$/;"	S	section:Getting Started with Create React App""Available Scripts
 abbrev	package-lock.json	/^        "abbrev": "1"$/;"	s	object:dependencies.nopt.requires
 abbrev	package-lock.json	/^    "abbrev": {$/;"	o	object:dependencies
 accepts	package-lock.json	/^        "accepts": "~1.3.4",$/;"	s	object:dependencies.engine.io.requires
 accepts	package-lock.json	/^        "accepts": "~1.3.4",$/;"	s	object:dependencies.socket.io.requires
 accepts	package-lock.json	/^        "accepts": "~1.3.7",$/;"	s	object:dependencies.express.requires
 accepts	package-lock.json	/^    "accepts": {$/;"	o	object:dependencies
+animateMenuMore	client/src/components/header/styles/nav-more-menu.jsx	/^const animateMenuMore = keyframes`$/;"	C
+animationAppear	client/src/components/profile/styles/upload-avatar.jsx	/^const animationAppear = keyframes`$/;"	C
 ansi-align	package-lock.json	/^        "ansi-align": "^3.0.0",$/;"	s	object:dependencies.boxen.requires
 ansi-align	package-lock.json	/^    "ansi-align": {$/;"	o	object:dependencies
 ansi-regex	package-lock.json	/^            "ansi-regex": "^5.0.0"$/;"	s	object:dependencies.string-width.dependencies.strip-ansi.requires
@@ -89,7 +955,15 @@ asyncHandler	middlewares/user.middleware.js	/^const asyncHandler = require("expr
 auth	middlewares/auth.middleware.js	/^const auth = asyncHandler(async (req, res, next) => {$/;"	C
 authSignIn	controllers/user.controller.js	/^const authSignIn = asyncHandler(async (req, res) => {$/;"	C
 author	package.json	/^  "author": "",$/;"	s
+authorization	client/src/actions/conversationAction.jsx	/^      authorization: `Bearer ${userInfo.token}`,$/;"	p	class:config.headers
+authorization	client/src/actions/messageAction.jsx	/^        authorization: `Bearer ${userInfo.token}`,$/;"	p	class:config.headers
+authorization	client/src/actions/postAction.jsx	/^      authorization: `Bearer ${userInfo.token}`,$/;"	p	class:config.headers
+authorization	client/src/actions/userAction.jsx	/^        authorization: `Bearer ${userInfo.token}`,$/;"	p	class:config.headers
+authorization	client/src/actions/userAction.jsx	/^      authorization: `Bearer ${userInfo.token}`,$/;"	p	class:config.headers
+avatar	client/src/containers/header/HeaderSearchItem.jsx	/^        avatar: user.avatar,$/;"	p	class:newHistory
 avatar	socket/post/index.js	/^      avatar: avatar,$/;"	p	class:module.exports.newComment
+axios	client/package.json	/^    "axios": "^0.21.1",$/;"	s	object:dependencies
+background_color	client/public/manifest.json	/^  "background_color": "#ffffff"$/;"	s
 balanced-match	package-lock.json	/^        "balanced-match": "^1.0.0",$/;"	s	object:dependencies.brace-expansion.requires
 balanced-match	package-lock.json	/^    "balanced-match": {$/;"	o	object:dependencies
 base64-arraybuffer	package-lock.json	/^        "base64-arraybuffer": "0.1.4"$/;"	s	object:dependencies.engine.io-parser.requires
@@ -116,11 +990,13 @@ brace-expansion	package-lock.json	/^        "brace-expansion": "^1.1.7"$/;"	s	ob
 brace-expansion	package-lock.json	/^    "brace-expansion": {$/;"	o	object:dependencies
 braces	package-lock.json	/^        "braces": "~3.0.2",$/;"	s	object:dependencies.chokidar.requires
 braces	package-lock.json	/^    "braces": {$/;"	o	object:dependencies
+browserslist	client/package.json	/^  "browserslist": {$/;"	o
 bson	package-lock.json	/^        "bson": "^1.1.4",$/;"	s	object:dependencies.mongodb.requires
 bson	package-lock.json	/^        "bson": "^1.1.4",$/;"	s	object:dependencies.mongoose.requires
 bson	package-lock.json	/^    "bson": {$/;"	o	object:dependencies
 buffer-equal-constant-time	package-lock.json	/^        "buffer-equal-constant-time": "1.0.1",$/;"	s	object:dependencies.jwa.requires
 buffer-equal-constant-time	package-lock.json	/^    "buffer-equal-constant-time": {$/;"	o	object:dependencies
+build	client/package.json	/^    "build": "react-scripts build",$/;"	s	object:scripts
 bytes	package-lock.json	/^        "bytes": "3.1.0",$/;"	s	object:dependencies.body-parser.requires
 bytes	package-lock.json	/^        "bytes": "3.1.0",$/;"	s	object:dependencies.raw-body.requires
 bytes	package-lock.json	/^    "bytes": {$/;"	o	object:dependencies
@@ -128,6 +1004,7 @@ cacheable-request	package-lock.json	/^        "cacheable-request": "^6.0.0",$/;"
 cacheable-request	package-lock.json	/^    "cacheable-request": {$/;"	o	object:dependencies
 camelcase	package-lock.json	/^        "camelcase": "^5.3.1",$/;"	s	object:dependencies.boxen.requires
 camelcase	package-lock.json	/^    "camelcase": {$/;"	o	object:dependencies
+canvas	client/src/containers/profile/ProfileUploadAvatar.jsx	/^      const canvas = imageRef.current.getImageScaledToCanvas();$/;"	C
 chalk	package-lock.json	/^        "chalk": "^3.0.0",$/;"	s	object:dependencies.boxen.requires
 chalk	package-lock.json	/^        "chalk": "^3.0.0",$/;"	s	object:dependencies.update-notifier.requires
 chalk	package-lock.json	/^    "chalk": {$/;"	o	object:dependencies
@@ -143,21 +1020,31 @@ color-convert	package-lock.json	/^        "color-convert": "^2.0.1"$/;"	s	object
 color-convert	package-lock.json	/^    "color-convert": {$/;"	o	object:dependencies
 color-name	package-lock.json	/^        "color-name": "~1.1.4"$/;"	s	object:dependencies.color-convert.requires
 color-name	package-lock.json	/^    "color-name": {$/;"	o	object:dependencies
+commentPost	client/src/actions/userAction.jsx	/^export const commentPost = (comment, postId) => async (dispatch, getState) => {$/;"	C
 commentPost	controllers/user.controller.js	/^const commentPost = asyncHandler(async (req, res) => {$/;"	C
 commentSchema	models/post.model.js	/^const commentSchema = new mongoose.Schema($/;"	C
 component-emitter	package-lock.json	/^        "component-emitter": "~1.3.0",$/;"	s	object:dependencies.socket.io-parser.requires
 component-emitter	package-lock.json	/^    "component-emitter": {$/;"	o	object:dependencies
 concat-map	package-lock.json	/^        "concat-map": "0.0.1"$/;"	s	object:dependencies.brace-expansion.requires
 concat-map	package-lock.json	/^    "concat-map": {$/;"	o	object:dependencies
+config	client/src/actions/conversationAction.jsx	/^  const config = {$/;"	c
+config	client/src/actions/messageAction.jsx	/^    const config = {$/;"	c
+config	client/src/actions/postAction.jsx	/^  const config = {$/;"	c
+config	client/src/actions/userAction.jsx	/^      const config = {$/;"	c
+config	client/src/actions/userAction.jsx	/^    const config = {$/;"	c
+config	client/src/actions/userAction.jsx	/^  const config = {$/;"	c
 configstore	package-lock.json	/^        "configstore": "^5.0.1",$/;"	s	object:dependencies.update-notifier.requires
 configstore	package-lock.json	/^    "configstore": {$/;"	o	object:dependencies
 connectDb	server.js	/^const connectDb = require(".\/utils\/db");$/;"	C
 connectDb	utils/db.js	/^const connectDb = async () => {$/;"	C
+connectSocket	client/src/actions/socketAction.jsx	/^export const connectSocket = (userInfo) => (dispatch) => {$/;"	C
 content-disposition	package-lock.json	/^        "content-disposition": "0.5.3",$/;"	s	object:dependencies.express.requires
 content-disposition	package-lock.json	/^    "content-disposition": {$/;"	o	object:dependencies
 content-type	package-lock.json	/^        "content-type": "~1.0.4",$/;"	s	object:dependencies.body-parser.requires
 content-type	package-lock.json	/^        "content-type": "~1.0.4",$/;"	s	object:dependencies.express.requires
 content-type	package-lock.json	/^    "content-type": {$/;"	o	object:dependencies
+conversationCreateReducer	client/src/reducers/conversationReducer.jsx	/^export const conversationCreateReducer = (state = {}, action) => {$/;"	C
+conversationListReducer	client/src/reducers/conversationReducer.jsx	/^export const conversationListReducer = (state = {}, action) => {$/;"	C
 conversationRoute	server.js	/^const conversationRoute = require(".\/routes\/conversation.route");$/;"	C
 conversationSchema	models/conversation.model.js	/^const conversationSchema = new mongoose.Schema($/;"	C
 conversationSocket	socket/index.js	/^const conversationSocket = require(".\/conversation");$/;"	C
@@ -174,14 +1061,21 @@ cors	package-lock.json	/^    "cors": {$/;"	o	object:dependencies
 cors	package.json	/^    "cors": "^2.8.5",$/;"	s	object:dependencies
 cors	server.js	/^const cors = require("cors");$/;"	C
 createCommentValidator	validators/user.validator.js	/^const createCommentValidator = () => [$/;"	C
+createConversation	client/src/actions/conversationAction.jsx	/^export const createConversation = (userId) => async (dispatch, getState) => {$/;"	C
 createConversation	controllers/conversation.controller.js	/^const createConversation = asyncHandler(async (req, res) => {$/;"	C
+createMessage	client/src/actions/messageAction.jsx	/^export const createMessage =$/;"	C
 createMessage	controllers/message.controller.js	/^const createMessage = asyncHandler(async (req, res) => {$/;"	C
 createMessageValidator	validators/message.validator.js	/^const createMessageValidator = () => [$/;"	C
+createPost	client/src/actions/postAction.jsx	/^export const createPost = (caption, data) => async (dispatch, getState) => {$/;"	C
 createPost	controllers/post.controller.js	/^const createPost = asyncHandler(async (req, res) => {$/;"	C
 createPostValidator	validators/post.validator.js	/^const createPostValidator = () => [$/;"	C
 createdAt	socket/post/index.js	/^      createdAt: Date.now(),$/;"	p	class:module.exports.newComment
 crypto-random-string	package-lock.json	/^        "crypto-random-string": "^2.0.0"$/;"	s	object:dependencies.unique-string.requires
 crypto-random-string	package-lock.json	/^    "crypto-random-string": {$/;"	o	object:dependencies
+data	client/src/containers/create-post/CreatePostBody.jsx	/^    const data = new FormData();$/;"	C
+data	client/src/containers/profile/ProfileUploadAvatar.jsx	/^      const data = new FormData();$/;"	C
+date-fns	client/package.json	/^    "date-fns": "^2.22.1",$/;"	s	object:dependencies
+debounceSearch	client/src/containers/header/HeaderInputSearch.jsx	/^  const debounceSearch = useRef($/;"	C
 debug	package-lock.json	/^        "debug": "2.6.9",$/;"	s	object:dependencies.body-parser.requires
 debug	package-lock.json	/^        "debug": "2.6.9",$/;"	s	object:dependencies.express.requires
 debug	package-lock.json	/^        "debug": "2.6.9",$/;"	s	object:dependencies.finalhandler.requires
@@ -205,6 +1099,7 @@ deep-extend	package-lock.json	/^        "deep-extend": "^0.6.0",$/;"	s	object:de
 deep-extend	package-lock.json	/^    "deep-extend": {$/;"	o	object:dependencies
 defer-to-connect	package-lock.json	/^        "defer-to-connect": "^1.0.1"$/;"	s	object:dependencies.@szmarczak/http-timer.requires
 defer-to-connect	package-lock.json	/^    "defer-to-connect": {$/;"	o	object:dependencies
+deleteAvatar	client/src/actions/userAction.jsx	/^export const deleteAvatar = () => async (dispatch, getState) => {$/;"	C
 deleteAvatar	controllers/user.controller.js	/^const deleteAvatar = asyncHandler(async (req, res) => {$/;"	C
 denque	package-lock.json	/^        "denque": "^1.4.1",$/;"	s	object:dependencies.mongodb.requires
 denque	package-lock.json	/^    "denque": {$/;"	o	object:dependencies
@@ -215,6 +1110,7 @@ depd	package-lock.json	/^        "depd": "~1.1.2",$/;"	s	object:dependencies.sen
 depd	package-lock.json	/^        "depd": "~2.0.0",$/;"	s	object:dependencies.morgan.requires
 depd	package-lock.json	/^        "depd": {$/;"	o	object:dependencies.morgan.dependencies
 depd	package-lock.json	/^    "depd": {$/;"	o	object:dependencies
+dependencies	client/package.json	/^  "dependencies": {$/;"	o
 dependencies	package-lock.json	/^      "dependencies": {$/;"	o	object:dependencies.ansi-align
 dependencies	package-lock.json	/^      "dependencies": {$/;"	o	object:dependencies.cacheable-request
 dependencies	package-lock.json	/^      "dependencies": {$/;"	o	object:dependencies.chalk
@@ -358,6 +1254,22 @@ dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.url-parse-l
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.widest-line
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.write-file-atomic
 devDependencies	package.json	/^  "devDependencies": {$/;"	o
+development	client/package.json	/^    "development": [$/;"	a	object:browserslist
+dispatch	client/src/containers/create-post/CreatePostBody.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/header/HeaderInputSearch.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/header/HeaderMoreMenu.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/header/index.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/list-user/index.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/message/index.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/post-list/index.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/profile/index.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/setting/SettingChangePassword.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/setting/SettingEdit.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/suggestion/index.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/pages/LoginPage.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/pages/SignUpPage.jsx	/^  const dispatch = useDispatch();$/;"	C
+display	client/public/manifest.json	/^  "display": "standalone",$/;"	s
 dot-prop	package-lock.json	/^        "dot-prop": "^5.2.0",$/;"	s	object:dependencies.configstore.requires
 dot-prop	package-lock.json	/^    "dot-prop": {$/;"	o	object:dependencies
 dotenv	package-lock.json	/^    "dotenv": {$/;"	o	object:dependencies
@@ -368,6 +1280,7 @@ ecdsa-sig-formatter	package-lock.json	/^        "ecdsa-sig-formatter": "1.0.11",
 ecdsa-sig-formatter	package-lock.json	/^    "ecdsa-sig-formatter": {$/;"	o	object:dependencies
 ee-first	package-lock.json	/^        "ee-first": "1.1.1"$/;"	s	object:dependencies.on-finished.requires
 ee-first	package-lock.json	/^    "ee-first": {$/;"	o	object:dependencies
+eject	client/package.json	/^    "eject": "react-scripts eject"$/;"	s	object:scripts
 emoji-regex	package-lock.json	/^            "emoji-regex": "^7.0.1",$/;"	s	object:dependencies.ansi-align.dependencies.string-width.requires
 emoji-regex	package-lock.json	/^        "emoji-regex": "^8.0.0",$/;"	s	object:dependencies.string-width.requires
 emoji-regex	package-lock.json	/^        "emoji-regex": {$/;"	o	object:dependencies.string-width.dependencies
@@ -392,6 +1305,7 @@ escape-html	package-lock.json	/^        "escape-html": "~1.0.3",$/;"	s	object:de
 escape-html	package-lock.json	/^        "escape-html": "~1.0.3",$/;"	s	object:dependencies.send.requires
 escape-html	package-lock.json	/^        "escape-html": "~1.0.3",$/;"	s	object:dependencies.serve-static.requires
 escape-html	package-lock.json	/^    "escape-html": {$/;"	o	object:dependencies
+eslintConfig	client/package.json	/^  "eslintConfig": {$/;"	o
 etag	package-lock.json	/^        "etag": "~1.8.1",$/;"	s	object:dependencies.express.requires
 etag	package-lock.json	/^        "etag": "~1.8.1",$/;"	s	object:dependencies.send.requires
 etag	package-lock.json	/^    "etag": {$/;"	o	object:dependencies
@@ -411,11 +1325,16 @@ express-async-handler	package-lock.json	/^    "express-async-handler": {$/;"	o	o
 express-async-handler	package.json	/^    "express-async-handler": "^1.1.4",$/;"	s	object:dependencies
 express-validator	package-lock.json	/^    "express-validator": {$/;"	o	object:dependencies
 express-validator	package.json	/^    "express-validator": "^6.12.0",$/;"	s	object:dependencies
+extends	client/package.json	/^    "extends": [$/;"	a	object:eslintConfig
+file	client/src/containers/create-post/CreatePostBody.jsx	/^    const file = e.target.files[0];$/;"	C
+file	client/src/containers/profile/ProfileUploadAvatar.jsx	/^    const file = e.target.files[0];$/;"	C
 fill-range	package-lock.json	/^        "fill-range": "^7.0.1"$/;"	s	object:dependencies.braces.requires
 fill-range	package-lock.json	/^    "fill-range": {$/;"	o	object:dependencies
 finalhandler	package-lock.json	/^        "finalhandler": "~1.1.2",$/;"	s	object:dependencies.express.requires
 finalhandler	package-lock.json	/^    "finalhandler": {$/;"	o	object:dependencies
+findUser	client/src/actions/userAction.jsx	/^export const findUser = (keyword) => async (dispatch, getState) => {$/;"	C
 findUser	controllers/user.controller.js	/^const findUser = asyncHandler(async (req, res) => {$/;"	C
+followUser	client/src/actions/userAction.jsx	/^export const followUser = (username) => async (dispatch, getState) => {$/;"	C
 followUser	controllers/user.controller.js	/^const followUser = asyncHandler(async (req, res) => {$/;"	C
 forwarded	package-lock.json	/^        "forwarded": "0.2.0",$/;"	s	object:dependencies.proxy-addr.requires
 forwarded	package-lock.json	/^    "forwarded": {$/;"	o	object:dependencies
@@ -424,18 +1343,25 @@ fresh	package-lock.json	/^        "fresh": "0.5.2",$/;"	s	object:dependencies.se
 fresh	package-lock.json	/^    "fresh": {$/;"	o	object:dependencies
 fsevents	package-lock.json	/^        "fsevents": "~2.3.2",$/;"	s	object:dependencies.chokidar.requires
 fsevents	package-lock.json	/^    "fsevents": {$/;"	o	object:dependencies
+fullName	client/src/containers/header/HeaderSearchItem.jsx	/^        fullName: user.fullName,$/;"	p	class:newHistory
 generateToken	controllers/user.controller.js	/^const generateToken = require("..\/utils\/generate-token");$/;"	C
 generateToken	utils/generate-token.js	/^const generateToken = (userId) => {$/;"	C
 get-stream	package-lock.json	/^        "get-stream": "^4.1.0",$/;"	s	object:dependencies.got.requires
 get-stream	package-lock.json	/^        "get-stream": "^5.1.0",$/;"	s	object:dependencies.cacheable-request.requires
 get-stream	package-lock.json	/^        "get-stream": {$/;"	o	object:dependencies.cacheable-request.dependencies
 get-stream	package-lock.json	/^    "get-stream": {$/;"	o	object:dependencies
+getAllConversation	client/src/actions/conversationAction.jsx	/^export const getAllConversation = () => async (dispatch, getState) => {$/;"	C
 getAllConversation	controllers/conversation.controller.js	/^const getAllConversation = asyncHandler(async (req, res) => {$/;"	C
 getAllMessage	controllers/message.controller.js	/^const getAllMessage = asyncHandler(async (req, res) => {$/;"	C
+getAllMessageInConversation	client/src/actions/messageAction.jsx	/^export const getAllMessageInConversation =$/;"	C
+getAllPost	client/src/actions/postAction.jsx	/^export const getAllPost = () => async (dispatch, getState) => {$/;"	C
 getAllPost	controllers/post.controller.js	/^const getAllPost = asyncHandler(async (req, res) => {$/;"	C
 getAllPostByUserId	controllers/post.controller.js	/^const getAllPostByUserId = asyncHandler(async (req, res) => {$/;"	C
+getAllPostCreated	client/src/actions/postAction.jsx	/^export const getAllPostCreated = (name) => async (dispatch, getState) => {$/;"	C
+getAllUserSuggestion	client/src/actions/userAction.jsx	/^export const getAllUserSuggestion = () => async (dispatch, getState) => {$/;"	C
 getConversationId	middlewares/conversation.middleware.js	/^const getConversationId = asyncHandler($/;"	C
 getPostId	middlewares/post.middleware.js	/^const getPostId = asyncHandler(async (req, res, next, postId) => {$/;"	C
+getUserDetails	client/src/actions/userAction.jsx	/^export const getUserDetails = (username) => async (dispatch, getState) => {$/;"	C
 getUserDetails	controllers/user.controller.js	/^const getUserDetails = asyncHandler(async (req, res) => {$/;"	C
 getUserId	middlewares/user.middleware.js	/^const getUserId = asyncHandler(async (req, res, next, userId) => {$/;"	C
 getUserSuggestion	controllers/user.controller.js	/^const getUserSuggestion = asyncHandler(async (req, res) => {$/;"	C
@@ -448,33 +1374,79 @@ got	package-lock.json	/^        "got": "^9.6.0",$/;"	s	object:dependencies.packa
 got	package-lock.json	/^    "got": {$/;"	o	object:dependencies
 graceful-fs	package-lock.json	/^        "graceful-fs": "^4.1.2",$/;"	s	object:dependencies.configstore.requires
 graceful-fs	package-lock.json	/^    "graceful-fs": {$/;"	o	object:dependencies
+handleBrandClick	client/src/containers/header/index.jsx	/^  const handleBrandClick = () => {$/;"	C
+handleChooseFile	client/src/containers/create-post/CreatePostBody.jsx	/^  const handleChooseFile = (e) => {$/;"	C
+handleChooseImage	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const handleChooseImage = (e) => {$/;"	C
+handleClearHistory	client/src/containers/header/HeaderInputSearch.jsx	/^  const handleClearHistory = () => {$/;"	C
+handleClick	client/src/containers/create-post/CreatePostBody.jsx	/^  const handleClick = () => {$/;"	C
+handleClickInput	client/src/containers/header/HeaderInputSearch.jsx	/^  const handleClickInput = (e) => {$/;"	C
+handleCreateConversation	client/src/containers/profile/ProfileHeading.jsx	/^  const handleCreateConversation = () => {$/;"	C
+handleCreatePost	client/src/containers/create-post/CreatePostBody.jsx	/^  const handleCreatePost = async () => {$/;"	C
+handleForcedUnfollow	client/src/containers/list-user/ListUserItem.jsx	/^  const handleForcedUnfollow = (id) => {$/;"	C
+handleLogout	client/src/containers/header/HeaderMoreMenu.jsx	/^  const handleLogout = () => {$/;"	C
+handleRedirect	client/src/containers/message/MessageReceiver.jsx	/^  const handleRedirect = () => {$/;"	C
+handleRemoveAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const handleRemoveAvatar = () => {$/;"	C
+handleSaveHistory	client/src/containers/header/HeaderSearchItem.jsx	/^  const handleSaveHistory = (user) => {$/;"	C
+handleScroll	client/src/containers/StoryContainer.jsx	/^  const handleScroll = ({ target }) => {$/;"	C
+handleScrollLeft	client/src/containers/StoryContainer.jsx	/^  const handleScrollLeft = () => {$/;"	C
+handleScrollRight	client/src/containers/StoryContainer.jsx	/^  const handleScrollRight = () => {$/;"	C
+handleSearch	client/src/containers/header/HeaderInputSearch.jsx	/^  const handleSearch = (e) => {$/;"	C
+handleSendMessage	client/src/containers/message/MessageForm.jsx	/^  const handleSendMessage = (e) => {$/;"	C
+handleSubmit	client/src/containers/post-list/PostItem.jsx	/^  const handleSubmit = (e) => {$/;"	C
+handleSubmit	client/src/pages/LoginPage.jsx	/^  const handleSubmit = async (e) => {$/;"	C
+handleSubmit	client/src/pages/SignUpPage.jsx	/^  const handleSubmit = async (e) => {$/;"	C
+handleToggleFollow	client/src/containers/profile/ProfileHeading.jsx	/^  const handleToggleFollow = () => {$/;"	C
+handleToggleFollow	client/src/containers/suggestion/SuggestionItem.jsx	/^  const handleToggleFollow = (username) => {$/;"	C
+handleToggleLike	client/src/containers/post-list/PostItem.jsx	/^  const handleToggleLike = () => {$/;"	C
+handleUnfollow	client/src/containers/list-user/ListUserItem.jsx	/^  const handleUnfollow = (id) => {$/;"	C
+handleUpdate	client/src/containers/setting/SettingEdit.jsx	/^  const handleUpdate = () => {$/;"	C
+handleUpdateAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const handleUpdateAvatar = () => {$/;"	C
+handleUpdatePassword	client/src/containers/setting/SettingChangePassword.jsx	/^  const handleUpdatePassword = () => {$/;"	C
+handleUploadAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const handleUploadAvatar = () => {$/;"	C
 has-flag	package-lock.json	/^            "has-flag": "^4.0.0"$/;"	s	object:dependencies.chalk.dependencies.supports-color.requires
 has-flag	package-lock.json	/^        "has-flag": "^3.0.0"$/;"	s	object:dependencies.supports-color.requires
 has-flag	package-lock.json	/^        "has-flag": {$/;"	o	object:dependencies.chalk.dependencies
 has-flag	package-lock.json	/^    "has-flag": {$/;"	o	object:dependencies
 has-yarn	package-lock.json	/^        "has-yarn": "^2.1.0",$/;"	s	object:dependencies.update-notifier.requires
 has-yarn	package-lock.json	/^    "has-yarn": {$/;"	o	object:dependencies
+headers	client/src/actions/conversationAction.jsx	/^    headers: {$/;"	c	class:config
+headers	client/src/actions/messageAction.jsx	/^      headers: {$/;"	c	class:config
+headers	client/src/actions/postAction.jsx	/^    headers: {$/;"	c	class:config
+headers	client/src/actions/userAction.jsx	/^        headers: {$/;"	c	class:config
+headers	client/src/actions/userAction.jsx	/^      headers: {$/;"	c	class:config
+headers	client/src/actions/userAction.jsx	/^    headers: {$/;"	c	class:config
+heroku-postbuild	package.json	/^    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run buil/;"	s	object:scripts
+history	client/src/containers/message/MessageReceiver.jsx	/^  const history = useHistory();$/;"	C
+history	client/src/containers/profile/index.jsx	/^  const history = useHistory();$/;"	C
+history	client/src/pages/LoginPage.jsx	/^  const history = useHistory();$/;"	C
+history	client/src/pages/SignUpPage.jsx	/^  const history = useHistory();$/;"	C
 http-cache-semantics	package-lock.json	/^        "http-cache-semantics": "^4.0.0",$/;"	s	object:dependencies.cacheable-request.requires
 http-cache-semantics	package-lock.json	/^    "http-cache-semantics": {$/;"	o	object:dependencies
 http-errors	package-lock.json	/^        "http-errors": "1.7.2",$/;"	s	object:dependencies.body-parser.requires
 http-errors	package-lock.json	/^        "http-errors": "1.7.2",$/;"	s	object:dependencies.raw-body.requires
 http-errors	package-lock.json	/^        "http-errors": "~1.7.2",$/;"	s	object:dependencies.send.requires
 http-errors	package-lock.json	/^    "http-errors": {$/;"	o	object:dependencies
+icons	client/public/manifest.json	/^  "icons": [$/;"	a
 iconv-lite	package-lock.json	/^        "iconv-lite": "0.4.24",$/;"	s	object:dependencies.body-parser.requires
 iconv-lite	package-lock.json	/^        "iconv-lite": "0.4.24",$/;"	s	object:dependencies.raw-body.requires
 iconv-lite	package-lock.json	/^    "iconv-lite": {$/;"	o	object:dependencies
 ignore-by-default	package-lock.json	/^        "ignore-by-default": "^1.0.1",$/;"	s	object:dependencies.nodemon.requires
 ignore-by-default	package-lock.json	/^    "ignore-by-default": {$/;"	o	object:dependencies
+imageRef	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const imageRef = useRef(null);$/;"	C
 import-lazy	package-lock.json	/^        "import-lazy": "^2.1.0",$/;"	s	object:dependencies.update-notifier.requires
 import-lazy	package-lock.json	/^    "import-lazy": {$/;"	o	object:dependencies
 imurmurhash	package-lock.json	/^        "imurmurhash": "^0.1.4",$/;"	s	object:dependencies.write-file-atomic.requires
 imurmurhash	package-lock.json	/^    "imurmurhash": {$/;"	o	object:dependencies
+index	client/src/containers/header/HeaderSearchItem.jsx	/^    const index = history.findIndex((u) => u.username === user.username);$/;"	C
 inherits	package-lock.json	/^        "inherits": "2.0.3",$/;"	s	object:dependencies.http-errors.requires
 inherits	package-lock.json	/^        "inherits": "~2.0.3",$/;"	s	object:dependencies.readable-stream.requires
 inherits	package-lock.json	/^    "inherits": {$/;"	o	object:dependencies
 ini	package-lock.json	/^        "ini": "1.3.7"$/;"	s	object:dependencies.global-dirs.requires
 ini	package-lock.json	/^        "ini": "~1.3.0",$/;"	s	object:dependencies.rc.requires
 ini	package-lock.json	/^    "ini": {$/;"	o	object:dependencies
+initialState	client/src/store.jsx	/^const initialState = {$/;"	c
+inputRef	client/src/containers/create-post/CreatePostBody.jsx	/^  const inputRef = useRef(null);$/;"	C
+inputRef	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const inputRef = useRef(null);$/;"	C
 integrity	package-lock.json	/^          "integrity": "sha512-6FlzubTLZG3J2a\/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq\/s5xXI6\/XXP6/;"	s	object:dependencies.jsonwebtoken.dependencies.ms
 integrity	package-lock.json	/^          "integrity": "sha512-6FlzubTLZG3J2a\/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq\/s5xXI6\/XXP6/;"	s	object:dependencies.nodemon.dependencies.ms
 integrity	package-lock.json	/^          "integrity": "sha512-AuvKTrTfQNYNIctbR1K\/YGTR1756GycPsg7b9bdV9Duqur4gv6aKqHXah67Z8ImS/;"	s	object:dependencies.string-width.dependencies.strip-ansi
@@ -748,6 +1720,10 @@ is-typedarray	package-lock.json	/^    "is-typedarray": {$/;"	o	object:dependenci
 is-yarn-global	package-lock.json	/^        "is-yarn-global": "^0.3.0",$/;"	s	object:dependencies.update-notifier.requires
 is-yarn-global	package-lock.json	/^    "is-yarn-global": {$/;"	o	object:dependencies
 isCorrectPassword	models/user.model.js	/^userSchema.methods.isCorrectPassword = async function (password) {$/;"	f	function:userSchema.methods
+isInvalid	client/src/containers/setting/SettingChangePassword.jsx	/^  const isInvalid =$/;"	C
+isInvalid	client/src/containers/setting/SettingEdit.jsx	/^  const isInvalid =$/;"	C
+isInvalid	client/src/pages/LoginPage.jsx	/^  const isInvalid =$/;"	C
+isInvalid	client/src/pages/SignUpPage.jsx	/^  const isInvalid =$/;"	C
 isarray	package-lock.json	/^        "isarray": "~1.0.0",$/;"	s	object:dependencies.readable-stream.requires
 isarray	package-lock.json	/^    "isarray": {$/;"	o	object:dependencies
 json-buffer	package-lock.json	/^        "json-buffer": "3.0.0"$/;"	s	object:dependencies.keyv.requires
@@ -768,7 +1744,9 @@ latest-version	package-lock.json	/^        "latest-version": "^5.0.0",$/;"	s	obj
 latest-version	package-lock.json	/^    "latest-version": {$/;"	o	object:dependencies
 license	package.json	/^  "license": "ISC"$/;"	s
 likePost	controllers/post.controller.js	/^const likePost = asyncHandler(async (req, res) => {$/;"	C
+loadUser	client/src/actions/userAction.jsx	/^export const loadUser = () => async (dispatch) => {$/;"	C
 lockfileVersion	package-lock.json	/^  "lockfileVersion": 1,$/;"	n
+lodash	client/package.json	/^    "lodash": "^4.17.21",$/;"	s	object:dependencies
 lodash	package-lock.json	/^        "lodash": "^4.17.21",$/;"	s	object:dependencies.express-validator.requires
 lodash	package-lock.json	/^    "lodash": {$/;"	o	object:dependencies
 lodash.includes	package-lock.json	/^        "lodash.includes": "^4.3.0",$/;"	s	object:dependencies.jsonwebtoken.requires
@@ -785,6 +1763,8 @@ lodash.isstring	package-lock.json	/^        "lodash.isstring": "^4.0.1",$/;"	s	o
 lodash.isstring	package-lock.json	/^    "lodash.isstring": {$/;"	o	object:dependencies
 lodash.once	package-lock.json	/^        "lodash.once": "^4.0.0",$/;"	s	object:dependencies.jsonwebtoken.requires
 lodash.once	package-lock.json	/^    "lodash.once": {$/;"	o	object:dependencies
+login	client/src/actions/userAction.jsx	/^export const login = (email, password) => async (dispatch) => {$/;"	C
+logout	client/src/actions/userAction.jsx	/^export const logout = () => (dispatch) => {$/;"	C
 lowercase-keys	package-lock.json	/^        "lowercase-keys": "^1.0.0"$/;"	s	object:dependencies.responselike.requires
 lowercase-keys	package-lock.json	/^        "lowercase-keys": "^1.0.1",$/;"	s	object:dependencies.got.requires
 lowercase-keys	package-lock.json	/^        "lowercase-keys": "^2.0.0",$/;"	s	object:dependencies.cacheable-request.requires
@@ -799,11 +1779,15 @@ memory-pager	package-lock.json	/^        "memory-pager": "^1.0.2"$/;"	s	object:d
 memory-pager	package-lock.json	/^    "memory-pager": {$/;"	o	object:dependencies
 merge-descriptors	package-lock.json	/^        "merge-descriptors": "1.0.1",$/;"	s	object:dependencies.express.requires
 merge-descriptors	package-lock.json	/^    "merge-descriptors": {$/;"	o	object:dependencies
+messageCreateReducer	client/src/reducers/messageReducer.jsx	/^export const messageCreateReducer = (state = {}, action) => {$/;"	C
+messageEndRef	client/src/containers/message/MessageList.jsx	/^  const messageEndRef = useRef(null);$/;"	C
+messageListReducer	client/src/reducers/messageReducer.jsx	/^export const messageListReducer = (state = {}, action) => {$/;"	C
 messageRoute	server.js	/^const messageRoute = require(".\/routes\/message.route");$/;"	C
 messageSchema	models/message.model.js	/^const messageSchema = new mongoose.Schema({$/;"	C
 messageSocket	socket/index.js	/^const messageSocket = require(".\/message");$/;"	C
 methods	package-lock.json	/^        "methods": "~1.1.2",$/;"	s	object:dependencies.express.requires
 methods	package-lock.json	/^    "methods": {$/;"	o	object:dependencies
+middlewares	client/src/store.jsx	/^const middlewares = [thunk];$/;"	C
 mime	package-lock.json	/^        "mime": "1.6.0",$/;"	s	object:dependencies.send.requires
 mime	package-lock.json	/^    "mime": {$/;"	o	object:dependencies
 mime-db	package-lock.json	/^        "mime-db": "1.48.0"$/;"	s	object:dependencies.mime-types.requires
@@ -854,12 +1838,16 @@ ms	package-lock.json	/^        "ms": {$/;"	o	object:dependencies.send.dependenci
 ms	package-lock.json	/^        "ms": {$/;"	o	object:dependencies.socket.io-parser.dependencies
 ms	package-lock.json	/^        "ms": {$/;"	o	object:dependencies.socket.io.dependencies
 ms	package-lock.json	/^    "ms": {$/;"	o	object:dependencies
+name	client/package.json	/^  "name": "instagram",$/;"	s
+name	client/public/manifest.json	/^  "name": "Create React App Sample",$/;"	s
 name	package-lock.json	/^  "name": "server",$/;"	s
 name	package.json	/^  "name": "server",$/;"	s
 name	socket/post/index.js	/^      name: username,$/;"	p	class:module.exports.newComment
 negotiator	package-lock.json	/^        "negotiator": "0.6.2"$/;"	s	object:dependencies.accepts.requires
 negotiator	package-lock.json	/^    "negotiator": {$/;"	o	object:dependencies
 newComment	socket/post/index.js	/^    const newComment = {$/;"	c	class:module.exports
+newHistory	client/src/containers/header/HeaderSearchItem.jsx	/^      newHistory[index] = {$/;"	c
+newHistory	client/src/containers/header/HeaderSearchItem.jsx	/^    const newHistory = [...history];$/;"	C
 nodemon	package-lock.json	/^    "nodemon": {$/;"	o	object:dependencies
 nodemon	package.json	/^    "nodemon": "^2.0.9"$/;"	s	object:devDependencies
 nopt	package-lock.json	/^        "nopt": "~1.0.10"$/;"	s	object:dependencies.touch.requires
@@ -884,6 +1872,7 @@ once	package-lock.json	/^        "once": "^1.3.1"$/;"	s	object:dependencies.pump
 once	package-lock.json	/^        "once": "^1.4.0"$/;"	s	object:dependencies.end-of-stream.requires
 once	package-lock.json	/^    "once": {$/;"	o	object:dependencies
 onlineUsers	socket/index.js	/^const onlineUsers = [];$/;"	C
+onload	client/src/containers/create-post/CreatePostBody.jsx	/^      reader.onload = function () {$/;"	f	function:reader
 optional	package-lock.json	/^      "optional": true$/;"	b	object:dependencies.fsevents
 optional	package-lock.json	/^      "optional": true$/;"	b	object:dependencies.memory-pager
 optional	package-lock.json	/^      "optional": true,$/;"	b	object:dependencies.saslprep
@@ -898,18 +1887,27 @@ parseurl	package-lock.json	/^        "parseurl": "~1.3.3",$/;"	s	object:dependen
 parseurl	package-lock.json	/^        "parseurl": "~1.3.3",$/;"	s	object:dependencies.finalhandler.requires
 parseurl	package-lock.json	/^        "parseurl": "~1.3.3",$/;"	s	object:dependencies.serve-static.requires
 parseurl	package-lock.json	/^    "parseurl": {$/;"	o	object:dependencies
+path	server.js	/^  const path = require("path");$/;"	C
 path-to-regexp	package-lock.json	/^        "path-to-regexp": "0.1.7",$/;"	s	object:dependencies.express.requires
 path-to-regexp	package-lock.json	/^    "path-to-regexp": {$/;"	o	object:dependencies
 picomatch	package-lock.json	/^        "picomatch": "^2.0.4"$/;"	s	object:dependencies.anymatch.requires
 picomatch	package-lock.json	/^        "picomatch": "^2.2.1"$/;"	s	object:dependencies.readdirp.requires
 picomatch	package-lock.json	/^    "picomatch": {$/;"	o	object:dependencies
+postCreate	client/src/containers/create-post/CreatePostBody.jsx	/^  const postCreate = useSelector((state) => state.postCreate);$/;"	C
+postCreateReducer	client/src/reducers/postReducer.jsx	/^export const postCreateReducer = (state = {}, action) => {$/;"	C
+postList	client/src/containers/post-list/index.jsx	/^  const postList = useSelector((state) => state.postList);$/;"	C
+postListCreatedReducer	client/src/reducers/postReducer.jsx	/^export const postListCreatedReducer = (state = {}, action) => {$/;"	C
+postListReducer	client/src/reducers/postReducer.jsx	/^export const postListReducer = (state = {}, action) => {$/;"	C
 postRoute	server.js	/^const postRoute = require(".\/routes\/post.route");$/;"	C
 postSchema	models/post.model.js	/^const postSchema = new mongoose.Schema($/;"	C
 postSocket	socket/index.js	/^const postSocket = require(".\/post");$/;"	C
+postToggleLikeReducer	client/src/reducers/postReducer.jsx	/^export const postToggleLikeReducer = (state = {}, action) => {$/;"	C
 prepend-http	package-lock.json	/^        "prepend-http": "^2.0.0"$/;"	s	object:dependencies.url-parse-lax.requires
 prepend-http	package-lock.json	/^    "prepend-http": {$/;"	o	object:dependencies
+private	client/package.json	/^  "private": true,$/;"	b
 process-nextick-args	package-lock.json	/^        "process-nextick-args": "~2.0.0",$/;"	s	object:dependencies.readable-stream.requires
 process-nextick-args	package-lock.json	/^    "process-nextick-args": {$/;"	o	object:dependencies
+production	client/package.json	/^    "production": [$/;"	a	object:browserslist
 proxy-addr	package-lock.json	/^        "proxy-addr": "~2.0.5",$/;"	s	object:dependencies.express.requires
 proxy-addr	package-lock.json	/^    "proxy-addr": {$/;"	o	object:dependencies
 pstree.remy	package-lock.json	/^        "pstree.remy": "^1.1.7",$/;"	s	object:dependencies.nodemon.requires
@@ -930,13 +1928,26 @@ raw-body	package-lock.json	/^    "raw-body": {$/;"	o	object:dependencies
 rc	package-lock.json	/^        "rc": "^1.2.8"$/;"	s	object:dependencies.registry-auth-token.requires
 rc	package-lock.json	/^        "rc": "^1.2.8"$/;"	s	object:dependencies.registry-url.requires
 rc	package-lock.json	/^    "rc": {$/;"	o	object:dependencies
+react	client/package.json	/^    "react": "^17.0.2",$/;"	s	object:dependencies
+react-avatar-editor	client/package.json	/^    "react-avatar-editor": "^11.1.0",$/;"	s	object:dependencies
+react-dom	client/package.json	/^    "react-dom": "^17.0.2",$/;"	s	object:dependencies
+react-icons	client/package.json	/^    "react-icons": "^4.2.0",$/;"	s	object:dependencies
+react-loading-skeleton	client/package.json	/^    "react-loading-skeleton": "^2.2.0",$/;"	s	object:dependencies
+react-redux	client/package.json	/^    "react-redux": "^7.2.4",$/;"	s	object:dependencies
+react-router-dom	client/package.json	/^    "react-router-dom": "^5.2.0",$/;"	s	object:dependencies
+react-scripts	client/package.json	/^    "react-scripts": "4.0.3",$/;"	s	object:dependencies
 readable-stream	package-lock.json	/^        "readable-stream": "^2.3.5",$/;"	s	object:dependencies.bl.requires
 readable-stream	package-lock.json	/^    "readable-stream": {$/;"	o	object:dependencies
 readdirp	package-lock.json	/^        "readdirp": "~3.6.0"$/;"	s	object:dependencies.chokidar.requires
 readdirp	package-lock.json	/^    "readdirp": {$/;"	o	object:dependencies
+reader	client/src/containers/create-post/CreatePostBody.jsx	/^      const reader = new FileReader();$/;"	C
+redux	client/package.json	/^    "redux": "^4.1.0",$/;"	s	object:dependencies
+redux-devtools-extension	client/package.json	/^    "redux-devtools-extension": "^2.13.9",$/;"	s	object:dependencies
+redux-thunk	client/package.json	/^    "redux-thunk": "^2.3.0",$/;"	s	object:dependencies
 regexp-clone	package-lock.json	/^        "regexp-clone": "1.0.0",$/;"	s	object:dependencies.mongoose.requires
 regexp-clone	package-lock.json	/^        "regexp-clone": "^1.0.0",$/;"	s	object:dependencies.mquery.requires
 regexp-clone	package-lock.json	/^    "regexp-clone": {$/;"	o	object:dependencies
+register	client/src/actions/userAction.jsx	/^export const register =$/;"	C
 registry-auth-token	package-lock.json	/^        "registry-auth-token": "^4.0.0",$/;"	s	object:dependencies.package-json.requires
 registry-auth-token	package-lock.json	/^    "registry-auth-token": {$/;"	o	object:dependencies
 registry-url	package-lock.json	/^        "registry-url": "^5.0.0",$/;"	s	object:dependencies.package-json.requires
@@ -1041,6 +2052,22 @@ requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.url-p
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.widest-line
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.write-file-atomic
 requires	package-lock.json	/^  "requires": true,$/;"	b
+res	client/src/actions/conversationAction.jsx	/^    const res = await axios.get(`\/api\/conversation`, config);$/;"	C
+res	client/src/actions/conversationAction.jsx	/^    const res = await axios.post(`\/api\/conversation\/${userId}`, {}, config);$/;"	C
+res	client/src/actions/messageAction.jsx	/^      const res = await axios.get(`\/api\/message\/${conversationId}`, config);$/;"	C
+res	client/src/actions/messageAction.jsx	/^      const res = await axios.post($/;"	C
+res	client/src/actions/postAction.jsx	/^    const res = await axios.get("\/api\/post", config);$/;"	C
+res	client/src/actions/postAction.jsx	/^    const res = await axios.get(`\/api\/post\/created\/${name}`, config);$/;"	C
+res	client/src/actions/postAction.jsx	/^    const res = await axios.post($/;"	C
+res	client/src/actions/userAction.jsx	/^      const res = await axios.get("\/api\/user\/auth", config);$/;"	C
+res	client/src/actions/userAction.jsx	/^      const res = await axios.post($/;"	C
+res	client/src/actions/userAction.jsx	/^      const res = await axios.put($/;"	C
+res	client/src/actions/userAction.jsx	/^    const res = await axios.get("\/api\/user\/suggestion", config);$/;"	C
+res	client/src/actions/userAction.jsx	/^    const res = await axios.get(`\/api\/user?keyword=${keyword}`, config);$/;"	C
+res	client/src/actions/userAction.jsx	/^    const res = await axios.get(`\/api\/user\/details\/${username}`, config);$/;"	C
+res	client/src/actions/userAction.jsx	/^    const res = await axios.post($/;"	C
+resImg	client/src/actions/postAction.jsx	/^  const resImg = await axios.post($/;"	C
+resImg	client/src/actions/userAction.jsx	/^  const resImg = await axios.post($/;"	C
 resolved	package-lock.json	/^          "resolved": "https:\/\/registry.npmjs.org\/ansi-regex\/-\/ansi-regex-5.0.0.tgz",$/;"	s	object:dependencies.string-width.dependencies.ansi-regex
 resolved	package-lock.json	/^          "resolved": "https:\/\/registry.npmjs.org\/cookie\/-\/cookie-0.4.1.tgz",$/;"	s	object:dependencies.engine.io.dependencies.cookie
 resolved	package-lock.json	/^          "resolved": "https:\/\/registry.npmjs.org\/debug\/-\/debug-3.1.0.tgz",$/;"	s	object:dependencies.mquery.dependencies.debug
@@ -1284,6 +2311,8 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/ws
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/xdg-basedir\/-\/xdg-basedir-4.0.0.tgz",$/;"	s	object:dependencies.xdg-basedir
 responselike	package-lock.json	/^        "responselike": "^1.0.2"$/;"	s	object:dependencies.cacheable-request.requires
 responselike	package-lock.json	/^    "responselike": {$/;"	o	object:dependencies
+root	client/public/index.html	/^    <div id="root"><\/div>$/;"	I
+rootReducer	client/src/store.jsx	/^const rootReducer = combineReducers({$/;"	C
 router	routes/conversation.route.js	/^const router = express.Router();$/;"	C
 router	routes/message.route.js	/^const router = express.Router();$/;"	C
 router	routes/post.route.js	/^const router = express.Router();$/;"	C
@@ -1306,6 +2335,7 @@ safer-buffer	package-lock.json	/^        "safer-buffer": ">= 2.1.2 < 3"$/;"	s	ob
 safer-buffer	package-lock.json	/^    "safer-buffer": {$/;"	o	object:dependencies
 saslprep	package-lock.json	/^        "saslprep": "^1.0.0"$/;"	s	object:dependencies.mongodb.requires
 saslprep	package-lock.json	/^    "saslprep": {$/;"	o	object:dependencies
+scripts	client/package.json	/^  "scripts": {$/;"	o
 scripts	package.json	/^  "scripts": {$/;"	o
 semver	package-lock.json	/^        "semver": "^5.6.0"$/;"	s	object:dependencies.jsonwebtoken.requires
 semver	package-lock.json	/^        "semver": "^5.7.1",$/;"	s	object:dependencies.nodemon.requires
@@ -1324,9 +2354,76 @@ send	package-lock.json	/^    "send": {$/;"	o	object:dependencies
 serve-static	package-lock.json	/^        "serve-static": "1.14.1",$/;"	s	object:dependencies.express.requires
 serve-static	package-lock.json	/^    "serve-static": {$/;"	o	object:dependencies
 server	server.js	/^const server = app.listen(PORT, () => {$/;"	C
+setActive	client/src/containers/message/index.jsx	/^  const [active, setActive] = useState(false);$/;"	C
+setAvatarClicked	client/src/containers/header/HeaderMoreMenu.jsx	/^  const [avatarClicked, setAvatarClicked] = useState(false);$/;"	C
+setCaption	client/src/containers/create-post/index.jsx	/^  const [caption, setCaption] = useState("");$/;"	C
+setChangePassword	client/src/containers/setting/SettingSidebar.jsx	/^  const [changePassword, setChangePassword] = useState(false);$/;"	C
+setComment	client/src/containers/post-list/PostItem.jsx	/^  const [comment, setComment] = useState("");$/;"	C
+setComments	client/src/containers/post-list/PostItem.jsx	/^  const [comments, setComments] = useState(post.comments);$/;"	C
+setConfirmPassword	client/src/containers/setting/SettingChangePassword.jsx	/^  const [confirmPassword, setConfirmPassword] = useState("");$/;"	C
+setContent	client/src/containers/message/MessageForm.jsx	/^  const [content, setContent] = useState("");$/;"	C
+setConversation	client/src/containers/message/index.jsx	/^  const [conversation, setConversation] = useState(null);$/;"	C
+setConversations	client/src/pages/InboxPage.jsx	/^  const [conversations, setConversations] = useState([]);$/;"	C
+setEdit	client/src/containers/setting/SettingSidebar.jsx	/^  const [edit, setEdit] = useState(true);$/;"	C
+setEmail	client/src/containers/setting/SettingEdit.jsx	/^  const [email, setEmail] = useState("");$/;"	C
+setEmail	client/src/pages/LoginPage.jsx	/^  const [email, setEmail] = useState("");$/;"	C
+setEmail	client/src/pages/SignUpPage.jsx	/^  const [email, setEmail] = useState("");$/;"	C
+setErr	client/src/containers/create-post/CreatePostBody.jsx	/^  const [err, setErr] = useState("");$/;"	C
+setError	client/src/pages/InboxPage.jsx	/^  const [error, setError] = useState("");$/;"	C
+setError	client/src/pages/LoginPage.jsx	/^  const [error, setError] = useState("");$/;"	C
+setFollowed	client/src/containers/profile/index.jsx	/^  const [followed, setFollowed] = useState(false);$/;"	C
+setFollowed	client/src/containers/suggestion/SuggestionItem.jsx	/^  const [followed, setFollowed] = useState(false);$/;"	C
+setFullName	client/src/containers/setting/SettingEdit.jsx	/^  const [fullName, setFullName] = useState("");$/;"	C
+setFullName	client/src/pages/SignUpPage.jsx	/^  const [fullName, setFullName] = useState("");$/;"	C
+setGender	client/src/containers/setting/SettingEdit.jsx	/^  const [gender, setGender] = useState("");$/;"	C
+setHistory	client/src/containers/header/HeaderInputSearch.jsx	/^  const [history, setHistory] = useState($/;"	C
+setImage	client/src/containers/create-post/CreatePostBody.jsx	/^  const [image, setImage] = useState("");$/;"	C
+setImage	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const [image, setImage] = useState(null);$/;"	C
+setImageSrc	client/src/containers/create-post/CreatePostBody.jsx	/^  const [imageSrc, setImageSrc] = useState("");$/;"	C
+setImgNumber	client/src/pages/LoginPage.jsx	/^  const [imgNumber, setImgNumber] = useState(1);$/;"	C
+setImgNumber	client/src/pages/SignUpPage.jsx	/^  const [imgNumber, setImgNumber] = useState(1);$/;"	C
+setIsBetween	client/src/containers/StoryContainer.jsx	/^  const [isBetween, setIsBetween] = useState(false);$/;"	C
+setIsFirst	client/src/containers/StoryContainer.jsx	/^  const [isFirst, setIsFirst] = useState(true);$/;"	C
+setIsLast	client/src/containers/StoryContainer.jsx	/^  const [isLast, setIsLast] = useState(false);$/;"	C
+setIsLoading	client/src/containers/list-user/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
+setIsLoading	client/src/containers/profile/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
+setIsLoading	client/src/pages/InboxPage.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
+setLastMessage	client/src/containers/sidebar/SidebarItem.jsx	/^  const [lastMessage, setLastMessage] = useState(null);$/;"	C
+setLiked	client/src/containers/post-list/PostItem.jsx	/^  const [liked, setLiked] = useState(post.likes.includes(userInfo._id));$/;"	C
+setLoadingToggleFollow	client/src/containers/profile/index.jsx	/^  const [loadingToggleFollow, setLoadingToggleFollow] = useState(false);$/;"	C
+setMessage	client/src/containers/setting/SettingEdit.jsx	/^  const [message, setMessage] = useState("");$/;"	C
+setMessages	client/src/containers/message/index.jsx	/^  const [messages, setMessages] = useState(null);$/;"	C
+setModal	client/src/containers/create-post/index.jsx	/^  const [modal, setModal] = useState(false);$/;"	C
+setModal	client/src/containers/profile/ProfileHeading.jsx	/^  const [modal, setModal] = useState(false);$/;"	C
+setModal	client/src/containers/setting/SettingEdit.jsx	/^  const [modal, setModal] = useState(false);$/;"	C
+setModalAvatar	client/src/containers/setting/SettingEdit.jsx	/^  const [modalAvatar, setModalAvatar] = useState(false);$/;"	C
+setModalEditor	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const [modalEditor, setModalEditor] = useState(false);$/;"	C
+setModalFollower	client/src/containers/profile/ProfileHeading.jsx	/^  const [modalFollower, setModalFollower] = useState(false);$/;"	C
+setModalFollowing	client/src/containers/profile/ProfileHeading.jsx	/^  const [modalFollowing, setModalFollowing] = useState(false);$/;"	C
+setNewPassword	client/src/containers/setting/SettingChangePassword.jsx	/^  const [newPassword, setNewPassword] = useState("");$/;"	C
+setNumFollowers	client/src/containers/profile/index.jsx	/^  const [numFollowers, setNumFollowers] = useState(0);$/;"	C
+setNumFollowing	client/src/containers/profile/index.jsx	/^  const [numFollowing, setNumFollowing] = useState(0);$/;"	C
+setNumLiked	client/src/containers/post-list/PostItem.jsx	/^  const [numLiked, setNumLiked] = useState(post.likes.length);$/;"	C
+setNumberUnreadMessage	client/src/containers/header/HeaderMessageItem.jsx	/^  const [numberUnreadMessage, setNumberUnreadMessage] = useState(0);$/;"	C
+setOldPassword	client/src/containers/setting/SettingChangePassword.jsx	/^  const [oldPassword, setOldPassword] = useState("");$/;"	C
+setPassword	client/src/pages/LoginPage.jsx	/^  const [password, setPassword] = useState("");$/;"	C
+setPassword	client/src/pages/SignUpPage.jsx	/^  const [password, setPassword] = useState("");$/;"	C
+setPhoneNumber	client/src/containers/setting/SettingEdit.jsx	/^  const [phoneNumber, setPhoneNumber] = useState("");$/;"	C
+setPosts	client/src/containers/profile/index.jsx	/^  const [posts, setPosts] = useState(null);$/;"	C
+setReceiver	client/src/containers/message/index.jsx	/^  const [receiver, setReceiver] = useState(null);$/;"	C
+setSearch	client/src/containers/header/HeaderInputSearch.jsx	/^  const [search, setSearch] = useState("");$/;"	C
+setUser	client/src/containers/profile/index.jsx	/^  const [user, setUser] = useState(null);$/;"	C
+setUserList	client/src/containers/list-user/index.jsx	/^  const [userList, setUserList] = useState(userInfoDetails.followers);$/;"	C
+setUserListFollowing	client/src/containers/list-user/index.jsx	/^  const [userListFollowing, setUserListFollowing] = useState($/;"	C
+setUserLoading	client/src/containers/profile/index.jsx	/^  const [userLoading, setUserLoading] = useState(false);$/;"	C
+setUsername	client/src/containers/setting/SettingEdit.jsx	/^  const [username, setUsername] = useState("");$/;"	C
+setUsername	client/src/pages/SignUpPage.jsx	/^  const [username, setUsername] = useState("");$/;"	C
+setUsers	client/src/containers/header/HeaderInputSearch.jsx	/^  const [users, setUsers] = useState($/;"	C
+setVisible	client/src/containers/header/HeaderInputSearch.jsx	/^  const [visible, setVisible] = useState(false);$/;"	C
 setprototypeof	package-lock.json	/^        "setprototypeof": "1.1.1",$/;"	s	object:dependencies.express.requires
 setprototypeof	package-lock.json	/^        "setprototypeof": "1.1.1",$/;"	s	object:dependencies.http-errors.requires
 setprototypeof	package-lock.json	/^    "setprototypeof": {$/;"	o	object:dependencies
+short_name	client/public/manifest.json	/^  "short_name": "React App",$/;"	s
 sift	package-lock.json	/^        "sift": "13.5.2",$/;"	s	object:dependencies.mongoose.requires
 sift	package-lock.json	/^    "sift": {$/;"	o	object:dependencies
 signIn	controllers/user.controller.js	/^const signIn = asyncHandler(async (req, res) => {$/;"	C
@@ -1335,25 +2432,50 @@ signUp	controllers/user.controller.js	/^const signUp = asyncHandler(async (req, 
 signUpValidator	validators/user.validator.js	/^const signUpValidator = () => [$/;"	C
 signal-exit	package-lock.json	/^        "signal-exit": "^3.0.2",$/;"	s	object:dependencies.write-file-atomic.requires
 signal-exit	package-lock.json	/^    "signal-exit": {$/;"	o	object:dependencies
+sizes	client/public/manifest.json	/^      "sizes": "192x192"$/;"	s	object:icons.1
+sizes	client/public/manifest.json	/^      "sizes": "512x512"$/;"	s	object:icons.2
+sizes	client/public/manifest.json	/^      "sizes": "64x64 32x32 24x24 16x16",$/;"	s	object:icons.0
 sliced	package-lock.json	/^        "sliced": "1.0.1"$/;"	s	object:dependencies.mongoose.requires
 sliced	package-lock.json	/^        "sliced": "1.0.1"$/;"	s	object:dependencies.mquery.requires
 sliced	package-lock.json	/^    "sliced": {$/;"	o	object:dependencies
+socket	client/src/actions/socketAction.jsx	/^  const socket = io(process.env.REACT_APP_SOCKET_URL_SERVER);$/;"	C
+socket	client/src/helpers/socket.jsx	/^const socket = (function () {$/;"	f
 socket.io	package-lock.json	/^    "socket.io": {$/;"	o	object:dependencies
 socket.io	package.json	/^    "socket.io": "^4.1.2"$/;"	s	object:dependencies
 socket.io-adapter	package-lock.json	/^        "socket.io-adapter": "~2.3.0",$/;"	s	object:dependencies.socket.io.requires
 socket.io-adapter	package-lock.json	/^    "socket.io-adapter": {$/;"	o	object:dependencies
+socket.io-client	client/package.json	/^    "socket.io-client": "^4.1.2",$/;"	s	object:dependencies
 socket.io-parser	package-lock.json	/^        "socket.io-parser": "~4.0.3"$/;"	s	object:dependencies.socket.io.requires
 socket.io-parser	package-lock.json	/^    "socket.io-parser": {$/;"	o	object:dependencies
+socketConnect	client/src/containers/header/HeaderMessageItem.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/containers/header/HeaderMoreMenu.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/containers/list-user/index.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/containers/message/MessageForm.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/containers/message/index.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/containers/post-list/PostItem.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/containers/profile/index.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/containers/sidebar/SidebarItem.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnect	client/src/pages/InboxPage.jsx	/^  const socketConnect = useSelector((state) => state.socketConnect);$/;"	C
+socketConnectReducer	client/src/reducers/socketReducers.jsx	/^export const socketConnectReducer = (state = {}, action) => {$/;"	C
 socketio	socket/index.js	/^const socketio = (httpServer) => {$/;"	C
 sparse-bitfield	package-lock.json	/^        "sparse-bitfield": "^3.0.3"$/;"	s	object:dependencies.saslprep.requires
 sparse-bitfield	package-lock.json	/^    "sparse-bitfield": {$/;"	o	object:dependencies
-start	package.json	/^    "start": "nodemon server.js"$/;"	s	object:scripts
+spinnerAnimation	client/src/components/spinner/styles/spinner.jsx	/^const spinnerAnimation = keyframes`$/;"	C
+src	client/public/manifest.json	/^      "src": "favicon.ico",$/;"	s	object:icons.0
+src	client/public/manifest.json	/^      "src": "logo192.png",$/;"	s	object:icons.1
+src	client/public/manifest.json	/^      "src": "logo512.png",$/;"	s	object:icons.2
+start	client/package.json	/^    "start": "react-scripts start",$/;"	s	object:scripts
+start	package.json	/^    "start": "node server.js",$/;"	s	object:scripts
+start_url	client/public/manifest.json	/^  "start_url": ".",$/;"	s
 statusCode	middlewares/error.middleware.js	/^  const statusCode = req.statusCode === 200 ? 500 : res.statusCode;$/;"	C
 statuses	package-lock.json	/^        "statuses": ">= 1.5.0 < 2",$/;"	s	object:dependencies.http-errors.requires
 statuses	package-lock.json	/^        "statuses": "~1.5.0"$/;"	s	object:dependencies.send.requires
 statuses	package-lock.json	/^        "statuses": "~1.5.0",$/;"	s	object:dependencies.express.requires
 statuses	package-lock.json	/^        "statuses": "~1.5.0",$/;"	s	object:dependencies.finalhandler.requires
 statuses	package-lock.json	/^    "statuses": {$/;"	o	object:dependencies
+store	client/src/store.jsx	/^const store = createStore($/;"	C
+storyRef	client/src/containers/StoryContainer.jsx	/^  const storyRef = createRef();$/;"	C
 string-width	package-lock.json	/^        "string-width": "^3.0.0"$/;"	s	object:dependencies.ansi-align.requires
 string-width	package-lock.json	/^        "string-width": "^4.0.0"$/;"	s	object:dependencies.widest-line.requires
 string-width	package-lock.json	/^        "string-width": "^4.1.0",$/;"	s	object:dependencies.boxen.requires
@@ -1367,21 +2489,30 @@ strip-ansi	package-lock.json	/^        "strip-ansi": {$/;"	o	object:dependencies
 strip-ansi	package-lock.json	/^    "strip-ansi": {$/;"	o	object:dependencies
 strip-json-comments	package-lock.json	/^        "strip-json-comments": "~2.0.1"$/;"	s	object:dependencies.rc.requires
 strip-json-comments	package-lock.json	/^    "strip-json-comments": {$/;"	o	object:dependencies
+styled-components	client/package.json	/^    "styled-components": "^5.3.0",$/;"	s	object:dependencies
 supports-color	package-lock.json	/^        "supports-color": "^5.5.0",$/;"	s	object:dependencies.nodemon.requires
 supports-color	package-lock.json	/^        "supports-color": "^7.1.0"$/;"	s	object:dependencies.chalk.requires
 supports-color	package-lock.json	/^        "supports-color": {$/;"	o	object:dependencies.chalk.dependencies
 supports-color	package-lock.json	/^    "supports-color": {$/;"	o	object:dependencies
 term-size	package-lock.json	/^        "term-size": "^2.1.0",$/;"	s	object:dependencies.boxen.requires
 term-size	package-lock.json	/^    "term-size": {$/;"	o	object:dependencies
+test	client/package.json	/^    "test": "react-scripts test",$/;"	s	object:scripts
 test	package.json	/^    "test": "echo \\"Error: no test specified\\" && exit 1",$/;"	s	object:scripts
+theme_color	client/public/manifest.json	/^  "theme_color": "#000000",$/;"	s
+timer	client/src/containers/header/index.jsx	/^    const timer = setInterval(() => {$/;"	C
 to-readable-stream	package-lock.json	/^        "to-readable-stream": "^1.0.0",$/;"	s	object:dependencies.got.requires
 to-readable-stream	package-lock.json	/^    "to-readable-stream": {$/;"	o	object:dependencies
 to-regex-range	package-lock.json	/^        "to-regex-range": "^5.0.1"$/;"	s	object:dependencies.fill-range.requires
 to-regex-range	package-lock.json	/^    "to-regex-range": {$/;"	o	object:dependencies
+toggleLike	client/src/actions/postAction.jsx	/^export const toggleLike = (postId) => async (dispatch, getState) => {$/;"	C
 toidentifier	package-lock.json	/^        "toidentifier": "1.0.0"$/;"	s	object:dependencies.http-errors.requires
 toidentifier	package-lock.json	/^    "toidentifier": {$/;"	o	object:dependencies
+token	client/src/actions/userAction.jsx	/^    const token = JSON.parse(localStorage.getItem("userInfo")).token;$/;"	C
 touch	package-lock.json	/^        "touch": "^3.1.0",$/;"	s	object:dependencies.nodemon.requires
 touch	package-lock.json	/^    "touch": {$/;"	o	object:dependencies
+type	client/public/manifest.json	/^      "type": "image\/png",$/;"	s	object:icons.1
+type	client/public/manifest.json	/^      "type": "image\/png",$/;"	s	object:icons.2
+type	client/public/manifest.json	/^      "type": "image\/x-icon"$/;"	s	object:icons.0
 type-fest	package-lock.json	/^        "type-fest": "^0.8.1",$/;"	s	object:dependencies.boxen.requires
 type-fest	package-lock.json	/^    "type-fest": {$/;"	o	object:dependencies
 type-is	package-lock.json	/^        "type-is": "~1.6.17"$/;"	s	object:dependencies.body-parser.requires
@@ -1398,17 +2529,57 @@ unpipe	package-lock.json	/^        "unpipe": "~1.0.0"$/;"	s	object:dependencies.
 unpipe	package-lock.json	/^    "unpipe": {$/;"	o	object:dependencies
 update-notifier	package-lock.json	/^        "update-notifier": "^4.1.0"$/;"	s	object:dependencies.nodemon.requires
 update-notifier	package-lock.json	/^    "update-notifier": {$/;"	o	object:dependencies
+updateAvatar	client/src/actions/userAction.jsx	/^export const updateAvatar = (data) => async (dispatch, getState) => {$/;"	C
 updateAvatar	controllers/user.controller.js	/^const updateAvatar = asyncHandler(async (req, res) => {$/;"	C
+updateInfo	client/src/actions/userAction.jsx	/^export const updateInfo =$/;"	C
 updateInfo	controllers/user.controller.js	/^const updateInfo = asyncHandler(async (req, res) => {$/;"	C
 updateInfoValidator	validators/user.validator.js	/^const updateInfoValidator = () => [$/;"	C
+updatePassword	client/src/actions/userAction.jsx	/^export const updatePassword =$/;"	C
 updatePassword	controllers/user.controller.js	/^const updatePassword = asyncHandler(async (req, res) => {$/;"	C
 updatePasswordValidator	validators/user.validator.js	/^const updatePasswordValidator = () => [$/;"	C
 url-parse-lax	package-lock.json	/^        "url-parse-lax": "^3.0.0"$/;"	s	object:dependencies.got.requires
 url-parse-lax	package-lock.json	/^    "url-parse-lax": {$/;"	o	object:dependencies
+urlBase64	client/src/containers/profile/ProfileUploadAvatar.jsx	/^      const urlBase64 = canvas.toDataURL();$/;"	C
 user	socket/post/index.js	/^      user: userId,$/;"	p	class:module.exports.newComment
+userDeleteAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const userDeleteAvatar = useSelector((state) => state.userDeleteAvatar);$/;"	C
+userDeleteAvatarReducer	client/src/reducers/userReducer.jsx	/^export const userDeleteAvatarReducer = (state = {}, action) => {$/;"	C
+userDetails	client/src/containers/profile/index.jsx	/^  const userDetails = useSelector((state) => state.userDetails);$/;"	C
+userDetailsReducer	client/src/reducers/userReducer.jsx	/^export const userDetailsReducer = (state = {}, action) => {$/;"	C
+userFind	client/src/containers/header/HeaderInputSearch.jsx	/^  const userFind = useSelector((state) => state.userFind);$/;"	C
+userFindReducer	client/src/reducers/userReducer.jsx	/^export const userFindReducer = (state = {}, action) => {$/;"	C
+userFollowReducer	client/src/reducers/userReducer.jsx	/^export const userFollowReducer = (state = {}, action) => {$/;"	C
+userInfo	client/src/store.jsx	/^    userInfo: userInfoFromLocal,$/;"	p	class:initialState.userLogin
+userInfoFromLocal	client/src/store.jsx	/^const userInfoFromLocal = localStorage.getItem("userInfo")$/;"	C
+userLogin	client/src/containers/create-post/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/header/HeaderMoreMenu.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/list-user/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/message/MessageForm.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/message/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/post-list/PostItem.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/profile/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/setting/SettingChangePassword.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/setting/SettingEdit.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/sidebar/SidebarItem.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/sidebar/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/containers/suggestion/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/pages/LoginPage.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/store.jsx	/^  userLogin: {$/;"	c	class:initialState
+userLoginReducer	client/src/reducers/userReducer.jsx	/^export const userLoginReducer = (state = {}, action) => {$/;"	C
+userRegister	client/src/pages/SignUpPage.jsx	/^  const userRegister = useSelector((state) => state.userRegister);$/;"	C
+userRegisterReducer	client/src/reducers/userReducer.jsx	/^export const userRegisterReducer = (state = {}, action) => {$/;"	C
 userRoute	server.js	/^const userRoute = require(".\/routes\/user.route");$/;"	C
 userSchema	models/user.model.js	/^const userSchema = new mongoose.Schema($/;"	C
 userSocket	socket/index.js	/^const userSocket = require(".\/user");$/;"	C
+userSuggested	client/src/containers/suggestion/index.jsx	/^  const userSuggested = useSelector((state) => state.userSuggested);$/;"	C
+userSuggestedReducer	client/src/reducers/userReducer.jsx	/^export const userSuggestedReducer = (state = {}, action) => {$/;"	C
+userUpdate	client/src/containers/setting/SettingEdit.jsx	/^  const userUpdate = useSelector((state) => state.userUpdate);$/;"	C
+userUpdateAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const userUpdateAvatar = useSelector((state) => state.userUpdateAvatar);$/;"	C
+userUpdateAvatarReducer	client/src/reducers/userReducer.jsx	/^export const userUpdateAvatarReducer = (state = {}, action) => {$/;"	C
+userUpdatePassword	client/src/containers/setting/SettingChangePassword.jsx	/^  const userUpdatePassword = useSelector((state) => state.userUpdatePassword);$/;"	C
+userUpdatePasswordReducer	client/src/reducers/userReducer.jsx	/^export const userUpdatePasswordReducer = (state = {}, action) => {$/;"	C
+userUpdateReducer	client/src/reducers/userReducer.jsx	/^export const userUpdateReducer = (state = {}, action) => {$/;"	C
+username	client/src/containers/header/HeaderSearchItem.jsx	/^        username: user.username,$/;"	p	class:newHistory
 util-deprecate	package-lock.json	/^        "util-deprecate": "~1.0.1"$/;"	s	object:dependencies.readable-stream.requires
 util-deprecate	package-lock.json	/^    "util-deprecate": {$/;"	o	object:dependencies
 utils-merge	package-lock.json	/^        "utils-merge": "1.0.1",$/;"	s	object:dependencies.express.requires
@@ -1418,6 +2589,7 @@ validator	package-lock.json	/^    "validator": {$/;"	o	object:dependencies
 vary	package-lock.json	/^        "vary": "^1"$/;"	s	object:dependencies.cors.requires
 vary	package-lock.json	/^        "vary": "~1.1.2"$/;"	s	object:dependencies.express.requires
 vary	package-lock.json	/^    "vary": {$/;"	o	object:dependencies
+version	client/package.json	/^  "version": "0.1.0",$/;"	s
 version	package-lock.json	/^          "version": "0.4.1",$/;"	s	object:dependencies.engine.io.dependencies.cookie
 version	package-lock.json	/^          "version": "2.0.0",$/;"	s	object:dependencies.cacheable-request.dependencies.lowercase-keys
 version	package-lock.json	/^          "version": "2.0.0",$/;"	s	object:dependencies.morgan.dependencies.depd
@@ -1661,8 +2833,10 @@ version	package-lock.json	/^      "version": "8.5.1",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "9.6.0",$/;"	s	object:dependencies.got
 version	package-lock.json	/^  "version": "1.0.0",$/;"	s
 version	package.json	/^  "version": "1.0.0",$/;"	s
+web-vitals	client/package.json	/^    "web-vitals": "^1.0.1"$/;"	s	object:dependencies
 widest-line	package-lock.json	/^        "widest-line": "^3.1.0"$/;"	s	object:dependencies.boxen.requires
 widest-line	package-lock.json	/^    "widest-line": {$/;"	o	object:dependencies
+wrapRef	client/src/containers/header/HeaderInputSearch.jsx	/^  const wrapRef = useRef(null);$/;"	C
 wrappy	package-lock.json	/^        "wrappy": "1"$/;"	s	object:dependencies.once.requires
 wrappy	package-lock.json	/^    "wrappy": {$/;"	o	object:dependencies
 write-file-atomic	package-lock.json	/^        "write-file-atomic": "^3.0.0",$/;"	s	object:dependencies.configstore.requires
