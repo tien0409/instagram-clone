@@ -5,7 +5,7 @@ import {
 } from "../constants/socketConstants";
 
 export const connectSocket = (userInfo) => (dispatch) => {
-  const socket = io(process.env.REACT_APP_SOCKET_URL_SERVER);
+  const socket = io("/");
 
   socket.on("disconnect", () => {
     console.log("socket disconnect from server");
