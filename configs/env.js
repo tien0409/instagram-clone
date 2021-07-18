@@ -1,5 +1,5 @@
 module.exports = {
-  PORT: process.env.PORT,
+  PORT: process.env.PORT || 8000,
   MONGO_URI: process.env.MONGO_URI,
   JWT_SECRET: process.env.JWT_SECRET,
   CLOUD_NAME: process.env.CLOUD_NAME,
