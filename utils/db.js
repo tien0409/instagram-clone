@@ -3,6 +3,7 @@ const { MONGO_URI } = require("../configs/env");
 
 const connectDb = async () => {
   try {
+    console.log("abc", MONGO_URI);
     await mongoose.connect(MONGO_URI, {
       useCreateIndex: true,
       useNewUrlParser: true,
