@@ -24,11 +24,11 @@ module.exports = function (socket, io) {
         .populate("members", "avatar username")
         .execPopulate();
 
-      socket.emit("server-send-new-conversation", conversation);
+      io.emit("server-send-new-conversation", conversationInfo);
     }
 
     await Message.updateMany(
-      { conversation: conversation._id },
+      { conversation: conversation._id, sender: { $ne: user._id } },
       { unread: false },
     );
     const messages = await Message.find({
@@ -46,6 +46,28 @@ module.exports = function (socket, io) {
     socket.emit("server-send-last-message", lastMessage);
   };
 
+  const getNumberUnreadMessage = async () => {
+    const conversations = await Conversation.find({
+      members: { $in: [socket._id] },
+    });
+    let num = 0;
+    await Promise.all(
+      conversations.map(async (c) => {
+        if (
+          await Message.findOne({
+            conversation: c._id,
+            unread: true,
+            sender: { $ne: socket._id },
+          })
+        ) {
+          num += 1;
+        }
+      }),
+    );
+    socket.emit("server-send-number-unread-message", num);
+  };
+
   socket.on("client-get-all-message", getAllMessageInConversation);
   socket.on("client-get-last-message", getLastMessage);
+  socket.on("client-get-number-unread-message", getNumberUnreadMessage);
 };

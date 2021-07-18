@@ -28,7 +28,9 @@ module.exports = function (socket, io) {
     const userIdLoggedIn = socket._id;
 
     const conversation = await Conversation.findById(conversationId);
-    const userId = conversation.members.find((id) => id !== userIdLoggedIn);
+    const userId = conversation.members.find((id) => {
+      return String(id) !== userIdLoggedIn;
+    });
 
     const user = await User.findById(userId).select("-password");
 
@@ -80,6 +82,16 @@ module.exports = function (socket, io) {
       ...data,
       _id: message._id,
     });
+
+    const noFirstMessage = await Message.findOne({ conversation });
+
+    if (!noFirstMessage) {
+      const conversationInfo = await Conversation.findById(
+        conversation._id,
+      ).populate("members", "avatar username");
+      io.emit("server-send-new-conversation", conversationInfo);
+    }
+
     await message.save();
   };
 
