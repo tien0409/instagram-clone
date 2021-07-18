@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
-const { CLOUD_NAME } = require("../configs/env");
 
 const userSchema = new mongoose.Schema(
   {
