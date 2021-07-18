@@ -37,7 +37,9 @@ module.exports = function (socket, io) {
     socket.emit("server-send-receiver", user);
   };
 
-  const toggleFollow = async (data) => {
+  const toggleFollow = async (data, cb) => {
+    socket.emit("server-sending-toggle-follow");
+    console.log("abc");
     const { userReq, user } = data;
 
     const userReqRes = await User.findById(userReq._id);
@@ -71,7 +73,11 @@ module.exports = function (socket, io) {
 
     const userReqInfo = await User.findById(userReq._id);
 
-    io.emit("server-toggle-follow", userReqInfo.followers.length);
+    io.emit("server-toggle-follow", {
+      numFollowers: userReqInfo.followers.length,
+      numFollowing: userReqInfo.following.length,
+    });
+    cb();
   };
 
   const sendMessage = async (data) => {
@@ -96,9 +102,24 @@ module.exports = function (socket, io) {
   };
 
   const forcedUnfollow = async (id) => {
+    socket.emit("server-sending-user-forced-unfollow");
     await User.updateOne({ _id: socket._id }, { $pull: { followers: id } });
     await User.updateOne({ _id: id }, { $pull: { following: socket._id } });
-    socket.emit("server-user-forced-unfollow", id);
+    const user = await User.findById(id);
+    socket.emit("server-user-forced-unfollow", {
+      _id: id,
+      numFollowers: user.followers.length,
+    });
+  };
+
+  const unfollow = async (id) => {
+    await User.updateOne({ _id: socket._id }, { $pull: { following: id } });
+    await User.updateOne({ _id: id }, { $pull: { followers: socket._id } });
+    const user = await User.findById(id);
+    socket.emit("server-user-unfollow", {
+      _id: id,
+      numFollowing: user.following.length,
+    });
   };
 
   socket.on("client-get-user-logged-in", getUserLoggedIn);
@@ -110,6 +131,8 @@ module.exports = function (socket, io) {
   socket.on("client-send-message", sendMessage);
 
   socket.on("client-user-forced-unfollow", forcedUnfollow);
+
+  socket.on("client-user-unfollow", unfollow);
 
   socket.on("client-user-typing", (data) => {
     io.to(data.room).emit("server-user-typing");
