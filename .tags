@@ -1815,7 +1815,7 @@ mongoose	utils/db.js	/^const mongoose = require("mongoose");$/;"	C
 mongoose-legacy-pluralize	package-lock.json	/^        "mongoose-legacy-pluralize": "1.0.2",$/;"	s	object:dependencies.mongoose.requires
 mongoose-legacy-pluralize	package-lock.json	/^    "mongoose-legacy-pluralize": {$/;"	o	object:dependencies
 morgan	package-lock.json	/^    "morgan": {$/;"	o	object:dependencies
-morgan	package.json	/^    "morgan": "^1.10.0",$/;"	s	object:devDependencies
+morgan	package.json	/^    "morgan": "^1.10.0"$/;"	s	object:dependencies
 morgan	server.js	/^const morgan = require("morgan");$/;"	C
 mpath	package-lock.json	/^        "mpath": "0.8.3",$/;"	s	object:dependencies.mongoose.requires
 mpath	package-lock.json	/^    "mpath": {$/;"	o	object:dependencies
@@ -2441,7 +2441,7 @@ sliced	package-lock.json	/^    "sliced": {$/;"	o	object:dependencies
 socket	client/src/actions/socketAction.jsx	/^  const socket = io(process.env.REACT_APP_SOCKET_URL_SERVER);$/;"	C
 socket	client/src/helpers/socket.jsx	/^const socket = (function () {$/;"	f
 socket.io	package-lock.json	/^    "socket.io": {$/;"	o	object:dependencies
-socket.io	package.json	/^    "socket.io": "^4.1.2"$/;"	s	object:dependencies
+socket.io	package.json	/^    "socket.io": "^4.1.2",$/;"	s	object:dependencies
 socket.io-adapter	package-lock.json	/^        "socket.io-adapter": "~2.3.0",$/;"	s	object:dependencies.socket.io.requires
 socket.io-adapter	package-lock.json	/^    "socket.io-adapter": {$/;"	o	object:dependencies
 socket.io-client	client/package.json	/^    "socket.io-client": "^4.1.2",$/;"	s	object:dependencies
