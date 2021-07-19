@@ -84,6 +84,7 @@ module.exports = function (socket, io) {
     const { room, sender, conversation, content, avatar } = data;
     const message = new Message({ conversation, content, avatar, sender });
 
+    await message.save();
     io.to(room).emit("server-send-message", {
       ...data,
       _id: message._id,
@@ -97,8 +98,6 @@ module.exports = function (socket, io) {
       ).populate("members", "avatar username");
       io.emit("server-send-new-conversation", conversationInfo);
     }
-
-    await message.save();
   };
 
   const forcedUnfollow = async (id) => {
