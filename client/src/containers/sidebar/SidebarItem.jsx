@@ -16,6 +16,7 @@ const SidebarItem = ({ conversation, conversationId, user }) => {
       room: `${userInfo.username}-${user.username}`,
     });
     socket.on("server-send-last-message", (lastMessage) => {
+      console.log("lastMessage", lastMessage);
       if (lastMessage && lastMessage?.conversation === conversation._id) {
         setLastMessage(lastMessage);
       }
