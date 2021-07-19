@@ -18,7 +18,7 @@ export const createPost = (caption, data) => async (dispatch, getState) => {
   dispatch({ type: POST_CREATE_REQUEST });
 
   const resImg = await axios.post(
-    "http://api.cloudinary.com/v1_1/dspnu5m0h/image/upload",
+    "https://api.cloudinary.com/v1_1/dspnu5m0h/image/upload",
     data,
   );
 
