@@ -96,7 +96,6 @@ const ListUserContainer = ({
             />
           ) : (
             <ListUserList
-              type={type}
               isLoading={isLoading}
               socket={socket}
               userList={userListFollowing}
