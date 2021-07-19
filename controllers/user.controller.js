@@ -302,6 +302,7 @@ const findUser = asyncHandler(async (req, res) => {
 
   const users = await User.find({
     username: new RegExp(`${keyword}`, "gi"),
+    _id: { $ne: req.user._id },
   }).select("-password");
 
   res.status(200).json(users);
