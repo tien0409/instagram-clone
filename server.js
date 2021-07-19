@@ -10,6 +10,7 @@ const { PORT } = require("./configs/env");
 const connectDb = require("./utils/db");
 
 const app = express();
+const http = require("http").Server(app);
 connectDb();
 
 // middlewares
@@ -46,4 +47,4 @@ const server = app.listen(PORT, () => {
   console.log(`Listening on PORT ${PORT}`);
 });
 
-require("./socket")(server);
+require("./socket")(http);
