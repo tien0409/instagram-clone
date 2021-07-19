@@ -30,7 +30,9 @@ const InboxPage = () => {
     });
 
     socket.on("server-send-new-conversation", (conversation) => {
-      setConversations((conversations) => [...conversations, conversation]);
+      if (conversations.find((c) => c._id !== conversation._id)) {
+        setConversations((conversations) => [...conversations, conversation]);
+      }
       socket.emit("client-get-number-unread-message");
     });
 
