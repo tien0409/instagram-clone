@@ -45,7 +45,7 @@ module.exports = function (socket, io) {
     }).sort({ createdAt: -1 });
 
     socket.emit("server-send-last-message", lastMessage);
-    socket.to(room).emit("server-send-last-message", lastMessage);
+    io.to(room).emit("server-send-last-message", lastMessage);
   };
 
   const getNumberUnreadMessage = async () => {
