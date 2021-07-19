@@ -1908,7 +1908,7 @@ private	client/package.json	/^  "private": true,$/;"	b
 process-nextick-args	package-lock.json	/^        "process-nextick-args": "~2.0.0",$/;"	s	object:dependencies.readable-stream.requires
 process-nextick-args	package-lock.json	/^    "process-nextick-args": {$/;"	o	object:dependencies
 production	client/package.json	/^    "production": [$/;"	a	object:browserslist
-proxy	client/package.json	/^  "proxy": "http:\/\/localhost:8000",$/;"	s
+proxy	client/package.json	/^  "proxy": "https:\/\/localhost:8000",$/;"	s
 proxy-addr	package-lock.json	/^        "proxy-addr": "~2.0.5",$/;"	s	object:dependencies.express.requires
 proxy-addr	package-lock.json	/^    "proxy-addr": {$/;"	o	object:dependencies
 pstree.remy	package-lock.json	/^        "pstree.remy": "^1.1.7",$/;"	s	object:dependencies.nodemon.requires
