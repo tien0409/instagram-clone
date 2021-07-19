@@ -228,7 +228,7 @@ export const updateAvatar = (data) => async (dispatch, getState) => {
   dispatch({ type: USER_UPDATE_AVATAR_REQUEST });
 
   const resImg = await axios.post(
-    `https://api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUD_NAME}/image/upload`,
+    `https://api.cloudinary.com/v1_1/dspnu5m0h/image/upload`,
     data,
   );
 
