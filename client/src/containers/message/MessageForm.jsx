@@ -26,10 +26,7 @@ const MessageForm = ({ receiver, conversation }) => {
         content: content.trim(),
       },
       () => {
-        socket.emit("client-get-last-message", {
-          conversationId: conversation._id,
-          room: `${receiver.username}-${userInfo.username}`,
-        });
+        socket.emit("client-get-last-message", conversation._id);
       },
     );
     setContent("");
