@@ -8,6 +8,7 @@ const ListUserList = ({
   userInfoDetails,
   type,
   isLoading,
+  setIsLoading,
 }) => {
   return (
     <ListUser.List>
@@ -15,6 +16,7 @@ const ListUserList = ({
         <ListUserItem
           key={user._id}
           isLoading={isLoading}
+          setIsLoading={setIsLoading}
           user={user}
           type={type}
           userInfo={userInfo}

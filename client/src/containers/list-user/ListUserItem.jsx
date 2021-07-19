@@ -7,13 +7,20 @@ const ListUserItem = ({
   userInfo,
   userInfoDetails,
   isLoading,
+  setIsLoading,
 }) => {
   const handleForcedUnfollow = (id) => {
-    socket.emit("client-user-forced-unfollow", id);
+    setIsLoading(true);
+    socket.emit("client-user-forced-unfollow", id, () => {
+      setIsLoading(false);
+    });
   };
 
   const handleUnfollow = (id) => {
-    socket.emit("client-user-unfollow", id);
+    setIsLoading(true);
+    socket.emit("client-user-unfollow", id, () => {
+      setIsLoading(false);
+    });
   };
 
   return (

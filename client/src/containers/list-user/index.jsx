@@ -43,7 +43,6 @@ const ListUserContainer = ({
       const userListNew = userList.filter((user) => user._id !== data._id);
       setUserList(userListNew);
       setNumFollowers(data.numFollowers);
-      setIsLoading(false);
     });
 
     socket.on("server-user-unfollow", (data) => {
@@ -52,15 +51,6 @@ const ListUserContainer = ({
       );
       setUserListFollowing(userListNew);
       setNumFollowing(data.numFollowing);
-      setIsLoading(false);
-    });
-
-    socket.on("server-sending-user-unfollow", () => {
-      setIsLoading(true);
-    });
-
-    socket.on("server-sending-user-forced-unfollow", () => {
-      setIsLoading(true);
     });
 
     return () => {
@@ -87,6 +77,7 @@ const ListUserContainer = ({
             <ListUserList
               type={type}
               isLoading={isLoading}
+              setIsLoading={setIsLoading}
               socket={socket}
               userList={userList}
               setNumFollowing={setNumFollowing}
@@ -96,7 +87,9 @@ const ListUserContainer = ({
             />
           ) : (
             <ListUserList
+              type={type}
               isLoading={isLoading}
+              setIsLoading={setIsLoading}
               socket={socket}
               userList={userListFollowing}
               setNumFollowing={setNumFollowing}
