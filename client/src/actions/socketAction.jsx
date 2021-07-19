@@ -5,7 +5,7 @@ import {
 } from "../constants/socketConstants";
 
 export const connectSocket = (userInfo) => (dispatch) => {
-  const socket = io("/");
+  const socket = io("https://localhost:8000");
 
   socket.on("disconnect", () => {
     console.log("socket disconnect from server");
