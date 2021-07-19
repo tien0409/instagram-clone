@@ -30,10 +30,6 @@ app.use("/api/post", postRoute);
 app.use("/api/conversation", conversationRoute);
 app.use("/api/message", messageRoute);
 
-// handle error
-app.use(notFoundRoute);
-app.use(errHandler);
-
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
   const path = require("path");
@@ -41,6 +37,10 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
+
+// handle error
+app.use(notFoundRoute);
+app.use(errHandler);
 
 const server = app.listen(PORT, () => {
   console.log(`Listening on PORT ${PORT}`);
