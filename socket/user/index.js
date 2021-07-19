@@ -101,8 +101,7 @@ module.exports = function (socket, io) {
     cb();
   };
 
-  const forcedUnfollow = async (id) => {
-    socket.emit("server-sending-user-forced-unfollow");
+  const forcedUnfollow = async (id, cb) => {
     await User.updateOne({ _id: socket._id }, { $pull: { followers: id } });
     await User.updateOne({ _id: id }, { $pull: { following: socket._id } });
     const user = await User.findById(id);
@@ -110,9 +109,10 @@ module.exports = function (socket, io) {
       _id: id,
       numFollowers: user.followers.length,
     });
+    cb();
   };
 
-  const unfollow = async (id) => {
+  const unfollow = async (id, cb) => {
     await User.updateOne({ _id: socket._id }, { $pull: { following: id } });
     await User.updateOne({ _id: id }, { $pull: { followers: socket._id } });
     const user = await User.findById(id);
@@ -120,6 +120,7 @@ module.exports = function (socket, io) {
       _id: id,
       numFollowing: user.following.length,
     });
+    cb();
   };
 
   socket.on("client-get-user-logged-in", getUserLoggedIn);
