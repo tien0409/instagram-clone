@@ -63,7 +63,6 @@ const MessageContainer = () => {
     socket.on("server-send-message", (data) => {
       setMessages((messages) => [...messages, data]);
       socket.emit("client-get-number-unread-message");
-      socket.emit("client-get-last-message", data.conversation);
     });
 
     socket.on("server-send-receiver", (user) => {

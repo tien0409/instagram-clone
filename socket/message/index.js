@@ -38,12 +38,13 @@ module.exports = function (socket, io) {
     socket.emit("server-send-all-message", messages);
   };
 
-  const getLastMessage = async (conversationId) => {
+  const getLastMessage = async (data) => {
+    const { conversationId, room } = data;
     const lastMessage = await Message.findOne({
       conversation: conversationId,
     }).sort({ createdAt: -1 });
 
-    socket.emit("server-send-last-message", lastMessage);
+    io.to(room).emit("server-send-last-message", lastMessage);
   };
 
   const getNumberUnreadMessage = async () => {

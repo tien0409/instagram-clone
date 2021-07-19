@@ -11,7 +11,10 @@ const SidebarItem = ({ conversation, conversationId, user }) => {
   const [lastMessage, setLastMessage] = useState(null);
 
   useEffect(() => {
-    socket.emit("client-get-last-message", conversation._id);
+    socket.emit("client-get-last-message", {
+      conversationId: conversation._id,
+      room: `${userInfo.username}-${user.username}`,
+    });
     socket.on("server-send-last-message", (lastMessage) => {
       if (lastMessage && lastMessage?.conversation === conversation._id) {
         setLastMessage(lastMessage);

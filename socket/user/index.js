@@ -80,7 +80,7 @@ module.exports = function (socket, io) {
     cb();
   };
 
-  const sendMessage = async (data) => {
+  const sendMessage = async (data, cb) => {
     const { room, sender, conversation, content, avatar } = data;
     const message = new Message({ conversation, content, avatar, sender });
 
@@ -98,6 +98,7 @@ module.exports = function (socket, io) {
       ).populate("members", "avatar username");
       io.emit("server-send-new-conversation", conversationInfo);
     }
+    cb();
   };
 
   const forcedUnfollow = async (id) => {

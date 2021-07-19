@@ -16,13 +16,22 @@ const MessageForm = ({ receiver, conversation }) => {
       return;
     }
 
-    socket.emit("client-send-message", {
-      room: `${receiver.username}-${userInfo.username}`,
-      conversation: conversation,
-      sender: userInfo._id,
-      avatar: userInfo.avatar,
-      content: content.trim(),
-    });
+    socket.emit(
+      "client-send-message",
+      {
+        room: `${receiver.username}-${userInfo.username}`,
+        conversation: conversation,
+        sender: userInfo._id,
+        avatar: userInfo.avatar,
+        content: content.trim(),
+      },
+      () => {
+        socket.emit("client-get-last-message", {
+          conversationId: conversation._id,
+          room: `${receiver.username}-${userInfo.username}`,
+        });
+      },
+    );
     setContent("");
   };
 
