@@ -43,7 +43,6 @@ module.exports = function (socket, io) {
       conversation: conversationId,
     }).sort({ createdAt: -1 });
 
-    // socket.emit("server-send-last-message", lastMessage);
     io.emit("server-send-last-message", lastMessage);
   };
 

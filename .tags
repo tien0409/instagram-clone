@@ -918,6 +918,7 @@ Wrap	client/src/components/post/styles/post.jsx	/^export const Wrap = styled.div
 Wrap	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.Wrap = function UploadAvatarWrap({ children, ...restProps }) {$/;"	f	function:UploadAvatar
 Wrap	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Wrap = styled.div`$/;"	C
 WrapUserUser	client/src/components/list-user/index.jsx	/^ListUser.Wrap = function WrapUserUser({ children, ...restProps }) {$/;"	f
+_id	client/src/containers/header/HeaderSearchItem.jsx	/^        _id: user._id,$/;"	p	class:newHistory
 `yarn build`	client/README.md	/^### `yarn build`$/;"	S	section:Getting Started with Create React App""Available Scripts
 `yarn build` fails to minify	client/README.md	/^### `yarn build` fails to minify$/;"	S	section:Getting Started with Create React App""Learn More
 `yarn eject`	client/README.md	/^### `yarn eject`$/;"	S	section:Getting Started with Create React App""Available Scripts

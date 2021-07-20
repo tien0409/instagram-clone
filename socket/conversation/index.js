@@ -75,9 +75,18 @@ module.exports = function (socket, io) {
       );
 
       socket.emit("server-send-conversation", conversation);
+      socket.conversationCurrent = conversation;
     } catch (err) {
       socket.emit("server-send-conversation-error");
     }
+  };
+  const updateUnreadMessage = async (data, cb) => {
+    const { conversationId, room } = data;
+    await Message.updateMany(
+      { conversation: conversationId, sender: { $ne: socket._id } },
+      { unread: false },
+    );
+    cb();
   };
 
   socket.on("client-get-conversation", getConversationById);
@@ -85,4 +94,6 @@ module.exports = function (socket, io) {
   socket.on("client-create-conversation", createConversation);
 
   socket.on("client-get-all-conversation", getAllConversation);
+
+  socket.on("client-in-conversation", updateUnreadMessage);
 };

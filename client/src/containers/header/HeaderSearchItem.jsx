@@ -20,6 +20,7 @@ const HeaderSearchItem = ({
         avatar: user.avatar,
         username: user.username,
         fullName: user.fullName,
+        _id: user._id,
       };
     } else {
       newHistory.push({

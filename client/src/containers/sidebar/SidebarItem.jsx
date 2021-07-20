@@ -16,6 +16,7 @@ const SidebarItem = ({ conversation, conversationId, user }) => {
       if (lastMessage && lastMessage?.conversation === conversation._id) {
         setLastMessage(lastMessage);
       }
+      socket.emit("client-get-number-unread-message");
     });
 
     return () => {

@@ -35,6 +35,7 @@ module.exports = function (socket, io) {
     const user = await User.findById(userId).select("-password");
 
     socket.emit("server-send-receiver", user);
+    socket.receiver = user;
   };
 
   const toggleFollow = async (data, cb) => {
@@ -88,6 +89,8 @@ module.exports = function (socket, io) {
     io.to(room).emit("server-send-message", {
       ...data,
       _id: message._id,
+      conversationCurrent: socket.conversationCurrent,
+      receiver: socket.receiver,
     });
 
     const noFirstMessage = await Message.findOne({ conversation });
