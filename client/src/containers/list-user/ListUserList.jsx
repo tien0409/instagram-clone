@@ -9,6 +9,9 @@ const ListUserList = ({
   type,
   isLoading,
   setIsLoading,
+  userSelect,
+  setUserSelect,
+  userListFollowing,
 }) => {
   return (
     <ListUser.List>
@@ -22,6 +25,9 @@ const ListUserList = ({
           userInfo={userInfo}
           userInfoDetails={userInfoDetails}
           socket={socket}
+          userSelect={userSelect}
+          setUserSelect={setUserSelect}
+          userList={userList}
         />
       ))}
     </ListUser.List>

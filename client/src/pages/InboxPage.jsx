@@ -11,6 +11,8 @@ import { useSelector } from "react-redux";
 const InboxPage = () => {
   const socketConnect = useSelector((state) => state.socketConnect);
   const { socket } = socketConnect;
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
 
   const { path } = useRouteMatch();
 
@@ -29,8 +31,13 @@ const InboxPage = () => {
       setIsLoading(true);
     });
 
-    socket.on("server-send-new-conversation", (conversation) => {
-      if (conversations.find((c) => c._id !== conversation._id)) {
+    socket.on("server-send-new-conversation", (data) => {
+      const { conversation, creator } = data;
+      if (
+        (conversations.find((c) => c._id !== conversation._id) ||
+          conversations.length === 0) &&
+        creator !== userInfo._id
+      ) {
         setConversations((conversations) => [...conversations, conversation]);
       }
       socket.emit("client-get-number-unread-message");

@@ -93,35 +93,41 @@ module.exports = function (socket, io) {
       receiver: socket.receiver,
     });
 
-    const noFirstMessage = await Message.findOne({ conversation });
-
-    if (!noFirstMessage) {
+    const firstMessage = await Message.find({ conversation }).limit(2);
+    if (firstMessage.length !== 2) {
       const conversationInfo = await Conversation.findById(
         conversation._id,
       ).populate("members", "avatar username");
-      io.emit("server-send-new-conversation", conversationInfo);
+      io.emit("server-send-new-conversation", {
+        conversation: conversationInfo,
+        creator: socket._id,
+      });
     }
     cb();
   };
 
-  const forcedUnfollow = async (id, cb) => {
+  const forcedUnfollow = async (data, cb) => {
+    const { id, userList } = data;
     await User.updateOne({ _id: socket._id }, { $pull: { followers: id } });
     await User.updateOne({ _id: id }, { $pull: { following: socket._id } });
     const user = await User.findById(id);
     socket.emit("server-user-forced-unfollow", {
       _id: id,
       numFollowers: user.followers.length,
+      userList,
     });
     cb();
   };
 
-  const unfollow = async (id, cb) => {
+  const unfollow = async (data, cb) => {
+    const { id, userList } = data;
     await User.updateOne({ _id: socket._id }, { $pull: { following: id } });
     await User.updateOne({ _id: id }, { $pull: { followers: socket._id } });
     const user = await User.findById(id);
     socket.emit("server-user-unfollow", {
       _id: id,
       numFollowing: user.following.length,
+      userList,
     });
     cb();
   };

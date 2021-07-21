@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { formatDistanceToNowStrict } from "date-fns";
 import { useSelector } from "react-redux";
 import { Inbox } from "../../components";
 
@@ -41,7 +42,10 @@ const SidebarItem = ({ conversation, conversationId, user }) => {
           <Inbox.SidebarMsg>
             {lastMessage ? lastMessage.content : ""}
           </Inbox.SidebarMsg>
-          <Inbox.SidebarTime>4d</Inbox.SidebarTime>
+          <Inbox.SidebarTime>
+            {lastMessage &&
+              formatDistanceToNowStrict(new Date(lastMessage.createdAt))}
+          </Inbox.SidebarTime>
         </Inbox.SidebarMsgWrap>
       </Inbox.SidebarInfor>
     </Inbox.SidebarItem>

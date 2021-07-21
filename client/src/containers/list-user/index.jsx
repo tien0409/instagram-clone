@@ -29,6 +29,7 @@ const ListUserContainer = ({
     userInfoDetails.following,
   );
   const [isLoading, setIsLoading] = useState(false);
+  const [userSelect, setUserSelect] = useState(null);
 
   useEffect(() => {
     if (username !== userInfoDetails.username) {
@@ -40,15 +41,14 @@ const ListUserContainer = ({
 
   useEffect(() => {
     socket.on("server-user-forced-unfollow", (data) => {
-      const userListNew = userList.filter((user) => user._id !== data._id);
+      const userListNew = data.userList.filter((user) => user._id !== data._id);
+      setUserSelect(data._id);
       setUserList(userListNew);
       setNumFollowers(data.numFollowers);
     });
 
     socket.on("server-user-unfollow", (data) => {
-      const userListNew = userListFollowing.filter(
-        (user) => user._id !== data._id,
-      );
+      const userListNew = data.userList.filter((user) => user._id !== data._id);
       setUserListFollowing(userListNew);
       setNumFollowing(data.numFollowing);
     });
@@ -84,6 +84,8 @@ const ListUserContainer = ({
               setNumFollowers={setNumFollowers}
               userInfo={userInfo}
               userInfoDetails={userInfoDetails}
+              userSelect={userSelect}
+              setUserSelect={setUserSelect}
             />
           ) : (
             <ListUserList
@@ -96,6 +98,8 @@ const ListUserContainer = ({
               setNumFollowers={setNumFollowers}
               userInfo={userInfo}
               userInfoDetails={userInfoDetails}
+              userSelect={userSelect}
+              setUserSelect={setUserSelect}
             />
           )}
         </ListUser>

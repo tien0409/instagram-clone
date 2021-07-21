@@ -1689,7 +1689,7 @@ integrity	package-lock.json	/^      "integrity": "sha512-yaOH\/Pk\/VEhBWWTlhI+qX
 integrity	package-lock.json	/^      "integrity": "sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbz/;"	s	object:dependencies.bytes
 integrity	package-lock.json	/^      "integrity": "sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlF/;"	s	object:dependencies.ansi-styles
 integrity	package-lock.json	/^      "integrity": "sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr\/\/H6V+0DvJ3OQ/;"	s	object:dependencies.typedarray-to-buffer
-io	socket/index.js	/^  const io = require("socket.io")(httpServer, {});$/;"	C
+io	socket/index.js	/^  const io = require("socket.io")(httpServer, { cors: CLIENT_URL });$/;"	C
 ipaddr.js	package-lock.json	/^        "ipaddr.js": "1.9.1"$/;"	s	object:dependencies.proxy-addr.requires
 ipaddr.js	package-lock.json	/^    "ipaddr.js": {$/;"	o	object:dependencies
 is-binary-path	package-lock.json	/^        "is-binary-path": "~2.1.0",$/;"	s	object:dependencies.chokidar.requires
@@ -2418,6 +2418,7 @@ setUser	client/src/containers/profile/index.jsx	/^  const [user, setUser] = useS
 setUserList	client/src/containers/list-user/index.jsx	/^  const [userList, setUserList] = useState(userInfoDetails.followers);$/;"	C
 setUserListFollowing	client/src/containers/list-user/index.jsx	/^  const [userListFollowing, setUserListFollowing] = useState($/;"	C
 setUserLoading	client/src/containers/profile/index.jsx	/^  const [userLoading, setUserLoading] = useState(false);$/;"	C
+setUserSelect	client/src/containers/list-user/index.jsx	/^  const [userSelect, setUserSelect] = useState(null);$/;"	C
 setUsername	client/src/containers/setting/SettingEdit.jsx	/^  const [username, setUsername] = useState("");$/;"	C
 setUsername	client/src/pages/SignUpPage.jsx	/^  const [username, setUsername] = useState("");$/;"	C
 setUsers	client/src/containers/header/HeaderInputSearch.jsx	/^  const [users, setUsers] = useState($/;"	C
@@ -2440,7 +2441,7 @@ sizes	client/public/manifest.json	/^      "sizes": "64x64 32x32 24x24 16x16",$/;
 sliced	package-lock.json	/^        "sliced": "1.0.1"$/;"	s	object:dependencies.mongoose.requires
 sliced	package-lock.json	/^        "sliced": "1.0.1"$/;"	s	object:dependencies.mquery.requires
 sliced	package-lock.json	/^    "sliced": {$/;"	o	object:dependencies
-socket	client/src/actions/socketAction.jsx	/^  const socket = io("\/");$/;"	C
+socket	client/src/actions/socketAction.jsx	/^  const socket = io("http:\/\/localhost:8000");$/;"	C
 socket	client/src/helpers/socket.jsx	/^const socket = (function () {$/;"	f
 socket.io	package-lock.json	/^    "socket.io": {$/;"	o	object:dependencies
 socket.io	package.json	/^    "socket.io": "^4.1.2",$/;"	s	object:dependencies
@@ -2565,6 +2566,7 @@ userLogin	client/src/containers/setting/SettingEdit.jsx	/^  const userLogin = us
 userLogin	client/src/containers/sidebar/SidebarItem.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
 userLogin	client/src/containers/sidebar/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
 userLogin	client/src/containers/suggestion/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/pages/InboxPage.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
 userLogin	client/src/pages/LoginPage.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
 userLogin	client/src/store.jsx	/^  userLogin: {$/;"	c	class:initialState
 userLoginReducer	client/src/reducers/userReducer.jsx	/^export const userLoginReducer = (state = {}, action) => {$/;"	C

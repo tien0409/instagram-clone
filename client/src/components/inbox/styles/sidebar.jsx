@@ -92,6 +92,7 @@ export const SidebarName = styled.div`
 
 export const SidebarMsgWrap = styled.div`
   display: flex;
+  align-items: baseline;
   font-weight: 300;
   font-size: 1.4rem;
   color: #a6919d;
@@ -100,5 +101,6 @@ export const SidebarMsgWrap = styled.div`
 export const SidebarMsg = styled.div``;
 
 export const SidebarTime = styled.span`
-  margin-left: 8px;
+  margin-left: 12px;
+  font-size: 1.2rem;
 `;

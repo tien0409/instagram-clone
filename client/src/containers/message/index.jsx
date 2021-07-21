@@ -88,12 +88,12 @@ const MessageContainer = () => {
 
   useEffect(() => {
     socket.on("server-send-message", (data) => {
-      if (conversationId === data.conversation._id) {
+      if (conversationId === data.conversationCurrent._id) {
         setMessages((messages) => [...messages, data]);
       }
       if (
         data.sender !== userInfo._id &&
-        conversationId === data.conversation._id
+        conversationId === data.conversationCurrent._id
       ) {
         // update unread message when user in conversation
         socket.emit(
