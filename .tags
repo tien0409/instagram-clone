@@ -1934,6 +1934,7 @@ rc	package-lock.json	/^    "rc": {$/;"	o	object:dependencies
 react	client/package.json	/^    "react": "^17.0.2",$/;"	s	object:dependencies
 react-avatar-editor	client/package.json	/^    "react-avatar-editor": "^11.1.0",$/;"	s	object:dependencies
 react-dom	client/package.json	/^    "react-dom": "^17.0.2",$/;"	s	object:dependencies
+react-helmet	client/package.json	/^    "react-helmet": "^6.1.0",$/;"	s	object:dependencies
 react-icons	client/package.json	/^    "react-icons": "^4.2.0",$/;"	s	object:dependencies
 react-loading-skeleton	client/package.json	/^    "react-loading-skeleton": "^2.2.0",$/;"	s	object:dependencies
 react-redux	client/package.json	/^    "react-redux": "^7.2.4",$/;"	s	object:dependencies
@@ -2390,7 +2391,7 @@ setIsFirst	client/src/containers/StoryContainer.jsx	/^  const [isFirst, setIsFir
 setIsLast	client/src/containers/StoryContainer.jsx	/^  const [isLast, setIsLast] = useState(false);$/;"	C
 setIsLoading	client/src/containers/list-user/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/containers/profile/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
-setIsLoading	client/src/pages/InboxPage.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
+setIsLoading	client/src/pages/InboxPage.jsx	/^  const [isLoading, setIsLoading] = useState(true);$/;"	C
 setLastMessage	client/src/containers/sidebar/SidebarItem.jsx	/^  const [lastMessage, setLastMessage] = useState(null);$/;"	C
 setLiked	client/src/containers/post-list/PostItem.jsx	/^  const [liked, setLiked] = useState(post.likes.includes(userInfo._id));$/;"	C
 setLoadingToggleFollow	client/src/containers/profile/index.jsx	/^  const [loadingToggleFollow, setLoadingToggleFollow] = useState(false);$/;"	C

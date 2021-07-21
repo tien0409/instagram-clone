@@ -18,7 +18,7 @@ const InboxPage = () => {
   const { path } = useRouteMatch();
 
   const [conversations, setConversations] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
   const [numberUnreadMessage, setNumberUnreadMessage] = useState(0);
 
@@ -66,7 +66,13 @@ const InboxPage = () => {
 
   return (
     <>
-      <HelmetContainer title={`(${numberUnreadMessage}) Inbox • Chats`} />
+      <HelmetContainer
+        title={
+          numberUnreadMessage > 0
+            ? `(${numberUnreadMessage}) Inbox • Chats`
+            : "Inbox • Chats"
+        }
+      />
       <HeaderContainer relative="true" inbox="true" />
       {error ? (
         <Inbox.Error>{error}</Inbox.Error>
