@@ -7,3 +7,4 @@ export { default as SuggestionContainer } from "./suggestion";
 export { default as ProfileContainer } from "./profile";
 export { default as SettingContainer } from "./setting";
 export { default as ListUserContainer } from "./list-user";
+export { default as HelmetContainer } from "./helmet";

@@ -331,6 +331,7 @@ HeadingUsernameWrap	client/src/components/profile/index.jsx	/^Profile.HeadingUse
 HeadingUsernameWrap	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingUsernameWrap = styled.div`$/;"	C
 HeadingWrap	client/src/components/profile/index.jsx	/^Profile.HeadingWrap = function ProfileHeadingWrap({ children, ...restProps }) {$/;"	f	function:Profile
 HeadingWrap	client/src/components/profile/styles/profile-heading.jsx	/^export const HeadingWrap = styled.div`$/;"	C
+HelmetContainer	client/src/containers/helmet/index.jsx	/^const HelmetContainer = ({ title }) => {$/;"	C
 HomePage	client/src/App.jsx	/^const HomePage = lazy(() => import(".\/pages\/HomePage"));$/;"	C
 HomePage	client/src/pages/HomePage.jsx	/^const HomePage = () => {$/;"	C
 INBOX	client/src/constants/routes.jsx	/^export const INBOX = "\/inbox";$/;"	C
@@ -2407,6 +2408,7 @@ setNumFollowers	client/src/containers/profile/index.jsx	/^  const [numFollowers,
 setNumFollowing	client/src/containers/profile/index.jsx	/^  const [numFollowing, setNumFollowing] = useState(0);$/;"	C
 setNumLiked	client/src/containers/post-list/PostItem.jsx	/^  const [numLiked, setNumLiked] = useState(post.likes.length);$/;"	C
 setNumberUnreadMessage	client/src/containers/header/HeaderMessageItem.jsx	/^  const [numberUnreadMessage, setNumberUnreadMessage] = useState(0);$/;"	C
+setNumberUnreadMessage	client/src/pages/InboxPage.jsx	/^  const [numberUnreadMessage, setNumberUnreadMessage] = useState(0);$/;"	C
 setOldPassword	client/src/containers/setting/SettingChangePassword.jsx	/^  const [oldPassword, setOldPassword] = useState("");$/;"	C
 setPassword	client/src/pages/LoginPage.jsx	/^  const [password, setPassword] = useState("");$/;"	C
 setPassword	client/src/pages/SignUpPage.jsx	/^  const [password, setPassword] = useState("");$/;"	C
@@ -2568,6 +2570,7 @@ userLogin	client/src/containers/sidebar/index.jsx	/^  const userLogin = useSelec
 userLogin	client/src/containers/suggestion/index.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
 userLogin	client/src/pages/InboxPage.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
 userLogin	client/src/pages/LoginPage.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
+userLogin	client/src/pages/ProfilePage.jsx	/^  const userLogin = useSelector((state) => state.userLogin);$/;"	C
 userLogin	client/src/store.jsx	/^  userLogin: {$/;"	c	class:initialState
 userLoginReducer	client/src/reducers/userReducer.jsx	/^export const userLoginReducer = (state = {}, action) => {$/;"	C
 userRegister	client/src/pages/SignUpPage.jsx	/^  const userRegister = useSelector((state) => state.userRegister);$/;"	C

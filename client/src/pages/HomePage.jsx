@@ -3,12 +3,14 @@ import {
   PostListContainer,
   CreatePostContainer,
   SuggestionContainer,
+  HelmetContainer,
 } from "../containers";
 import { Container } from "../globalStyles";
 
 const HomePage = () => {
   return (
     <>
+      <HelmetContainer title="Instagram" />
       <HeaderContainer home="true" />
       <Container>
         <div

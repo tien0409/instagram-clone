@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../actions/userAction";
+import { HelmetContainer } from "../containers";
 
 const LoginPage = () => {
   const dispatch = useDispatch();
@@ -58,68 +59,71 @@ const LoginPage = () => {
   };
 
   return (
-    <Form>
-      <Form.Wrap>
-        <Form.ImgWrap>
-          <Form.ImgList>
-            <Form.ImgItem src={`/images/phone${imgNumber}.jpg`} />
-          </Form.ImgList>
-        </Form.ImgWrap>
-        <Form.BaseWrap>
-          <Form.Base onSubmit={handleSubmit} autocomplete="off">
-            <Form.Title>Instagram</Form.Title>
-            <Form.Input
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              type="text"
-              placeholder="Email"
-            />
-            <Form.Input
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              type="password"
-              placeholder="Password"
-            />
-            {err && err}
-            <Form.Button type="submit" disabled={isInvalid}>
-              {isLoading ? (
-                <Spinner size="sm" color="white"></Spinner>
-              ) : (
-                "Sign in"
-              )}
-            </Form.Button>
+    <>
+      <HelmetContainer title="Instagram" />
+      <Form>
+        <Form.Wrap>
+          <Form.ImgWrap>
+            <Form.ImgList>
+              <Form.ImgItem src={`/images/phone${imgNumber}.jpg`} />
+            </Form.ImgList>
+          </Form.ImgWrap>
+          <Form.BaseWrap>
+            <Form.Base onSubmit={handleSubmit} autocomplete="off">
+              <Form.Title>Instagram</Form.Title>
+              <Form.Input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="text"
+                placeholder="Email"
+              />
+              <Form.Input
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                type="password"
+                placeholder="Password"
+              />
+              {err && err}
+              <Form.Button type="submit" disabled={isInvalid}>
+                {isLoading ? (
+                  <Spinner size="sm" color="white"></Spinner>
+                ) : (
+                  "Sign in"
+                )}
+              </Form.Button>
 
-            <Form.Separate></Form.Separate>
+              <Form.Separate></Form.Separate>
 
-            <Form.SocialWrap to="/">
-              <Form.SocialIcon>
-                <AiFillFacebook />
-              </Form.SocialIcon>
-              <Form.SocialName>Log in with Facebook</Form.SocialName>
-            </Form.SocialWrap>
-            {error && <Form.Error login>{error}</Form.Error>}
-            <Form.ForgotPassword to="/">Forgot password?</Form.ForgotPassword>
-          </Form.Base>
-          <Form.Option>
-            <Form.OptionText>
-              Don't have an account?&nbsp;
-              <Form.OptionLink to={ROUTES.SIGN_UP}>Sign up</Form.OptionLink>
-            </Form.OptionText>
-          </Form.Option>
-          <Form.DownloadWrap>
-            <Form.DownloadText>Get the app</Form.DownloadText>
-            <Form.DownloadOS>
-              <Form.DownloadLink>
-                <Form.DownloadImg src="/images/apple.png" />
-              </Form.DownloadLink>
-              <Form.DownloadLink>
-                <Form.DownloadImg src="/images/google-play.png" />
-              </Form.DownloadLink>
-            </Form.DownloadOS>
-          </Form.DownloadWrap>
-        </Form.BaseWrap>
-      </Form.Wrap>
-    </Form>
+              <Form.SocialWrap to="/">
+                <Form.SocialIcon>
+                  <AiFillFacebook />
+                </Form.SocialIcon>
+                <Form.SocialName>Log in with Facebook</Form.SocialName>
+              </Form.SocialWrap>
+              {error && <Form.Error login>{error}</Form.Error>}
+              <Form.ForgotPassword to="/">Forgot password?</Form.ForgotPassword>
+            </Form.Base>
+            <Form.Option>
+              <Form.OptionText>
+                Don't have an account?&nbsp;
+                <Form.OptionLink to={ROUTES.SIGN_UP}>Sign up</Form.OptionLink>
+              </Form.OptionText>
+            </Form.Option>
+            <Form.DownloadWrap>
+              <Form.DownloadText>Get the app</Form.DownloadText>
+              <Form.DownloadOS>
+                <Form.DownloadLink>
+                  <Form.DownloadImg src="/images/apple.png" />
+                </Form.DownloadLink>
+                <Form.DownloadLink>
+                  <Form.DownloadImg src="/images/google-play.png" />
+                </Form.DownloadLink>
+              </Form.DownloadOS>
+            </Form.DownloadWrap>
+          </Form.BaseWrap>
+        </Form.Wrap>
+      </Form>
+    </>
   );
 };
 

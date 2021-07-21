@@ -1,5 +1,6 @@
 import {
   HeaderContainer,
+  HelmetContainer,
   MessageContainer,
   SidebarContainer,
 } from "../containers";
@@ -19,6 +20,7 @@ const InboxPage = () => {
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const [numberUnreadMessage, setNumberUnreadMessage] = useState(0);
 
   useEffect(() => {
     socket.emit("client-get-all-conversation");
@@ -48,17 +50,23 @@ const InboxPage = () => {
       setIsLoading(false);
     });
 
+    socket.on("server-send-number-unread-message", (num) => {
+      setNumberUnreadMessage(num);
+    });
+
     return () => {
       socket.off("server-send-conversation-error");
       socket.off("server-sending-all-conversation");
       socket.off("server-send-new-conversation");
       socket.off("server-send-all-conversation");
+      socket.off("server-send-number-unread-message");
     };
     // eslint-disable-next-line
   }, []);
 
   return (
     <>
+      <HelmetContainer title={`(${numberUnreadMessage}) Inbox • Chats`} />
       <HeaderContainer relative="true" inbox="true" />
       {error ? (
         <Inbox.Error>{error}</Inbox.Error>
