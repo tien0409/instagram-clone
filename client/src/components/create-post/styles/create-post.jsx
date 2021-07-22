@@ -99,7 +99,7 @@ export const Button = styled.button`
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
-  background: linear-gradient(135deg, #3a8ffe 0%, #9f58fe 100%);
+  background-color: #0d6efd;
 
   ${({ disabled }) => disabled && "filter: brightness(0.6); cursor: default"}
 `;
@@ -177,7 +177,7 @@ export const CustomButton = styled.button`
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
-  background: linear-gradient(135deg, #3a8ffe 0%, #9f58fe 100%);
+  background-color: #0d6efd;
 
   ${({ disabled }) => disabled && "filter: brightness(0.6); cursor: default"}
 `;

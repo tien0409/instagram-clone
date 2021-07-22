@@ -998,7 +998,7 @@ bson	package-lock.json	/^        "bson": "^1.1.4",$/;"	s	object:dependencies.mon
 bson	package-lock.json	/^    "bson": {$/;"	o	object:dependencies
 buffer-equal-constant-time	package-lock.json	/^        "buffer-equal-constant-time": "1.0.1",$/;"	s	object:dependencies.jwa.requires
 buffer-equal-constant-time	package-lock.json	/^    "buffer-equal-constant-time": {$/;"	o	object:dependencies
-build	client/package.json	/^    "build": "react-scripts build",$/;"	s	object:scripts
+build	client/package.json	/^    "build": "GENERATE_SOURCEMAP=false react-scripts build",$/;"	s	object:scripts
 bytes	package-lock.json	/^        "bytes": "3.1.0",$/;"	s	object:dependencies.body-parser.requires
 bytes	package-lock.json	/^        "bytes": "3.1.0",$/;"	s	object:dependencies.raw-body.requires
 bytes	package-lock.json	/^    "bytes": {$/;"	o	object:dependencies
