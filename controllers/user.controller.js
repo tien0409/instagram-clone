@@ -1,28 +1,28 @@
-const { validationResult } = require("express-validator");
-const asyncHandler = require("express-async-handler");
+const {validationResult} = require ("express-validator");
+const asyncHandler = require ("express-async-handler");
 
-const generateToken = require("../utils/generate-token");
-const User = require("../models/user.model");
-const Post = require("../models/post.model");
-const Message = require("../models/message.model");
+const generateToken = require ("../utils/generate-token");
+const User = require ("../models/user.model");
+const Post = require ("../models/post.model");
+const Message = require ("../models/message.model");
 
 /*
  * @desc  sign up user
  * @route POST /api/user/signup
  * @access Public
  */
-const signUp = asyncHandler(async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    res.status(400);
-    throw new Error(errors.array()[0].msg);
+const signUp = asyncHandler (async (req, res) => {
+  const errors = validationResult (req);
+  if (!errors.isEmpty ()) {
+    res.status (400);
+    throw new Error (errors.array ()[0].msg);
   }
-  const { email, username, fullName, password } = req.body;
+  const {email, username, fullName, password} = req.body;
 
-  const newUser = new User({ email, username, fullName, password });
-  await newUser.save();
+  const newUser = new User ({email, username, fullName, password});
+  await newUser.save ();
 
-  res.status(201).json({
+  res.status (201).json ({
     _id: newUser._id,
     email: newUser.email,
     username: newUser.username,
@@ -32,7 +32,7 @@ const signUp = asyncHandler(async (req, res) => {
     avatar: newUser.avatar,
     phoneNumber: newUser.phoneNumber,
     gender: newUser.gender,
-    token: generateToken(newUser._id),
+    token: generateToken (newUser._id),
   });
 });
 
@@ -41,19 +41,19 @@ const signUp = asyncHandler(async (req, res) => {
  * @route POST /api/user/signin
  * @access Public
  */
-const signIn = asyncHandler(async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    res.status(400);
-    throw new Error(errors.array()[0].msg);
+const signIn = asyncHandler (async (req, res) => {
+  const errors = validationResult (req);
+  if (!errors.isEmpty ()) {
+    res.status (400);
+    throw new Error (errors.array ()[0].msg);
   }
 
-  const { email, password } = req.body;
+  const {email, password} = req.body;
 
-  const user = await User.findOne({ email });
+  const user = await User.findOne ({email});
 
-  if (user && (await user.isCorrectPassword(password))) {
-    res.status(200).json({
+  if (user && (await user.isCorrectPassword (password))) {
+    res.status (200).json ({
       _id: user._id,
       email: user.email,
       username: user.username,
@@ -63,12 +63,49 @@ const signIn = asyncHandler(async (req, res) => {
       following: user.following,
       phoneNumber: user.phoneNumber,
       gender: user.gender,
-      token: generateToken(user._id),
+      token: generateToken (user._id),
     });
   } else {
-    res.status(401);
-    throw new Error("Email or Password incorrect. Please try again");
+    res.status (401);
+    throw new Error ("Email or Password incorrect. Please try again");
   }
+});
+
+/*
+ * @desc  sign in user with fb
+ * @route POST /api/user/signin/fb
+ * @access Public
+ */
+const signInWithFb = asyncHandler (async (req, res) => {
+  console.log("req.user", req.user)
+  // const errors = validationResult(req);
+  // if (!errors.isEmpty()) {
+  //   res.status(400);
+  //   throw new Error(errors.array()[0].msg);
+  // }
+  //
+  // const { email, password } = req.body;
+  //
+  // const user = await User.findOne({ email });
+  //
+  // if (user && (await user.isCorrectPassword(password))) {
+  //   res.status(200).json({
+  //     _id: user._id,
+  //     email: user.email,
+  //     username: user.username,
+  //     avatar: user.avatar,
+  //     fullName: user.fullName,
+  //     followers: user.followers,
+  //     following: user.following,
+  //     phoneNumber: user.phoneNumber,
+  //     gender: user.gender,
+  //     token: generateToken(user._id),
+  //   });
+  // } else {
+  //   res.status(401);
+  //   throw new Error("Email or Password incorrect. Please try again");
+  // }
+  res.json ("abc")
 });
 
 /*
@@ -76,8 +113,8 @@ const signIn = asyncHandler(async (req, res) => {
  * @route POST /api/user/auth
  * @access Public
  */
-const authSignIn = asyncHandler(async (req, res) => {
-  res.status(200).json({
+const authSignIn = asyncHandler (async (req, res) => {
+  res.status (200).json ({
     _id: req.user._id,
     email: req.user.email,
     username: req.user.username,
@@ -95,14 +132,14 @@ const authSignIn = asyncHandler(async (req, res) => {
  * @route GET /api/user/suggestion
  * @access Private
  */
-const getUserSuggestion = asyncHandler(async (req, res) => {
-  const { _id: idLoggedIn, following } = req.user;
+const getUserSuggestion = asyncHandler (async (req, res) => {
+  const {_id: idLoggedIn, following} = req.user;
 
-  const users = await User.find({
-    _id: { $ne: idLoggedIn, $nin: following },
-  }).select("-password");
+  const users = await User.find ({
+    _id: {$ne: idLoggedIn, $nin: following},
+  }).select ("-password");
 
-  res.status(200).json(users);
+  res.status (200).json (users);
 });
 
 /*
@@ -110,15 +147,15 @@ const getUserSuggestion = asyncHandler(async (req, res) => {
  * @route GET /api/user/:username
  * @access Private
  */
-const getUserDetails = asyncHandler(async (req, res) => {
-  const { userReq } = req;
+const getUserDetails = asyncHandler (async (req, res) => {
+  const {userReq} = req;
 
-  const user = await User.findById(userReq._id)
-    .populate("followers", "username avatar fullName")
-    .populate("following", "username avatar fullName");
-  const postsCreated = await Post.find({ user: userReq._id });
+  const user = await User.findById (userReq._id)
+    .populate ("followers", "username avatar fullName")
+    .populate ("following", "username avatar fullName");
+  const postsCreated = await Post.find ({user: userReq._id});
 
-  res.status(200).json({
+  res.status (200).json ({
     _id: user._id,
     email: user.email,
     username: user.username,
@@ -137,47 +174,47 @@ const getUserDetails = asyncHandler(async (req, res) => {
  * @route POST /api/user/follow
  * @access Private
  */
-const followUser = asyncHandler(async (req, res) => {
-  const { following, id: idLoggedIn } = req.user;
-  const { username } = req.body;
+const followUser = asyncHandler (async (req, res) => {
+  const {following, id: idLoggedIn} = req.user;
+  const {username} = req.body;
 
-  const user = await User.findOne({ username });
+  const user = await User.findOne ({username});
 
   if (!user) {
-    res.status(404);
-    throw new Error("Can not follow. User not found");
+    res.status (404);
+    throw new Error ("Can not follow. User not found");
   }
 
   // user logged in following
-  if (following.includes(user._id)) {
-    await User.updateOne(
-      { _id: idLoggedIn },
-      { $pull: { following: user._id } },
+  if (following.includes (user._id)) {
+    await User.updateOne (
+      {_id: idLoggedIn},
+      {$pull: {following: user._id}},
     );
   } else {
-    await User.updateOne(
-      { _id: idLoggedIn },
-      { $push: { following: user._id } },
+    await User.updateOne (
+      {_id: idLoggedIn},
+      {$push: {following: user._id}},
     );
   }
 
   // user followed
-  if (user.followers.includes(idLoggedIn)) {
-    await User.updateOne(
-      { _id: user._id },
-      { $pull: { followers: idLoggedIn } },
+  if (user.followers.includes (idLoggedIn)) {
+    await User.updateOne (
+      {_id: user._id},
+      {$pull: {followers: idLoggedIn}},
     );
   } else {
-    await User.updateOne(
-      { _id: user._id },
-      { $push: { followers: idLoggedIn } },
+    await User.updateOne (
+      {_id: user._id},
+      {$push: {followers: idLoggedIn}},
     );
   }
 
-  await user.save();
-  await req.user.save();
+  await user.save ();
+  await req.user.save ();
 
-  res.status(200).json({ msg: "Follow success" });
+  res.status (200).json ({msg: "Follow success"});
 });
 
 /*
@@ -185,9 +222,9 @@ const followUser = asyncHandler(async (req, res) => {
  * @route POST /api/user/comment/:postId
  * @access Private
  */
-const commentPost = asyncHandler(async (req, res) => {
-  const { postReq, user } = req;
-  const { content } = req.body;
+const commentPost = asyncHandler (async (req, res) => {
+  const {postReq, user} = req;
+  const {content} = req.body;
 
   const comment = {
     user: user._id,
@@ -196,9 +233,9 @@ const commentPost = asyncHandler(async (req, res) => {
     content,
   };
 
-  await Post.updateOne({ _id: postReq._id }, { $push: { comments: comment } });
+  await Post.updateOne ({_id: postReq._id}, {$push: {comments: comment}});
 
-  res.status(200).json({ msg: "Comment success" });
+  res.status (200).json ({msg: "Comment success"});
 });
 
 /*
@@ -206,15 +243,15 @@ const commentPost = asyncHandler(async (req, res) => {
  * @route PUT /api/user/avatar
  * @access Private
  */
-const updateAvatar = asyncHandler(async (req, res) => {
-  const { user } = req;
-  const { avatar } = req.body;
+const updateAvatar = asyncHandler (async (req, res) => {
+  const {user} = req;
+  const {avatar} = req.body;
 
-  await User.updateOne({ _id: user._id }, { avatar });
-  await Post.updateMany({ user: user._id }, { avatar });
-  await Message.updateMany({ sender: user._id }, { avatar });
+  await User.updateOne ({_id: user._id}, {avatar});
+  await Post.updateMany ({user: user._id}, {avatar});
+  await Message.updateMany ({sender: user._id}, {avatar});
 
-  res.status(200).json({ msg: "Update avatar success" });
+  res.status (200).json ({msg: "Update avatar success"});
 });
 
 /*
@@ -222,23 +259,23 @@ const updateAvatar = asyncHandler(async (req, res) => {
  * @route DELETE /api/user/avatar
  * @access Private
  */
-const deleteAvatar = asyncHandler(async (req, res) => {
-  const { user } = req;
+const deleteAvatar = asyncHandler (async (req, res) => {
+  const {user} = req;
 
-  await User.updateOne(
-    { _id: user._id },
-    { avatar: "/images/avatar_default.png" },
+  await User.updateOne (
+    {_id: user._id},
+    {avatar: "/images/avatar_default.png"},
   );
-  await Post.updateMany(
-    { user: user._id },
-    { avatar: "/images/avatar_default.png" },
+  await Post.updateMany (
+    {user: user._id},
+    {avatar: "/images/avatar_default.png"},
   );
-  await Message.updateMany(
-    { sender: user._id },
-    { avatar: "/images/avatar_default.png" },
+  await Message.updateMany (
+    {sender: user._id},
+    {avatar: "/images/avatar_default.png"},
   );
 
-  res.status(200).json({ msg: "Remove avatar success" });
+  res.status (200).json ({msg: "Remove avatar success"});
 });
 
 /*
@@ -246,26 +283,26 @@ const deleteAvatar = asyncHandler(async (req, res) => {
  * @route PUT /api/user
  * @access Private
  */
-const updateInfo = asyncHandler(async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    res.status(400);
-    throw new Error(errors.array()[0].msg);
+const updateInfo = asyncHandler (async (req, res) => {
+  const errors = validationResult (req);
+  if (!errors.isEmpty ()) {
+    res.status (400);
+    throw new Error (errors.array ()[0].msg);
   }
 
-  const { user } = req;
-  const { fullName, username, email, gender, phoneNumber } = req.body;
+  const {user} = req;
+  const {fullName, username, email, gender, phoneNumber} = req.body;
 
-  await User.updateOne(
-    { _id: user._id },
-    { fullName, username, email, gender, phoneNumber },
+  await User.updateOne (
+    {_id: user._id},
+    {fullName, username, email, gender, phoneNumber},
   );
-  await Post.updateMany(
-    { user: user._id },
-    { name: username, comment: { name: username } },
+  await Post.updateMany (
+    {user: user._id},
+    {name: username, comment: {name: username}},
   );
 
-  res.status(200).json({ msg: "Update info success" });
+  res.status (200).json ({msg: "Update info success"});
 });
 
 /*
@@ -273,19 +310,19 @@ const updateInfo = asyncHandler(async (req, res) => {
  * @route PUT /api/user/password
  * @access Private
  */
-const updatePassword = asyncHandler(async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    res.status(400);
-    throw new Error(errors.array()[0].msg);
+const updatePassword = asyncHandler (async (req, res) => {
+  const errors = validationResult (req);
+  if (!errors.isEmpty ()) {
+    res.status (400);
+    throw new Error (errors.array ()[0].msg);
   }
 
-  const { user } = req;
-  const { password } = req.body;
+  const {user} = req;
+  const {password} = req.body;
 
-  await User.updateOne({ _id: user._id }, { password });
+  await User.updateOne ({_id: user._id}, {password});
 
-  res.status(200).json({ msg: "Update password success" });
+  res.status (200).json ({msg: "Update password success"});
 });
 
 /*
@@ -293,19 +330,19 @@ const updatePassword = asyncHandler(async (req, res) => {
  * @route GET /api/user?keyword
  * @access Private
  */
-const findUser = asyncHandler(async (req, res) => {
-  const { keyword } = req.query;
+const findUser = asyncHandler (async (req, res) => {
+  const {keyword} = req.query;
 
-  if (keyword.trim() === "") {
-    return res.status(200).json([]);
+  if (keyword.trim () === "") {
+    return res.status (200).json ([]);
   }
 
-  const users = await User.find({
-    username: new RegExp(`${keyword}`, "gi"),
-    _id: { $ne: req.user._id },
-  }).select("-password");
+  const users = await User.find ({
+    username: new RegExp (`${keyword}`, "gi"),
+    _id: {$ne: req.user._id},
+  }).select ("-password");
 
-  res.status(200).json(users);
+  res.status (200).json (users);
 });
 
 module.exports = {
@@ -321,4 +358,5 @@ module.exports = {
   updateInfo,
   updatePassword,
   findUser,
+  signInWithFb
 };

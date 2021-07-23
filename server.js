@@ -8,6 +8,7 @@ const morgan = require("morgan");
 const { notFoundRoute, errHandler } = require("./middlewares/error.middleware");
 const { PORT } = require("./configs/env");
 const connectDb = require("./utils/db");
+require("./middlewares/passport.middleware");
 
 const app = express();
 connectDb();
