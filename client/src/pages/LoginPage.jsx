@@ -4,8 +4,9 @@ import { Form, Spinner } from "../components";
 import { useHistory } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../actions/userAction";
+import { login, loginWithFb } from "../actions/userAction";
 import { HelmetContainer } from "../containers";
+import FacebookLoginContainer from "../containers/facebook-login";
 
 const LoginPage = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,6 @@ const LoginPage = () => {
 
   const history = useHistory();
 
-  const [imgNumber, setImgNumber] = useState(1);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -30,20 +30,6 @@ const LoginPage = () => {
     );
 
   useEffect(() => {
-    const timerImg = setInterval(() => {
-      if (imgNumber === 4) {
-        setImgNumber(1);
-      } else {
-        setImgNumber(imgNumber + 1);
-      }
-    }, 3000);
-
-    return () => {
-      clearInterval(timerImg);
-    };
-  }, [imgNumber]);
-
-  useEffect(() => {
     if (userInfo) {
       history.push(ROUTES.HOME);
     }
@@ -53,10 +39,12 @@ const LoginPage = () => {
   }, [userInfo, history, err]);
 
   // handle login
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
   };
+
+  const handleLoginWithFb = () => {};
 
   return (
     <>
@@ -65,7 +53,7 @@ const LoginPage = () => {
         <Form.Wrap>
           <Form.ImgWrap>
             <Form.ImgList>
-              <Form.ImgItem src={`/images/phone${imgNumber}.jpg`} />
+              <Form.ImgItem />
             </Form.ImgList>
           </Form.ImgWrap>
           <Form.BaseWrap>
@@ -94,7 +82,7 @@ const LoginPage = () => {
 
               <Form.Separate></Form.Separate>
 
-              <Form.SocialWrap to="/">
+              <Form.SocialWrap onClick={handleLoginWithFb}>
                 <Form.SocialIcon>
                   <AiFillFacebook />
                 </Form.SocialIcon>
@@ -112,10 +100,10 @@ const LoginPage = () => {
             <Form.DownloadWrap>
               <Form.DownloadText>Get the app</Form.DownloadText>
               <Form.DownloadOS>
-                <Form.DownloadLink>
+                <Form.DownloadLink to="/">
                   <Form.DownloadImg src="/images/apple.png" />
                 </Form.DownloadLink>
-                <Form.DownloadLink>
+                <Form.DownloadLink to="/">
                   <Form.DownloadImg src="/images/google-play.png" />
                 </Form.DownloadLink>
               </Form.DownloadOS>
@@ -123,6 +111,7 @@ const LoginPage = () => {
           </Form.BaseWrap>
         </Form.Wrap>
       </Form>
+      <FacebookLoginContainer />
     </>
   );
 };

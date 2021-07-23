@@ -34,6 +34,7 @@ import {
   USER_FIND_REQUEST,
   USER_FIND_SUCCESS,
   USER_FIND_FAIL,
+  USER_LOGIN_WITH_FB_REQUEST,
 } from "../constants/userConstants";
 import { SOCKET_DISCONNECT } from "../constants/socketConstants";
 
@@ -75,6 +76,32 @@ export const login = (email, password) => async (dispatch) => {
       { email, password },
       config,
     );
+
+    localStorage.setItem("userInfo", JSON.stringify(res.data));
+    dispatch({ type: USER_LOGIN_SUCCESS, payload: res.data });
+  } catch (err) {
+    console.log("err", err);
+    dispatch({ type: USER_LOGIN_FAIL, payload: err.response.data.msg });
+  }
+};
+
+// login user with fb
+export const loginWithFb = (accessToken) => async (dispatch) => {
+  try {
+    dispatch({ type: USER_LOGIN_WITH_FB_REQUEST });
+
+    const config = {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    };
+
+    const res = await axios.post(
+      "/api/user/signin/fb",
+      { access_token: accessToken },
+      config,
+    );
+    console.log("res", res.data);
 
     localStorage.setItem("userInfo", JSON.stringify(res.data));
     dispatch({ type: USER_LOGIN_SUCCESS, payload: res.data });

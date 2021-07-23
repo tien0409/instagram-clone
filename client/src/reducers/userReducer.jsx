@@ -34,7 +34,7 @@ import {
   USER_UPDATE_PASSWORD_SUCCESS,
   USER_FIND_FAIL,
   USER_FIND_REQUEST,
-  USER_FIND_SUCCESS,
+  USER_FIND_SUCCESS, USER_LOGIN_WITH_FB_REQUEST,
 } from "../constants/userConstants";
 
 export const userLoginReducer = (state = {}, action) => {
@@ -42,6 +42,7 @@ export const userLoginReducer = (state = {}, action) => {
 
   switch (type) {
     case USER_LOGIN_REQUEST:
+    case USER_LOGIN_WITH_FB_REQUEST:
       return { isLoading: true };
     case USER_LOGIN_SUCCESS:
       return { isLoading: false, userInfo: payload };

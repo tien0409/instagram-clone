@@ -49,7 +49,6 @@ passport.use (new FacebookTokenStrategy ({
     }
   }
 
-  console.log ("username", username);
   const newUser = new User ({
     authFbId: profile.id,
     authType: "facebook",

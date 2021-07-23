@@ -57,7 +57,7 @@ const HeaderInputSearch = () => {
   }, []);
 
   const handleSearch = (e) => {
-    if (e.target.value === "") {
+    if (e.target.value === "" && e.target.name === "search") {
       setUsers(history);
     }
     setVisible(true);
@@ -84,6 +84,7 @@ const HeaderInputSearch = () => {
         value={search}
         onClick={handleClickInput}
         onChange={handleSearch}
+        name="search"
         type="text"
         placeholder="Search..."
       />

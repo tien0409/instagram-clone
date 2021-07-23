@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   Container,
   Wrap,
@@ -44,8 +45,24 @@ Form.ImgList = function FormImgList({ children, ...restProps }) {
   return <ImgList {...restProps}>{children}</ImgList>;
 };
 
-Form.ImgItem = function FormImgItem({ src, ...restProps }) {
-  return <ImgItem src={src} {...restProps} />;
+Form.ImgItem = function FormImgItem({ ...restProps }) {
+  const [imgNumber, setImgNumber] = useState(1);
+
+  useEffect(() => {
+    const timerImg = setInterval(() => {
+      if (imgNumber === 4) {
+        setImgNumber(1);
+      } else {
+        setImgNumber(imgNumber + 1);
+      }
+    }, 3000);
+
+    return () => {
+      clearInterval(timerImg);
+    };
+  }, [imgNumber]);
+
+  return <ImgItem src={`/images/phone${imgNumber}.jpg`} {...restProps} />;
 };
 
 Form.BaseWrap = function FormBaseWrap({ children, ...restProps }) {

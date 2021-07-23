@@ -36,11 +36,11 @@ router.post ("/signup", signUpValidator (), signUp);
 router.route ("/signin/fb").post (passport.authenticate ("facebook-token", {session: false}), signInWithFb);
 router.route ("/signin", signInValidator ()).post (signIn);
 router.get ("/auth", passport.authenticate ('jwt', {session: false}), authSignIn);
-router.route ("/suggestion").get (auth, getUserSuggestion);
-router.route ("/details/:username").get (auth, getUserDetails);
-router.route ("/follow").post (auth, followUser);
-router.route ("/avatar").put (auth, updateAvatar).delete (auth, deleteAvatar);
-router.route ("/password").put (auth, updatePasswordValidator (), updatePassword);
+router.route ("/suggestion").get (passport.authenticate ('jwt', {session: false}), getUserSuggestion);
+router.route ("/details/:username").get (passport.authenticate ('jwt', {session: false}), getUserDetails);
+router.route ("/follow").post (passport.authenticate ('jwt', {session: false}), followUser);
+router.route ("/avatar").put (passport.authenticate ('jwt', {session: false}), updateAvatar).delete (auth, deleteAvatar);
+router.route ("/password").put (passport.authenticate ('jwt', {session: false}), updatePasswordValidator (), updatePassword);
 router
   .route ("/comment/:postId")
   .post (auth, createCommentValidator (), commentPost);

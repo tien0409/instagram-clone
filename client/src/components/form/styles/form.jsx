@@ -140,12 +140,13 @@ export const Separate = styled.span`
   }
 `;
 
-export const SocialWrap = styled(Link)`
+export const SocialWrap = styled.div`
   margin: ${({ signup }) => (signup ? "28px 0 0" : "28px 0 24px")};
   display: flex;
   align-items: center;
   color: #385185;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 export const SocialIcon = styled.span`

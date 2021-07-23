@@ -1138,7 +1138,7 @@ Analyzing the Bundle Size	client/README.md	/^### Analyzing the Bundle Size$/;"	S
 AnonymousClassa72a56781b901	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:t.createContext
 AnonymousClassa72a5678ae01	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:b
 AnonymousClassa72a5678af01	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c
-AnonymousFunction17a937810100	models/user.model.js	/^userSchema.pre("save", async function (next) {$/;"	c
+AnonymousFunction17a937810100	models/user.model.js	/^userSchema.pre ("save", async function (next) {$/;"	c
 AnonymousFunction1d506daa0100	client/build/static/js/4.6b63b437.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],{179:function(e,n,t){"use /;"	f
 AnonymousFunction1d506daa0200	client/build/static/js/4.6b63b437.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],{179:function(e,n,t){"use /;"	f	function:n
 AnonymousFunction1d506daa0300	client/build/static/js/4.6b63b437.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],{179:function(e,n,t){"use /;"	f	function:n
@@ -2645,8 +2645,13 @@ Esc	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=thi
 Et	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Eu	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Events	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:ic
+ExtractJwt	middlewares/passport.middleware.js	/^const ExtractJwt = require ("passport-jwt").ExtractJwt;$/;"	C
 F	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
+FB_APP_ID	configs/env.js	/^  FB_APP_ID: process.env.FB_APP_ID,$/;"	p	class:module.exports
+FB_APP_SECRET	configs/env.js	/^  FB_APP_SECRET: process.env.FB_APP_SECRET$/;"	p	class:module.exports
 Fa	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
+FacebookLoginContainer	client/src/containers/facebook-login/index.jsx	/^const FacebookLoginContainer = () => {$/;"	C
+FacebookTokenStrategy	middlewares/passport.middleware.js	/^const FacebookTokenStrategy = require ("passport-facebook-token")$/;"	C
 Fe	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	v
 Fi	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 FileInfoWrap	client/src/components/create-post/index.jsx	/^CreatePost.FileInfoWrap = function CreatePostFileInfoWrap({$/;"	f	function:CreatePost
@@ -2672,7 +2677,7 @@ FormDownloadText	client/src/components/form/index.jsx	/^Form.DownloadText = func
 FormDownloadWrap	client/src/components/form/index.jsx	/^Form.DownloadWrap = function FormDownloadWrap({ children, ...restProps }) {$/;"	f
 FormError	client/src/components/form/index.jsx	/^Form.Error = function FormError({ children, ...restProps }) {$/;"	f
 FormForgotPassword	client/src/components/form/index.jsx	/^Form.ForgotPassword = function FormForgotPassword({ children, ...restProps }) {$/;"	f
-FormImgItem	client/src/components/form/index.jsx	/^Form.ImgItem = function FormImgItem({ src, ...restProps }) {$/;"	f
+FormImgItem	client/src/components/form/index.jsx	/^Form.ImgItem = function FormImgItem({ ...restProps }) {$/;"	f
 FormImgList	client/src/components/form/index.jsx	/^Form.ImgList = function FormImgList({ children, ...restProps }) {$/;"	f
 FormImgWrap	client/src/components/form/index.jsx	/^Form.ImgWrap = function FormImgWrap({ children, ...restProps }) {$/;"	f
 FormInput	client/src/components/form/index.jsx	/^Form.Input = function FormInput({ children, ...restProps }) {$/;"	f
@@ -2794,7 +2799,7 @@ HelmetContainer	client/src/containers/helmet/index.jsx	/^const HelmetContainer =
 Hi	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Hn	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Ho	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
-HomePage	client/src/App.jsx	/^const HomePage = lazy(() => import(".\/pages\/HomePage"));$/;"	C
+HomePage	client/src/App.jsx	/^const HomePage = lazy (() => import(".\/pages\/HomePage"));$/;"	C
 HomePage	client/src/pages/HomePage.jsx	/^const HomePage = () => {$/;"	C
 Hr	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Hs	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
@@ -2818,7 +2823,7 @@ Image	client/src/components/post/index.jsx	/^Post.Image = function PostImage({ s
 Image	client/src/components/post/styles/post.jsx	/^export const Image = styled.img`$/;"	C
 ImageWrap	client/src/components/create-post/index.jsx	/^CreatePost.ImageWrap = function CreatePostImageWrap({$/;"	f	function:CreatePost
 ImageWrap	client/src/components/create-post/styles/create-post.jsx	/^export const ImageWrap = styled.div`$/;"	C
-ImgItem	client/src/components/form/index.jsx	/^Form.ImgItem = function FormImgItem({ src, ...restProps }) {$/;"	f	function:Form
+ImgItem	client/src/components/form/index.jsx	/^Form.ImgItem = function FormImgItem({ ...restProps }) {$/;"	f	function:Form
 ImgItem	client/src/components/form/styles/form.jsx	/^export const ImgItem = styled.img`$/;"	C
 ImgList	client/src/components/form/index.jsx	/^Form.ImgList = function FormImgList({ children, ...restProps }) {$/;"	f	function:Form
 ImgList	client/src/components/form/styles/form.jsx	/^export const ImgList = styled.div`$/;"	C
@@ -2844,7 +2849,7 @@ InboxMsgWrap	client/src/components/inbox/index.jsx	/^Inbox.MsgWrap = function In
 InboxNoMsg	client/src/components/inbox/index.jsx	/^Inbox.NoMsg = function InboxNoMsg({ children, ...restProps }) {$/;"	f
 InboxNoMsgWrap	client/src/components/inbox/index.jsx	/^Inbox.NoMsgWrap = function InboxNoMsgWrap({ children, ...restProps }) {$/;"	f
 InboxNoSubMsg	client/src/components/inbox/index.jsx	/^Inbox.NoSubMsg = function InboxNoSubMsg({ children, ...restProps }) {$/;"	f
-InboxPage	client/src/App.jsx	/^const InboxPage = lazy(() => import(".\/pages\/InboxPage"));$/;"	C
+InboxPage	client/src/App.jsx	/^const InboxPage = lazy (() => import(".\/pages\/InboxPage"));$/;"	C
 InboxPage	client/src/pages/InboxPage.jsx	/^const InboxPage = () => {$/;"	C
 InboxSend	client/src/components/inbox/index.jsx	/^Inbox.Send = function InboxSend({ children, ...restProps }) {$/;"	f
 InboxSidebar	client/src/components/inbox/index.jsx	/^Inbox.Sidebar = function InboxSidebar({ children, ...restProps }) {$/;"	f
@@ -2890,6 +2895,7 @@ Jr	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this
 Js	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Jt	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Ju	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	v
+JwtStrategy	middlewares/passport.middleware.js	/^const JwtStrategy = require ("passport-jwt").Strategy;$/;"	C
 K	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Ka	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c
 Kn	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
@@ -2938,7 +2944,7 @@ LoadingWrap	client/src/components/post/index.jsx	/^Post.LoadingWrap = function P
 LoadingWrap	client/src/components/post/styles/post.jsx	/^export const LoadingWrap = styled.div`$/;"	C
 LoadingWrap	client/src/components/profile/index.jsx	/^Profile.LoadingWrap = function ProfileLoadingWrap({ children, ...restProps }) {$/;"	f	function:Profile
 LoadingWrap	client/src/components/profile/styles/profile.jsx	/^export const LoadingWrap = styled.div`$/;"	C
-LoginPage	client/src/App.jsx	/^const LoginPage = lazy(() => import(".\/pages\/LoginPage"));$/;"	C
+LoginPage	client/src/App.jsx	/^const LoginPage = lazy (() => import(".\/pages\/LoginPage"));$/;"	C
 LoginPage	client/src/pages/LoginPage.jsx	/^const LoginPage = () => {$/;"	C
 Lr	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Ls	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
@@ -2958,7 +2964,7 @@ Making a Progressive Web App	client/README.md	/^### Making a Progressive Web App
 Me	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 Menu	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:En
 Message	controllers/message.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
-Message	controllers/user.controller.js	/^const Message = require("..\/models\/message.model");$/;"	C
+Message	controllers/user.controller.js	/^const Message = require ("..\/models\/message.model");$/;"	C
 Message	models/message.model.js	/^const Message = mongoose.model("message", messageSchema);$/;"	C
 Message	socket/conversation/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
 Message	socket/message/index.js	/^const Message = require("..\/..\/models\/message.model");$/;"	C
@@ -3153,7 +3159,7 @@ PersonWrap	client/src/components/post/index.jsx	/^Post.PersonWrap = function Pos
 PersonWrap	client/src/components/post/styles/post.jsx	/^export const PersonWrap = styled.div`$/;"	C
 Post	client/src/components/post/index.jsx	/^const Post = ({ children, ...restProps }) => {$/;"	C
 Post	controllers/post.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
-Post	controllers/user.controller.js	/^const Post = require("..\/models\/post.model");$/;"	C
+Post	controllers/user.controller.js	/^const Post = require ("..\/models\/post.model");$/;"	C
 Post	middlewares/post.middleware.js	/^const Post = require("..\/models\/post.model");$/;"	C
 Post	models/post.model.js	/^const Post = mongoose.model("post", postSchema);$/;"	C
 Post	socket/post/index.js	/^const Post = require("..\/..\/models\/post.model");$/;"	C
@@ -3224,7 +3230,7 @@ ProfileLoading	client/src/components/profile/index.jsx	/^Profile.Loading = funct
 ProfileLoading	client/src/containers/profile/ProfileLoading.jsx	/^const ProfileLoading = () => {$/;"	C
 ProfileLoadingWrap	client/src/components/profile/index.jsx	/^Profile.LoadingWrap = function ProfileLoadingWrap({ children, ...restProps }) {$/;"	f
 ProfileNoPost	client/src/components/profile/index.jsx	/^Profile.NoPost = function ProfileNoPost({ children, ...restProps }) {$/;"	f
-ProfilePage	client/src/App.jsx	/^const ProfilePage = lazy(() => import(".\/pages\/ProfilePage"));$/;"	C
+ProfilePage	client/src/App.jsx	/^const ProfilePage = lazy (() => import(".\/pages\/ProfilePage"));$/;"	C
 ProfilePage	client/src/pages/ProfilePage.jsx	/^const ProfilePage = () => {$/;"	C
 ProfilePostImg	client/src/components/profile/index.jsx	/^Profile.PostImg = function ProfilePostImg({ src, ...restProps }) {$/;"	f
 ProfilePostImgWrap	client/src/components/profile/index.jsx	/^Profile.PostImgWrap = function ProfilePostImgWrap({ children, ...restProps }) {$/;"	f
@@ -3317,6 +3323,7 @@ SettingEditText	client/src/components/setting/index.jsx	/^Setting.EditText = fun
 SettingEditWrap	client/src/components/setting/index.jsx	/^Setting.EditWrap = function SettingEditWrap({ children, ...restProps }) {$/;"	f
 SettingGender	client/src/containers/setting/SettingGender.jsx	/^const SettingGender = ({ gender, setGender, modal, setModal }) => {$/;"	C
 SettingLink	client/src/components/setting/index.jsx	/^Setting.Link = function SettingLink({ children, ...restProps }) {$/;"	f
+SettingPage	client/src/App.jsx	/^const SettingPage = lazy (() => import(".\/pages\/SettingPage"));$/;"	C
 SettingPage	client/src/pages/SettingPage.jsx	/^const SettingPage = () => {$/;"	C
 SettingSidebar	client/src/components/setting/index.jsx	/^Setting.Sidebar = function SettingSidebar({ children, ...restProps }) {$/;"	f
 SettingSidebar	client/src/containers/setting/SettingSidebar.jsx	/^const SettingSidebar = () => {$/;"	C
@@ -3353,7 +3360,7 @@ SidebarName	client/src/components/inbox/index.jsx	/^Inbox.SidebarName = function
 SidebarName	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarName = styled.div`$/;"	C
 SidebarTime	client/src/components/inbox/index.jsx	/^Inbox.SidebarTime = function InboxSidebarTime({ children, ...restProps }) {$/;"	f	function:Inbox
 SidebarTime	client/src/components/inbox/styles/sidebar.jsx	/^export const SidebarTime = styled.span`$/;"	C
-SignUpPage	client/src/App.jsx	/^const SignUpPage = lazy(() => import(".\/pages\/SignUpPage"));$/;"	C
+SignUpPage	client/src/App.jsx	/^const SignUpPage = lazy (() => import(".\/pages\/SignUpPage"));$/;"	C
 SignUpPage	client/src/pages/SignUpPage.jsx	/^const SignUpPage = () => {$/;"	C
 SlowBuffer	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f	function:t
 So	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	v
@@ -3362,7 +3369,7 @@ SocialIcon	client/src/components/form/styles/form.jsx	/^export const SocialIcon 
 SocialName	client/src/components/form/index.jsx	/^Form.SocialName = function FormSocialName({ children, ...restProps }) {$/;"	f	function:Form
 SocialName	client/src/components/form/styles/form.jsx	/^export const SocialName = styled.span`$/;"	C
 SocialWrap	client/src/components/form/index.jsx	/^Form.SocialWrap = function FormSocialWrap({ children, ...restProps }) {$/;"	f	function:Form
-SocialWrap	client/src/components/form/styles/form.jsx	/^export const SocialWrap = styled(Link)`$/;"	C
+SocialWrap	client/src/components/form/styles/form.jsx	/^export const SocialWrap = styled.div`$/;"	C
 Spacebar	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:En
 Spinner	client/src/components/spinner/index.jsx	/^const Spinner = ({ children, ...restProps }) => {$/;"	C
 Ss	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
@@ -3454,6 +3461,9 @@ USER_FOLLOW_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_F
 USER_LOGIN_FAIL	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_FAIL = "USER_LOGIN_FAIL";$/;"	C
 USER_LOGIN_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_REQUEST = "USER_LOGIN_REQUEST";$/;"	C
 USER_LOGIN_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_SUCCESS = "USER_LOGIN_SUCCESS";$/;"	C
+USER_LOGIN_WITH_FB_FAIL	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_WITH_FB_FAIL = "USER_LOGIN_WITH_FB_FAIL";$/;"	C
+USER_LOGIN_WITH_FB_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_WITH_FB_REQUEST = "USER_LOGIN_WITH_FB_REQUEST";$/;"	C
+USER_LOGIN_WITH_FB_SUCCESS	client/src/constants/userConstants.jsx	/^export const USER_LOGIN_WITH_FB_SUCCESS = "USER_LOGIN_WITH_FB_SUCCESS";$/;"	C
 USER_LOGOUT	client/src/constants/userConstants.jsx	/^export const USER_LOGOUT = "USER_LOGOUT";$/;"	C
 USER_REGISTER_FAIL	client/src/constants/userConstants.jsx	/^export const USER_REGISTER_FAIL = "USER_REGISTER_FAIL";$/;"	C
 USER_REGISTER_REQUEST	client/src/constants/userConstants.jsx	/^export const USER_REGISTER_REQUEST = "USER_REGISTER_REQUEST";$/;"	C
@@ -3508,10 +3518,11 @@ Ur	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this
 Us	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 User	client/src/components/list-user/index.jsx	/^ListUser.User = function ListUserUser({ children, ...restProps }) {$/;"	f	function:ListUser
 User	client/src/components/list-user/styles/list-user.jsx	/^export const User = styled.div`$/;"	C
-User	controllers/user.controller.js	/^const User = require("..\/models\/user.model");$/;"	C
+User	controllers/user.controller.js	/^const User = require ("..\/models\/user.model");$/;"	C
 User	middlewares/auth.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
+User	middlewares/passport.middleware.js	/^const User = require ("..\/models\/user.model")$/;"	C
 User	middlewares/user.middleware.js	/^const User = require("..\/models\/user.model");$/;"	C
-User	models/user.model.js	/^const User = mongoose.model("user", userSchema);$/;"	C
+User	models/user.model.js	/^const User = mongoose.model ("user", userSchema);$/;"	C
 User	socket/conversation/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
 User	socket/message/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
 User	socket/user/index.js	/^const User = require("..\/..\/models\/user.model");$/;"	C
@@ -3925,9 +3936,10 @@ async-limiter	client/package-lock.json	/^    "async-limiter": {$/;"	o	object:dep
 asyncHandler	controllers/conversation.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/message.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	controllers/post.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
-asyncHandler	controllers/user.controller.js	/^const asyncHandler = require("express-async-handler");$/;"	C
+asyncHandler	controllers/user.controller.js	/^const asyncHandler = require ("express-async-handler");$/;"	C
 asyncHandler	middlewares/auth.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/conversation.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
+asyncHandler	middlewares/passport.middleware.js	/^const asyncHandler = require ("express-async-handler");$/;"	C
 asyncHandler	middlewares/post.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asyncHandler	middlewares/user.middleware.js	/^const asyncHandler = require("express-async-handler");$/;"	C
 asynckit	client/package-lock.json	/^        "asynckit": "^0.4.0",$/;"	s	object:dependencies.form-data.requires
@@ -3943,7 +3955,7 @@ attr	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=th
 attrs	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f	function:i
 au	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 auth	middlewares/auth.middleware.js	/^const auth = asyncHandler(async (req, res, next) => {$/;"	C
-authSignIn	controllers/user.controller.js	/^const authSignIn = asyncHandler(async (req, res) => {$/;"	C
+authSignIn	controllers/user.controller.js	/^const authSignIn = asyncHandler (async (req, res) => {$/;"	C
 author	package.json	/^  "author": "",$/;"	s
 authorization	client/build/static/js/main.5864c6ab.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[0],{12:function(e,t,n){"use s/;"	p	class:AnonymousFunction441e42ad1b200.d.headers
 authorization	client/build/static/js/main.5864c6ab.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[0],{12:function(e,t,n){"use s/;"	p	class:AnonymousFunction441e42ad1b600.c.headers
@@ -4067,7 +4079,7 @@ basic-auth	package-lock.json	/^        "basic-auth": "~2.0.1",$/;"	s	object:depe
 basic-auth	package-lock.json	/^    "basic-auth": {$/;"	o	object:dependencies
 batch	client/package-lock.json	/^        "batch": "0.6.1",$/;"	s	object:dependencies.serve-index.requires
 batch	client/package-lock.json	/^    "batch": {$/;"	o	object:dependencies
-bcrypt	models/user.model.js	/^const bcrypt = require("bcryptjs");$/;"	C
+bcrypt	models/user.model.js	/^const bcrypt = require ("bcryptjs");$/;"	C
 bcryptjs	package-lock.json	/^    "bcryptjs": {$/;"	o	object:dependencies
 bcryptjs	package.json	/^    "bcryptjs": "^2.4.3",$/;"	s	object:dependencies
 be	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c
@@ -4541,7 +4553,7 @@ commander	client/package-lock.json	/^        "commander": {$/;"	o	object:depende
 commander	client/package-lock.json	/^        "commander": {$/;"	o	object:dependencies.terser.dependencies
 commander	client/package-lock.json	/^    "commander": {$/;"	o	object:dependencies
 commentPost	client/src/actions/userAction.jsx	/^export const commentPost = (comment, postId) => async (dispatch, getState) => {$/;"	C
-commentPost	controllers/user.controller.js	/^const commentPost = asyncHandler(async (req, res) => {$/;"	C
+commentPost	controllers/user.controller.js	/^const commentPost = asyncHandler (async (req, res) => {$/;"	C
 commentSchema	models/post.model.js	/^const commentSchema = new mongoose.Schema($/;"	C
 common-tags	client/package-lock.json	/^        "common-tags": "^1.8.0",$/;"	s	object:dependencies.workbox-build.requires
 common-tags	client/package-lock.json	/^    "common-tags": {$/;"	o	object:dependencies
@@ -4561,6 +4573,7 @@ component-emitter	client/package-lock.json	/^        "component-emitter": "~1.3.
 component-emitter	client/package-lock.json	/^    "component-emitter": {$/;"	o	object:dependencies
 component-emitter	package-lock.json	/^        "component-emitter": "~1.3.0",$/;"	s	object:dependencies.socket.io-parser.requires
 component-emitter	package-lock.json	/^    "component-emitter": {$/;"	o	object:dependencies
+componentClicked	client/src/containers/facebook-login/index.jsx	/^  const componentClicked = (res) => {$/;"	C
 componentDidMount	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:n
 componentDidMount	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:r
 componentDidUpdate	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:n
@@ -5023,7 +5036,7 @@ delayed-stream	client/package-lock.json	/^        "delayed-stream": "~1.0.0"$/;"
 delayed-stream	client/package-lock.json	/^    "delayed-stream": {$/;"	o	object:dependencies
 delegate	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:P
 deleteAvatar	client/src/actions/userAction.jsx	/^export const deleteAvatar = () => async (dispatch, getState) => {$/;"	C
-deleteAvatar	controllers/user.controller.js	/^const deleteAvatar = asyncHandler(async (req, res) => {$/;"	C
+deleteAvatar	controllers/user.controller.js	/^const deleteAvatar = asyncHandler (async (req, res) => {$/;"	C
 deleteRule	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:t
 denque	package-lock.json	/^        "denque": "^1.4.1",$/;"	s	object:dependencies.mongodb.requires
 denque	package-lock.json	/^    "denque": {$/;"	o	object:dependencies
@@ -5465,6 +5478,7 @@ disable	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram
 dispatch	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	m	class:m.AnonymousFunctiona72a5678b500.o
 dispatch	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:AnonymousClassa72a5678af01
 dispatch	client/src/containers/create-post/CreatePostBody.jsx	/^  const dispatch = useDispatch();$/;"	C
+dispatch	client/src/containers/facebook-login/index.jsx	/^  const dispatch = useDispatch();$/;"	C
 dispatch	client/src/containers/header/HeaderInputSearch.jsx	/^  const dispatch = useDispatch();$/;"	C
 dispatch	client/src/containers/header/HeaderMoreMenu.jsx	/^  const dispatch = useDispatch();$/;"	C
 dispatch	client/src/containers/header/index.jsx	/^  const dispatch = useDispatch();$/;"	C
@@ -5924,8 +5938,8 @@ express	package-lock.json	/^    "express": {$/;"	o	object:dependencies
 express	package.json	/^    "express": "^4.17.1",$/;"	s	object:dependencies
 express	routes/conversation.route.js	/^const express = require("express");$/;"	C
 express	routes/message.route.js	/^const express = require("express");$/;"	C
-express	routes/post.route.js	/^const express = require("express");$/;"	C
-express	routes/user.route.js	/^const express = require("express");$/;"	C
+express	routes/post.route.js	/^const express = require ("express");$/;"	C
+express	routes/user.route.js	/^const express = require ("express");$/;"	C
 express	server.js	/^const express = require("express");$/;"	C
 express-async-handler	package-lock.json	/^    "express-async-handler": {$/;"	o	object:dependencies
 express-async-handler	package.json	/^    "express-async-handler": "^1.1.4",$/;"	s	object:dependencies
@@ -6096,7 +6110,7 @@ findFiberByHostInstance	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpa
 findHostInstanceByFiber	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	m	class:uc
 findHostInstancesForRefresh	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:uc
 findUser	client/src/actions/userAction.jsx	/^export const findUser = (keyword) => async (dispatch, getState) => {$/;"	C
-findUser	controllers/user.controller.js	/^const findUser = asyncHandler(async (req, res) => {$/;"	C
+findUser	controllers/user.controller.js	/^const findUser = asyncHandler (async (req, res) => {$/;"	C
 finish	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	m	class:P
 firstBaseUpdate	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:e.updateQueue
 firstBaseUpdate	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:li.n
@@ -6134,7 +6148,7 @@ follow-redirects	client/package-lock.json	/^        "follow-redirects": "^1.0.0"
 follow-redirects	client/package-lock.json	/^        "follow-redirects": "^1.10.0"$/;"	s	object:dependencies.axios.requires
 follow-redirects	client/package-lock.json	/^    "follow-redirects": {$/;"	o	object:dependencies
 followUser	client/src/actions/userAction.jsx	/^export const followUser = (username) => async (dispatch, getState) => {$/;"	C
-followUser	controllers/user.controller.js	/^const followUser = asyncHandler(async (req, res) => {$/;"	C
+followUser	controllers/user.controller.js	/^const followUser = asyncHandler (async (req, res) => {$/;"	C
 fontWeight	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:be
 fontWeight	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:t.a
 foo	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	m	class:e.__proto__
@@ -6224,7 +6238,7 @@ g	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.
 ga	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 ge	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 generateAndInjectStyles	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	m	class:e
-generateToken	controllers/user.controller.js	/^const generateToken = require("..\/utils\/generate-token");$/;"	C
+generateToken	controllers/user.controller.js	/^const generateToken = require ("..\/utils\/generate-token");$/;"	C
 generateToken	utils/generate-token.js	/^const generateToken = (userId) => {$/;"	C
 gensync	client/package-lock.json	/^        "gensync": "^1.0.0-beta.1",$/;"	s	object:dependencies.@babel/core.requires
 gensync	client/package-lock.json	/^    "gensync": {$/;"	o	object:dependencies
@@ -6282,9 +6296,9 @@ getStyleTags	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinst
 getTag	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f	function:t
 getUri	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	m	class:s
 getUserDetails	client/src/actions/userAction.jsx	/^export const getUserDetails = (username) => async (dispatch, getState) => {$/;"	C
-getUserDetails	controllers/user.controller.js	/^const getUserDetails = asyncHandler(async (req, res) => {$/;"	C
+getUserDetails	controllers/user.controller.js	/^const getUserDetails = asyncHandler (async (req, res) => {$/;"	C
 getUserId	middlewares/user.middleware.js	/^const getUserId = asyncHandler(async (req, res, next, userId) => {$/;"	C
-getUserSuggestion	controllers/user.controller.js	/^const getUserSuggestion = asyncHandler(async (req, res) => {$/;"	C
+getUserSuggestion	controllers/user.controller.js	/^const getUserSuggestion = asyncHandler (async (req, res) => {$/;"	C
 getUsername	middlewares/user.middleware.js	/^const getUsername = asyncHandler(async (req, res, next, username) => {$/;"	C
 getValue	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f	function:r
 gi	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
@@ -6426,6 +6440,7 @@ handleClickInput	client/src/containers/header/HeaderInputSearch.jsx	/^  const ha
 handleCreateConversation	client/src/containers/profile/ProfileHeading.jsx	/^  const handleCreateConversation = () => {$/;"	C
 handleCreatePost	client/src/containers/create-post/CreatePostBody.jsx	/^  const handleCreatePost = async () => {$/;"	C
 handleForcedUnfollow	client/src/containers/list-user/ListUserItem.jsx	/^  const handleForcedUnfollow = (id) => {$/;"	C
+handleLoginWithFb	client/src/pages/LoginPage.jsx	/^  const handleLoginWithFb = () => {};$/;"	C
 handleLogout	client/src/containers/header/HeaderMoreMenu.jsx	/^  const handleLogout = () => {$/;"	C
 handleRedirect	client/src/containers/message/MessageReceiver.jsx	/^  const handleRedirect = () => {$/;"	C
 handleRemoveAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const handleRemoveAvatar = () => {$/;"	C
@@ -6436,7 +6451,7 @@ handleScrollRight	client/src/containers/StoryContainer.jsx	/^  const handleScrol
 handleSearch	client/src/containers/header/HeaderInputSearch.jsx	/^  const handleSearch = (e) => {$/;"	C
 handleSendMessage	client/src/containers/message/MessageForm.jsx	/^  const handleSendMessage = (e) => {$/;"	C
 handleSubmit	client/src/containers/post-list/PostItem.jsx	/^  const handleSubmit = (e) => {$/;"	C
-handleSubmit	client/src/pages/LoginPage.jsx	/^  const handleSubmit = async (e) => {$/;"	C
+handleSubmit	client/src/pages/LoginPage.jsx	/^  const handleSubmit = (e) => {$/;"	C
 handleSubmit	client/src/pages/SignUpPage.jsx	/^  const handleSubmit = async (e) => {$/;"	C
 handleToggleFollow	client/src/containers/profile/ProfileHeading.jsx	/^  const handleToggleFollow = () => {$/;"	C
 handleToggleFollow	client/src/containers/suggestion/SuggestionItem.jsx	/^  const handleToggleFollow = (username) => {$/;"	C
@@ -8925,7 +8940,7 @@ internal-ip	client/package-lock.json	/^    "internal-ip": {$/;"	o	object:depende
 internal-slot	client/package-lock.json	/^        "internal-slot": "^1.0.3",$/;"	s	object:dependencies.string.prototype.matchall.requires
 internal-slot	client/package-lock.json	/^    "internal-slot": {$/;"	o	object:dependencies
 io	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	v
-io	socket/index.js	/^  const io = require("socket.io")(httpServer);$/;"	C
+io	socket/index.js	/^  const io = require("socket.io")(httpServer, {cors: CLIENT_URL});$/;"	C
 ip	client/package-lock.json	/^        "ip": "^1.1.0",$/;"	s	object:dependencies.dns-packet.requires
 ip	client/package-lock.json	/^        "ip": "^1.1.5",$/;"	s	object:dependencies.webpack-dev-server.requires
 ip	client/package-lock.json	/^    "ip": {$/;"	o	object:dependencies
@@ -9519,6 +9534,7 @@ jws	package-lock.json	/^        "jws": "^3.2.2",$/;"	s	object:dependencies.jsonw
 jws	package-lock.json	/^    "jws": {$/;"	o	object:dependencies
 jwt	middlewares/auth.middleware.js	/^const jwt = require("jsonwebtoken");$/;"	C
 jwt	utils/generate-token.js	/^const jwt = require("jsonwebtoken");$/;"	C
+jwtFromRequest	middlewares/passport.middleware.js	/^  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken (),$/;"	p	class:opts
 k	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 k	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f	function:e.exports
 k	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	v
@@ -9749,6 +9765,7 @@ lodash.truncate	client/package-lock.json	/^    "lodash.truncate": {$/;"	o	object
 lodash.uniq	client/package-lock.json	/^        "lodash.uniq": "^4.5.0"$/;"	s	object:dependencies.caniuse-api.requires
 lodash.uniq	client/package-lock.json	/^    "lodash.uniq": {$/;"	o	object:dependencies
 login	client/src/actions/userAction.jsx	/^export const login = (email, password) => async (dispatch) => {$/;"	C
+loginWithFb	client/src/actions/userAction.jsx	/^export const loginWithFb = (accessToken) => async (dispatch) => {$/;"	C
 loglevel	client/package-lock.json	/^        "loglevel": "^1.6.8",$/;"	s	object:dependencies.webpack-dev-server.requires
 loglevel	client/package-lock.json	/^    "loglevel": {$/;"	o	object:dependencies
 logout	client/src/actions/userAction.jsx	/^export const logout = () => (dispatch) => {$/;"	C
@@ -10011,7 +10028,7 @@ mongodb	package-lock.json	/^    "mongodb": {$/;"	o	object:dependencies
 mongoose	models/conversation.model.js	/^const mongoose = require("mongoose");$/;"	C
 mongoose	models/message.model.js	/^const mongoose = require("mongoose");$/;"	C
 mongoose	models/post.model.js	/^const mongoose = require("mongoose");$/;"	C
-mongoose	models/user.model.js	/^const mongoose = require("mongoose");$/;"	C
+mongoose	models/user.model.js	/^const mongoose = require ("mongoose");$/;"	C
 mongoose	package-lock.json	/^    "mongoose": {$/;"	o	object:dependencies
 mongoose	package.json	/^    "mongoose": "^5.13.0",$/;"	s	object:dependencies
 mongoose	utils/db.js	/^const mongoose = require("mongoose");$/;"	C
@@ -10021,7 +10038,7 @@ month	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=t
 month	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:l.localize
 month	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:l.match
 morgan	package-lock.json	/^    "morgan": {$/;"	o	object:dependencies
-morgan	package.json	/^    "morgan": "^1.10.0"$/;"	s	object:dependencies
+morgan	package.json	/^    "morgan": "^1.10.0",$/;"	s	object:dependencies
 morgan	server.js	/^const morgan = require("morgan");$/;"	C
 mouseDown	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:e.exports.S.touch.native
 mouseDown	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:e.exports.S.touch.react
@@ -10456,6 +10473,7 @@ optionator	client/package-lock.json	/^    "optionator": {$/;"	o	object:dependenc
 options	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:l
 options	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:p.AnonymousFunctiona72a567823f00.o
 options	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:y.AnonymousFunctiona72a567812100.o
+opts	middlewares/passport.middleware.js	/^const opts = {$/;"	c
 or	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 order	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:be
 order	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:t.a
@@ -10604,6 +10622,12 @@ pascal-case	client/package-lock.json	/^        "pascal-case": "^3.1.2",$/;"	s	ob
 pascal-case	client/package-lock.json	/^    "pascal-case": {$/;"	o	object:dependencies
 pascalcase	client/package-lock.json	/^        "pascalcase": "^0.1.1"$/;"	s	object:dependencies.base.requires
 pascalcase	client/package-lock.json	/^    "pascalcase": {$/;"	o	object:dependencies
+passport	middlewares/passport.middleware.js	/^const passport = require ("passport")$/;"	C
+passport	package.json	/^    "passport": "^0.4.1",$/;"	s	object:dependencies
+passport	routes/post.route.js	/^const passport = require ("passport");$/;"	C
+passport	routes/user.route.js	/^const passport = require ("passport");$/;"	C
+passport-facebook-token	package.json	/^    "passport-facebook-token": "^4.0.0",$/;"	s	object:dependencies
+passport-jwt	package.json	/^    "passport-jwt": "^4.0.0",$/;"	s	object:dependencies
 password	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:Vn
 path	server.js	/^  const path = require("path");$/;"	C
 path-browserify	client/package-lock.json	/^        "path-browserify": "0.0.1",$/;"	s	object:dependencies.node-libs-browser.requires
@@ -11209,6 +11233,7 @@ react-dom	client/package-lock.json	/^    "react-dom": {$/;"	o	object:dependencie
 react-dom	client/package.json	/^    "react-dom": "^17.0.2",$/;"	s	object:dependencies
 react-error-overlay	client/package-lock.json	/^        "react-error-overlay": "^6.0.9",$/;"	s	object:dependencies.react-dev-utils.requires
 react-error-overlay	client/package-lock.json	/^    "react-error-overlay": {$/;"	o	object:dependencies
+react-facebook-login	client/package.json	/^    "react-facebook-login": "^4.1.1",$/;"	s	object:dependencies
 react-fast-compare	client/package-lock.json	/^        "react-fast-compare": "^3.1.1",$/;"	s	object:dependencies.react-helmet.requires
 react-fast-compare	client/package-lock.json	/^    "react-fast-compare": {$/;"	o	object:dependencies
 react-helmet	client/package-lock.json	/^    "react-helmet": {$/;"	o	object:dependencies
@@ -14892,6 +14917,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/ws
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/xdg-basedir\/-\/xdg-basedir-4.0.0.tgz",$/;"	s	object:dependencies.xdg-basedir
 responders	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:Go.dependencies
 response	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:s.interceptors
+responseFacebook	client/src/containers/facebook-login/index.jsx	/^  const responseFacebook = (res) => {$/;"	C
 responselike	package-lock.json	/^        "responselike": "^1.0.2"$/;"	s	object:dependencies.cacheable-request.requires
 responselike	package-lock.json	/^    "responselike": {$/;"	o	object:dependencies
 resultName	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:P.delegate
@@ -14946,8 +14972,8 @@ root	client/public/index.html	/^    <div id="root"><\/div>$/;"	I
 rootReducer	client/src/store.jsx	/^const rootReducer = combineReducers({$/;"	C
 router	routes/conversation.route.js	/^const router = express.Router();$/;"	C
 router	routes/message.route.js	/^const router = express.Router();$/;"	C
-router	routes/post.route.js	/^const router = express.Router();$/;"	C
-router	routes/user.route.js	/^const router = express.Router();$/;"	C
+router	routes/post.route.js	/^const router = express.Router ();$/;"	C
+router	routes/user.route.js	/^const router = express.Router ();$/;"	C
 rr	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 rs	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	v
 rsvp	client/package-lock.json	/^        "rsvp": "^4.8.4"$/;"	s	object:dependencies.capture-exit.requires
@@ -15072,6 +15098,7 @@ scripts	package.json	/^  "scripts": {$/;"	o
 se	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f
 seal	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	m	class:AnonymousFunctiona72a56783a00.e
 search	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	p	class:Vn
+secretOrKey	middlewares/passport.middleware.js	/^  secretOrKey: JWT_SECRET$/;"	p	class:opts
 select-hose	client/package-lock.json	/^        "select-hose": "^2.0.0",$/;"	s	object:dependencies.spdy.requires
 select-hose	client/package-lock.json	/^    "select-hose": {$/;"	o	object:dependencies
 selectColor	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	f	function:t
@@ -15183,7 +15210,6 @@ setHistory	client/src/containers/header/HeaderInputSearch.jsx	/^  const [history
 setImage	client/src/containers/create-post/CreatePostBody.jsx	/^  const [image, setImage] = useState("");$/;"	C
 setImage	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const [image, setImage] = useState(null);$/;"	C
 setImageSrc	client/src/containers/create-post/CreatePostBody.jsx	/^  const [imageSrc, setImageSrc] = useState("");$/;"	C
-setImgNumber	client/src/pages/LoginPage.jsx	/^  const [imgNumber, setImgNumber] = useState(1);$/;"	C
 setImgNumber	client/src/pages/SignUpPage.jsx	/^  const [imgNumber, setImgNumber] = useState(1);$/;"	C
 setIsBetween	client/src/containers/StoryContainer.jsx	/^  const [isBetween, setIsBetween] = useState(false);$/;"	C
 setIsFirst	client/src/containers/StoryContainer.jsx	/^  const [isFirst, setIsFirst] = useState(true);$/;"	C
@@ -15191,6 +15217,7 @@ setIsLast	client/src/containers/StoryContainer.jsx	/^  const [isLast, setIsLast]
 setIsLoading	client/src/containers/list-user/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/containers/profile/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/pages/InboxPage.jsx	/^  const [isLoading, setIsLoading] = useState(true);$/;"	C
+setIsLoggedIn	client/src/containers/facebook-login/index.jsx	/^  const [isLoggedIn, setIsLoggedIn] = useState(true);$/;"	C
 setJitter	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	m	class:n
 setLastMessage	client/src/containers/sidebar/SidebarItem.jsx	/^  const [lastMessage, setLastMessage] = useState(null);$/;"	C
 setLiked	client/src/containers/post-list/PostItem.jsx	/^  const [liked, setLiked] = useState(post.likes.includes(userInfo._id));$/;"	C
@@ -15282,9 +15309,10 @@ side-channel	client/package-lock.json	/^        "side-channel": "^1.0.4"$/;"	s	o
 side-channel	client/package-lock.json	/^    "side-channel": {$/;"	o	object:dependencies
 sift	package-lock.json	/^        "sift": "13.5.2",$/;"	s	object:dependencies.mongoose.requires
 sift	package-lock.json	/^    "sift": {$/;"	o	object:dependencies
-signIn	controllers/user.controller.js	/^const signIn = asyncHandler(async (req, res) => {$/;"	C
+signIn	controllers/user.controller.js	/^const signIn = asyncHandler (async (req, res) => {$/;"	C
 signInValidator	validators/user.validator.js	/^const signInValidator = () => [$/;"	C
-signUp	controllers/user.controller.js	/^const signUp = asyncHandler(async (req, res) => {$/;"	C
+signInWithFb	controllers/user.controller.js	/^const signInWithFb = asyncHandler (async (req, res) => {$/;"	C
+signUp	controllers/user.controller.js	/^const signUp = asyncHandler (async (req, res) => {$/;"	C
 signUpValidator	validators/user.validator.js	/^const signUpValidator = () => [$/;"	C
 signal-exit	client/package-lock.json	/^            "signal-exit": "^3.0.2",$/;"	s	object:dependencies.jest-changed-files.dependencies.execa.requires
 signal-exit	client/package-lock.json	/^        "signal-exit": "^3.0.0",$/;"	s	object:dependencies.execa.requires
@@ -15359,7 +15387,7 @@ so	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this
 socket	client/src/actions/socketAction.jsx	/^  const socket = io("\/");$/;"	C
 socket	client/src/helpers/socket.jsx	/^const socket = (function () {$/;"	f
 socket.io	package-lock.json	/^    "socket.io": {$/;"	o	object:dependencies
-socket.io	package.json	/^    "socket.io": "^4.1.2",$/;"	s	object:dependencies
+socket.io	package.json	/^    "socket.io": "^4.1.2"$/;"	s	object:dependencies
 socket.io-adapter	package-lock.json	/^        "socket.io-adapter": "~2.3.0",$/;"	s	object:dependencies.socket.io.requires
 socket.io-adapter	package-lock.json	/^    "socket.io-adapter": {$/;"	o	object:dependencies
 socket.io-client	client/package-lock.json	/^    "socket.io-client": {$/;"	o	object:dependencies
@@ -16106,12 +16134,12 @@ upath	client/package-lock.json	/^    "upath": {$/;"	o	object:dependencies
 update-notifier	package-lock.json	/^        "update-notifier": "^4.1.0"$/;"	s	object:dependencies.nodemon.requires
 update-notifier	package-lock.json	/^    "update-notifier": {$/;"	o	object:dependencies
 updateAvatar	client/src/actions/userAction.jsx	/^export const updateAvatar = (data) => async (dispatch, getState) => {$/;"	C
-updateAvatar	controllers/user.controller.js	/^const updateAvatar = asyncHandler(async (req, res) => {$/;"	C
+updateAvatar	controllers/user.controller.js	/^const updateAvatar = asyncHandler (async (req, res) => {$/;"	C
 updateInfo	client/src/actions/userAction.jsx	/^export const updateInfo =$/;"	C
-updateInfo	controllers/user.controller.js	/^const updateInfo = asyncHandler(async (req, res) => {$/;"	C
+updateInfo	controllers/user.controller.js	/^const updateInfo = asyncHandler (async (req, res) => {$/;"	C
 updateInfoValidator	validators/user.validator.js	/^const updateInfoValidator = () => [$/;"	C
 updatePassword	client/src/actions/userAction.jsx	/^export const updatePassword =$/;"	C
-updatePassword	controllers/user.controller.js	/^const updatePassword = asyncHandler(async (req, res) => {$/;"	C
+updatePassword	controllers/user.controller.js	/^const updatePassword = asyncHandler (async (req, res) => {$/;"	C
 updatePasswordValidator	validators/user.validator.js	/^const updatePasswordValidator = () => [$/;"	C
 updateQueue	client/build/static/js/2.3d2d1e68.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],[function(e,t,n){"use stri/;"	c	class:e
 uri-js	client/package-lock.json	/^            "uri-js": "^4.2.2"$/;"	s	object:dependencies.table.dependencies.ajv.requires
@@ -16237,7 +16265,7 @@ userLoginReducer	client/src/reducers/userReducer.jsx	/^export const userLoginRed
 userRegister	client/src/pages/SignUpPage.jsx	/^  const userRegister = useSelector((state) => state.userRegister);$/;"	C
 userRegisterReducer	client/src/reducers/userReducer.jsx	/^export const userRegisterReducer = (state = {}, action) => {$/;"	C
 userRoute	server.js	/^const userRoute = require(".\/routes\/user.route");$/;"	C
-userSchema	models/user.model.js	/^const userSchema = new mongoose.Schema($/;"	C
+userSchema	models/user.model.js	/^const userSchema = new mongoose.Schema ($/;"	C
 userSocket	socket/index.js	/^const userSocket = require(".\/user");$/;"	C
 userSuggested	client/src/containers/suggestion/index.jsx	/^  const userSuggested = useSelector((state) => state.userSuggested);$/;"	C
 userSuggestedReducer	client/src/reducers/userReducer.jsx	/^export const userSuggestedReducer = (state = {}, action) => {$/;"	C

@@ -40,6 +40,7 @@ const SettingChangePassword = () => {
         <Setting.EditInputWrap>
           <Setting.EditInput
             type="password"
+            name="oldPassword"
             value={oldPassword}
             onChange={(e) => setOldPassword(e.target.value)}
           />
@@ -50,6 +51,7 @@ const SettingChangePassword = () => {
         <Setting.EditInputWrap>
           <Setting.EditInput
             type="password"
+            name="newPassword"
             value={newPassword}
             onChange={(e) => setNewPassword(e.target.value)}
           />
@@ -60,6 +62,7 @@ const SettingChangePassword = () => {
         <Setting.EditInputWrap>
           <Setting.EditInput
             type="password"
+            name="confirmPassword"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />

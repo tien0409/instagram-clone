@@ -77,35 +77,19 @@ const signIn = asyncHandler (async (req, res) => {
  * @access Public
  */
 const signInWithFb = asyncHandler (async (req, res) => {
-  console.log("req.user", req.user)
-  // const errors = validationResult(req);
-  // if (!errors.isEmpty()) {
-  //   res.status(400);
-  //   throw new Error(errors.array()[0].msg);
-  // }
-  //
-  // const { email, password } = req.body;
-  //
-  // const user = await User.findOne({ email });
-  //
-  // if (user && (await user.isCorrectPassword(password))) {
-  //   res.status(200).json({
-  //     _id: user._id,
-  //     email: user.email,
-  //     username: user.username,
-  //     avatar: user.avatar,
-  //     fullName: user.fullName,
-  //     followers: user.followers,
-  //     following: user.following,
-  //     phoneNumber: user.phoneNumber,
-  //     gender: user.gender,
-  //     token: generateToken(user._id),
-  //   });
-  // } else {
-  //   res.status(401);
-  //   throw new Error("Email or Password incorrect. Please try again");
-  // }
-  res.json ("abc")
+  const {user} = req;
+  res.status (200).json ({
+    _id: user._id,
+    email: user.email,
+    username: user.username,
+    avatar: user.avatar,
+    fullName: user.fullName,
+    followers: user.followers,
+    following: user.following,
+    phoneNumber: user.phoneNumber,
+    gender: user.gender,
+    token: generateToken (user._id),
+  });
 });
 
 /*
