@@ -44,8 +44,6 @@ const LoginPage = () => {
     dispatch(login(email, password));
   };
 
-  const handleLoginWithFb = () => {};
-
   return (
     <>
       <HelmetContainer title="Instagram" />

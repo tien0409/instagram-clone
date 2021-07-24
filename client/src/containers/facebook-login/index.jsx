@@ -6,10 +6,10 @@ import { loginWithFb } from "../../actions/userAction";
 const FacebookLoginContainer = () => {
   const dispatch = useDispatch();
 
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const componentClicked = (res) => {
-    console.log("res click", res);
+    // console.log("res click", res);
   };
 
   const responseFacebook = (res) => {

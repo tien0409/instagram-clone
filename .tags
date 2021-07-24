@@ -6531,7 +6531,6 @@ handleClickInput	client/src/containers/header/HeaderInputSearch.jsx	/^  const ha
 handleCreateConversation	client/src/containers/profile/ProfileHeading.jsx	/^  const handleCreateConversation = () => {$/;"	C
 handleCreatePost	client/src/containers/create-post/CreatePostBody.jsx	/^  const handleCreatePost = async () => {$/;"	C
 handleForcedUnfollow	client/src/containers/list-user/ListUserItem.jsx	/^  const handleForcedUnfollow = (id) => {$/;"	C
-handleLoginWithFb	client/src/pages/LoginPage.jsx	/^  const handleLoginWithFb = () => {};$/;"	C
 handleLogout	client/src/containers/header/HeaderMoreMenu.jsx	/^  const handleLogout = () => {$/;"	C
 handleRedirect	client/src/containers/message/MessageReceiver.jsx	/^  const handleRedirect = () => {$/;"	C
 handleRemoveAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const handleRemoveAvatar = () => {$/;"	C
@@ -8833,6 +8832,7 @@ integrity	package-lock.json	/^      "integrity": "sha1-CzpmK10Ewxd7GSa+qCsD+Dei7
 integrity	package-lock.json	/^      "integrity": "sha1-DdOXEhPHxW34gJd9UEyI+0cal6w="$/;"	s	object:dependencies.lodash.once
 integrity	package-lock.json	/^      "integrity": "sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow="$/;"	s	object:dependencies.statuses
 integrity	package-lock.json	/^      "integrity": "sha1-FrXK\/Afb42dsGxmZF3gj1lA6yww=",$/;"	s	object:dependencies.url-parse-lax
+integrity	package-lock.json	/^      "integrity": "sha1-HUCLP9t2kjuVQ9lvtMnf1TXZy10="$/;"	s	object:dependencies.pause
 integrity	package-lock.json	/^      "integrity": "sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=",$/;"	s	object:dependencies.on-finished
 integrity	package-lock.json	/^      "integrity": "sha1-IQmtx5ZYh8\/AXLvUQsrIv7s2CGM="$/;"	s	object:dependencies.object-assign
 integrity	package-lock.json	/^      "integrity": "sha1-IpnwLG3tMNSllhsLn3RSShj2NPw="$/;"	s	object:dependencies.vary
@@ -8929,6 +8929,7 @@ integrity	package-lock.json	/^      "integrity": "sha512-HdmbVF4V4w1q\/iz++RV7bU
 integrity	package-lock.json	/^      "integrity": "sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr\/2/;"	s	object:dependencies.range-parser
 integrity	package-lock.json	/^      "integrity": "sha512-Il80Qs2WjYlJIBNzNkK6KYqlVMTbZLXgHx2oT0pU\/fjRHyEp+PEfEPY0R3WCwAGVOtau/;"	s	object:dependencies.accepts
 integrity	package-lock.json	/^      "integrity": "sha512-Iq25XBt6zD5npPhlLVXGFN3\/gyR2\/qODcKNNyTMd4vbm39HUaOiAM4PMq0eMVC\/Tkx/;"	s	object:dependencies.to-readable-stream
+integrity	package-lock.json	/^      "integrity": "sha512-IxXgZZs8d7uFSt3eqNjM9NQ3g3uQCW5avD8mRNoXV99Yig50vjuaez6dQK2qC0kVWPRTu/;"	s	object:dependencies.passport
 integrity	package-lock.json	/^      "integrity": "sha512-JMrvUwE54emCYWlTI+hGrGv5I8dEwmco\/00EvkzIIsR7MqrHonbD9pO2MOfFnpFntl7e/;"	s	object:dependencies.serve-static
 integrity	package-lock.json	/^      "integrity": "sha512-JvdAWfbXeIGaZ9cILp38HntZSFSo3mWg6xGcJJsd+d4aRMOqauag1C63dJfDw7OaMYwEb/;"	s	object:dependencies.setprototypeof
 integrity	package-lock.json	/^      "integrity": "sha512-KIHbLJqu73RGr\/hnbrO9uBeixNGuvSQjul\/jdFvS\/KFSIH1hWVd1ng7zOHx+YrEfIn/;"	s	object:dependencies.cors
@@ -10770,6 +10771,8 @@ pascal-case	client/package-lock.json	/^    "pascal-case": {$/;"	o	object:depende
 pascalcase	client/package-lock.json	/^        "pascalcase": "^0.1.1"$/;"	s	object:dependencies.base.requires
 pascalcase	client/package-lock.json	/^    "pascalcase": {$/;"	o	object:dependencies
 passport	middlewares/passport.middleware.js	/^const passport = require ("passport")$/;"	C
+passport	package-lock.json	/^    "passport": {$/;"	o	object:dependencies
+passport	package.json	/^    "passport": "^0.4.1",$/;"	s	object:dependencies
 passport	routes/post.route.js	/^const passport = require ("passport");$/;"	C
 passport	routes/user.route.js	/^const passport = require ("passport");$/;"	C
 passport-facebook-token	package-lock.json	/^    "passport-facebook-token": {$/;"	o	object:dependencies
@@ -10784,6 +10787,7 @@ passport-oauth2	package-lock.json	/^        "passport-oauth2": "1.x.x"$/;"	s	obj
 passport-oauth2	package-lock.json	/^    "passport-oauth2": {$/;"	o	object:dependencies
 passport-strategy	package-lock.json	/^        "passport-strategy": "1.x.x",$/;"	s	object:dependencies.passport-oauth1.requires
 passport-strategy	package-lock.json	/^        "passport-strategy": "1.x.x",$/;"	s	object:dependencies.passport-oauth2.requires
+passport-strategy	package-lock.json	/^        "passport-strategy": "1.x.x",$/;"	s	object:dependencies.passport.requires
 passport-strategy	package-lock.json	/^        "passport-strategy": "^1.0.0"$/;"	s	object:dependencies.passport-jwt.requires
 passport-strategy	package-lock.json	/^    "passport-strategy": {$/;"	o	object:dependencies
 password	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:Vn
@@ -10843,6 +10847,8 @@ path-type	client/package-lock.json	/^        "path-type": "^4.0.0",$/;"	s	object
 path-type	client/package-lock.json	/^        "path-type": {$/;"	o	object:dependencies.read-pkg.dependencies
 path-type	client/package-lock.json	/^    "path-type": {$/;"	o	object:dependencies
 pathNames	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f	function:u
+pause	package-lock.json	/^        "pause": "0.0.1"$/;"	s	object:dependencies.passport.requires
+pause	package-lock.json	/^    "pause": {$/;"	o	object:dependencies
 payload	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	c	class:n
 payload	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f	function:n
 payload	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:ci.a
@@ -12865,6 +12871,7 @@ requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.nopt
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.on-finished
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.once
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.package-json
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport-facebook-token
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport-jwt
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport-oauth
@@ -15043,7 +15050,9 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/pa
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-oauth2\/-\/passport-oauth2-1.6.0.tgz",$/;"	s	object:dependencies.passport-oauth2
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-oauth\/-\/passport-oauth-1.0.0.tgz",$/;"	s	object:dependencies.passport-oauth
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-strategy\/-\/passport-strategy-1.0.0.t/;"	s	object:dependencies.passport-strategy
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport\/-\/passport-0.4.1.tgz",$/;"	s	object:dependencies.passport
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/path-to-regexp\/-\/path-to-regexp-0.1.7.tgz",$/;"	s	object:dependencies.path-to-regexp
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/pause\/-\/pause-0.0.1.tgz",$/;"	s	object:dependencies.pause
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/picomatch\/-\/picomatch-2.3.0.tgz",$/;"	s	object:dependencies.picomatch
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/prepend-http\/-\/prepend-http-2.0.0.tgz",$/;"	s	object:dependencies.prepend-http
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/process-nextick-args\/-\/process-nextick-args-2/;"	s	object:dependencies.process-nextick-args
@@ -15416,7 +15425,7 @@ setIsLast	client/src/containers/StoryContainer.jsx	/^  const [isLast, setIsLast]
 setIsLoading	client/src/containers/list-user/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/containers/profile/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/pages/InboxPage.jsx	/^  const [isLoading, setIsLoading] = useState(true);$/;"	C
-setIsLoggedIn	client/src/containers/facebook-login/index.jsx	/^  const [isLoggedIn, setIsLoggedIn] = useState(true);$/;"	C
+setIsLoggedIn	client/src/containers/facebook-login/index.jsx	/^  const [isLoggedIn, setIsLoggedIn] = useState(false);$/;"	C
 setJitter	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	m	class:n
 setLastMessage	client/src/containers/sidebar/SidebarItem.jsx	/^  const [lastMessage, setLastMessage] = useState(null);$/;"	C
 setLiked	client/src/containers/post-list/PostItem.jsx	/^  const [liked, setLiked] = useState(post.likes.includes(userInfo._id));$/;"	C
@@ -18472,6 +18481,7 @@ version	package-lock.json	/^          "version": "6.3.0",$/;"	s	object:dependenc
 version	package-lock.json	/^          "version": "7.2.0",$/;"	s	object:dependencies.chalk.dependencies.supports-color
 version	package-lock.json	/^          "version": "8.0.0",$/;"	s	object:dependencies.string-width.dependencies.emoji-regex
 version	package-lock.json	/^      "version": "0.0.1",$/;"	s	object:dependencies.concat-map
+version	package-lock.json	/^      "version": "0.0.1",$/;"	s	object:dependencies.pause
 version	package-lock.json	/^      "version": "0.0.3",$/;"	s	object:dependencies.uid2
 version	package-lock.json	/^      "version": "0.1.4",$/;"	s	object:dependencies.base64-arraybuffer
 version	package-lock.json	/^      "version": "0.1.4",$/;"	s	object:dependencies.duplexer3
@@ -18485,6 +18495,7 @@ version	package-lock.json	/^      "version": "0.3.0",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "0.3.2",$/;"	s	object:dependencies.is-installed-globally
 version	package-lock.json	/^      "version": "0.4.0",$/;"	s	object:dependencies.@types/cookie
 version	package-lock.json	/^      "version": "0.4.0",$/;"	s	object:dependencies.cookie
+version	package-lock.json	/^      "version": "0.4.1",$/;"	s	object:dependencies.passport
 version	package-lock.json	/^      "version": "0.4.24",$/;"	s	object:dependencies.iconv-lite
 version	package-lock.json	/^      "version": "0.5.2",$/;"	s	object:dependencies.fresh
 version	package-lock.json	/^      "version": "0.5.3",$/;"	s	object:dependencies.content-disposition
