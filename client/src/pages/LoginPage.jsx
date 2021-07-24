@@ -4,7 +4,7 @@ import { Form, Spinner } from "../components";
 import { useHistory } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
 import { useDispatch, useSelector } from "react-redux";
-import { login, loginWithFb } from "../actions/userAction";
+import { login } from "../actions/userAction";
 import { HelmetContainer } from "../containers";
 import FacebookLoginContainer from "../containers/facebook-login";
 
@@ -80,7 +80,7 @@ const LoginPage = () => {
 
               <Form.Separate></Form.Separate>
 
-              <Form.SocialWrap onClick={handleLoginWithFb}>
+              <Form.SocialWrap>
                 <Form.SocialIcon>
                   <AiFillFacebook />
                 </Form.SocialIcon>
