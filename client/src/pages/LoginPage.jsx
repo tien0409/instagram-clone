@@ -19,6 +19,7 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [openFb, setOpenFb] = useState(false);
 
   // check valid fields email, password
   const isInvalid =
@@ -42,6 +43,10 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
+  };
+
+  const handleLoginFb = () => {
+    setOpenFb(true);
   };
 
   return (
@@ -80,7 +85,7 @@ const LoginPage = () => {
 
               <Form.Separate></Form.Separate>
 
-              <Form.SocialWrap>
+              <Form.SocialWrap onClick={handleLoginFb}>
                 <Form.SocialIcon>
                   <AiFillFacebook />
                 </Form.SocialIcon>
@@ -109,7 +114,7 @@ const LoginPage = () => {
           </Form.BaseWrap>
         </Form.Wrap>
       </Form>
-      <FacebookLoginContainer />
+      {openFb && <FacebookLoginContainer />}
     </>
   );
 };
