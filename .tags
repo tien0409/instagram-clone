@@ -4141,6 +4141,8 @@ base64-js	client/package-lock.json	/^    "base64-js": {$/;"	o	object:dependencie
 base64id	package-lock.json	/^        "base64id": "2.0.0",$/;"	s	object:dependencies.engine.io.requires
 base64id	package-lock.json	/^        "base64id": "~2.0.0",$/;"	s	object:dependencies.socket.io.requires
 base64id	package-lock.json	/^    "base64id": {$/;"	o	object:dependencies
+base64url	package-lock.json	/^        "base64url": "3.x.x",$/;"	s	object:dependencies.passport-oauth2.requires
+base64url	package-lock.json	/^    "base64url": {$/;"	o	object:dependencies
 baseLanes	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:t.memoizedState
 baseQueue	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:aa.e
 baseQueue	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:ia.e
@@ -5428,7 +5430,6 @@ detect-port-alt	client/package-lock.json	/^    "detect-port-alt": {$/;"	o	object
 dev	package-lock.json	/^          "dev": true$/;"	b	object:dependencies.cacheable-request.dependencies.lowercase-keys
 dev	package-lock.json	/^          "dev": true$/;"	b	object:dependencies.chalk.dependencies.has-flag
 dev	package-lock.json	/^          "dev": true$/;"	b	object:dependencies.make-dir.dependencies.semver
-dev	package-lock.json	/^          "dev": true$/;"	b	object:dependencies.morgan.dependencies.depd
 dev	package-lock.json	/^          "dev": true$/;"	b	object:dependencies.nodemon.dependencies.ms
 dev	package-lock.json	/^          "dev": true$/;"	b	object:dependencies.package-json.dependencies.semver
 dev	package-lock.json	/^          "dev": true$/;"	b	object:dependencies.semver-diff.dependencies.semver
@@ -5478,7 +5479,6 @@ dev	package-lock.json	/^      "dev": true$/;"	b	object:dependencies.mimic-respon
 dev	package-lock.json	/^      "dev": true$/;"	b	object:dependencies.minimist
 dev	package-lock.json	/^      "dev": true$/;"	b	object:dependencies.normalize-path
 dev	package-lock.json	/^      "dev": true$/;"	b	object:dependencies.normalize-url
-dev	package-lock.json	/^      "dev": true$/;"	b	object:dependencies.on-headers
 dev	package-lock.json	/^      "dev": true$/;"	b	object:dependencies.p-cancelable
 dev	package-lock.json	/^      "dev": true$/;"	b	object:dependencies.picomatch
 dev	package-lock.json	/^      "dev": true$/;"	b	object:dependencies.prepend-http
@@ -5494,7 +5494,6 @@ dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.@szmarczak/
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.ansi-align
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.ansi-styles
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.anymatch
-dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.basic-auth
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.boxen
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.brace-expansion
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.braces
@@ -5521,7 +5520,6 @@ dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.keyv
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.latest-version
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.make-dir
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.minimatch
-dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.morgan
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.nodemon
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.nopt
 dev	package-lock.json	/^      "dev": true,$/;"	b	object:dependencies.once
@@ -8843,6 +8841,7 @@ integrity	package-lock.json	/^      "integrity": "sha1-POdoEMWSjQM1IwGsKHMX8RwLH
 integrity	package-lock.json	/^      "integrity": "sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac="$/;"	s	object:dependencies.fresh
 integrity	package-lock.json	/^      "integrity": "sha1-Qa4u62XvpiJorr\/qg6x9eSmbCIc="$/;"	s	object:dependencies.etag
 integrity	package-lock.json	/^      "integrity": "sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8="$/;"	s	object:dependencies.util-deprecate
+integrity	package-lock.json	/^      "integrity": "sha1-SDEm4Rd03y9xuLY53NeZw3YWK4I="$/;"	s	object:dependencies.uid2
 integrity	package-lock.json	/^      "integrity": "sha1-SMptcvbGo68Aqa1K5odr44ieKwk=",$/;"	s	object:dependencies.ignore-by-default
 integrity	package-lock.json	/^      "integrity": "sha1-VSmk1nZUE07cxSZmVoNbD4Ua\/O4="$/;"	s	object:dependencies.methods
 integrity	package-lock.json	/^      "integrity": "sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g="$/;"	s	object:dependencies.ms
@@ -8858,6 +8857,7 @@ integrity	package-lock.json	/^      "integrity": "sha1-bd0hvSoxQXuScn3Vhfim83YI6
 integrity	package-lock.json	/^      "integrity": "sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs="$/;"	s	object:dependencies.lodash.isplainobject
 integrity	package-lock.json	/^      "integrity": "sha1-gKTdMjdIOEv6JICDYirt7Jgq3\/M=",$/;"	s	object:dependencies.decompress-response
 integrity	package-lock.json	/^      "integrity": "sha1-hxDXrwqmJvj\/+hzgAWhUUmMlV0g="$/;"	s	object:dependencies.media-typer
+integrity	package-lock.json	/^      "integrity": "sha1-kK\/2M4dUDwIImvKM2tOep\/gNd98=",$/;"	s	object:dependencies.passport-oauth
 integrity	package-lock.json	/^      "integrity": "sha1-kYcg7ztjHFZCvgaPFa3lpG9Loec=",$/;"	s	object:dependencies.responselike
 integrity	package-lock.json	/^      "integrity": "sha1-khi5srkoojixPcT7a21XbyMUU+o=",$/;"	s	object:dependencies.imurmurhash
 integrity	package-lock.json	/^      "integrity": "sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA="$/;"	s	object:dependencies.destroy
@@ -8872,9 +8872,11 @@ integrity	package-lock.json	/^      "integrity": "sha1-rT\/0yG7C0CkyL1oCw6mmBslb
 integrity	package-lock.json	/^      "integrity": "sha1-sAqqVW3YtEVoFQ7J0blT8\/kMu2E="$/;"	s	object:dependencies.merge-descriptors
 integrity	package-lock.json	/^      "integrity": "sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw="$/;"	s	object:dependencies.unpipe
 integrity	package-lock.json	/^      "integrity": "sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=",$/;"	s	object:dependencies.wrappy
+integrity	package-lock.json	/^      "integrity": "sha1-tVOaqPwiWj0a0XlHbd8ja0QPUuQ="$/;"	s	object:dependencies.passport-strategy
 integrity	package-lock.json	/^      "integrity": "sha1-tdRU3CGZriJWmfNGfloH87lVuv0=",$/;"	s	object:dependencies.has-flag
 integrity	package-lock.json	/^      "integrity": "sha1-tf1UIgqivFq1eqtxQMlAdUUDwac="$/;"	s	object:dependencies.core-util-is
 integrity	package-lock.json	/^      "integrity": "sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE="$/;"	s	object:dependencies.isarray
+integrity	package-lock.json	/^      "integrity": "sha1-vR\/vr2hslrdUda7VGWQS\/2DPucE="$/;"	s	object:dependencies.oauth
 integrity	package-lock.json	/^      "integrity": "sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg\/jqx+1Om94\/W6ZaPDO/;"	s	object:dependencies.cookie
 integrity	package-lock.json	/^      "integrity": "sha512-+gxdEOMA2J+AI+fVsCqeNn7Tgx3M9ZN9jdi95939l1IJ8cZsqS8sqpJyOkic2SJk+1+98/;"	s	object:dependencies.sift
 integrity	package-lock.json	/^      "integrity": "sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x\/oI/;"	s	object:dependencies.end-of-stream
@@ -8907,6 +8909,7 @@ integrity	package-lock.json	/^      "integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5V
 integrity	package-lock.json	/^      "integrity": "sha512-AbegBVI4sh6El+1gNwvD5YIck7nSA36weD7xvIxG4in80j\/UoK8AEGaWnnz8v1GxonMC/;"	s	object:dependencies.morgan
 integrity	package-lock.json	/^      "integrity": "sha512-AvHcyZ5JnSfq3ioSyjrBkH9yW4m7Ayk8\/9My\/DD9onKeu\/94fwrMocemO2QAJFAlnn/;"	s	object:dependencies.write-file-atomic
 integrity	package-lock.json	/^      "integrity": "sha512-BsVKsiGcQMFwT8UxypobUKyv7irCNRHk1T0G680vk88yf6LBByGcZJOTJCrTP2xVN6yI+/;"	s	object:dependencies.send
+integrity	package-lock.json	/^      "integrity": "sha512-BwC0n2GP\/1hMVjR4QpnvqA61TxenUMlmfNjYNgK0ZAs0HK4SOQkHcSv4L328blNTLtHq/;"	s	object:dependencies.passport-jwt
 integrity	package-lock.json	/^      "integrity": "sha512-C7srjHiVG3Ey1nR6d511dtDkCEjxuN9W1HWAEjGq8kpcwmNM6JJkpC0xvabM7BXTG2wDq/;"	s	object:dependencies.@types/cors
 integrity	package-lock.json	/^      "integrity": "sha512-CYiCSgIF1p6EUByQPlGkKnP1M9g0ZV3qMIrqMqZqdwazygIA\/YP2vrbcyl1h\/WppKJT/;"	s	object:dependencies.denque
 integrity	package-lock.json	/^      "integrity": "sha512-CiyeOxFT\/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3/;"	s	object:dependencies.parseurl
@@ -8940,12 +8943,14 @@ integrity	package-lock.json	/^      "integrity": "sha512-Oj3cAGPCqOZX7Rz64Uny2GY
 integrity	package-lock.json	/^      "integrity": "sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y\/GNK7v0aa8rY816xWjZ7rJd/;"	s	object:dependencies.anymatch
 integrity	package-lock.json	/^      "integrity": "sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E/;"	s	object:dependencies.xdg-basedir
 integrity	package-lock.json	/^      "integrity": "sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCv/;"	s	object:dependencies.dot-prop
+integrity	package-lock.json	/^      "integrity": "sha512-QihlU3xphIVDvhko1e2pfLZfIyLnjIgSO2CVtlas0QNv3484atvfQLs+3WoXSkG70KEV\//;"	s	object:dependencies.passport-facebook-token
 integrity	package-lock.json	/^      "integrity": "sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey/;"	s	object:dependencies.supports-color
 integrity	package-lock.json	/^      "integrity": "sha512-R7eWptXuGYxwijs0eV+v3o6+XH1IqVK8dJOEecQfTmkncw9AV4dcw\/Dhxi8MdlqPthxx/;"	s	object:dependencies.got
 integrity	package-lock.json	/^      "integrity": "sha512-RRECPsj7iu\/xb5oKYcsFHSppFNnsj\/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpf/;"	s	object:dependencies.color-convert
 integrity	package-lock.json	/^      "integrity": "sha512-RV2Zp2MY2aeYK5G+B\/Sps8lW5NHAzE5QClbFP15j+PWmP+T9PxlJXBOOLoSAdgwFvS4t/;"	s	object:dependencies.optional-require
 integrity	package-lock.json	/^      "integrity": "sha512-Rd3se6QB+sO1TwqZjscQrurpEPIfO0\/yYnSin6Q\/rD3mOutHvUrCAhJub3r90uNb+SE/;"	s	object:dependencies.component-emitter
 integrity	package-lock.json	/^      "integrity": "sha512-STHz9P7X2L4Kwn72fA4rGyqyXdmrMSdxqHx9IXon\/FXluXieaFA6KJ2upcHAHxQPQ0Le/;"	s	object:dependencies.kareem
+integrity	package-lock.json	/^      "integrity": "sha512-Sv2YWodC6jN12M\/OXwmR4BIXeeIHjjbwYTQw4kS6tHK4zYzSEpxBgSJJnknBjICA5cj0/;"	s	object:dependencies.passport-oauth1
 integrity	package-lock.json	/^      "integrity": "sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+/;"	s	object:dependencies.type-is
 integrity	package-lock.json	/^      "integrity": "sha512-TuAasHQNamyyJ2hb97IuBEif4qBHGjPHBS64sZwytpLEqtBQ1gPJTnOaQ6qmpET16cK14/;"	s	object:dependencies.regexp-clone
 integrity	package-lock.json	/^      "integrity": "sha512-UqBRqi4ju7T+TqGNdqAO0PaSVGsDGJUBQvk9eUWNGRY1CFGDzYhLWoM7JQEemnlvVcv\//;"	s	object:dependencies.has-yarn
@@ -8982,6 +8987,7 @@ integrity	package-lock.json	/^      "integrity": "sha512-drqDG3cbczxxEJRoOXcOjtd
 integrity	package-lock.json	/^      "integrity": "sha512-eB4uT9RGzg2odpER62bBwSLvUeGC+WbRjjyyFhGsKnc8wp\/m0+hQsMUvUe3H2V0D5vw0/;"	s	object:dependencies.boxen
 integrity	package-lock.json	/^      "integrity": "sha512-eb9rRvhDltXVNL6Fxd2zM9D4vKBxjVVQNLNijlj7uoXUy19zNDsIif5zR+pWmPCWNKwAt/;"	s	object:dependencies.mpath
 integrity	package-lock.json	/^      "integrity": "sha512-ekGhOnNVPgT77r4K\/U3GDhu+FQ2S8TnK\/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84Dp/;"	s	object:dependencies.chokidar
+integrity	package-lock.json	/^      "integrity": "sha512-emXPLqLcVEcLFR\/QvQXZcwLmfK8e9CqvMgmOFJxcNT3okSFMtUbRRKpY20x5euD+01uH/;"	s	object:dependencies.passport-oauth2
 integrity	package-lock.json	/^      "integrity": "sha512-g3FeP20LNwhALb\/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J\/fiSf1s/;"	s	object:dependencies.make-dir
 integrity	package-lock.json	/^      "integrity": "sha512-gVgKbdbHgtxpRyR8K0O6oFZPhhB5tT1jeEHZR0Znr9Svg03U0+r9DXWMrnRAB+HtCStDQ/;"	s	object:dependencies.validator
 integrity	package-lock.json	/^      "integrity": "sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF\/j4osnnQLXBCBFBk\/t/;"	s	object:dependencies.content-type
@@ -8989,6 +8995,7 @@ integrity	package-lock.json	/^      "integrity": "sha512-hOS089on8RduqdbhvQ5Z37A
 integrity	package-lock.json	/^      "integrity": "sha512-hZXc7K2e+PgeI1eDBe\/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI/;"	s	object:dependencies.negotiator
 integrity	package-lock.json	/^      "integrity": "sha512-iCuPHDFgrHX7H2vEI\/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187uf/;"	s	object:dependencies.brace-expansion
 integrity	package-lock.json	/^      "integrity": "sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG\/d/;"	s	object:dependencies.ini
+integrity	package-lock.json	/^      "integrity": "sha512-ir1UPr3dkwexU7FdV8qBBbNDRUhMmIekYMFZfi+C\/sLNnRESKPl23nB9b2pltqfOQNnG/;"	s	object:dependencies.base64url
 integrity	package-lock.json	/^      "integrity": "sha512-j5EctnkH7amfV\/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI\/lJSl1nMpQ45hVarwNET/;"	s	object:dependencies.mimic-response
 integrity	package-lock.json	/^      "integrity": "sha512-jDctJ\/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7bl/;"	s	object:dependencies.binary-extensions
 integrity	package-lock.json	/^      "integrity": "sha512-k3bdm2n25tkyxcjSKzB5x8kfVxlMdgsbPr0GkZcwHsLpba6cBjqCt1KlcChKEvxHIcTB1/;"	s	object:dependencies.package-json
@@ -9621,6 +9628,7 @@ jsonfile	client/package-lock.json	/^        "jsonfile": "^6.0.1",$/;"	s	object:d
 jsonfile	client/package-lock.json	/^        "jsonfile": {$/;"	o	object:dependencies.webpack-manifest-plugin.dependencies
 jsonfile	client/package-lock.json	/^        "jsonfile": {$/;"	o	object:dependencies.workbox-build.dependencies
 jsonfile	client/package-lock.json	/^    "jsonfile": {$/;"	o	object:dependencies
+jsonwebtoken	package-lock.json	/^        "jsonwebtoken": "^8.2.0",$/;"	s	object:dependencies.passport-jwt.requires
 jsonwebtoken	package-lock.json	/^    "jsonwebtoken": {$/;"	o	object:dependencies
 jsonwebtoken	package.json	/^    "jsonwebtoken": "^8.5.1",$/;"	s	object:dependencies
 jsx-ast-utils	client/package-lock.json	/^        "jsx-ast-utils": "^2.4.1 || ^3.0.0",$/;"	s	object:dependencies.eslint-plugin-react.requires
@@ -10149,7 +10157,7 @@ month	client/build/static/js/0.8ce141be.chunk.js	/^(this.webpackJsonpinstagram=t
 month	client/build/static/js/0.8ce141be.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[0],{143:function(e,t,n){"use /;"	p	class:AnonymousFunction6f69ff422f00.d.match
 month	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:Vn
 morgan	package-lock.json	/^    "morgan": {$/;"	o	object:dependencies
-morgan	package.json	/^    "morgan": "^1.10.0"$/;"	s	object:dependencies
+morgan	package.json	/^    "morgan": "^1.10.0",$/;"	s	object:dependencies
 morgan	server.js	/^const morgan = require("morgan");$/;"	C
 mouseDown	client/build/static/js/0.8ce141be.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[0],{143:function(e,t,n){"use /;"	p	class:e.exports.j.touch.native
 mouseDown	client/build/static/js/0.8ce141be.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[0],{143:function(e,t,n){"use /;"	p	class:e.exports.j.touch.react
@@ -10431,6 +10439,9 @@ o	client/build/static/js/main.bf40f367.chunk.js	/^(this.webpackJsonpinstagram=th
 o	client/build/static/js/runtime-main.26e86030.js	/^!function(e){function r(r){for(var n,a,i=r[0],c=r[1],f=r[2],s=0,p=[];s<i.length;s++)a=i[s],Objec/;"	c
 o	client/build/static/js/runtime-main.26e86030.js	/^!function(e){function r(r){for(var n,a,i=r[0],c=r[1],f=r[2],s=0,p=[];s<i.length;s++)a=i[s],Objec/;"	f	function:a
 oa	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
+oauth	package-lock.json	/^        "oauth": "0.9.x",$/;"	s	object:dependencies.passport-oauth1.requires
+oauth	package-lock.json	/^        "oauth": "0.9.x",$/;"	s	object:dependencies.passport-oauth2.requires
+oauth	package-lock.json	/^    "oauth": {$/;"	o	object:dependencies
 object	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:e.exports.n
 object-assign	client/package-lock.json	/^            "object-assign": "^4.0.1",$/;"	s	object:dependencies.del.dependencies.globby.requires
 object-assign	client/package-lock.json	/^        "object-assign": "^4.0.1",$/;"	s	object:dependencies.normalize-url.requires
@@ -10761,6 +10772,20 @@ pascalcase	client/package-lock.json	/^    "pascalcase": {$/;"	o	object:dependenc
 passport	middlewares/passport.middleware.js	/^const passport = require ("passport")$/;"	C
 passport	routes/post.route.js	/^const passport = require ("passport");$/;"	C
 passport	routes/user.route.js	/^const passport = require ("passport");$/;"	C
+passport-facebook-token	package-lock.json	/^    "passport-facebook-token": {$/;"	o	object:dependencies
+passport-facebook-token	package.json	/^    "passport-facebook-token": "^4.0.0",$/;"	s	object:dependencies
+passport-jwt	package-lock.json	/^    "passport-jwt": {$/;"	o	object:dependencies
+passport-jwt	package.json	/^    "passport-jwt": "^4.0.0",$/;"	s	object:dependencies
+passport-oauth	package-lock.json	/^        "passport-oauth": "1.0.0"$/;"	s	object:dependencies.passport-facebook-token.requires
+passport-oauth	package-lock.json	/^    "passport-oauth": {$/;"	o	object:dependencies
+passport-oauth1	package-lock.json	/^        "passport-oauth1": "1.x.x",$/;"	s	object:dependencies.passport-oauth.requires
+passport-oauth1	package-lock.json	/^    "passport-oauth1": {$/;"	o	object:dependencies
+passport-oauth2	package-lock.json	/^        "passport-oauth2": "1.x.x"$/;"	s	object:dependencies.passport-oauth.requires
+passport-oauth2	package-lock.json	/^    "passport-oauth2": {$/;"	o	object:dependencies
+passport-strategy	package-lock.json	/^        "passport-strategy": "1.x.x",$/;"	s	object:dependencies.passport-oauth1.requires
+passport-strategy	package-lock.json	/^        "passport-strategy": "1.x.x",$/;"	s	object:dependencies.passport-oauth2.requires
+passport-strategy	package-lock.json	/^        "passport-strategy": "^1.0.0"$/;"	s	object:dependencies.passport-jwt.requires
+passport-strategy	package-lock.json	/^    "passport-strategy": {$/;"	o	object:dependencies
 password	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:Vn
 path	server.js	/^  const path = require("path");$/;"	C
 path-browserify	client/package-lock.json	/^        "path-browserify": "0.0.1",$/;"	s	object:dependencies.node-libs-browser.requires
@@ -12840,6 +12865,11 @@ requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.nopt
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.on-finished
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.once
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.package-json
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport-facebook-token
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport-jwt
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport-oauth
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport-oauth1
+requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.passport-oauth2
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.proxy-addr
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.pump
 requires	package-lock.json	/^      "requires": {$/;"	o	object:dependencies.pupa
@@ -14870,6 +14900,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/ar
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/balanced-match\/-\/balanced-match-1.0.2.tgz",$/;"	s	object:dependencies.balanced-match
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/base64-arraybuffer\/-\/base64-arraybuffer-0.1.4/;"	s	object:dependencies.base64-arraybuffer
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/base64id\/-\/base64id-2.0.0.tgz",$/;"	s	object:dependencies.base64id
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/base64url\/-\/base64url-3.0.1.tgz",$/;"	s	object:dependencies.base64url
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/basic-auth\/-\/basic-auth-2.0.1.tgz",$/;"	s	object:dependencies.basic-auth
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/bcryptjs\/-\/bcryptjs-2.4.3.tgz",$/;"	s	object:dependencies.bcryptjs
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/binary-extensions\/-\/binary-extensions-2.2.0.t/;"	s	object:dependencies.binary-extensions
@@ -14997,6 +15028,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/no
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/nopt\/-\/nopt-1.0.10.tgz",$/;"	s	object:dependencies.nopt
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/normalize-path\/-\/normalize-path-3.0.0.tgz",$/;"	s	object:dependencies.normalize-path
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/normalize-url\/-\/normalize-url-4.5.1.tgz",$/;"	s	object:dependencies.normalize-url
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/oauth\/-\/oauth-0.9.15.tgz",$/;"	s	object:dependencies.oauth
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/object-assign\/-\/object-assign-4.1.1.tgz",$/;"	s	object:dependencies.object-assign
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/on-finished\/-\/on-finished-2.3.0.tgz",$/;"	s	object:dependencies.on-finished
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/on-headers\/-\/on-headers-1.0.2.tgz",$/;"	s	object:dependencies.on-headers
@@ -15005,6 +15037,12 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/op
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/p-cancelable\/-\/p-cancelable-1.1.0.tgz",$/;"	s	object:dependencies.p-cancelable
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/package-json\/-\/package-json-6.5.0.tgz",$/;"	s	object:dependencies.package-json
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/parseurl\/-\/parseurl-1.3.3.tgz",$/;"	s	object:dependencies.parseurl
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-facebook-token\/-\/passport-facebook-t/;"	s	object:dependencies.passport-facebook-token
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-jwt\/-\/passport-jwt-4.0.0.tgz",$/;"	s	object:dependencies.passport-jwt
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-oauth1\/-\/passport-oauth1-1.2.0.tgz",$/;"	s	object:dependencies.passport-oauth1
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-oauth2\/-\/passport-oauth2-1.6.0.tgz",$/;"	s	object:dependencies.passport-oauth2
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-oauth\/-\/passport-oauth-1.0.0.tgz",$/;"	s	object:dependencies.passport-oauth
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/passport-strategy\/-\/passport-strategy-1.0.0.t/;"	s	object:dependencies.passport-strategy
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/path-to-regexp\/-\/path-to-regexp-0.1.7.tgz",$/;"	s	object:dependencies.path-to-regexp
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/picomatch\/-\/picomatch-2.3.0.tgz",$/;"	s	object:dependencies.picomatch
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/prepend-http\/-\/prepend-http-2.0.0.tgz",$/;"	s	object:dependencies.prepend-http
@@ -15052,6 +15090,7 @@ resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/to
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/type-fest\/-\/type-fest-0.8.1.tgz",$/;"	s	object:dependencies.type-fest
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/type-is\/-\/type-is-1.6.18.tgz",$/;"	s	object:dependencies.type-is
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/typedarray-to-buffer\/-\/typedarray-to-buffer-3/;"	s	object:dependencies.typedarray-to-buffer
+resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/uid2\/-\/uid2-0.0.3.tgz",$/;"	s	object:dependencies.uid2
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/undefsafe\/-\/undefsafe-2.0.3.tgz",$/;"	s	object:dependencies.undefsafe
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/unique-string\/-\/unique-string-2.0.0.tgz",$/;"	s	object:dependencies.unique-string
 resolved	package-lock.json	/^      "resolved": "https:\/\/registry.npmjs.org\/unpipe\/-\/unpipe-1.0.0.tgz",$/;"	s	object:dependencies.unpipe
@@ -15547,7 +15586,7 @@ so	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this
 socket	client/src/actions/socketAction.jsx	/^  const socket = io("\/");$/;"	C
 socket	client/src/helpers/socket.jsx	/^const socket = (function () {$/;"	f
 socket.io	package-lock.json	/^    "socket.io": {$/;"	o	object:dependencies
-socket.io	package.json	/^    "socket.io": "^4.1.2",$/;"	s	object:dependencies
+socket.io	package.json	/^    "socket.io": "^4.1.2"$/;"	s	object:dependencies
 socket.io-adapter	package-lock.json	/^        "socket.io-adapter": "~2.3.0",$/;"	s	object:dependencies.socket.io.requires
 socket.io-adapter	package-lock.json	/^    "socket.io-adapter": {$/;"	o	object:dependencies
 socket.io-client	client/package-lock.json	/^    "socket.io-client": {$/;"	o	object:dependencies
@@ -16218,6 +16257,8 @@ ua	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this
 ue	client/build/static/js/0.8ce141be.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[0],{143:function(e,t,n){"use /;"	f
 ue	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
 ui	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
+uid2	package-lock.json	/^        "uid2": "0.0.x",$/;"	s	object:dependencies.passport-oauth2.requires
+uid2	package-lock.json	/^    "uid2": {$/;"	o	object:dependencies
 ul	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	c
 umask	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f	function:o
 un	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
@@ -16473,6 +16514,8 @@ utila	client/package-lock.json	/^    "utila": {$/;"	o	object:dependencies
 utils-merge	client/package-lock.json	/^        "utils-merge": "1.0.1",$/;"	s	object:dependencies.express.requires
 utils-merge	client/package-lock.json	/^    "utils-merge": {$/;"	o	object:dependencies
 utils-merge	package-lock.json	/^        "utils-merge": "1.0.1",$/;"	s	object:dependencies.express.requires
+utils-merge	package-lock.json	/^        "utils-merge": "1.x.x"$/;"	s	object:dependencies.passport-oauth1.requires
+utils-merge	package-lock.json	/^        "utils-merge": "1.x.x"$/;"	s	object:dependencies.passport-oauth2.requires
 utils-merge	package-lock.json	/^    "utils-merge": {$/;"	o	object:dependencies
 uu	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
 uuid	client/package-lock.json	/^        "uuid": "^3.3.2"$/;"	s	object:dependencies.webpack-log.requires
@@ -18429,6 +18472,7 @@ version	package-lock.json	/^          "version": "6.3.0",$/;"	s	object:dependenc
 version	package-lock.json	/^          "version": "7.2.0",$/;"	s	object:dependencies.chalk.dependencies.supports-color
 version	package-lock.json	/^          "version": "8.0.0",$/;"	s	object:dependencies.string-width.dependencies.emoji-regex
 version	package-lock.json	/^      "version": "0.0.1",$/;"	s	object:dependencies.concat-map
+version	package-lock.json	/^      "version": "0.0.3",$/;"	s	object:dependencies.uid2
 version	package-lock.json	/^      "version": "0.1.4",$/;"	s	object:dependencies.base64-arraybuffer
 version	package-lock.json	/^      "version": "0.1.4",$/;"	s	object:dependencies.duplexer3
 version	package-lock.json	/^      "version": "0.1.4",$/;"	s	object:dependencies.imurmurhash
@@ -18448,8 +18492,11 @@ version	package-lock.json	/^      "version": "0.6.0",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "0.6.2",$/;"	s	object:dependencies.negotiator
 version	package-lock.json	/^      "version": "0.8.1",$/;"	s	object:dependencies.type-fest
 version	package-lock.json	/^      "version": "0.8.3",$/;"	s	object:dependencies.mpath
+version	package-lock.json	/^      "version": "0.9.15",$/;"	s	object:dependencies.oauth
 version	package-lock.json	/^      "version": "1.0.0",$/;"	s	object:dependencies.is-typedarray
 version	package-lock.json	/^      "version": "1.0.0",$/;"	s	object:dependencies.isarray
+version	package-lock.json	/^      "version": "1.0.0",$/;"	s	object:dependencies.passport-oauth
+version	package-lock.json	/^      "version": "1.0.0",$/;"	s	object:dependencies.passport-strategy
 version	package-lock.json	/^      "version": "1.0.0",$/;"	s	object:dependencies.regexp-clone
 version	package-lock.json	/^      "version": "1.0.0",$/;"	s	object:dependencies.to-readable-stream
 version	package-lock.json	/^      "version": "1.0.0",$/;"	s	object:dependencies.toidentifier
@@ -18498,6 +18545,7 @@ version	package-lock.json	/^      "version": "1.1.8",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "1.10.0",$/;"	s	object:dependencies.morgan
 version	package-lock.json	/^      "version": "1.14.1",$/;"	s	object:dependencies.serve-static
 version	package-lock.json	/^      "version": "1.19.0",$/;"	s	object:dependencies.body-parser
+version	package-lock.json	/^      "version": "1.2.0",$/;"	s	object:dependencies.passport-oauth1
 version	package-lock.json	/^      "version": "1.2.1",$/;"	s	object:dependencies.range-parser
 version	package-lock.json	/^      "version": "1.2.10",$/;"	s	object:dependencies.@types/component-emitter
 version	package-lock.json	/^      "version": "1.2.5",$/;"	s	object:dependencies.minimist
@@ -18514,6 +18562,7 @@ version	package-lock.json	/^      "version": "1.5.0",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "1.5.0",$/;"	s	object:dependencies.memory-pager
 version	package-lock.json	/^      "version": "1.5.0",$/;"	s	object:dependencies.statuses
 version	package-lock.json	/^      "version": "1.6.0",$/;"	s	object:dependencies.mime
+version	package-lock.json	/^      "version": "1.6.0",$/;"	s	object:dependencies.passport-oauth2
 version	package-lock.json	/^      "version": "1.6.18",$/;"	s	object:dependencies.type-is
 version	package-lock.json	/^      "version": "1.7.2",$/;"	s	object:dependencies.http-errors
 version	package-lock.json	/^      "version": "1.8.1",$/;"	s	object:dependencies.etag
@@ -18570,6 +18619,7 @@ version	package-lock.json	/^      "version": "3.0.0",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "3.0.0",$/;"	s	object:dependencies.normalize-path
 version	package-lock.json	/^      "version": "3.0.0",$/;"	s	object:dependencies.pump
 version	package-lock.json	/^      "version": "3.0.0",$/;"	s	object:dependencies.url-parse-lax
+version	package-lock.json	/^      "version": "3.0.1",$/;"	s	object:dependencies.base64url
 version	package-lock.json	/^      "version": "3.0.2",$/;"	s	object:dependencies.braces
 version	package-lock.json	/^      "version": "3.0.3",$/;"	s	object:dependencies.is-path-inside
 version	package-lock.json	/^      "version": "3.0.3",$/;"	s	object:dependencies.lodash.isboolean
@@ -18595,6 +18645,8 @@ version	package-lock.json	/^      "version": "3.6.0",$/;"	s	object:dependencies.
 version	package-lock.json	/^      "version": "3.6.19",$/;"	s	object:dependencies.@types/mongodb
 version	package-lock.json	/^      "version": "3.6.8",$/;"	s	object:dependencies.mongodb
 version	package-lock.json	/^      "version": "4.0.0",$/;"	s	object:dependencies.is-npm
+version	package-lock.json	/^      "version": "4.0.0",$/;"	s	object:dependencies.passport-facebook-token
+version	package-lock.json	/^      "version": "4.0.0",$/;"	s	object:dependencies.passport-jwt
 version	package-lock.json	/^      "version": "4.0.0",$/;"	s	object:dependencies.xdg-basedir
 version	package-lock.json	/^      "version": "4.0.1",$/;"	s	object:dependencies.is-glob
 version	package-lock.json	/^      "version": "4.0.1",$/;"	s	object:dependencies.lodash.isstring
