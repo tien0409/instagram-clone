@@ -50,6 +50,7 @@ export const MyName = styled(Link)`
 `;
 export const Image = styled.img`
   width: 100%;
+  height: 100%;
   max-height: 600px;
   object-fit: contain;
 `;
@@ -117,8 +118,10 @@ export const PersonComment = styled.div`
 
 export const CreatedPost = styled(ViewAllComment)`
   margin-top: 4px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
+  font-weight: 400;
+  color: #8e8e8e;
 `;
 
 export const Form = styled.form`

@@ -75,7 +75,7 @@ const CreatePostBody = ({ modal, userInfo, setModal, caption, setCaption }) => {
     <CreatePost.Body>
       <CreatePost.CaptionWrap>
         <CreatePost.InfoWrap>
-          <CreatePost.Avatar src={userInfo.avatar} />
+          <CreatePost.Avatar alt={userInfo.avatar} src={userInfo.avatar} />
           <CreatePost.Username>{userInfo.username}</CreatePost.Username>
         </CreatePost.InfoWrap>
         <CreatePost.TextArea
@@ -102,7 +102,7 @@ const CreatePostBody = ({ modal, userInfo, setModal, caption, setCaption }) => {
       <CreatePost.UploadFileWrap>
         <CreatePost.FileWrap>
           <CreatePost.ImageWrap active={imageSrc}>
-            {imageSrc && <CreatePost.Image src={imageSrc} />}
+            {imageSrc && <CreatePost.Image alt={imageSrc} src={imageSrc} />}
           </CreatePost.ImageWrap>
           <CreatePost.FileInfoWrap>
             <CreatePost.Icon>

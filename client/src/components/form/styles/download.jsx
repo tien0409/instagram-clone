@@ -18,9 +18,11 @@ export const DownloadOS = styled.div``;
 export const DownloadLink = styled(ReactLink)``;
 export const DownloadImg = styled.img`
   width: 132px;
+  height: 100%;
   margin: 0 4px;
 
   @media (max-width: 28.125em) {
     width: 100px;
+    height: 100%;
   }
 `;

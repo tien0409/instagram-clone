@@ -51,6 +51,7 @@ const ProfileHeading = ({
           }
         }}
         src={userInfoDetails.avatar}
+        alt={userInfoDetails.avatar}
       />
       <ProfileUploadAvatar modal={modal} setModal={setModal} />
       <Profile.HeadingInfor>

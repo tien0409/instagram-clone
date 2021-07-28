@@ -42,7 +42,10 @@ const MessageList = ({ userInfo, messages }) => {
                 key={message._id}
                 self={message.sender === userInfo._id}
               >
-                <Inbox.MsgAvatar src={`${message.avatar}`} />
+                <Inbox.MsgAvatar
+                  alt={message.avatar}
+                  src={`${message.avatar}`}
+                />
                 <Inbox.MsgContent>{message.content}</Inbox.MsgContent>
               </Inbox.MsgItem>
             ))}

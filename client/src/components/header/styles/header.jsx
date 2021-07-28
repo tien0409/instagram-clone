@@ -32,9 +32,11 @@ export const Navbar = styled.nav`
 export const NavbarLogo = styled.img`
   margin-top: 6px;
   width: 103px;
+  height: 100%;
 
   @media (max-width: 22.75em) {
     width: 80px;
+    height: 100%;
   }
 `;
 

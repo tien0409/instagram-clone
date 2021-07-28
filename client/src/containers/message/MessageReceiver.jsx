@@ -13,6 +13,7 @@ const MessageReceiver = ({ receiver, active }) => {
       <Inbox.MsgHead>
         <Inbox.MsgHeadAvatar
           onClick={handleRedirect}
+          alt={receiver.avatar}
           src={`${receiver.avatar}`}
         />
         <Inbox.MsgHeadInfor>

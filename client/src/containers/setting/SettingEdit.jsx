@@ -56,7 +56,7 @@ const SettingEdit = () => {
     <Setting.Edit>
       <Setting.EditGroup avatar>
         <Setting.EditAvatarWrap>
-          <Setting.EditAvatar src={userInfo.avatar} />
+          <Setting.EditAvatar alt={userInfo.avatar} src={userInfo.avatar} />
         </Setting.EditAvatarWrap>
         <Setting.EditWrap>
           <Setting.EditText>{userInfo.username}</Setting.EditText>

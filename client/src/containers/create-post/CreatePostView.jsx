@@ -3,7 +3,7 @@ import { CreatePost } from "../../components";
 const CreatePostView = ({ userInfo, caption, setModal, setCaption }) => {
   return (
     <CreatePost.Create>
-      <CreatePost.Avatar src={userInfo.avatar} />
+      <CreatePost.Avatar alt={userInfo.avatar} src={userInfo.avatar} />
       <CreatePost.Input
         onFocus={() => {
           setModal(true);

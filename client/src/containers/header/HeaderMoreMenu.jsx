@@ -29,7 +29,7 @@ const HeaderMoreMenu = () => {
       onClick={() => setAvatarClicked(!avatarClicked)}
     >
       <Header.NavAvatarWrap>
-        <Header.NavAvatarImg src={userInfo.avatar} />
+        <Header.NavAvatarImg alt={userInfo.username} src={userInfo.avatar} />
 
         {/* More menu when click avatar user logged in */}
         <Header.NavMoreMenu>

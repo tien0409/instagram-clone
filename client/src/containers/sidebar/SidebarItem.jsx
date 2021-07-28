@@ -35,7 +35,7 @@ const SidebarItem = ({ conversation, conversationId, user }) => {
       } // tam de the nay
       to={`/inbox/${conversation._id}`}
     >
-      <Inbox.SidebarAvatar src={`${user.avatar}`} />
+      <Inbox.SidebarAvatar alt={user.avatar} src={`${user.avatar}`} />
       <Inbox.SidebarInfor>
         <Inbox.SidebarName>{user.username}</Inbox.SidebarName>
         <Inbox.SidebarMsgWrap>

@@ -36,6 +36,7 @@ const HeaderContainer = ({
       <Header.Navbar>
         <Header.NavLink to={`${ROUTES.HOME}`}>
           <Header.NavbarLogo
+            alt="Instagram logo"
             onClick={handleBrandClick}
             src="/images/logo.png"
           />

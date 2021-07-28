@@ -93,10 +93,13 @@ const LoginPage = () => {
               <Form.DownloadText>Get the app</Form.DownloadText>
               <Form.DownloadOS>
                 <Form.DownloadLink to="/">
-                  <Form.DownloadImg src="/images/apple.png" />
+                  <Form.DownloadImg alt="apple" src="/images/apple.png" />
                 </Form.DownloadLink>
                 <Form.DownloadLink to="/">
-                  <Form.DownloadImg src="/images/google-play.png" />
+                  <Form.DownloadImg
+                    alt="google-play"
+                    src="/images/google-play.png"
+                  />
                 </Form.DownloadLink>
               </Form.DownloadOS>
             </Form.DownloadWrap>

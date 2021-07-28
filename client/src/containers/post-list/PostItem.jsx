@@ -67,12 +67,12 @@ const PostItem = ({ post }) => {
     <Post>
       <Post.Infor to={`/${post.name}`}>
         <Post.AvatarWrap to={`/${post.name}`}>
-          <Post.Avatar src={post.avatar} />
+          <Post.Avatar alt={post.avatar} src={post.avatar} />
         </Post.AvatarWrap>
         <Post.MyName to={`/${post.name}`}>{post.name}</Post.MyName>
       </Post.Infor>
 
-      <Post.Image src={post.imagePost} />
+      <Post.Image alt={post.imagePost} src={post.imagePost} />
       <Post.Actions>
         <Post.Icon onClick={handleToggleLike}>
           {liked ? <AiFillHeart fill="red" /> : <AiOutlineHeart />}

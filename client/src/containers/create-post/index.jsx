@@ -1,9 +1,10 @@
 import { CreatePost, Modal } from "../../components";
 import { ImCancelCircle } from "react-icons/im";
-import { useState } from "react";
+import { lazy, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import CreatePostView from "./CreatePostView";
-import CreatePostBody from "./CreatePostBody";
+
+const CreatePostView = lazy(() => import("./CreatePostView"));
+const CreatePostBody = lazy(() => import("./CreatePostBody"));
 
 const CreatePostContainer = () => {
   const userLogin = useSelector((state) => state.userLogin);
@@ -12,12 +13,20 @@ const CreatePostContainer = () => {
   const [modal, setModal] = useState(false);
   const [caption, setCaption] = useState("");
 
-  window.addEventListener("keydown", function (e) {
-    // escape
-    if (e.keyCode === 27) {
-      setModal(false);
-    }
-  });
+  useEffect(() => {
+    const closeModel = (e) => {
+      // escape
+      if (e.keyCode === 27) {
+        setModal(false);
+      }
+    };
+
+    window.addEventListener("keydown", closeModel, { passive: true });
+
+    return () => {
+      window.removeEventListener("keydown", closeModel, { passive: true });
+    };
+  }, []);
 
   return (
     <>

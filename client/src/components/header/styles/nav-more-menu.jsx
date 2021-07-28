@@ -9,6 +9,7 @@ export const NavAvatarWrap = styled.div`
 
 export const NavAvatarImg = styled.img`
   width: calc(2.4rem - 1px);
+  height: calc(2.4rem - 1px);
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.5);
 `;

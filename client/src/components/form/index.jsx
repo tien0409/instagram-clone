@@ -62,7 +62,13 @@ Form.ImgItem = function FormImgItem({ ...restProps }) {
     };
   }, [imgNumber]);
 
-  return <ImgItem src={`/images/phone${imgNumber}.jpg`} {...restProps} />;
+  return (
+    <ImgItem
+      alt={`image-${imgNumber}`}
+      src={`/images/phone${imgNumber}.jpg`}
+      {...restProps}
+    />
+  );
 };
 
 Form.BaseWrap = function FormBaseWrap({ children, ...restProps }) {

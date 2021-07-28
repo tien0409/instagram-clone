@@ -49,10 +49,10 @@ const HeaderInputSearch = () => {
       }
     };
 
-    window.addEventListener("click", handleOpenSearch);
+    window.addEventListener("click", handleOpenSearch, { passive: true });
 
     return () => {
-      window.removeEventListener("click", handleOpenSearch);
+      window.removeEventListener("click", handleOpenSearch, { passive: true });
     };
   }, []);
 

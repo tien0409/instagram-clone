@@ -7,7 +7,7 @@ const postSocket = require("./post");
 const onlineUsers = [];
 
 const socketio = (httpServer) => {
-  const io = require("socket.io")(httpServer, { cors: CLIENT_URL });
+  const io = require("socket.io")(httpServer);
 
   io.on("connection", (socket) => {
     console.log("user connect:", socket.id);
@@ -24,7 +24,6 @@ const socketio = (httpServer) => {
       console.log(`${socket.id} disconnect`);
       if (onlineUsers.length > 0) {
         const index = onlineUsers.findIndex((user) => user._id === socket._id);
-        // console.log(`${onlineUsers[index].username} disconnect`);
 
         const userExistToo = onlineUsers.find(
           (user) => user._id === socket._id,

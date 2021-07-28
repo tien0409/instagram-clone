@@ -13,7 +13,7 @@ const CreatePostContent = () => {
         <CreatePost.CaptionWrap>
           {" "}
           <CreatePost.InfoWrap>
-            <CreatePost.Avatar src={userInfo.avatar} />
+            <CreatePost.Avatar alt={userInfo.avatar} src={userInfo.avatar} />
             <CreatePost.Username>{userInfo.username}</CreatePost.Username>
           </CreatePost.InfoWrap>
           <CreatePost.TextArea

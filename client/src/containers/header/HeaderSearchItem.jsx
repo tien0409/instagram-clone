@@ -41,7 +41,7 @@ const HeaderSearchItem = ({
       to={`/${user.username}`}
     >
       <Header.NavSearchInforWrap>
-        <Header.NavSearchAvatar src={user.avatar} />
+        <Header.NavSearchAvatar alt={user.username} src={user.avatar} />
         <Header.NavSearchNameWrap>
           <Header.NavSearchName>{user.username}</Header.NavSearchName>
           <Header.NavSearchFullName>{user.fullName}</Header.NavSearchFullName>

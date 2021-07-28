@@ -14,7 +14,7 @@ const SuggestionItem = ({ user, userInfo, dispatch, index, listSuggested }) => {
     <Suggestion.SuggestedItem>
       <Suggestion.SuggestedWrapInfor>
         <Suggestion.Link to={`/${user.username}`}>
-          <Suggestion.SuggestedAvatar src={user.avatar} />
+          <Suggestion.SuggestedAvatar alt={user.avatar} src={user.avatar} />
         </Suggestion.Link>
         <Suggestion.SuggestedDetails>
           <Suggestion.Link to={`/${user.username}`}>

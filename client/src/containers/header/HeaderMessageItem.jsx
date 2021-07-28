@@ -2,10 +2,10 @@ import { Header } from "../../components";
 import {
   AiFillHome,
   AiOutlineHome,
-  AiFillCompass,
-  AiOutlineCompass,
-  AiFillHeart,
-  AiOutlineHeart,
+  // AiFillCompass,
+  // AiOutlineCompass,
+  // AiFillHeart,
+  // AiOutlineHeart,
   AiFillMessage,
   AiOutlineMessage,
 } from "react-icons/ai";
@@ -61,22 +61,22 @@ const HeaderListNavigate = ({ home, inbox, profile, activity, explore }) => {
       </Header.NavItem>
 
       {/* Explore */}
-      <Header.NavItem>
-        <Header.NavLink to="/explore">
-          <Header.NavIcon>
-            {explore ? <AiFillCompass /> : <AiOutlineCompass />}
-          </Header.NavIcon>
-        </Header.NavLink>
-      </Header.NavItem>
+      {/* <Header.NavItem> */}
+      {/*   <Header.NavLink to="/explore"> */}
+      {/*     <Header.NavIcon> */}
+      {/*       {explore ? <AiFillCompass /> : <AiOutlineCompass />} */}
+      {/*     </Header.NavIcon> */}
+      {/*   </Header.NavLink> */}
+      {/* </Header.NavItem> */}
 
       {/* Activity */}
-      <Header.NavItem>
-        <Header.NavLink to="/">
-          <Header.NavIcon>
-            {activity ? <AiFillHeart /> : <AiOutlineHeart />}
-          </Header.NavIcon>
-        </Header.NavLink>
-      </Header.NavItem>
+      {/* <Header.NavItem> */}
+      {/*   <Header.NavLink to="/"> */}
+      {/*     <Header.NavIcon> */}
+      {/*       {activity ? <AiFillHeart /> : <AiOutlineHeart />} */}
+      {/*     </Header.NavIcon> */}
+      {/*   </Header.NavLink> */}
+      {/* </Header.NavItem> */}
 
       {/* Avatar - More menu */}
       <HeaderMoreMenu />

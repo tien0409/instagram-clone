@@ -1613,7 +1613,6 @@ AnonymousFunction359b375efc00	client/build/static/js/4.20ca3fb4.chunk.js	/^(this
 AnonymousFunction359b375efd00	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f	function:y
 AnonymousFunction359b375efe00	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f	function:y
 AnonymousFunction359b375eff00	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	c	class:y
-AnonymousFunction36c3aae00100	client/src/containers/create-post/index.jsx	/^  window.addEventListener("keydown", function (e) {$/;"	f
 AnonymousFunction3f11f0b40100	client/build/static/js/9.12dee9c9.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[9],{180:function(t,s,e){"use /;"	f
 AnonymousFunction59523b2c0100	client/build/static/js/main.bf40f367.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],{1:function(e,n,t){"use st/;"	f
 AnonymousFunction59523b2c0200	client/build/static/js/main.bf40f367.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[2],{1:function(e,n,t){"use st/;"	f
@@ -2574,6 +2573,7 @@ CreatePost	client/src/components/create-post/index.jsx	/^const CreatePost = ({ c
 CreatePostAvatar	client/src/components/create-post/index.jsx	/^CreatePost.Avatar = function CreatePostAvatar({ src, ...restProps }) {$/;"	f
 CreatePostBody	client/src/components/create-post/index.jsx	/^CreatePost.Body = function CreatePostBody({ children, ...restProps }) {$/;"	f
 CreatePostBody	client/src/containers/create-post/CreatePostBody.jsx	/^const CreatePostBody = ({ modal, userInfo, setModal, caption, setCaption }) => {$/;"	C
+CreatePostBody	client/src/containers/create-post/index.jsx	/^const CreatePostBody = lazy(() => import(".\/CreatePostBody"));$/;"	C
 CreatePostButton	client/src/components/create-post/index.jsx	/^CreatePost.Button = function CreatePostButton({ children, ...restProps }) {$/;"	f
 CreatePostCaptionWrap	client/src/components/create-post/index.jsx	/^CreatePost.CaptionWrap = function CreatePostCaptionWrap({$/;"	f
 CreatePostCloseButton	client/src/components/create-post/index.jsx	/^CreatePost.CloseButton = function CreatePostCloseButton({$/;"	f
@@ -2594,6 +2594,7 @@ CreatePostTitle	client/src/components/create-post/index.jsx	/^CreatePost.HeadTit
 CreatePostUploadFileWrap	client/src/components/create-post/index.jsx	/^CreatePost.UploadFileWrap = function CreatePostUploadFileWrap({$/;"	f
 CreatePostUsername	client/src/components/create-post/index.jsx	/^CreatePost.Username = function CreatePostUsername({ children, ...restProps }) {$/;"	f
 CreatePostView	client/src/containers/create-post/CreatePostView.jsx	/^const CreatePostView = ({ userInfo, caption, setModal, setCaption }) => {$/;"	C
+CreatePostView	client/src/containers/create-post/index.jsx	/^const CreatePostView = lazy(() => import(".\/CreatePostView"));$/;"	C
 CreatedPost	client/src/components/post/index.jsx	/^Post.CreatedPost = function PostCreatedPost({ children, ...restProps }) {$/;"	f	function:Post
 CreatedPost	client/src/components/post/styles/post.jsx	/^export const CreatedPost = styled(ViewAllComment)`$/;"	C
 Cs	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
@@ -9022,7 +9023,7 @@ internal-ip	client/package-lock.json	/^    "internal-ip": {$/;"	o	object:depende
 internal-slot	client/package-lock.json	/^        "internal-slot": "^1.0.3",$/;"	s	object:dependencies.string.prototype.matchall.requires
 internal-slot	client/package-lock.json	/^    "internal-slot": {$/;"	o	object:dependencies
 io	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	v
-io	socket/index.js	/^  const io = require("socket.io")(httpServer, { cors: CLIENT_URL });$/;"	C
+io	socket/index.js	/^  const io = require("socket.io")(httpServer);$/;"	C
 ip	client/package-lock.json	/^        "ip": "^1.1.0",$/;"	s	object:dependencies.dns-packet.requires
 ip	client/package-lock.json	/^        "ip": "^1.1.5",$/;"	s	object:dependencies.webpack-dev-server.requires
 ip	client/package-lock.json	/^    "ip": {$/;"	o	object:dependencies
@@ -15560,7 +15561,7 @@ snapdragon-node	client/package-lock.json	/^    "snapdragon-node": {$/;"	o	object
 snapdragon-util	client/package-lock.json	/^        "snapdragon-util": "^3.0.1"$/;"	s	object:dependencies.snapdragon-node.requires
 snapdragon-util	client/package-lock.json	/^    "snapdragon-util": {$/;"	o	object:dependencies
 so	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
-socket	client/src/actions/socketAction.jsx	/^  const socket = io("http:\/\/localhost:8000");$/;"	C
+socket	client/src/actions/socketAction.jsx	/^  const socket = io("\/");$/;"	C
 socket	client/src/helpers/socket.jsx	/^const socket = (function () {$/;"	f
 socket.io	package-lock.json	/^    "socket.io": {$/;"	o	object:dependencies
 socket.io	package.json	/^    "socket.io": "^4.1.2"$/;"	s	object:dependencies

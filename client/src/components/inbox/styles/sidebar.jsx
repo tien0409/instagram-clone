@@ -93,9 +93,9 @@ export const SidebarName = styled.div`
 export const SidebarMsgWrap = styled.div`
   display: flex;
   align-items: baseline;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.4rem;
-  color: #a6919d;
+  color: #8e8e8e;
 `;
 
 export const SidebarMsg = styled.div``;

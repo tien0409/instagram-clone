@@ -132,11 +132,12 @@ export const NavSearchNoUser = styled.div`
 `;
 
 export const NavbarInput = styled.input`
-  color: #948e8e;
+  color: var(--black-color);
   border: 1px solid #dbdbdb;
   outline: none;
   padding: 8px 16px;
   border-radius: 5px;
+  background-color: rgba(230, 230, 230, 0.4);
 
   @media (max-width: 34rem) {
     display: none;

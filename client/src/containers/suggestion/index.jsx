@@ -28,7 +28,7 @@ const SuggestionContainer = () => {
     <Suggestion>
       <Suggestion.MyInfor>
         <Suggestion.Link to={userInfo.username}>
-          <Suggestion.MyAvatar src={userInfo.avatar} />
+          <Suggestion.MyAvatar alt={userInfo.avatar} src={userInfo.avatar} />
         </Suggestion.Link>
         <Suggestion.MyNameWrap>
           <Suggestion.Link to={userInfo.username}>

@@ -6,7 +6,7 @@ const ProfilePostItem = ({ post }) => {
   return (
     <Profile.PostItem to={`/post/${post._id}`}>
       <Profile.PostImgWrap>
-        <Profile.PostImg src={post.imagePost} />
+        <Profile.PostImg alt={post.imagePost} src={post.imagePost} />
       </Profile.PostImgWrap>
       <Profile.PostModal>
         <Profile.PostWrap>
