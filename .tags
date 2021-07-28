@@ -4656,7 +4656,6 @@ component-emitter	client/package-lock.json	/^        "component-emitter": "~1.3.
 component-emitter	client/package-lock.json	/^    "component-emitter": {$/;"	o	object:dependencies
 component-emitter	package-lock.json	/^        "component-emitter": "~1.3.0",$/;"	s	object:dependencies.socket.io-parser.requires
 component-emitter	package-lock.json	/^    "component-emitter": {$/;"	o	object:dependencies
-componentClicked	client/src/containers/facebook-login/index.jsx	/^  const componentClicked = (res) => {$/;"	C
 componentDidMount	client/build/static/js/0.8ce141be.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[0],{143:function(e,t,n){"use /;"	c	class:n
 componentDidMount	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	c	class:n
 componentDidMount	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	c	class:r
@@ -6531,7 +6530,6 @@ handleClickInput	client/src/containers/header/HeaderInputSearch.jsx	/^  const ha
 handleCreateConversation	client/src/containers/profile/ProfileHeading.jsx	/^  const handleCreateConversation = () => {$/;"	C
 handleCreatePost	client/src/containers/create-post/CreatePostBody.jsx	/^  const handleCreatePost = async () => {$/;"	C
 handleForcedUnfollow	client/src/containers/list-user/ListUserItem.jsx	/^  const handleForcedUnfollow = (id) => {$/;"	C
-handleLoginFb	client/src/pages/LoginPage.jsx	/^  const handleLoginFb = () => {$/;"	C
 handleLogout	client/src/containers/header/HeaderMoreMenu.jsx	/^  const handleLogout = () => {$/;"	C
 handleRedirect	client/src/containers/message/MessageReceiver.jsx	/^  const handleRedirect = () => {$/;"	C
 handleRemoveAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const handleRemoveAvatar = () => {$/;"	C
@@ -9050,7 +9048,7 @@ internal-ip	client/package-lock.json	/^    "internal-ip": {$/;"	o	object:depende
 internal-slot	client/package-lock.json	/^        "internal-slot": "^1.0.3",$/;"	s	object:dependencies.string.prototype.matchall.requires
 internal-slot	client/package-lock.json	/^    "internal-slot": {$/;"	o	object:dependencies
 io	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	v
-io	socket/index.js	/^  const io = require("socket.io")(httpServer);$/;"	C
+io	socket/index.js	/^  const io = require("socket.io")(httpServer, { cors: CLIENT_URL });$/;"	C
 ip	client/package-lock.json	/^        "ip": "^1.1.0",$/;"	s	object:dependencies.dns-packet.requires
 ip	client/package-lock.json	/^        "ip": "^1.1.5",$/;"	s	object:dependencies.webpack-dev-server.requires
 ip	client/package-lock.json	/^    "ip": {$/;"	o	object:dependencies
@@ -15426,7 +15424,6 @@ setIsLast	client/src/containers/StoryContainer.jsx	/^  const [isLast, setIsLast]
 setIsLoading	client/src/containers/list-user/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/containers/profile/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/pages/InboxPage.jsx	/^  const [isLoading, setIsLoading] = useState(true);$/;"	C
-setIsLoggedIn	client/src/containers/facebook-login/index.jsx	/^  const [isLoggedIn, setIsLoggedIn] = useState(true);$/;"	C
 setJitter	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	m	class:n
 setLastMessage	client/src/containers/sidebar/SidebarItem.jsx	/^  const [lastMessage, setLastMessage] = useState(null);$/;"	C
 setLiked	client/src/containers/post-list/PostItem.jsx	/^  const [liked, setLiked] = useState(post.likes.includes(userInfo._id));$/;"	C
@@ -15449,7 +15446,6 @@ setNumLiked	client/src/containers/post-list/PostItem.jsx	/^  const [numLiked, se
 setNumberUnreadMessage	client/src/containers/header/HeaderMessageItem.jsx	/^  const [numberUnreadMessage, setNumberUnreadMessage] = useState(0);$/;"	C
 setNumberUnreadMessage	client/src/pages/InboxPage.jsx	/^  const [numberUnreadMessage, setNumberUnreadMessage] = useState(0);$/;"	C
 setOldPassword	client/src/containers/setting/SettingChangePassword.jsx	/^  const [oldPassword, setOldPassword] = useState("");$/;"	C
-setOpenFb	client/src/pages/LoginPage.jsx	/^  const [openFb, setOpenFb] = useState(false);$/;"	C
 setPassword	client/src/pages/LoginPage.jsx	/^  const [password, setPassword] = useState("");$/;"	C
 setPassword	client/src/pages/SignUpPage.jsx	/^  const [password, setPassword] = useState("");$/;"	C
 setPhoneNumber	client/src/containers/setting/SettingEdit.jsx	/^  const [phoneNumber, setPhoneNumber] = useState("");$/;"	C

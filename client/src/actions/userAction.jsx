@@ -101,7 +101,6 @@ export const loginWithFb = (accessToken) => async (dispatch) => {
       { access_token: accessToken },
       config,
     );
-    console.log("res", res.data);
 
     localStorage.setItem("userInfo", JSON.stringify(res.data));
     dispatch({ type: USER_LOGIN_SUCCESS, payload: res.data });

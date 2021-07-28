@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { AiFillFacebook } from "react-icons/ai";
 import { Form, Spinner } from "../components";
 import { useHistory } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
@@ -19,7 +18,6 @@ const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [openFb, setOpenFb] = useState(false);
 
   // check valid fields email, password
   const isInvalid =
@@ -43,10 +41,6 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
-  };
-
-  const handleLoginFb = () => {
-    setOpenFb(true);
   };
 
   return (
@@ -85,12 +79,7 @@ const LoginPage = () => {
 
               <Form.Separate></Form.Separate>
 
-              <Form.SocialWrap onClick={handleLoginFb}>
-                <Form.SocialIcon>
-                  <AiFillFacebook />
-                </Form.SocialIcon>
-                <Form.SocialName>Log in with Facebook</Form.SocialName>
-              </Form.SocialWrap>
+              <FacebookLoginContainer />
               {error && <Form.Error login>{error}</Form.Error>}
               <Form.ForgotPassword to="/">Forgot password?</Form.ForgotPassword>
             </Form.Base>
@@ -114,7 +103,6 @@ const LoginPage = () => {
           </Form.BaseWrap>
         </Form.Wrap>
       </Form>
-      {openFb && <FacebookLoginContainer />}
     </>
   );
 };
