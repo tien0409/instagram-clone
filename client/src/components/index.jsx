@@ -1,5 +1,4 @@
 export { default as Header } from "./header";
-export { default as Story } from "./story";
 export { default as Post } from "./post";
 export { default as Suggestion } from "./suggestion";
 export { default as Form } from "./form";

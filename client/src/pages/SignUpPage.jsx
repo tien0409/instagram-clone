@@ -14,7 +14,6 @@ const SignUpPage = () => {
   const { userInfo, isLoading, err } = userRegister;
   const history = useHistory();
 
-  const [imgNumber, setImgNumber] = useState(1);
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -30,20 +29,6 @@ const SignUpPage = () => {
     !/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
       email.toLowerCase(),
     );
-
-  useEffect(() => {
-    const timerImg = setInterval(() => {
-      if (imgNumber === 4) {
-        setImgNumber(1);
-      } else {
-        setImgNumber(imgNumber + 1);
-      }
-    }, 3000);
-
-    return () => {
-      clearInterval(timerImg);
-    };
-  }, [imgNumber]);
 
   useEffect(() => {
     if (userInfo) {
@@ -64,7 +49,7 @@ const SignUpPage = () => {
         <Form.Wrap>
           <Form.ImgWrap>
             <Form.ImgList>
-              <Form.ImgItem src={`/images/phone${imgNumber}.jpg`} />
+              <Form.ImgItem />
             </Form.ImgList>
           </Form.ImgWrap>
           <Form.BaseWrap>

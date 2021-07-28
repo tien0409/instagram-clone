@@ -2461,12 +2461,8 @@ Avatar	client/src/components/list-user/index.jsx	/^ListUser.Avatar = function Li
 Avatar	client/src/components/list-user/styles/list-user.jsx	/^export const Avatar = styled.img`$/;"	C
 Avatar	client/src/components/post/index.jsx	/^Post.Avatar = function PostAvatar({ src, ...restProps }) {$/;"	f	function:Post
 Avatar	client/src/components/post/styles/post.jsx	/^export const Avatar = styled.img`$/;"	C
-Avatar	client/src/components/story/index.jsx	/^Store.Avatar = function StoreAvatar({ src, ...restProps }) {$/;"	f	function:Store
-Avatar	client/src/components/story/styles/story.jsx	/^export const Avatar = styled.img`$/;"	C
 AvatarWrap	client/src/components/post/index.jsx	/^Post.AvatarWrap = function PostAvatarWrap({ children, ...restProps }) {$/;"	f	function:Post
 AvatarWrap	client/src/components/post/styles/post.jsx	/^export const AvatarWrap = styled(Link)`$/;"	C
-AvatarWrap	client/src/components/story/index.jsx	/^Store.AvatarWrap = function StoreAvatarWrap({ children, ...restProps }) {$/;"	f	function:Store
-AvatarWrap	client/src/components/story/styles/story.jsx	/^export const AvatarWrap = styled.div`$/;"	C
 AvatarWrap	client/src/components/upload-avatar/index.jsx	/^UploadAvatar.AvatarWrap = function UploadAvatarAvatarWrap({$/;"	f	function:UploadAvatar
 AvatarWrap	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const AvatarWrap = styled.div`$/;"	C
 B	client/build/static/js/0.8ce141be.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[0],{143:function(e,t,n){"use /;"	f
@@ -2542,7 +2538,6 @@ Container	client/src/components/post/styles/post.jsx	/^export const Container = 
 Container	client/src/components/profile/styles/profile.jsx	/^export const Container = styled(ContainerGlobal)`$/;"	C
 Container	client/src/components/setting/styles/setting.jsx	/^export const Container = styled(ContainerGlobal)`$/;"	C
 Container	client/src/components/spinner/styles/spinner.jsx	/^export const Container = styled.div`$/;"	C
-Container	client/src/components/story/styles/story.jsx	/^export const Container = styled.div`$/;"	C
 Container	client/src/components/suggestion/styles/suggestion.jsx	/^export const Container = styled.div`$/;"	C
 Container	client/src/components/upload-avatar/styles/upload-avatar.jsx	/^export const Container = styled.div`$/;"	C
 Container	client/src/globalStyles.jsx	/^export const Container = styled.div`$/;"	C
@@ -3078,8 +3073,6 @@ NOSCRIPT	client/build/static/js/0.8ce141be.chunk.js	/^(this.webpackJsonpinstagra
 Na	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	c
 Name	client/src/components/list-user/index.jsx	/^ListUser.Name = function ListNameName({ children, ...restProps }) {$/;"	f	function:ListUser
 Name	client/src/components/list-user/styles/list-user.jsx	/^export const Name = styled.div`$/;"	C
-Name	client/src/components/story/index.jsx	/^Store.Name = function StoreName({ children, ...restProps }) {$/;"	f	function:Store
-Name	client/src/components/story/styles/story.jsx	/^export const Name = styled.span`$/;"	C
 NavAvatarImg	client/src/components/header/index.jsx	/^Header.NavAvatarImg = function HeaderNavAvatarImg({ src, ...restProps }) {$/;"	f	function:Header
 NavAvatarImg	client/src/components/header/styles/nav-more-menu.jsx	/^export const NavAvatarImg = styled.img`$/;"	C
 NavAvatarWrap	client/src/components/header/index.jsx	/^Header.NavAvatarWrap = function HeaderNavAvatarWrap({$/;"	f	function:Header
@@ -3141,8 +3134,6 @@ NavbarInput	client/src/components/header/styles/nav-search.jsx	/^export const Na
 NavbarLogo	client/src/components/header/index.jsx	/^Header.NavbarLogo = function HeaderNavbarLogo({ src, ...restProps }) {$/;"	f	function:Header
 NavbarLogo	client/src/components/header/styles/header.jsx	/^export const NavbarLogo = styled.img`$/;"	C
 Ne	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
-Next	client/src/components/story/index.jsx	/^Store.Next = function StoreNext({ children, ...restProps }) {$/;"	f	function:Store
-Next	client/src/components/story/styles/story.jsx	/^export const Next = styled.div`$/;"	C
 Ni	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
 NoMsg	client/src/components/inbox/index.jsx	/^Inbox.NoMsg = function InboxNoMsg({ children, ...restProps }) {$/;"	f	function:Inbox
 NoMsg	client/src/components/inbox/styles/message.jsx	/^export const NoMsg = styled.div`$/;"	C
@@ -3201,11 +3192,8 @@ PROBE_UNKNOWN_ACTION	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJ
 PROFILE	client/src/constants/routes.jsx	/^export const PROFILE = "\/:username";$/;"	C
 Pa	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
 Pe	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	v
-Person	client/src/components/story/index.jsx	/^Store.Person = function StorePerson({ children, ...restProps }) {$/;"	f	function:Store
-Person	client/src/components/story/styles/story.jsx	/^export const Person = styled(Link)`$/;"	C
 PersonComment	client/src/components/post/index.jsx	/^Post.PersonComment = function PostPersonComment({ children, ...restProps }) {$/;"	f	function:Post
 PersonComment	client/src/components/post/styles/post.jsx	/^export const PersonComment = styled.div`$/;"	C
-PersonList	client/src/components/story/styles/story.jsx	/^export const PersonList = styled.div`$/;"	C
 PersonName	client/src/components/post/index.jsx	/^Post.PersonName = function PostPersonName({ children, ...restProps }) {$/;"	f	function:Post
 PersonName	client/src/components/post/styles/post.jsx	/^export const PersonName = styled(Link)`$/;"	C
 PersonWrap	client/src/components/post/index.jsx	/^Post.PersonWrap = function PostPersonWrap({ children, ...restProps }) {$/;"	f	function:Post
@@ -3261,8 +3249,6 @@ PostWrap	client/src/components/post/index.jsx	/^Post.Wrap = function PostWrap({ 
 PostWrap	client/src/components/profile/index.jsx	/^Profile.PostWrap = function ProfilePostWrap({ children, ...restProps }) {$/;"	f	function:Profile
 PostWrap	client/src/components/profile/styles/post.jsx	/^export const PostWrap = styled.div`$/;"	C
 Pr	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	v
-Prev	client/src/components/story/index.jsx	/^Store.Prev = function StorePrev({ children, ...restProps }) {$/;"	f	function:Store
-Prev	client/src/components/story/styles/story.jsx	/^export const Prev = styled.div`$/;"	C
 Profile	client/src/components/profile/index.jsx	/^const Profile = ({ children, ...restProps }) => {$/;"	C
 ProfileContainer	client/src/containers/profile/index.jsx	/^const ProfileContainer = () => {$/;"	C
 ProfileError	client/src/components/profile/index.jsx	/^Profile.Error = function ProfileError({ children, ...restProps }) {$/;"	f
@@ -3430,15 +3416,6 @@ Spinner	client/src/components/spinner/index.jsx	/^const Spinner = ({ children, .
 Sr	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	v
 Ss	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
 St	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
-Store	client/src/components/story/index.jsx	/^const Store = ({ children, ...restProps }) => {$/;"	C
-StoreAvatar	client/src/components/story/index.jsx	/^Store.Avatar = function StoreAvatar({ src, ...restProps }) {$/;"	f
-StoreAvatarWrap	client/src/components/story/index.jsx	/^Store.AvatarWrap = function StoreAvatarWrap({ children, ...restProps }) {$/;"	f
-StoreName	client/src/components/story/index.jsx	/^Store.Name = function StoreName({ children, ...restProps }) {$/;"	f
-StoreNext	client/src/components/story/index.jsx	/^Store.Next = function StoreNext({ children, ...restProps }) {$/;"	f
-StorePerson	client/src/components/story/index.jsx	/^Store.Person = function StorePerson({ children, ...restProps }) {$/;"	f
-StorePersonList	client/src/components/story/index.jsx	/^Store.PersonList = React.forwardRef(function StorePersonList($/;"	f
-StorePrev	client/src/components/story/index.jsx	/^Store.Prev = function StorePrev({ children, ...restProps }) {$/;"	f
-StoryContainer	client/src/containers/StoryContainer.jsx	/^const StoryContainer = () => {$/;"	C
 Su	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
 SuggestedAvatar	client/src/components/suggestion/index.jsx	/^Suggestion.SuggestedAvatar = function SuggestionSuggestedAvatar({$/;"	f	function:Suggestion
 SuggestedAvatar	client/src/components/suggestion/styles/suggestion.jsx	/^export const SuggestedAvatar = styled(MyAvatar)`$/;"	C
@@ -6534,9 +6511,6 @@ handleLogout	client/src/containers/header/HeaderMoreMenu.jsx	/^  const handleLog
 handleRedirect	client/src/containers/message/MessageReceiver.jsx	/^  const handleRedirect = () => {$/;"	C
 handleRemoveAvatar	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const handleRemoveAvatar = () => {$/;"	C
 handleSaveHistory	client/src/containers/header/HeaderSearchItem.jsx	/^  const handleSaveHistory = (user) => {$/;"	C
-handleScroll	client/src/containers/StoryContainer.jsx	/^  const handleScroll = ({ target }) => {$/;"	C
-handleScrollLeft	client/src/containers/StoryContainer.jsx	/^  const handleScrollLeft = () => {$/;"	C
-handleScrollRight	client/src/containers/StoryContainer.jsx	/^  const handleScrollRight = () => {$/;"	C
 handleSearch	client/src/containers/header/HeaderInputSearch.jsx	/^  const handleSearch = (e) => {$/;"	C
 handleSendMessage	client/src/containers/message/MessageForm.jsx	/^  const handleSendMessage = (e) => {$/;"	C
 handleSubmit	client/src/containers/post-list/PostItem.jsx	/^  const handleSubmit = (e) => {$/;"	C
@@ -15417,10 +15391,6 @@ setHistory	client/src/containers/header/HeaderInputSearch.jsx	/^  const [history
 setImage	client/src/containers/create-post/CreatePostBody.jsx	/^  const [image, setImage] = useState("");$/;"	C
 setImage	client/src/containers/profile/ProfileUploadAvatar.jsx	/^  const [image, setImage] = useState(null);$/;"	C
 setImageSrc	client/src/containers/create-post/CreatePostBody.jsx	/^  const [imageSrc, setImageSrc] = useState("");$/;"	C
-setImgNumber	client/src/pages/SignUpPage.jsx	/^  const [imgNumber, setImgNumber] = useState(1);$/;"	C
-setIsBetween	client/src/containers/StoryContainer.jsx	/^  const [isBetween, setIsBetween] = useState(false);$/;"	C
-setIsFirst	client/src/containers/StoryContainer.jsx	/^  const [isFirst, setIsFirst] = useState(true);$/;"	C
-setIsLast	client/src/containers/StoryContainer.jsx	/^  const [isLast, setIsLast] = useState(false);$/;"	C
 setIsLoading	client/src/containers/list-user/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/containers/profile/index.jsx	/^  const [isLoading, setIsLoading] = useState(false);$/;"	C
 setIsLoading	client/src/pages/InboxPage.jsx	/^  const [isLoading, setIsLoading] = useState(true);$/;"	C
@@ -15590,7 +15560,7 @@ snapdragon-node	client/package-lock.json	/^    "snapdragon-node": {$/;"	o	object
 snapdragon-util	client/package-lock.json	/^        "snapdragon-util": "^3.0.1"$/;"	s	object:dependencies.snapdragon-node.requires
 snapdragon-util	client/package-lock.json	/^    "snapdragon-util": {$/;"	o	object:dependencies
 so	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f
-socket	client/src/actions/socketAction.jsx	/^  const socket = io("\/");$/;"	C
+socket	client/src/actions/socketAction.jsx	/^  const socket = io("http:\/\/localhost:8000");$/;"	C
 socket	client/src/helpers/socket.jsx	/^const socket = (function () {$/;"	f
 socket.io	package-lock.json	/^    "socket.io": {$/;"	o	object:dependencies
 socket.io	package.json	/^    "socket.io": "^4.1.2"$/;"	s	object:dependencies
@@ -15767,7 +15737,6 @@ stopOpacity	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinsta
 stopOpacity	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	p	class:t.a
 storage	client/build/static/js/4.20ca3fb4.chunk.js	/^(this.webpackJsonpinstagram=this.webpackJsonpinstagram||[]).push([[4],[function(e,t,n){"use stri/;"	f	function:t
 store	client/src/store.jsx	/^const store = createStore($/;"	C
-storyRef	client/src/containers/StoryContainer.jsx	/^  const storyRef = createRef();$/;"	C
 stream-browserify	client/package-lock.json	/^        "stream-browserify": "^2.0.1",$/;"	s	object:dependencies.node-libs-browser.requires
 stream-browserify	client/package-lock.json	/^    "stream-browserify": {$/;"	o	object:dependencies
 stream-each	client/package-lock.json	/^        "stream-each": "^1.1.0",$/;"	s	object:dependencies.mississippi.requires

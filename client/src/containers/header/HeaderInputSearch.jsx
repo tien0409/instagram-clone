@@ -1,5 +1,5 @@
 import React from "react";
-import debounce from "lodash.debounce";
+import { debounce } from "lodash";
 import { useRef, useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Header } from "../../components";

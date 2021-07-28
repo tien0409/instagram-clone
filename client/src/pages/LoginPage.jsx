@@ -5,7 +5,7 @@ import * as ROUTES from "../constants/routes";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../actions/userAction";
 import { HelmetContainer } from "../containers";
-import FacebookLoginContainer from "../containers/facebook-login";
+import { FacebookLoginContainer } from "../containers";
 
 const LoginPage = () => {
   const dispatch = useDispatch();
