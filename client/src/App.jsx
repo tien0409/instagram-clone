@@ -1,42 +1,42 @@
-import {BrowserRouter as Router, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
 
-import {ProtectedRoute, UserRedirect} from "./helpers/protected-route";
-import {lazy, Suspense, useEffect} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {loadUser, logout} from "./actions/userAction";
-import {connectSocket} from "./actions/socketAction";
+import { ProtectedRoute, UserRedirect } from "./helpers/protected-route";
+import { lazy, Suspense, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { loadUser, logout } from "./actions/userAction";
+import { connectSocket } from "./actions/socketAction";
 
-const HomePage = lazy (() => import("./pages/HomePage"));
-const LoginPage = lazy (() => import("./pages/LoginPage"));
-const SignUpPage = lazy (() => import("./pages/SignUpPage"));
-const ProfilePage = lazy (() => import("./pages/ProfilePage"));
-const InboxPage = lazy (() => import("./pages/InboxPage"));
-const SettingPage = lazy (() => import("./pages/SettingPage"));
+const HomePage = lazy(() => import("./pages/HomePage"));
+const LoginPage = lazy(() => import("./pages/LoginPage"));
+const SignUpPage = lazy(() => import("./pages/SignUpPage"));
+const ProfilePage = lazy(() => import("./pages/ProfilePage"));
+const InboxPage = lazy(() => import("./pages/InboxPage"));
+const SettingPage = lazy(() => import("./pages/SettingPage"));
 
 function App() {
-  const dispatch = useDispatch ();
+  const dispatch = useDispatch();
 
-  const socketConnect = useSelector ((state) => state.socketConnect);
-  const {socket} = socketConnect;
-  const userLogin = useSelector ((state) => state.userLogin);
-  const {userInfo, err} = userLogin;
+  const socketConnect = useSelector((state) => state.socketConnect);
+  const { socket } = socketConnect;
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo, err } = userLogin;
 
-  useEffect (() => {
+  useEffect(() => {
     if (!socket && userInfo && !err) {
-      dispatch (connectSocket (userInfo));
+      dispatch(connectSocket(userInfo));
     }
     if (err) {
-      dispatch (logout ());
+      dispatch(logout());
     }
 
     if (socket) {
-      socket.emit ("client-get-number-unread-message");
+      socket.emit("client-get-number-unread-message");
     }
   }, [dispatch, socket, userInfo, err]);
 
-  useEffect (() => {
-    dispatch (loadUser ());
+  useEffect(() => {
+    dispatch(loadUser());
   }, [dispatch]);
 
   return (
@@ -44,26 +44,26 @@ function App() {
       <Suspense fallback={<p>Loading...</p>}>
         <Switch>
           <ProtectedRoute userInfo={userInfo} path={ROUTES.HOME} exact>
-            <HomePage socket={socket}/>
+            <HomePage socket={socket} />
           </ProtectedRoute>
 
           <UserRedirect userInfo={userInfo} path={ROUTES.SIGN_IN}>
-            <LoginPage/>
+            <LoginPage />
           </UserRedirect>
           <UserRedirect userInfo={userInfo} path={ROUTES.SIGN_UP}>
-            <SignUpPage/>
+            <SignUpPage />
           </UserRedirect>
 
           <ProtectedRoute userInfo={userInfo} path={ROUTES.INBOX}>
-            <InboxPage/>
+            <InboxPage />
           </ProtectedRoute>
 
           <ProtectedRoute exact userInfo={userInfo} path={ROUTES.PROFILE}>
-            <ProfilePage/>
+            <ProfilePage />
           </ProtectedRoute>
 
           <ProtectedRoute userInfo={userInfo} path={ROUTES.SETTING}>
-            <SettingPage/>
+            <SettingPage />
           </ProtectedRoute>
         </Switch>
       </Suspense>
